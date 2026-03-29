@@ -13,6 +13,28 @@
       --link: #0969da;
       --border: #d0d7de;
       --panel: #f6f8fa;
+      .screenshot {
+  margin: 28px 0 32px;
+}
+
+.screenshot img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.screenshot figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
     }
 
     @media (prefers-color-scheme: dark) {
@@ -138,7 +160,10 @@
     <p class="intro">
       Snaglite is an iPhone app for live site inspections. It helps you record, organise, track and report construction defects, or ‘snags’, during inspections.
     </p>
-
+<figure class="screenshot">
+  <img src="manual-home.png" alt="Snaglite home screen">
+  <figcaption>Snaglite home screen</figcaption>
+</figure>
     <div class="panel">
       <p><strong>Snaglite workflow:</strong></p>
       <ol>
