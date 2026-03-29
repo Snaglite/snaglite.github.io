@@ -13,7 +13,6 @@
       --link: #0969da;
       --border: #d0d7de;
       --panel: #f6f8fa;
-      --overlay: rgba(0, 0, 0, 0.78);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -24,7 +23,6 @@
         --link: #58a6ff;
         --border: #30363d;
         --panel: #161b22;
-        --overlay: rgba(0, 0, 0, 0.84);
       }
     }
 
@@ -153,60 +151,16 @@
       border-radius: 8px;
     }
 
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
     .next-link {
       margin-top: 40px;
       padding-top: 20px;
       border-top: 1px solid var(--border);
-    }
-
-    .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: var(--overlay);
-      z-index: 9999;
-      padding: 24px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .lightbox:target {
-      display: flex;
-    }
-
-    .lightbox-inner {
-      position: relative;
-      max-width: 95vw;
-      max-height: 95vh;
-      text-align: center;
-    }
-
-    .lightbox img {
-      max-width: 95vw;
-      max-height: 82vh;
-      width: auto;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
-      background: #fff;
-    }
-
-    .lightbox-close {
-      display: inline-block;
-      margin-top: 14px;
-      padding: 10px 14px;
-      border: 1px solid rgba(255,255,255,0.25);
-      border-radius: 999px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      background: rgba(255,255,255,0.08);
-    }
-
-    .lightbox-note {
-      color: #eaeaea;
-      font-size: 0.95rem;
-      margin-top: 10px;
     }
 
     @media (max-width: 800px) {
@@ -241,7 +195,7 @@
         <li>quick look preview for photos</li>
       </ul>
       <p class="small">
-        Tap any screenshot thumbnail to open a larger view.
+        Tap any screenshot thumbnail to open the full image in a new tab.
       </p>
     </div>
 
@@ -257,7 +211,7 @@
           <li><strong>Missing Photos</strong> – helps identify snag records without attached images</li>
           <li><strong>Recent Snags</strong> – shows recently active snag records</li>
         </ul>
-        <a class="thumb-link" href="#img-inspection-hub">
+        <a class="thumb-link" href="manual-home.png" target="_blank" rel="noopener noreferrer">
           <img src="manual-home.png" alt="Inspection Hub on the Sites screen">
           <div class="thumb-caption">Inspection Hub on the Sites screen</div>
         </a>
@@ -268,6 +222,10 @@
         <p>
           Snaglite also provides small and medium Home Screen widgets which mirror these shortcut ideas, making it faster to jump into active inspection work without opening the app and navigating manually.
         </p>
+        <a class="thumb-link" href="widget.png" target="_blank" rel="noopener noreferrer">
+          <img src="widget.png" alt="Snaglite widget showing quick shortcuts">
+          <div class="thumb-caption">Small and medium widget options</div>
+        </a>
       </section>
     </div>
 
@@ -285,19 +243,28 @@
         <p>
           Both options move the site into an archive section within the Sites list. Archived sites can be hidden from view, and the associated map pin is also hidden.
         </p>
-        <a class="thumb-link" href="#img-site-swipe">
+        <a class="thumb-link" href="site-swipe.png" target="_blank" rel="noopener noreferrer">
           <img src="site-swipe.png" alt="Site row swipe actions including archive">
           <div class="thumb-caption">Site row swipe actions</div>
         </a>
       </section>
 
       <section class="tip-card">
-        <h3>Archive and Remove Full-Sized Photos</h3>
-        <p>
-          This option archives the site and permanently removes stored full-sized photos to reduce storage use. Small thumbnails are retained where available. Notes, snag data and other project information remain available.
-        </p>
-        <div class="callout">
-          The archived site becomes read-only. You will still be able to browse and export, but not edit. You may wish to export a PDF report first if you need a visual record. This action cannot be undone.
+        <div class="stack">
+          <div>
+            <h3>Archive and Remove Full-Sized Photos</h3>
+            <p>
+              This option archives the site and permanently removes stored full-sized photos to reduce storage use. Small thumbnails are retained where available. Notes, snag data and other project information remain available.
+            </p>
+          </div>
+
+          <div class="callout">
+            This will archive the site and permanently remove stored full-sized photos to reduce storage usage. Small thumbnails will be retained where available. Notes, snag data and other project information will remain.
+          </div>
+
+          <div class="callout">
+            The site becomes read-only. You will still be able to browse and export, but not edit. You may wish to export a PDF report first if you need a visual record. This action cannot be undone.
+          </div>
         </div>
       </section>
     </div>
@@ -309,7 +276,7 @@
         <p>
           Many rows in Snaglite support swipe actions for quicker access to common functions. Depending on the screen, this can include actions such as opening, closing, assigning, archiving or deleting.
         </p>
-        <a class="thumb-link" href="#img-location-swipe">
+        <a class="thumb-link" href="location-swipe.png" target="_blank" rel="noopener noreferrer">
           <img src="location-swipe.png" alt="Swipe actions on a location row">
           <div class="thumb-caption">Location row swipe actions</div>
         </a>
@@ -320,7 +287,7 @@
         <p>
           Snag rows also support swipe gestures for rapid management. This is useful when updating several items during an inspection or review.
         </p>
-        <a class="thumb-link" href="#img-swipe-status">
+        <a class="thumb-link" href="swipe-status.png" target="_blank" rel="noopener noreferrer">
           <img src="swipe-status.png" alt="Swipe action to reopen or update snag status">
           <div class="thumb-caption">Swipe action for status changes</div>
         </a>
@@ -331,7 +298,7 @@
         <p>
           Some swipe actions expose immediate shortcuts, such as assigning an item or deleting it, reducing the need to open the full detail screen.
         </p>
-        <a class="thumb-link" href="#img-swipe-assign">
+        <a class="thumb-link" href="swipe-to-assign.png" target="_blank" rel="noopener noreferrer">
           <img src="swipe-to-assign.png" alt="Swipe action showing assign and delete shortcuts">
           <div class="thumb-caption">Swipe shortcuts for assign and delete</div>
         </a>
@@ -342,7 +309,7 @@
         <p>
           The All Snags view supports bulk actions, which can be useful when managing several records together. Depending on context, bulk actions may include selecting all, setting status, assigning, moving or exporting selected items.
         </p>
-        <a class="thumb-link" href="#img-all-snags">
+        <a class="thumb-link" href="all-snags.png" target="_blank" rel="noopener noreferrer">
           <img src="all-snags.png" alt="All Snags bulk action menu">
           <div class="thumb-caption">Bulk actions in All Snags</div>
         </a>
@@ -354,9 +321,9 @@
       <section class="tip-card">
         <h3>Preview without fully opening the snag</h3>
         <p>
-          Where available, photo quick look allows you to preview an attached image more quickly. This is useful when you want to check the visual record without leaving the list context for longer than necessary. Just press and hold a record to quickly view the an image.
+          Where available, photo quick look allows you to preview an attached image more quickly. This is useful when you want to check the visual record without leaving the list context for longer than necessary. Just press and hold a record to quickly view the image.
         </p>
-        <a class="thumb-link" href="#img-photo-quick-look">
+        <a class="thumb-link" href="photo-quick-look.png" target="_blank" rel="noopener noreferrer">
           <img src="photo-quick-look.png" alt="Quick look preview of a snag photo">
           <div class="thumb-caption">Quick look image preview</div>
         </a>
@@ -367,61 +334,5 @@
       <p><a href="manual-faq.html"><strong>Next: FAQ</strong></a></p>
     </div>
   </main>
-
-  <div id="img-inspection-hub" class="lightbox">
-    <div class="lightbox-inner">
-      <img src="inspection-hub.png" alt="Inspection Hub on the Sites screen">
-      <div class="lightbox-note">Inspection Hub with quick shortcuts for active work.</div>
-      <a class="lightbox-close" href="#">Close</a>
-    </div>
-  </div>
-
-  <div id="img-site-swipe" class="lightbox">
-    <div class="lightbox-inner">
-      <img src="site-swipe.png" alt="Site row swipe actions including archive">
-      <div class="lightbox-note">Site row swipe actions, including archive-related actions.</div>
-      <a class="lightbox-close" href="#">Close</a>
-    </div>
-  </div>
-
-  <div id="img-location-swipe" class="lightbox">
-    <div class="lightbox-inner">
-      <img src="location-swipe.png" alt="Swipe actions on a location row">
-      <div class="lightbox-note">Location row swipe actions for quicker management.</div>
-      <a class="lightbox-close" href="#">Close</a>
-    </div>
-  </div>
-
-  <div id="img-swipe-status" class="lightbox">
-    <div class="lightbox-inner">
-      <img src="swipe-status.png" alt="Swipe action to reopen or update snag status">
-      <div class="lightbox-note">Swipe actions can be used to change status quickly.</div>
-      <a class="lightbox-close" href="#">Close</a>
-    </div>
-  </div>
-
-  <div id="img-swipe-assign" class="lightbox">
-    <div class="lightbox-inner">
-      <img src="swipe-to-assign.png" alt="Swipe action showing assign and delete shortcuts">
-      <div class="lightbox-note">Quick assign and delete options exposed by swipe.</div>
-      <a class="lightbox-close" href="#">Close</a>
-    </div>
-  </div>
-
-  <div id="img-all-snags" class="lightbox">
-    <div class="lightbox-inner">
-      <img src="all-snags-bulk.png" alt="All Snags bulk action menu">
-      <div class="lightbox-note">Bulk actions for multiple snag records in one view.</div>
-      <a class="lightbox-close" href="#">Close</a>
-    </div>
-  </div>
-
-  <div id="img-photo-quick-look" class="lightbox">
-    <div class="lightbox-inner">
-      <img src="photo-quick-look.png" alt="Quick look preview of a snag photo">
-      <div class="lightbox-note">Quick look preview for checking image content without deeper navigation.</div>
-      <a class="lightbox-close" href="#">Close</a>
-    </div>
-  </div>
 </body>
 </html>
