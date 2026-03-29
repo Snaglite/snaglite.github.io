@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting Started – Snaglite User Manual</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --link: #0969da;
+      --border: #d0d7de;
+      --panel: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #9da7b3;
+        --link: #58a6ff;
+        --border: #30363d;
+        --panel: #161b22;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 36px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul, ol {
+      margin: 0 0 16px 24px;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0 32px;
+    }
+
+    .next-link {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <a class="back-link" href="manual.html">← Back to User Manual</a>
+
+    <h1>Getting Started</h1>
+
+    <p>
+      This page explains the basic structure of Snaglite and the steps to take before carrying out live inspections.
+    </p>
+
+    <div class="panel">
+      <p><strong>Snaglite is organised as:</strong></p>
+      <p><strong>Site → Unit → Location → Snag</strong></p>
+      <p class="small">
+        In most cases, you will create the site first, then add units, then locations, and finally the snags within those locations.
+      </p>
+    </div>
+
+    <h2>Before using Snaglite on a live project</h2>
+    <ul>
+      <li>Check that your company details are correct in Settings</li>
+      <li>Add any assignees you expect to use regularly</li>
+      <li>Familiarise yourself with creating sites, units and locations</li>
+      <li>Test PDF export on your device before relying on it on site</li>
+      <li>Review backup and restore options if the inspection data is important</li>
+      <li>Confirm that any subscription access is active, if applicable</li>
+    </ul>
+
+    <h2>Typical workflow</h2>
+    <ol>
+      <li>Create a site</li>
+      <li>Add one or more units</li>
+      <li>Add locations within each unit</li>
+      <li>Create snags with descriptions, photos, notes, status and assignee</li>
+      <li>Review and update snag information as work progresses</li>
+      <li>Export a PDF report when needed</li>
+    </ol>
+
+    <h2>How to set up your inspection structure</h2>
+    <p>
+      Create the inspection structure in a logical order. This keeps navigation clear and makes reporting easier later.
+    </p>
+    <ul>
+      <li><strong>Site</strong> – the overall development, property or scheme</li>
+      <li><strong>Unit</strong> – a plot, house, apartment, block or inspection division within that site</li>
+      <li><strong>Location</strong> – a room, space or sub-area within the unit</li>
+      <li><strong>Snag</strong> – an individual defect or issue record</li>
+    </ul>
+
+    <h2>Good practice</h2>
+    <ul>
+      <li>Use clear, consistent names for sites, units and locations</li>
+      <li>Avoid vague labels such as ‘Room’ or ‘Area’ where a more specific name is available</li>
+      <li>Add photographs at the time of inspection where possible</li>
+      <li>Keep snag descriptions short, factual and specific</li>
+      <li>Use backups regularly if the data matters</li>
+      <li>Export important reports promptly after inspections</li>
+    </ul>
+
+    <h2>What to do next</h2>
+    <p>
+      Once you are comfortable with the basic structure, the next step is to understand how sites, units and locations are arranged in the app.
+    </p>
+
+    <div class="next-link">
+      <p><a href="manual-sites.html"><strong>Next: Sites, Units and Locations</strong></a></p>
+    </div>
+  </main>
+</body>
+</html>
