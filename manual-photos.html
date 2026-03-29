@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photos and Annotations – Snaglite User Manual</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --link: #0969da;
+      --border: #d0d7de;
+      --panel: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #9da7b3;
+        --link: #58a6ff;
+        --border: #30363d;
+        --panel: #161b22;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 36px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul, ol {
+      margin: 0 0 16px 24px;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0 32px;
+    }
+
+    .next-link {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .example {
+      margin: 20px 0;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <a class="back-link" href="manual.html">← Back to User Manual</a>
+
+    <h1>Photos and Annotations</h1>
+
+    <p>
+      Photographs are one of the most important parts of a snag record. They help identify the issue clearly, support follow-up actions and improve the quality of the final report.
+    </p>
+
+    <div class="panel">
+      <p><strong>Good snag photos should be:</strong></p>
+      <ul>
+        <li>clear</li>
+        <li>well framed</li>
+        <li>close enough to show the issue</li>
+        <li>wide enough to show context where needed</li>
+        <li>checked before you move on</li>
+      </ul>
+    </div>
+
+    <h2>Adding photos</h2>
+    <p>
+      Photos can be added to a snag as part of the snag detail or snag creation process.
+    </p>
+
+    <p>
+      Depending on the situation, you may be able to:
+    </p>
+
+    <ul>
+      <li>take a new photo in the app</li>
+      <li>choose one or more photos from your photo library</li>
+    </ul>
+
+    <p>
+      It is generally better to add photos at the time of inspection rather than trying to match them later.
+    </p>
+
+    <h2>What makes a useful inspection photo</h2>
+    <ul>
+      <li>Show the defect clearly</li>
+      <li>Include surrounding context where that helps identify the location</li>
+      <li>Take a second wider shot if the close-up lacks context</li>
+      <li>Avoid blurred or poorly lit images where possible</li>
+      <li>Check that the issue is actually visible before saving</li>
+    </ul>
+
+    <h2>Annotating photos</h2>
+    <p>
+      Snaglite allows you to annotate photos so the defect is easier to identify. This is useful where the issue might otherwise be missed in a report image.
+    </p>
+
+    <p>
+      Typical annotation uses include:
+    </p>
+
+    <ul>
+      <li>circling a defect</li>
+      <li>drawing a line or arrow to the affected point</li>
+      <li>marking a small or visually unclear issue</li>
+      <li>making the report image quicker to understand</li>
+    </ul>
+
+    <h2>Shape recognition</h2>
+    <p>
+      Where shape recognition is available, pause briefly at the end of the stroke to allow the shape to snap into place.
+    </p>
+
+    <div class="example">
+      <p><strong>Tip</strong></p>
+      <p>
+        If the shape does not snap correctly, redraw it more deliberately and pause again at the end.
+      </p>
+    </div>
+
+    <p>
+      Shape recognition is intended to improve neatness, but it may not interpret every hand-drawn mark perfectly every time.
+    </p>
+
+    <h2>Using annotations well</h2>
+    <ul>
+      <li>Keep annotations simple</li>
+      <li>Use one clear mark rather than several unnecessary ones</li>
+      <li>Do not cover the defect itself if that would reduce clarity</li>
+      <li>Check the final image before saving</li>
+      <li>Use annotation only where it adds value</li>
+    </ul>
+
+    <h2>Primary or preferred photo</h2>
+    <p>
+      Where several photos are attached to a snag, one image may be more suitable than the others as the main reference image. Choose the clearest and most useful image where that option is available.
+    </p>
+
+    <h2>Good practice</h2>
+    <ul>
+      <li>Take the photo before leaving the area</li>
+      <li>Use both context shots and close-up shots where needed</li>
+      <li>Annotate only where the issue is not obvious enough without it</li>
+      <li>Review saved images to make sure they support the snag properly</li>
+      <li>Do not rely on memory to explain a weak or unclear image later</li>
+    </ul>
+
+    <div class="next-link">
+      <p><a href="manual-reports.html"><strong>Next: Reports and Export</strong></a></p>
+    </div>
+  </main>
+</body>
+</html>
