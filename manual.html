@@ -13,6 +13,7 @@
       --link: #0969da;
       --border: #d0d7de;
       --panel: #f6f8fa;
+      --overlay: rgba(0, 0, 0, 0.78);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -23,6 +24,7 @@
         --link: #58a6ff;
         --border: #30363d;
         --panel: #161b22;
+        --overlay: rgba(0, 0, 0, 0.84);
       }
     }
 
@@ -165,7 +167,13 @@
       text-align: center;
     }
 
-    .screen-card img {
+    .screen-thumb {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .screen-thumb img {
       display: block;
       width: 100%;
       max-width: 100%;
@@ -174,6 +182,11 @@
       border-radius: 18px;
       background: var(--panel);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: transform 0.15s ease;
+    }
+
+    .screen-thumb:hover img {
+      transform: scale(1.02);
     }
 
     .screen-card figcaption {
@@ -183,12 +196,62 @@
       text-align: center;
     }
 
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--overlay);
+      z-index: 9999;
+      padding: 24px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .lightbox-inner {
+      position: relative;
+      max-width: 95vw;
+      max-height: 95vh;
+      text-align: center;
+    }
+
+    .lightbox img {
+      max-width: 95vw;
+      max-height: 82vh;
+      width: auto;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+      background: #fff;
+    }
+
+    .lightbox-note {
+      color: #eaeaea;
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    .lightbox-close {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      background: rgba(255,255,255,0.08);
+    }
+
     @media (max-width: 900px) {
       .screens-row {
         grid-template-columns: 1fr;
       }
 
-      .screen-card img {
+      .screen-thumb img {
         max-width: 320px;
         margin: 0 auto;
       }
@@ -236,17 +299,23 @@
 
     <div class="screens-row">
       <figure class="screen-card">
-        <img src="manual-units.png" alt="Units screen in Snaglite">
+        <a class="screen-thumb" href="#img-unit">
+          <img src="manual-units.png" alt="Units screen in Snaglite">
+        </a>
         <figcaption>Unit</figcaption>
       </figure>
 
       <figure class="screen-card">
-        <img src="manual-location.png" alt="Locations screen in Snaglite">
+        <a class="screen-thumb" href="#img-location">
+          <img src="manual-location.png" alt="Locations screen in Snaglite">
+        </a>
         <figcaption>Location</figcaption>
       </figure>
 
       <figure class="screen-card">
-        <img src="manual-snags.png" alt="Snag list screen in Snaglite">
+        <a class="screen-thumb" href="#img-snag">
+          <img src="manual-snags.png" alt="Snag list screen in Snaglite">
+        </a>
         <figcaption>Snag</figcaption>
       </figure>
     </div>
@@ -260,6 +329,7 @@
       <a href="manual-photos.html">Photos and Annotations</a>
       <a href="manual-reports.html">Reports and Export</a>
       <a href="manual-settings.html">Settings, Backup and Assignees</a>
+      <a href="manual-tips.html">Tips and Tricks</a>
       <a href="manual-faq.html">FAQ</a>
     </nav>
 
@@ -275,5 +345,29 @@
       Support, legal information and related pages can be found on the main Snaglite site.
     </p>
   </main>
+
+  <div id="img-unit" class="lightbox">
+    <div class="lightbox-inner">
+      <img src="manual-units.png" alt="Units screen in Snaglite">
+      <div class="lightbox-note">Unit level – units sit within a site and contain locations.</div>
+      <a class="lightbox-close" href="#">Close</a>
+    </div>
+  </div>
+
+  <div id="img-location" class="lightbox">
+    <div class="lightbox-inner">
+      <img src="manual-location.png" alt="Locations screen in Snaglite">
+      <div class="lightbox-note">Location level – locations sit within a unit and contain snag records.</div>
+      <a class="lightbox-close" href="#">Close</a>
+    </div>
+  </div>
+
+  <div id="img-snag" class="lightbox">
+    <div class="lightbox-inner">
+      <img src="manual-snags.png" alt="Snag list screen in Snaglite">
+      <div class="lightbox-note">Snag level – each snag records an individual defect or issue.</div>
+      <a class="lightbox-close" href="#">Close</a>
+    </div>
+  </div>
 </body>
 </html>
