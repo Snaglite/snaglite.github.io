@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Working with Snags – Snaglite User Manual</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --link: #0969da;
+      --border: #d0d7de;
+      --panel: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #9da7b3;
+        --link: #58a6ff;
+        --border: #30363d;
+        --panel: #161b22;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 36px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul, ol {
+      margin: 0 0 16px 24px;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0 32px;
+    }
+
+    .next-link {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .example {
+      margin: 20px 0;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <a class="back-link" href="manual.html">← Back to User Manual</a>
+
+    <h1>Working with Snags</h1>
+
+    <p>
+      A snag is an individual defect or issue recorded against a specific location. Each snag can include a description, photos, notes, status and an assignee.
+    </p>
+
+    <div class="panel">
+      <p><strong>A good snag record is:</strong></p>
+      <ul>
+        <li>clear</li>
+        <li>specific</li>
+        <li>linked to the correct location</li>
+        <li>supported by photographs where needed</li>
+        <li>kept up to date as work progresses</li>
+      </ul>
+    </div>
+
+    <h2>Creating a snag</h2>
+    <ol>
+      <li>Open the relevant site</li>
+      <li>Open the relevant unit</li>
+      <li>Open the relevant location</li>
+      <li>Add a new snag</li>
+      <li>Enter the snag description</li>
+      <li>Add photographs if required</li>
+      <li>Add notes, assignee and status as needed</li>
+      <li>Save the snag</li>
+    </ol>
+
+    <p>
+      Snags should normally be created in the exact location where the issue has been found. This keeps the inspection record accurate and makes reporting clearer.
+    </p>
+
+    <h2>Writing a good snag description</h2>
+    <p>
+      The description should explain the issue clearly and briefly. It should identify what is wrong and, where useful, where the issue is located.
+    </p>
+
+    <div class="example">
+      <p><strong>Better example</strong></p>
+      <p>Scratch to internal face of entrance door – redecorate complete panel.</p>
+    </div>
+
+    <div class="example">
+      <p><strong>Less useful example</strong></p>
+      <p>Door damaged.</p>
+    </div>
+
+    <p>
+      Keep the wording factual. Avoid vague wording where a more precise description is available.
+    </p>
+
+    <h2>Photos and supporting information</h2>
+    <p>
+      A snag can include one or more photographs. These help identify the issue clearly and improve the usefulness of the final report.
+    </p>
+
+    <p>
+      Where needed, you can also add notes to give further context or record supplementary information.
+    </p>
+
+    <h2>Status</h2>
+    <p>
+      Each snag has a status so that progress can be tracked clearly.
+    </p>
+
+    <ul>
+      <li><strong>Open</strong> – the issue still requires attention</li>
+      <li><strong>Closed</strong> – the issue has been completed or resolved</li>
+    </ul>
+
+    <p>
+      Keep the status up to date. This affects lists, filters, progress views and reports.
+    </p>
+
+    <h2>Assignees</h2>
+    <p>
+      A snag can be assigned to a person, trade or responsible party. This helps with filtering, follow-up and reporting.
+    </p>
+
+    <p>
+      Examples might include:
+    </p>
+
+    <ul>
+      <li>Main Contractor</li>
+      <li>Joiner</li>
+      <li>Electrician</li>
+      <li>Painter</li>
+      <li>Client Supply Item</li>
+    </ul>
+
+    <h2>Editing an existing snag</h2>
+    <p>
+      You can return to an existing snag to update its details. This may include:
+    </p>
+
+    <ul>
+      <li>changing the description</li>
+      <li>adding or removing photos</li>
+      <li>updating notes</li>
+      <li>changing the assignee</li>
+      <li>changing the status</li>
+    </ul>
+
+    <p>
+      This is useful where work has progressed, additional evidence is needed, or the original wording needs refinement.
+    </p>
+
+    <h2>Bulk actions and list management</h2>
+    <p>
+      Snag lists may support bulk actions for faster management of multiple items. Depending on the screen and context, this may include changing status, assigning items, moving items or deleting items.
+    </p>
+
+    <p>
+      Use bulk actions carefully, particularly where several similar snag records exist in the same area.
+    </p>
+
+    <h2>Good practice</h2>
+    <ul>
+      <li>Keep each snag to one issue wherever possible</li>
+      <li>Do not combine unrelated defects into one snag</li>
+      <li>Use photographs where they improve clarity</li>
+      <li>Keep descriptions short, factual and specific</li>
+      <li>Use consistent assignee names</li>
+      <li>Update status promptly when work is complete</li>
+    </ul>
+
+    <div class="next-link">
+      <p><a href="manual-photos.html"><strong>Next: Photos and Annotations</strong></a></p>
+    </div>
+  </main>
+</body>
+</html>
