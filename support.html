@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,7 +55,7 @@
 
     <h2>Contact</h2>
     <p>For support, bug reports or feedback, please email:</p>
-    <p><a href=snaglite@icloud.com>snaglite@icloud.com</a></p>
+    <p><a id="support-email" href="#"></a></p>
 
     <h2>What to include</h2>
     <ul>
@@ -71,5 +71,14 @@
 
     <p class="muted">Copyright © 2026 Snaglite. All rights reserved.</p>
   </div>
+
+  <script>
+    const user = "snaglite";
+    const domain = "icloud.com";
+    const email = user + "@" + domain;
+    const link = document.getElementById("support-email");
+    link.href = "mailto:" + email;
+    link.textContent = email;
+  </script>
 </body>
 </html>
