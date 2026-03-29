@@ -156,15 +156,18 @@
     }
 
     .screens-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
       margin: 28px 0 8px;
     }
 
     .screen-card {
       margin: 0;
       text-align: center;
+      width: 180px;
+      flex: 0 0 180px;
     }
 
     .screen-thumb {
@@ -176,8 +179,9 @@
     .screen-thumb img {
       display: block;
       width: 100%;
-      max-width: 100%;
+      max-width: 180px;
       height: auto;
+      margin: 0 auto;
       border: 1px solid var(--border);
       border-radius: 18px;
       background: var(--panel);
@@ -246,14 +250,30 @@
       background: rgba(255,255,255,0.08);
     }
 
-    @media (max-width: 900px) {
-      .screens-row {
-        grid-template-columns: 1fr;
+    @media (max-width: 700px) {
+      .screen-card {
+        width: 150px;
+        flex: 0 0 150px;
       }
 
       .screen-thumb img {
-        max-width: 320px;
-        margin: 0 auto;
+        max-width: 150px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .screens-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .screen-card {
+        width: 220px;
+        flex: none;
+      }
+
+      .screen-thumb img {
+        max-width: 220px;
       }
     }
   </style>
