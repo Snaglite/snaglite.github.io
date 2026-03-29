@@ -13,28 +13,6 @@
       --link: #0969da;
       --border: #d0d7de;
       --panel: #f6f8fa;
-      .screenshot {
-  margin: 28px 0 32px;
-}
-
-.screenshot img {
-  display: block;
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  margin: 0 auto;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: var(--panel);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.screenshot figcaption {
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 0.95rem;
-  text-align: center;
-}
     }
 
     @media (prefers-color-scheme: dark) {
@@ -61,7 +39,7 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 40px 20px 56px;
     }
@@ -151,6 +129,70 @@
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
       font-size: 0.95em;
     }
+
+    .screenshot {
+      margin: 28px 0 32px;
+    }
+
+    .screenshot img {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--panel);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .screenshot figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .screens-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 28px 0 8px;
+    }
+
+    .screen-card {
+      margin: 0;
+      text-align: center;
+    }
+
+    .screen-card img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .screen-card figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .screens-row {
+        grid-template-columns: 1fr;
+      }
+
+      .screen-card img {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -160,10 +202,12 @@
     <p class="intro">
       Snaglite is an iPhone app for live site inspections. It helps you record, organise, track and report construction defects, or ‘snags’, during inspections.
     </p>
-<figure class="screenshot">
-  <img src="manual-home.png" alt="Snaglite home screen">
-  <figcaption>Snaglite home screen</figcaption>
-</figure>
+
+    <figure class="screenshot">
+      <img src="manual-home.png" alt="Snaglite home screen">
+      <figcaption>Snaglite home screen</figcaption>
+    </figure>
+
     <div class="panel">
       <p><strong>Snaglite workflow:</strong></p>
       <ol>
@@ -189,6 +233,23 @@
       <li><strong>Location</strong> means a room, space or sub-area within the unit</li>
       <li><strong>Snag</strong> means an individual defect or issue record</li>
     </ul>
+
+    <div class="screens-row">
+      <figure class="screen-card">
+        <img src="manual-units.png" alt="Units screen in Snaglite">
+        <figcaption>Unit</figcaption>
+      </figure>
+
+      <figure class="screen-card">
+        <img src="manual-location.png" alt="Locations screen in Snaglite">
+        <figcaption>Location</figcaption>
+      </figure>
+
+      <figure class="screen-card">
+        <img src="manual-snags.png" alt="Snag list screen in Snaglite">
+        <figcaption>Snag</figcaption>
+      </figure>
+    </div>
 
     <h2>Manual contents</h2>
     <nav class="contents" aria-label="User manual contents">
