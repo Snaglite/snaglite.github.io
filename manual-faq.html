@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ – Snaglite User Manual</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --link: #0969da;
+      --border: #d0d7de;
+      --panel: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #9da7b3;
+        --link: #58a6ff;
+        --border: #30363d;
+        --panel: #161b22;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 32px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0 32px;
+    }
+
+    .question {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .question:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .footer-link {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <a class="back-link" href="manual.html">← Back to User Manual</a>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="panel">
+      <p>
+        This page answers common questions about how Snaglite is organised and how it should be used in practice.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>What is the difference between a site, unit and location?</h2>
+      <p>
+        A <strong>site</strong> is the overall project, development, property or job.
+        A <strong>unit</strong> is the plot, apartment, house, block or inspection division within that site.
+        A <strong>location</strong> is the specific room, area or sub-space within the unit.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>What is a snag?</h2>
+      <p>
+        A snag is an individual defect or issue record. It is the actual item you are recording, such as damage, poor finish, missing work or another issue requiring attention.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Should I create one snag for several issues in the same room?</h2>
+      <p>
+        Usually, no. It is better to keep each snag as one individual issue wherever possible. This makes tracking, assigning, updating and reporting much clearer.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Can I add photos to a snag?</h2>
+      <p>
+        Yes. Photos can be attached to snag records to show the issue clearly. This is strongly recommended where the issue would benefit from visual evidence.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Can I annotate photos?</h2>
+      <p>
+        Yes. Snaglite allows photos to be annotated so the defect is easier to identify. Keep annotations simple and use them only where they materially improve clarity.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Why did the drawn shape not snap correctly?</h2>
+      <p>
+        Where shape recognition is available, pause briefly at the end of the stroke to allow the shape to snap. If the result is not correct, redraw the mark more deliberately and pause again.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>What do Open and Closed mean?</h2>
+      <p>
+        <strong>Open</strong> means the issue still requires action.
+        <strong>Closed</strong> means the issue has been completed or resolved.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>What is an assignee?</h2>
+      <p>
+        An assignee is the person, trade or responsible party linked to a snag. This helps with filtering, follow-up and report clarity.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Can I export a PDF report?</h2>
+      <p>
+        Yes. Snaglite can generate PDF reports from inspection data. Before export, check that the structure, wording, photos and statuses are all correct.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Should I back up my inspection data?</h2>
+      <p>
+        Yes. If the data matters, use backup regularly. It is sensible to back up before major changes, after important inspections and before moving to another device.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Can I rely on the app alone without exporting reports?</h2>
+      <p>
+        For important project records, it is prudent to export key PDF reports promptly rather than leaving everything only inside the live app data.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Does Snaglite work on iPad?</h2>
+      <p>
+        At present, this manual relates to the iPhone version of Snaglite.
+      </p>
+    </div>
+
+    <div class="footer-link">
+      <p><a href="manual.html"><strong>Return to User Manual home</strong></a></p>
+    </div>
+  </main>
+</body>
+</html>
