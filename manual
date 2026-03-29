@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snaglite User Manual</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --link: #0969da;
+      --border: #d0d7de;
+      --panel: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #9da7b3;
+        --link: #58a6ff;
+        --border: #30363d;
+        --panel: #161b22;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 36px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0 32px;
+    }
+
+    ul, ol {
+      margin: 0 0 16px 24px;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    .contents {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .contents a {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      background: transparent;
+      font-weight: 600;
+    }
+
+    .contents a:hover {
+      border-color: var(--link);
+      color: var(--link);
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Snaglite User Manual</h1>
+
+    <p class="intro">
+      Snaglite is an iPhone app for live site inspections. It helps you record, organise, track and report construction defects, or ‘snags’, during inspections.
+    </p>
+
+    <div class="panel">
+      <p><strong>Snaglite workflow:</strong></p>
+      <ol>
+        <li>Create a site</li>
+        <li>Add units</li>
+        <li>Add locations</li>
+        <li>Create snags with photos, notes, status and assignee</li>
+        <li>Review and update snag information</li>
+        <li>Export PDF reports</li>
+      </ol>
+      <p class="small">
+        You can also use attachments, backups, settings, subscriptions and Home Screen shortcuts where available.
+      </p>
+    </div>
+
+    <h2>How Snaglite is organised</h2>
+    <p>Snaglite uses a simple hierarchy:</p>
+    <p><strong>Site → Unit → Location → Snag</strong></p>
+
+    <ul>
+      <li><strong>Site</strong> means the overall development, scheme or property</li>
+      <li><strong>Unit</strong> means an individual plot, apartment, house, block or inspection area</li>
+      <li><strong>Location</strong> means a room, space or sub-area within the unit</li>
+      <li><strong>Snag</strong> means an individual defect or issue record</li>
+    </ul>
+
+    <h2>Manual contents</h2>
+    <nav class="contents" aria-label="User manual contents">
+      <a href="manual-getting-started.html">Getting Started</a>
+      <a href="manual-sites.html">Sites, Units and Locations</a>
+      <a href="manual-snags.html">Working with Snags</a>
+      <a href="manual-photos.html">Photos and Annotations</a>
+      <a href="manual-reports.html">Reports and Export</a>
+      <a href="manual-settings.html">Settings, Backup and Assignees</a>
+      <a href="manual-faq.html">FAQ</a>
+    </nav>
+
+    <h2>Before you start</h2>
+    <ul>
+      <li>Enter your company details in Settings</li>
+      <li>Add any regular assignees you want to use</li>
+      <li>Test PDF export on your device</li>
+      <li>Use backup regularly if your inspection data is important</li>
+    </ul>
+
+    <p class="footer">
+      Support, legal information and related pages can be found on the main Snaglite site.
+    </p>
+  </main>
+</body>
+</html>
