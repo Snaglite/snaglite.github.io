@@ -46,6 +46,42 @@
       padding: 40px 20px 56px;
     }
 
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 8px;
+    }
+
+    .hero-copy {
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .brand-card {
+      flex: 0 0 auto;
+      width: 112px;
+      height: 112px;
+      padding: 8px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .brand-card img {
+      display: block;
+      width: calc(100% + 22px);
+      height: calc(100% + 22px);
+      margin-left: -6px;
+      margin-top: -6px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 22px;
+    }
+
     h1, h2 {
       line-height: 1.2;
       margin: 0 0 16px;
@@ -251,6 +287,16 @@
     }
 
     @media (max-width: 700px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .brand-card {
+        width: 96px;
+        height: 96px;
+      }
+
       .screen-card {
         width: 150px;
         flex: 0 0 150px;
@@ -280,11 +326,19 @@
 </head>
 <body>
   <main class="container">
-    <h1>Snaglite User Manual</h1>
+    <div class="hero">
+      <div class="hero-copy">
+        <h1>Snaglite User Manual</h1>
 
-    <p class="intro">
-      Snaglite is an iPhone app for live site inspections. It helps you record, organise, track and report construction defects, or ‘snags’, during inspections.
-    </p>
+        <p class="intro">
+          Snaglite is an iPhone app for live site inspections. It helps you record, organise, track and report construction defects, or ‘snags’, during inspections.
+        </p>
+      </div>
+
+      <div class="brand-card" aria-label="Snaglite app icon">
+        <img src="app-icon.jpeg" alt="Snaglite app icon">
+      </div>
+    </div>
 
     <figure class="screenshot">
       <img src="manual-home.png" alt="Snaglite home screen">
@@ -316,6 +370,8 @@
       <li><strong>Location</strong> means a room, space or sub-area within the unit</li>
       <li><strong>Snag</strong> means an individual defect or issue record</li>
     </ul>
+
+    <div id="gallery-close"></div>
 
     <div class="screens-row">
       <figure class="screen-card">
@@ -370,7 +426,7 @@
     <div class="lightbox-inner">
       <img src="manual-units.png" alt="Units screen in Snaglite">
       <div class="lightbox-note">Unit level – units sit within a site and contain locations.</div>
-      <a class="lightbox-close" href="#">Close</a>
+      <a class="lightbox-close" href="#gallery-close">Close</a>
     </div>
   </div>
 
@@ -378,7 +434,7 @@
     <div class="lightbox-inner">
       <img src="manual-location.png" alt="Locations screen in Snaglite">
       <div class="lightbox-note">Location level – locations sit within a unit and contain snag records.</div>
-      <a class="lightbox-close" href="#">Close</a>
+      <a class="lightbox-close" href="#gallery-close">Close</a>
     </div>
   </div>
 
@@ -386,7 +442,7 @@
     <div class="lightbox-inner">
       <img src="manual-snags.png" alt="Snag list screen in Snaglite">
       <div class="lightbox-note">Snag level – each snag records an individual defect or issue.</div>
-      <a class="lightbox-close" href="#">Close</a>
+      <a class="lightbox-close" href="#gallery-close">Close</a>
     </div>
   </div>
 </body>
