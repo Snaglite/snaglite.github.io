@@ -102,6 +102,28 @@
       max-width: 760px;
     }
 
+    .store-link {
+      margin: 20px 0 28px;
+    }
+
+    .store-link a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .store-link img {
+      display: block;
+      height: 54px;
+      width: auto;
+      border-radius: 12px;
+    }
+
+    .store-note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
     .panel {
       background: var(--panel);
       border: 1px solid var(--border);
@@ -156,6 +178,11 @@
     .small {
       color: var(--muted);
       font-size: 0.95rem;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
     }
 
     .screenshot {
@@ -261,6 +288,10 @@
       .screen-thumb img {
         max-width: 220px;
       }
+
+      .store-link img {
+        height: 48px;
+      }
     }
   </style>
 </head>
@@ -273,6 +304,13 @@
         <p class="intro">
           Snaglite is an iPhone app for live site inspections. It helps you record, organise, track and report construction defects, or ‘snags’, during inspections.
         </p>
+
+        <div class="store-link">
+          <a href="https://apps.apple.com/app/snaglite/id6761205223" target="_blank" rel="noopener noreferrer" aria-label="Download Snaglite on the App Store">
+            <img src="black.jpeg" alt="Download on the App Store">
+          </a>
+          <p class="store-note">Snaglite is available on the App Store.</p>
+        </div>
       </div>
 
       <div class="brand-card" aria-label="Snaglite app icon">
@@ -347,7 +385,7 @@
       <a href="manual-faq.html">FAQ</a>
     </nav>
 
-        <h2>Before you start</h2>
+    <h2>Before you start</h2>
     <ul>
       <li>Enter your company details and add your logo in Settings</li>
       <li>Add any regular assignees you want to use</li>
