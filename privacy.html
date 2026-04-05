@@ -1,27 +1,93 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <title>Privacy Policy — Snaglite</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <style>
-  body { max-width: 800px; margin: 2rem auto; padding: 0 1rem; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1c1c1e; }
-  h1, h2, h3 { line-height: 1.25; }
-  a { color: #0066cc; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .muted { color: #6e6e73; }
+  :root {
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --link: #0066cc;
+    --bg: #ffffff;
+    --border: #d2d2d7;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --link: #4da3ff;
+      --bg: #000000;
+      --border: #3a3a3c;
+    }
+  }
+
+  html {
+    background: var(--bg);
+  }
+
+  body {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  h1, h2, h3 {
+    line-height: 1.25;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p, ul {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .contact-line {
+    word-break: break-word;
+  }
+
+  noscript span {
+    unicode-bidi: bidi-override;
+  }
 </style>
 </head>
 <body>
 <h1>Privacy Policy — Snaglite</h1>
-<p class="muted">Last updated: March 26, 2026</p>
+<p class="muted">Last updated: 26 March 2026</p>
 
 <p>Thank you for using Snaglite. This privacy policy explains what data we collect, how we use it, and your rights under the General Data Protection Regulation (GDPR).</p>
 
 <h2>Data Controller</h2>
-<p>Snaglite (independent developer)</p>
-<p>Contact: <a href="mailto:privacy.snaglite@icloud.com">privacy.snaglite@icloud.com</a></p>
-<p>If you use iCloud syncing, Apple may act as a separate data controller for processing performed under your Apple ID. Apple’s privacy policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></p>
+<p>Jason O'Donoghue, independent developer of Snaglite</p>
+<p class="contact-line">Contact: <a id="contact-email-top" href="#" aria-label="Email contact for Snaglite privacy enquiries">Email</a></p>
+<p>If you use iCloud syncing, Apple may act as a separate data controller for processing performed under your Apple ID. Apple’s privacy policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></p>
 
 <h2>Summary</h2>
 <ul>
@@ -38,74 +104,95 @@
   <li>Optional attachments: photos or files you attach to items.</li>
   <li>App preferences: appearance mode, onboarding completion, and other settings.</li>
 </ul>
-<p>This data is stored locally on your device. If you enable iCloud (or device backups), your data may be stored on Apple’s servers associated with your Apple ID.</p>
+<p>This data is stored locally on your device. If you enable iCloud or device backups, your data may be stored on Apple’s servers associated with your Apple ID.</p>
 
-<h3>2) Diagnostic/Usage Data</h3>
+<h3>2) Diagnostic and Usage Data</h3>
 <ul>
-  <li>Basic, privacy‑friendly diagnostics may be logged locally to improve reliability and user experience.</li>
-  <li>We do not use third‑party analytics SDKs.</li>
-  <li>If Apple device analytics are enabled at the system level, Apple may collect aggregated usage data. See your device settings and Apple’s privacy policy.</li>
+  <li>Basic, privacy-friendly diagnostics may be logged locally to improve reliability and user experience.</li>
+  <li>We do not use third-party analytics SDKs.</li>
+  <li>If Apple device analytics are enabled at system level, Apple may collect aggregated usage data. See your device settings and Apple’s privacy policy.</li>
 </ul>
 
 <h3>3) Special Categories</h3>
-<p>Snaglite is not intended to collect special categories of personal data (GDPR Art. 9). If you include personal or sensitive information in notes or attachments, you are responsible for ensuring you have the right to process that data.</p>
+<p>Snaglite is not intended to collect special categories of personal data under GDPR Article 9. If you include personal or sensitive information in notes or attachments, you are responsible for ensuring you have the right to process that data.</p>
 
 <h2>Legal Bases for Processing</h2>
 <ul>
-  <li><strong>Performance of a contract</strong> (GDPR Art. 6(1)(b)): To provide the app’s core functionality.</li>
-  <li><strong>Legitimate interests</strong> (GDPR Art. 6(1)(f)): To maintain and improve reliability, quality, and security.</li>
-  <li><strong>Consent</strong> (GDPR Art. 6(1)(a)): When you opt into optional features like iCloud sync.</li>
+  <li><strong>Performance of a contract</strong> (GDPR Article 6(1)(b)): to provide the app’s core functionality.</li>
+  <li><strong>Legitimate interests</strong> (GDPR Article 6(1)(f)): to maintain and improve reliability, quality, and security.</li>
+  <li><strong>Consent</strong> (GDPR Article 6(1)(a)): when you opt into optional features such as iCloud sync.</li>
 </ul>
 
 <h2>How We Use Your Data</h2>
 <ul>
   <li>To operate core features: create, edit, view, and manage sites, units, areas, and snags.</li>
-  <li>To maintain app reliability: local diagnostics and event logging (non‑identifying).</li>
+  <li>To maintain app reliability: local diagnostics and event logging that is not identifying.</li>
   <li>To improve user experience: remember your preferences.</li>
   <li>To provide optional syncing: if enabled, your data is synced through Apple’s services for availability across your devices.</li>
 </ul>
 <p>We do not use your data for targeted advertising and we do not sell your data.</p>
 
 <h2>Subscriptions and Billing</h2>
-<p>Snaglite offers auto‑renewable subscriptions and may include a 7‑day free trial. Purchases are processed by Apple. After the trial, your subscription automatically renews unless canceled at least 24 hours before the end of the current period. You can manage or cancel your subscription in your device settings under Apple ID → Subscriptions. We receive purchase status information (e.g., active/expired) to unlock features. Refunds are handled by Apple according to their policies.</p>
+<p>Snaglite offers auto-renewable subscriptions and may include a 7-day free trial. Purchases are processed by Apple. After the trial, your subscription renews automatically unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription in your device settings under Apple ID and Subscriptions. We receive purchase status information, such as active or expired status, to unlock features. Refunds are handled by Apple in accordance with its policies.</p>
 
 <h2>Data Storage and Transfers</h2>
 <ul>
-  <li><strong>Local storage:</strong> Your content and settings are stored on your device using Apple’s Core Data.</li>
-  <li><strong>iCloud (optional):</strong> If enabled, your data is stored on Apple’s servers and may be transferred internationally according to Apple’s safeguards.</li>
-  <li><strong>Backups:</strong> If you back up your device to iCloud or a computer, your app data may be included in those backups.</li>
+  <li><strong>Local storage:</strong> your content and settings are stored on your device using Apple’s Core Data.</li>
+  <li><strong>iCloud (optional):</strong> if enabled, your data is stored on Apple’s servers and may be transferred internationally in accordance with Apple’s safeguards.</li>
+  <li><strong>Backups:</strong> if you back up your device to iCloud or to a computer, your app data may be included in those backups.</li>
 </ul>
 
 <h2>Data Retention</h2>
-<p>On‑device data persists until you delete it via the app or uninstall the app. If iCloud sync is enabled, synced data persists until you disable sync and/or delete the data from iCloud. Local diagnostic logs (if any) are retained only as long as necessary for troubleshooting and quality improvements.</p>
+<p>On-device data remains until you delete it through the app or uninstall the app. If iCloud sync is enabled, synced data remains until you disable sync and or delete the data from iCloud. Local diagnostic logs, if any, are retained only as long as necessary for troubleshooting and quality improvement.</p>
 
 <h2>Your Rights (GDPR)</h2>
 <ul>
   <li>Right of access, rectification, erasure, restriction, portability, and objection.</li>
   <li>Right to withdraw consent where processing is based on consent.</li>
 </ul>
-<p>To exercise your rights, use in‑app tools or contact us at <a href="mailto:privacy.snaglite@icloud.com">privacy.snaglite@icloud.com</a>. We may request information to verify your identity.</p>
+<p>To exercise your rights, use the in-app tools or contact us at <a id="contact-email-rights" href="#" aria-label="Email contact for Snaglite privacy rights requests">Email</a>. We may request information to verify your identity.</p>
 
 <h2>Children’s Privacy</h2>
-<p>Snaglite is not directed to children under 16. If you believe we have inadvertently collected personal data from a child under 16, please contact us so we can delete it.</p>
+<p>Snaglite is not directed to children. If you believe we have inadvertently collected personal data from a child under 16, please contact us so that it can be deleted.</p>
 
 <h2>Security</h2>
-<p>We use appropriate technical and organizational measures to protect your data, including Apple’s secure storage frameworks. No method of transmission or storage is 100% secure. You are responsible for maintaining the security of your device and Apple ID.</p>
+<p>We use appropriate technical and organisational measures to protect your data, including Apple’s secure storage frameworks. No method of transmission or storage is completely secure. You are responsible for maintaining the security of your device and Apple ID.</p>
 
 <h2>Third Parties</h2>
 <ul>
-  <li>Apple Inc.: Provides iCloud and payment processing. See Apple’s privacy policy.</li>
-  <li>We do not share your personal data with other third parties except when required by law or with your explicit consent.</li>
+  <li>Apple Inc. provides iCloud and payment processing. See Apple’s privacy policy.</li>
+  <li>We do not share your personal data with other third parties except where required by law or with your explicit consent.</li>
+  <li>We do not integrate third-party advertising or tracking services.</li>
 </ul>
 
 <h2>International Transfers</h2>
-<p>If you enable iCloud, your data may be processed and stored by Apple in data centers outside your country, subject to Apple’s safeguards.</p>
+<p>If you enable iCloud, your data may be processed and stored by Apple in data centres outside your country, subject to Apple’s safeguards.</p>
 
 <h2>Changes to This Policy</h2>
-<p>We may update this policy from time to time. Material changes will be reflected by updating the “Last updated” date and may be communicated in‑app. Continued use of the app after updates constitutes acceptance of the revised policy.</p>
+<p>We may update this policy from time to time. Material changes will be reflected by updating the ‘Last updated’ date and may also be communicated in-app. Continued use of the app after updates constitutes acceptance of the revised policy.</p>
 
 <h2>Contact</h2>
-<p>Contact: <a href="mailto:privacy.snaglite@icloud.com">privacy.snaglite@icloud.com</a></p>
+<p class="contact-line">Contact: <a id="contact-email-bottom" href="#" aria-label="Email contact for Snaglite privacy enquiries">Email</a></p>
+
+<noscript>
+  <p class="contact-line muted">Email: <span>moc.duolci@etilgans</span> (reverse this text to read the address)</p>
+</noscript>
+
+<script>
+(function () {
+  const parts = ['snaglite', 'icloud', 'com'];
+  const email = parts[0] + '@' + parts[1] + '.' + parts[2];
+  const ids = ['contact-email-top', 'contact-email-rights', 'contact-email-bottom'];
+
+  ids.forEach(function (id) {
+    const link = document.getElementById(id);
+    if (link) {
+      link.href = 'mailto:' + email;
+      link.textContent = email;
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
