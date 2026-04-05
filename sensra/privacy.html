@@ -4,12 +4,78 @@
 <meta charset="utf-8">
 <title>Privacy Policy — Sensra</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <style>
-  body { max-width: 800px; margin: 2rem auto; padding: 0 1rem; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1c1c1e; }
-  h1, h2, h3 { line-height: 1.25; }
-  a { color: #0066cc; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .muted { color: #6e6e73; }
+  :root {
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --link: #0066cc;
+    --bg: #ffffff;
+    --border: #d2d2d7;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --link: #4da3ff;
+      --bg: #000000;
+      --border: #3a3a3c;
+    }
+  }
+
+  html {
+    background: var(--bg);
+  }
+
+  body {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  h1, h2, h3 {
+    line-height: 1.25;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p, ul {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .contact-line {
+    word-break: break-word;
+  }
+
+  noscript span {
+    unicode-bidi: bidi-override;
+  }
 </style>
 </head>
 <body>
@@ -21,7 +87,10 @@
 
 <h2>Data Controller</h2>
 <p>Jason O'Donoghue, independent developer of Sensra</p>
-<p>Contact: <a href="mailto:sensra@icloud.com">privacy.sensra@icloud.com</a></p>
+<p class="contact-line">Contact: <a id="contact-email" href="#" aria-label="Email contact for Sensra privacy enquiries">Email</a></p>
+<noscript>
+  <p class="contact-line muted">Email: <span>moc.duolci@arnes</span> (reverse this text to read the address)</p>
+</noscript>
 
 <h2>Summary</h2>
 <ul>
@@ -32,5 +101,43 @@
 </ul>
 
 <h2>Health Data</h2>
-<p>With your explicit permission, Sensra may read health and fitness data from Apple Health using HealthKit. This may include metrics such as heart rate, heart rate variability (HRV), VO₂ max, respiratory rate, blood oxygen levels, steps, and similar data.</p>
+<p>With your explicit permission, Sensra may read health and fitness data from Apple Health using HealthKit. This may include metrics such as heart rate, heart rate variability (HRV), VO₂ max, respiratory rate, blood oxygen levels, steps, sleep, weight, blood pressure, and similar data.</p>
 
+<h2>How Data Is Used</h2>
+<p>Health data is used only within the app to display current values, charts, trends, summaries, widgets, complications, and related health insights on your device.</p>
+<p>Sensra does not use your health data for advertising, profiling, or marketing.</p>
+
+<h2>Storage and Transmission</h2>
+<p>Sensra does not collect, store, or transmit your HealthKit data to the developer or to external servers for processing.</p>
+<p>Where data is shown in the app, it is read from Apple Health on your device, subject to the permissions you have granted.</p>
+
+<h2>Permissions</h2>
+<p>You control whether Sensra can access HealthKit data. You can change or revoke permissions at any time in the Apple Health app or in iOS settings.</p>
+
+<h2>Third Parties</h2>
+<p>Sensra does not sell personal data and does not use third-party advertising or tracking SDKs to monetise your information.</p>
+
+<h2>Children’s Privacy</h2>
+<p>Sensra is not directed at children and does not knowingly collect personal data from children.</p>
+
+<h2>Changes to This Policy</h2>
+<p>This policy may be updated from time to time. The latest version will always be available on this page, with the updated date shown above.</p>
+
+<h2>Contact</h2>
+<p>If you have any questions about this privacy policy or Sensra, please use the contact link above.</p>
+
+<script>
+(function () {
+  const parts = ['sensra', 'icloud', 'com'];
+  const email = parts[0] + '@' + parts[1] + '.' + parts[2];
+  const link = document.getElementById('contact-email');
+
+  if (link) {
+    link.href = 'mailto:' + email;
+    link.textContent = email;
+  }
+})();
+</script>
+
+</body>
+</html>
