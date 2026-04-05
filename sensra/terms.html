@@ -4,12 +4,74 @@
 <meta charset="utf-8">
 <title>Terms of Use — Sensra</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <style>
-  body { max-width: 800px; margin: 2rem auto; padding: 0 1rem; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1c1c1e; }
-  h1, h2, h3 { line-height: 1.25; }
-  a { color: #0066cc; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .muted { color: #6e6e73; }
+  :root {
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --link: #0066cc;
+    --bg: #ffffff;
+    --border: #d2d2d7;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --link: #4da3ff;
+      --bg: #000000;
+      --border: #3a3a3c;
+    }
+  }
+
+  html {
+    background: var(--bg);
+  }
+
+  body {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  h1, h2, h3 {
+    line-height: 1.25;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p, ul {
+    margin: 0 0 1rem;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .contact-line {
+    word-break: break-word;
+  }
+
+  noscript span {
+    unicode-bidi: bidi-override;
+  }
 </style>
 </head>
 <body>
@@ -25,47 +87,44 @@
 <h2>Licence</h2>
 <p>Sensra is licensed, not sold, to you for use on Apple-branded devices that you own or control, subject to the terms of the App Store.</p>
 
-<p>Your use of the app is also subject to Apple’s Standard End User License Agreement (EULA):</p>
-<p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+<p>Your use of the app is also subject to Apple’s Standard End User Licence Agreement (EULA):</p>
+<p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a></p>
 
 <h2>Use of the App</h2>
 <p>You may use Sensra for personal, non-commercial purposes. You agree not to misuse the app, attempt to reverse engineer it, or use it in any unlawful manner.</p>
 
 <h2>Health Information Disclaimer</h2>
 <p>Sensra displays health and fitness data obtained from Apple Health. The app is provided for informational purposes only and is not intended to provide medical advice, diagnosis, or treatment.</p>
-
 <p>You should not rely on the app for medical decisions. Always consult a qualified healthcare professional where appropriate.</p>
 
 <h2>Availability</h2>
-<p>The app is provided “as is” without any guarantee of availability, performance, or uninterrupted operation.</p>
+<p>The app is provided ‘as is’ without any guarantee of availability, performance, or uninterrupted operation.</p>
 
 <h2>Limitation of Liability</h2>
 <p>To the fullest extent permitted by law, Jason O'Donoghue shall not be liable for any indirect, incidental, or consequential damages arising from your use of the app.</p>
-
 <p>Nothing in these Terms excludes liability that cannot be excluded under applicable law.</p>
 
 <h2>Changes</h2>
 <p>These Terms may be updated from time to time. Continued use of the app after changes are made constitutes acceptance of the updated Terms.</p>
 
 <h2>Contact</h2>
-<p>Contact: <a href="mailto:sensra@icloud.com">privacy.sensra@icloud.com</a></p>
+<p class="contact-line">Contact: <a id="contact-email" href="#" aria-label="Email contact for Sensra terms enquiries">Email</a></p>
+<noscript>
+  <p class="contact-line muted">Email: <span>moc.duolci@arnes</span> (reverse this text to read the address)</p>
+</noscript>
 
-</body>
-</html><p>You should not rely on the app for medical decisions. Always consult a qualified healthcare professional where appropriate.</p>
+<script>
+(function () {
+  const parts = ['sensra', 'icloud', 'com'];
+  const email = parts[0] + '@' + parts[1] + '.' + parts[2];
+  const link = document.getElementById('contact-email');
 
-<h2>Availability</h2>
-<p>The app is provided “as is” without any guarantee of availability, performance, or uninterrupted operation.</p>
-
-<h2>Limitation of Liability</h2>
-<p>To the fullest extent permitted by law, the developer shall not be liable for any indirect, incidental, or consequential damages arising from your use of the app.</p>
-
-<p>Nothing in these Terms excludes liability that cannot be excluded under applicable law.</p>
-
-<h2>Changes</h2>
-<p>These Terms may be updated from time to time. Continued use of the app after changes are made constitutes acceptance of the updated Terms.</p>
-
-<h2>Contact</h2>
-<p>Contact: <a href="mailto:sensra@icloud.com">privacy.vitalview@icloud.com</a></p>
+  if (link) {
+    link.href = 'mailto:' + email;
+    link.textContent = email;
+  }
+})();
+</script>
 
 </body>
 </html>
