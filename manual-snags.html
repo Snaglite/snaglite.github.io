@@ -4,112 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Working with Snags – Snaglite User Manual</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1f2328;
-      --muted: #59636e;
-      --link: #0969da;
-      --border: #d0d7de;
-      --panel: #f6f8fa;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d1117;
-        --text: #e6edf3;
-        --muted: #9da7b3;
-        --link: #58a6ff;
-        --border: #30363d;
-        --panel: #161b22;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 56px;
-    }
-
-    h1, h2 {
-      line-height: 1.2;
-      margin: 0 0 16px;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 36px;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul, ol {
-      margin: 0 0 16px 24px;
-      padding: 0;
-    }
-
-    li {
-      margin: 0 0 8px;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0 32px;
-    }
-
-    .next-link {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .example {
-      margin: 20px 0;
-      padding: 16px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: transparent;
-    }
-  </style>
+  <link rel="stylesheet" href="manual.css">
 </head>
 <body>
   <main class="container">
@@ -117,135 +12,209 @@
 
     <h1>Working with Snags</h1>
 
-    <p>
-      A snag is an individual defect or issue recorded against a specific location. Each snag can include a description, photos, notes, status and an assignee.
+    <p class="intro">
+      A snag is an individual defect or issue recorded in a specific location. Each snag can have a title, notes, up to three photos, a status, a priority, an assignee and a pin on a drawing.
     </p>
 
     <div class="panel">
-      <p><strong>A good snag record is:</strong></p>
+      <p><strong>A good snag is:</strong></p>
       <ul>
-        <li>clear</li>
-        <li>specific</li>
-        <li>linked to the correct location</li>
-        <li>supported by photographs where needed</li>
+        <li>clear and specific</li>
+        <li>recorded in the correct location</li>
+        <li>supported by photos where needed</li>
         <li>kept up to date as work progresses</li>
       </ul>
     </div>
 
     <h2>Creating a snag</h2>
-    <ol>
-      <li>Open the relevant site</li>
-      <li>Open the relevant unit</li>
-      <li>Open the relevant location</li>
-      <li>Add a new snag</li>
-      <li>Enter the snag description</li>
-      <li>Add photographs if required</li>
-      <li>Add notes, assignee and status as needed</li>
-      <li>Save the snag</li>
-    </ol>
-
-    <p>
-      Snags should normally be created in the exact location where the issue has been found. This keeps the inspection record accurate and makes reporting clearer.
-    </p>
-
-    <h2>Writing a good snag description</h2>
-    <p>
-      The description should explain the issue clearly and briefly. It should identify what is wrong and, where useful, where the issue is located.
-    </p>
-
-    <div class="example">
-      <p><strong>Better example</strong></p>
-      <p>Scratch to internal face of entrance door – redecorate complete panel.</p>
+    <div class="split">
+      <div>
+        <ol>
+          <li>Open the site, then the unit, then the location.</li>
+          <li>Tap <strong>+</strong>.</li>
+          <li>Tap <strong>Take Photo</strong> or <strong>Photo Library</strong> to add up to three photos.</li>
+          <li>Enter a short title and any notes.</li>
+          <li>Set the status, priority and assignee as needed.</li>
+          <li>Tap the tick to save.</li>
+        </ol>
+        <p>
+          You can also add a snag from a unit’s <strong>All Snags</strong> list (you will be asked which location it belongs to), or straight from a drawing. See <a href="manual-drawings.html">Attachments and Drawings</a>.
+        </p>
+        <p>
+          If you close a new snag before saving it, Snaglite asks whether to discard it or keep editing, so nothing is lost by accident.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/new-snag.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/new-snag.png" alt="New Snag form">
+        </a>
+        <figcaption>The New Snag form</figcaption>
+      </figure>
     </div>
 
+    <h2>Writing a good snag title</h2>
+    <p>The title should say what is wrong and, where useful, exactly where.</p>
     <div class="example">
-      <p><strong>Less useful example</strong></p>
-      <p>Door damaged.</p>
+      <div class="example-label">Better</div>
+      <p>Scratch to internal face of entrance door – redecorate complete panel</p>
+      <div class="example-label">Less useful</div>
+      <p>Door damaged</p>
+    </div>
+    <p>
+      If you would rather write notes first, type what you see into the notes and tap <strong>Draft with Apple Intelligence</strong>. It writes a title and tidies the wording for you. See <a href="manual-notes.html#ai">Notes and Markdown</a>.
+    </p>
+
+    <h2>Status, priority and assignee</h2>
+    <div class="split">
+      <div>
+        <h3>Status</h3>
+        <ul>
+          <li><strong>Open</strong> – the issue still needs attention.</li>
+          <li><strong>Closed</strong> – the issue has been completed or resolved.</li>
+        </ul>
+        <p>Status drives the progress bars, the Inspection Hub counts, filters and reports, so keep it up to date.</p>
+
+        <h3>Priority</h3>
+        <p>
+          Priority is optional. Choose <strong>Low</strong>, <strong>Medium</strong>, <strong>High</strong> or <strong>Critical</strong>, or leave it as None. High and Critical snags are highlighted in lists, on reports and in Portfolio Insights.
+        </p>
+
+        <h3>Assignee</h3>
+        <p>
+          The person, trade or company responsible for the snag, such as Main Contractor, Joiner or Electrician. Choose from your saved assignees (see <a href="manual-settings.html">Settings and Assignees</a>). If the site has a default assignee, new snags start with it.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/snag-detail-lower.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/snag-detail-lower.png" alt="Snag status, priority, assignee, location and drawing">
+        </a>
+        <figcaption>Status, priority, assignee and location</figcaption>
+      </figure>
     </div>
 
+    <h2>Editing a snag</h2>
+    <div class="split">
+      <div>
+        <p>Tap a snag to open it. Changes are saved automatically. From here you can:</p>
+        <ul>
+          <li>change the title and notes</li>
+          <li>add, remove or mark up photos, and choose the <strong>Primary</strong> photo used on reports</li>
+          <li>change the status, priority and assignee</li>
+          <li>move the snag to another location in the same unit, or create a new location for it</li>
+          <li>pin it on a drawing, or move or remove its pin</li>
+        </ul>
+        <p class="small">
+          If the same snag is changed on another device while you are editing it, Snaglite tells you and lets you reload the saved version or keep your draft.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/snag-detail.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/snag-detail.png" alt="Snag detail screen">
+        </a>
+        <figcaption>A saved snag</figcaption>
+      </figure>
+    </div>
+
+    <h2>Snag lists</h2>
+    <div class="split">
+      <div>
+        <p>
+          Snags are numbered in each list. The same numbers are used in reports and on drawing pins. Each row shows the status, assignee, priority, a preview of the notes and how many photos are attached.
+        </p>
+        <ul>
+          <li><strong>Swipe right</strong> to <strong>Mark Closed</strong> or <strong>Reopen</strong>.</li>
+          <li><strong>Swipe left</strong> to <strong>Assign</strong> or <strong>Delete</strong>.</li>
+          <li><strong>Press and hold</strong> to preview the primary photo, with Share Snag, Mark Closed, Assign and Delete.</li>
+          <li><strong>⋯ → Filter</strong> shows only open or only closed snags.</li>
+          <li><strong>⋯ → Select</strong> lets you set the status, assign, set the priority, move or export several snags at once.</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <a href="images/snag-list.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/snag-list.png" alt="Snag list for a location">
+        </a>
+        <figcaption>Snags in a location</figcaption>
+      </figure>
+    </div>
+
+    <div class="shots-row">
+      <figure class="shot">
+        <a href="images/snag-swipe-right.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/snag-swipe-right.png" alt="Swipe right to mark a snag closed">
+        </a>
+        <figcaption>Swipe right</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="images/snag-swipe-left.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/snag-swipe-left.png" alt="Swipe left to assign or delete">
+        </a>
+        <figcaption>Swipe left</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="images/all-snags-bulk.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/all-snags-bulk.png" alt="Bulk actions for selected snags">
+        </a>
+        <figcaption>Bulk actions</figcaption>
+      </figure>
+    </div>
+
+    <h3>All Snags, Missing Photos and Recent Snags</h3>
     <p>
-      Keep the wording factual. Avoid vague wording where a more precise description is available.
+      <strong>All Snags</strong> (at the top of a unit’s locations) shows every snag in the unit with its location. The <strong>Missing Photos</strong> and <strong>Recent Snags</strong> tiles on the Inspection Hub show the same kind of list across all your active sites.
     </p>
 
-    <h2>Photos and supporting information</h2>
-    <p>
-      A snag can include one or more photographs. These help identify the issue clearly and improve the usefulness of the final report.
-    </p>
+    <h2>Searching</h2>
+    <div class="split">
+      <div>
+        <p>
+          Tap the magnifying glass next to <strong>+</strong> to search. On the Sites screen, search looks through every site, unit, location and snag. Inside a site, unit or location, it searches just that part.
+        </p>
+        <p>You can type naturally. For example:</p>
+        <ul>
+          <li><code>open bathroom snags</code></li>
+          <li><code>closed plot 12</code></li>
+          <li><code>unassigned</code></li>
+        </ul>
+        <p>In a snag list you can also search for <code>no photos</code>, <code>high priority</code> or <code>critical</code>.</p>
+        <p>Results show where each item is, for example <em>Riverside Walk › Block A › Bathroom</em>.</p>
+      </div>
+      <figure class="shot">
+        <a href="images/search.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/search.png" alt="Search results for open bathroom snags">
+        </a>
+        <figcaption>Searching across all sites</figcaption>
+      </figure>
+    </div>
 
-    <p>
-      Where needed, you can also add notes to give further context or record supplementary information.
-    </p>
-
-    <h2>Status</h2>
-    <p>
-      Each snag has a status so that progress can be tracked clearly.
-    </p>
-
-    <ul>
-      <li><strong>Open</strong> – the issue still requires attention</li>
-      <li><strong>Closed</strong> – the issue has been completed or resolved</li>
-    </ul>
-
-    <p>
-      Keep the status up to date. This affects lists, filters, progress views and reports.
-    </p>
-
-    <h2>Assignees</h2>
-    <p>
-      A snag can be assigned to a person, trade or responsible party. This helps with filtering, follow-up and reporting.
-    </p>
-
-    <p>
-      Examples might include:
-    </p>
-
-    <ul>
-      <li>Main Contractor</li>
-      <li>Joiner</li>
-      <li>Electrician</li>
-      <li>Painter</li>
-      <li>Client Supply Item</li>
-    </ul>
-
-    <h2>Editing an existing snag</h2>
-    <p>
-      You can return to an existing snag to update its details. This may include:
-    </p>
-
-    <ul>
-      <li>changing the description</li>
-      <li>adding or removing photos</li>
-      <li>updating notes</li>
-      <li>changing the assignee</li>
-      <li>changing the status</li>
-    </ul>
-
-    <p>
-      This is useful where work has progressed, additional evidence is needed, or the original wording needs refinement.
-    </p>
-
-    <h2>Bulk actions and list management</h2>
-    <p>
-      Snag lists may support bulk actions for faster management of multiple items. Depending on the screen and context, this may include changing status, assigning items, moving items or deleting items.
-    </p>
-
-    <p>
-      Use bulk actions carefully, particularly where several similar snag records exist in the same area.
-    </p>
+    <h2>Sharing a single snag</h2>
+    <div class="split">
+      <div>
+        <p>
+          To send one snag to someone quickly, press and hold it and choose <strong>Share Snag</strong>. Snaglite creates a branded image showing the status, priority, title, unit, site, location, assignee, address, photos and notes. You can send it by Messages, Mail or WhatsApp, or save it to Photos.
+        </p>
+        <p class="small">The image uses your marked-up photos, so annotations and pins are included.</p>
+      </div>
+      <figure class="shot">
+        <a href="images/share-snag-card.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/share-snag-card.png" alt="Share Snag image">
+        </a>
+        <figcaption>A Share Snag image</figcaption>
+      </figure>
+    </div>
 
     <h2>Good practice</h2>
     <ul>
-      <li>Keep each snag to one issue wherever possible</li>
+      <li>Keep each snag to one issue</li>
       <li>Do not combine unrelated defects into one snag</li>
-      <li>Use photographs where they improve clarity</li>
-      <li>Keep descriptions short, factual and specific</li>
+      <li>Use photos where they make the issue clearer</li>
       <li>Use consistent assignee names</li>
-      <li>Update status promptly when work is complete</li>
+      <li>Close snags promptly when the work is complete</li>
+      <li>Keep High and Critical for items that really are urgent, so they stand out</li>
     </ul>
 
     <div class="next-link">
-  <p><a href="manual-notes.html"><strong>Next: Notes and Markdown</strong></a></p>
-</div>
+      <p><a href="manual-notes.html"><strong>Next: Notes and Markdown</strong></a></p>
+    </div>
   </main>
 </body>
 </html>

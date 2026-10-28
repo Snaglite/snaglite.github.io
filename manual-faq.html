@@ -4,107 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FAQ – Snaglite User Manual</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1f2328;
-      --muted: #59636e;
-      --link: #0969da;
-      --border: #d0d7de;
-      --panel: #f6f8fa;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d1117;
-        --text: #e6edf3;
-        --muted: #9da7b3;
-        --link: #58a6ff;
-        --border: #30363d;
-        --panel: #161b22;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 56px;
-    }
-
-    h1, h2 {
-      line-height: 1.2;
-      margin: 0 0 16px;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 32px;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0 32px;
-    }
-
-    .question {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    .question:first-of-type {
-      border-top: 0;
-      padding-top: 0;
-      margin-top: 0;
-    }
-
-    .footer-link {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-  </style>
+  <link rel="stylesheet" href="manual.css">
 </head>
 <body>
   <main class="container">
@@ -112,100 +12,92 @@
 
     <h1>Frequently Asked Questions</h1>
 
-    <div class="panel">
-      <p>
-        This page answers common questions about how Snaglite is organised and how it should be used in practice.
-      </p>
-    </div>
+    <h2>Does Snaglite work on iPad?</h2>
+    <p>
+      Yes. Snaglite runs on iPhone and iPad, and your inspections sync between them through iCloud when both are signed in to the same Apple Account. On iPad you can also drag and drop files and use Apple Pencil for markup.
+    </p>
 
-    <div class="question">
-      <h2>What is the difference between a site, unit and location?</h2>
-      <p>
-        A <strong>site</strong> is the overall project, development, property or job.
-        A <strong>unit</strong> is the plot, apartment, house, block or inspection division within that site.
-        A <strong>location</strong> is the specific room, area or sub-space within the unit.
-      </p>
-    </div>
+    <h2>What is the difference between a site, unit and location?</h2>
+    <p>
+      A <strong>site</strong> is the overall project, development or job. A <strong>unit</strong> is a plot, apartment, house, block or other division within that site. A <strong>location</strong> is a room or area within the unit.
+    </p>
 
-    <div class="question">
-      <h2>What is a snag?</h2>
-      <p>
-        A snag is an individual defect or issue record. It is the actual item you are recording, such as damage, poor finish, missing work or another issue requiring attention.
-      </p>
-    </div>
+    <h2>Should I create one snag for several issues in the same room?</h2>
+    <p>
+      Usually not. Keep each snag to one issue. It makes assigning, tracking and reporting much clearer. If one photo shows several issues, use numbered markers on it.
+    </p>
 
-    <div class="question">
-      <h2>Should I create one snag for several issues in the same room?</h2>
-      <p>
-        Usually, no. It is better to keep each snag as one individual issue wherever possible. This makes tracking, assigning, updating and reporting much clearer.
-      </p>
-    </div>
+    <h2>How many photos can a snag have?</h2>
+    <p>
+      Up to three. The Primary photo is the main one on reports. Turn on <strong>All Photos</strong> when exporting to include all three.
+    </p>
 
-    <div class="question">
-      <h2>Can I add photos to a snag?</h2>
-      <p>
-        Yes. Photos can be attached to snag records to show the issue clearly. This is strongly recommended where the issue would benefit from visual evidence.
-      </p>
-    </div>
+    <h2>Does marking up a photo change the original?</h2>
+    <p>
+      No. Your markup is kept separately. You can reset it at any time, or share either the edited or the original image.
+    </p>
 
-    <div class="question">
-      <h2>Can I annotate photos?</h2>
-      <p>
-        Yes. Snaglite allows photos to be annotated so the defect is easier to identify. Keep annotations simple and use them only where they materially improve clarity.
-      </p>
-    </div>
+    <h2>Why did my drawn shape not snap?</h2>
+    <p>
+      Hold your finger or Pencil still for a moment at the end of the stroke. If you lift straight away, the stroke stays freehand. If the result is not right, tap Undo and redraw it more deliberately.
+    </p>
 
-    <div class="question">
-      <h2>Why did the drawn shape not snap correctly?</h2>
-      <p>
-        Where shape recognition is available, pause briefly at the end of the stroke to allow the shape to snap. If the result is not correct, redraw the mark more deliberately and pause again.
-      </p>
-    </div>
+    <h2>What do Open and Closed mean?</h2>
+    <p>
+      <strong>Open</strong> means the issue still needs action. <strong>Closed</strong> means it has been completed or resolved.
+    </p>
 
-    <div class="question">
-      <h2>What do Open and Closed mean?</h2>
-      <p>
-        <strong>Open</strong> means the issue still requires action.
-        <strong>Closed</strong> means the issue has been completed or resolved.
-      </p>
-    </div>
+    <h2>What is priority for?</h2>
+    <p>
+      Priority is optional: Low, Medium, High or Critical. High and Critical snags stand out in lists and reports and are ranked first in Portfolio Insights.
+    </p>
 
-    <div class="question">
-      <h2>What is an assignee?</h2>
-      <p>
-        An assignee is the person, trade or responsible party linked to a snag. This helps with filtering, follow-up and report clarity.
-      </p>
-    </div>
+    <h2>What is a back snag report?</h2>
+    <p>
+      A report for a return visit, to check whether snags from an earlier inspection have been fixed. Choose <strong>Back Snag</strong> as the report type when exporting. To report only on items still outstanding, set Snags to Export to Open Snags.
+    </p>
 
-    <div class="question">
-      <h2>Can I export a PDF report?</h2>
-      <p>
-        Yes. Snaglite can generate PDF reports from inspection data. Before export, check that the structure, wording, photos and statuses are all correct.
-      </p>
-    </div>
+    <h2>Can I use my own report title?</h2>
+    <p>
+      Yes. Set it in <strong>Settings → Reports → Custom Report Title</strong>, then choose <strong>Custom</strong> as the report type.
+    </p>
 
-    <div class="question">
-      <h2>Should I back up my inspection data?</h2>
-      <p>
-        Yes. If the data matters, use backup regularly. It is sensible to back up before major changes, after important inspections and before moving to another device.
-      </p>
-    </div>
+    <h2>Can I send each contractor only their own snags?</h2>
+    <p>
+      Yes. In Export Report, use <strong>Assignees</strong> to choose one or more people. Or group the report by assignee so each person can find their section.
+    </p>
 
-    <div class="question">
-      <h2>Can I rely on the app alone without exporting reports?</h2>
-      <p>
-        For important project records, it is prudent to export key PDF reports promptly rather than leaving everything only inside the live app data.
-      </p>
-    </div>
+    <h2>Can I get my snags into a spreadsheet?</h2>
+    <p>
+      Yes. Choose <strong>CSV</strong> in Export Report. The spreadsheet has the same numbering as the PDF, but no photos.
+    </p>
 
-    <div class="question">
-      <h2>Does Snaglite work on iPad?</h2>
-      <p>
-        At present, this manual relates to the iPhone version of Snaglite.
-      </p>
-    </div>
+    <h2>Is Apple Intelligence required?</h2>
+    <p>
+      No. Draft with Apple Intelligence is optional and only appears on supported devices. When used, it runs entirely on your device and your notes are not sent anywhere.
+    </p>
 
-    <div class="footer-link">
+    <h2>Is iCloud sync a backup?</h2>
+    <p>
+      No. Sync keeps your devices the same, so a deletion on one device deletes it everywhere. Make backup files regularly from <strong>Settings → Backup &amp; Recovery</strong>.
+    </p>
+
+    <h2>Will restoring a backup overwrite my current work?</h2>
+    <p>
+      Not if you use <strong>Recover Selected as New Copies</strong>. That adds the chosen sites or units alongside your current data. Only <strong>Replace Entire Library</strong> overwrites everything, and Snaglite asks you to confirm first.
+    </p>
+
+    <h2>I archived a site and now I can’t edit it. Why?</h2>
+    <p>
+      If you chose <strong>Archive and Remove Full-Sized Photos</strong>, the site becomes read-only. You can still browse it and export reports with the remaining thumbnails, but it cannot be edited. A site archived with <strong>Archive Only</strong> can be unarchived and edited as normal.
+    </p>
+
+    <h2>Can I rely on the app alone without exporting reports?</h2>
+    <p>
+      For important project records, export key PDF reports promptly and keep regular backups, rather than relying only on the data in the app.
+    </p>
+
+    <div class="next-link">
       <p><a href="manual.html"><strong>Return to User Manual home</strong></a></p>
     </div>
   </main>

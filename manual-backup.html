@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Backup, Recovery and iCloud – Snaglite User Manual</title>
+  <link rel="stylesheet" href="manual.css">
+</head>
+<body>
+  <main class="container">
+    <a class="back-link" href="manual.html">← Back to User Manual</a>
+
+    <h1>Backup, Recovery and iCloud</h1>
+
+    <p class="intro">
+      Snaglite keeps your inspections in step across your devices with iCloud, and lets you save a complete backup file whenever you need one.
+    </p>
+
+    <h2>iCloud sync</h2>
+    <p>
+      When you are signed in to iCloud, your sites, units, locations, snags, photos, attachments and drawings sync automatically between every iPhone and iPad signed in to the same Apple Account. There is nothing to set up.
+    </p>
+    <ul>
+      <li>Changes can take a little while to reach your other devices, especially photos on a slow connection.</li>
+      <li>If you are not signed in to iCloud, your inspections are stored on this device only.</li>
+      <li>Deleting something on one device deletes it on the others too.</li>
+    </ul>
+    <div class="callout warning">
+      iCloud sync is not a backup. If you delete a site by mistake, that deletion syncs too. Make regular backup files as well.
+    </div>
+
+    <h2>Making a backup</h2>
+    <div class="split">
+      <div>
+        <ol>
+          <li>Go to <strong>Settings → Backup &amp; Recovery</strong>.</li>
+          <li>Tap <strong>Create Backup</strong>.</li>
+          <li>Choose where to save it. Somewhere outside Snaglite is best, such as iCloud Drive, a Files folder or a cloud storage app.</li>
+        </ol>
+        <p>
+          The backup is a single <code>.snaglitebackup</code> file named with the date and time. It contains all the inspections, photos, attachments, drawings and settings on this device.
+        </p>
+        <p class="small">
+          Full-size photos already removed by <em>Archive and Remove Full-Sized Photos</em> are not included, because they are no longer on the device.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/backup-recovery.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/backup-recovery.png" alt="Backup & Recovery screen">
+        </a>
+        <figcaption>Backup &amp; Recovery</figcaption>
+      </figure>
+    </div>
+
+    <p>It is sensible to make a backup:</p>
+    <ul>
+      <li>after finishing an important inspection</li>
+      <li>before making big changes, such as deleting or archiving sites</li>
+      <li>before moving to a new device</li>
+      <li>regularly during active project work</li>
+    </ul>
+
+    <h2>Recovering from a backup</h2>
+    <div class="split">
+      <div>
+        <p>In <strong>Settings → Backup &amp; Recovery</strong>, tap <strong>Recover or Restore Backup</strong> and choose a backup file. You then have two choices.</p>
+
+        <h3>Recover selected inspections (safest)</h3>
+        <p>
+          Choose whole sites, or individual units, and tap <strong>Recover Selected as New Copies</strong>. They are added as new sites labelled “Recovered”, with their photos, attachments and drawings. Your current inspections and settings are not touched.
+        </p>
+
+        <h3>Replace Entire Library</h3>
+        <p>
+          This replaces <strong>all</strong> current inspections and settings with the contents of the backup. Anything added or changed since the backup was made is removed, and those changes sync to your other devices. Snaglite asks you to confirm, and offers to <strong>Save Current Backup First</strong>.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/backup-recover.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/backup-recover.png" alt="Recover from Backup screen">
+        </a>
+        <figcaption>Recover from Backup</figcaption>
+      </figure>
+    </div>
+
+    <div class="callout">
+      After any recovery, check the recovered data before relying on it for live reporting. If iCloud is still syncing, Snaglite may ask you to wait a moment before backing up or restoring.
+    </div>
+
+    <h2>Moving to a new device</h2>
+    <ul>
+      <li><strong>Same Apple Account:</strong> install Snaglite and sign in to iCloud. Your inspections sync across automatically.</li>
+      <li><strong>Different Apple Account:</strong> make a backup on the old device and save it somewhere the new device can reach, such as iCloud Drive or AirDrop. Then use <strong>Recover or Restore Backup</strong> on the new device.</li>
+    </ul>
+
+    <div class="next-link">
+      <p><a href="manual-shortcuts.html"><strong>Next: Siri, Shortcuts and Widgets</strong></a></p>
+    </div>
+  </main>
+</body>
+</html>

@@ -4,162 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Notes and Markdown – Snaglite User Manual</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1f2328;
-      --muted: #59636e;
-      --link: #0969da;
-      --border: #d0d7de;
-      --panel: #f6f8fa;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d1117;
-        --text: #e6edf3;
-        --muted: #9da7b3;
-        --link: #58a6ff;
-        --border: #30363d;
-        --panel: #161b22;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 56px;
-    }
-
-    h1, h2 {
-      line-height: 1.2;
-      margin: 0 0 16px;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 36px;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul, ol {
-      margin: 0 0 16px 24px;
-      padding: 0;
-    }
-
-    li {
-      margin: 0 0 8px;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0 32px;
-    }
-
-    .next-link {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    .example {
-      margin: 20px 0;
-      padding: 16px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: transparent;
-    }
-
-    .example-list {
-      margin: 0 0 16px 24px;
-      padding: 0;
-    }
-
-    .example-list li {
-      margin: 0 0 8px;
-    }
-
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: 0.95em;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .screenshot {
-      margin: 28px 0 32px;
-    }
-
-    .screenshot img {
-      display: block;
-      width: 100%;
-      max-width: 420px;
-      height: auto;
-      margin: 0 auto;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: var(--panel);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    .screenshot figcaption {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    mark {
-      background: #fff1a8;
-      color: inherit;
-      padding: 0 0.15em;
-      border-radius: 0.2em;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      mark {
-        background: #6b5d00;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="manual.css">
 </head>
 <body>
   <main class="container">
@@ -167,120 +12,108 @@
 
     <h1>Notes and Markdown</h1>
 
-    <p>
-      Snaglite supports notes as part of the inspection process. Notes can be used to add context, clarify a defect, or record supplementary information that does not fit neatly into a short snag title.
+    <p class="intro">
+      Notes add context that does not fit in a short snag title. Snaglite has notes on every snag, plus Site Notes for a whole site and General Notes for each unit.
     </p>
-
-    <figure class="screenshot">
-      <img src="manual-notes.png" alt="Site Notes editor in Snaglite showing formatted note content and markdown support">
-      <figcaption>Notes can hold practical site information and support markdown-style formatting for clearer structure.</figcaption>
-    </figure>
 
     <div class="panel">
-      <p><strong>Use notes for:</strong></p>
+      <p><strong>Where notes are kept:</strong></p>
       <ul>
-        <li>extra detail that supports the snag description</li>
-        <li>inspection context</li>
-        <li>practical observations</li>
-        <li>short structured lists where needed</li>
+        <li><strong>Snag notes</strong> – detail about one defect</li>
+        <li><strong>General Notes</strong> – at the top of each unit’s locations, for anything about the unit as a whole. You choose whether they appear on the report.</li>
+        <li><strong>Site Notes</strong> – at the top of a site’s units, for access arrangements, contacts and other site-wide information</li>
       </ul>
-      <p class="small">
-        Notes should still be concise. In most cases, shorter and clearer is better.
+    </div>
+
+    <h2>Formatting your notes</h2>
+    <div class="split">
+      <div>
+        <p>
+          Notes support Markdown formatting. To format text, select it and choose <strong>Format</strong> from the menu that appears. The options are:
+        </p>
+        <table>
+          <tr><th>Option</th><th>Typed as</th></tr>
+          <tr><td><strong>Bold</strong></td><td><code>**text**</code> or ⌘B</td></tr>
+          <tr><td><em>Italic</em></td><td><code>*text*</code> or ⌘I</td></tr>
+          <tr><td>Highlight</td><td><code>::text::</code></td></tr>
+          <tr><td><s>Strikethrough</s></td><td><code>~~text~~</code></td></tr>
+          <tr><td>Code and code block</td><td><code>`text`</code></td></tr>
+          <tr><td>Link</td><td><code>[text](https://…)</code></td></tr>
+          <tr><td>Heading</td><td><code># Heading</code></td></tr>
+          <tr><td>List, numbered list, task list</td><td><code>- item</code>, <code>1. item</code>, <code>- [ ] item</code></td></tr>
+          <tr><td>Quote</td><td><code>&gt; text</code></td></tr>
+        </table>
+        <p>
+          Lists continue automatically when you press Return. Use Tab and Shift-Tab on a keyboard to indent or outdent a list item.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/notes-editor.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/notes-editor.png" alt="Notes editor with bold, highlight, list and italic text">
+        </a>
+        <figcaption>Formatted General Notes</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      Formatting carries through to the PDF report and the Share Snag image. They show the formatted text, not the Markdown symbols.
+    </p>
+
+    <div class="example">
+      <div class="example-label">Example</div>
+      <p><strong>Access</strong><br>
+      Site gates open at 07:30. <mark>Call ahead to book a parking bay.</mark></p>
+      <p style="margin-bottom:4px"><strong>Contacts</strong></p>
+      <ul style="margin-bottom:0">
+        <li>Site manager: Ned Miller</li>
+        <li>Electrician: <em>Thursday visits only</em></li>
+      </ul>
+    </div>
+
+    <p>
+      To empty a set of Site or General Notes, open them and choose <strong>⋯ → Clear Notes</strong>.
+    </p>
+
+    <h2>Notes or title?</h2>
+    <p>The snag title names the defect. Notes add the supporting detail.</p>
+    <div class="example">
+      <div class="example-label">Title</div>
+      <p>Damage to skirting board at bedroom entrance</p>
+      <div class="example-label">Notes</div>
+      <p>Appears to have been caused during flooring works. Check adjacent trim before making good.</p>
+    </div>
+
+    <h2 id="ai">Draft with Apple Intelligence</h2>
+    <p>
+      On devices that support Apple Intelligence, <strong>Draft with Apple Intelligence</strong> appears under a snag’s notes, both on new snags and on saved ones. Type what you see in the notes, then tap it. Snaglite:
+    </p>
+    <ul>
+      <li>writes a short title (three to eight words) if the snag does not have one</li>
+      <li>tidies the notes into one or two clear sentences</li>
+      <li>sets the priority to <strong>Critical</strong> if the notes mention a clear safety hazard (such as exposed wiring, a gas smell, broken glass, a fire door or a trip hazard) and you have not already set a priority</li>
+    </ul>
+    <p>
+      It runs entirely on your device, works offline, and is designed to keep every fact you wrote without adding new ones. If you do not like the result, tap <strong>Undo</strong> to put back your original title, notes and priority.
+    </p>
+    <div class="callout">
+      <p>
+        Treat the draft as an editing aid, not a substitute for your own judgement. Check that it still describes what you saw, and that it does not overstate cause or responsibility.
       </p>
     </div>
-
-    <h2>Markdown support</h2>
-    <p>
-      Notes support markdown-style formatting. This can be used to improve readability and structure where longer notes need clearer presentation. Where note content is included in PDF reports, the formatted output is carried through into the report rather than showing the raw markdown symbols.
+    <p class="small">
+      If the button is not available, Apple Intelligence may be turned off in the iPhone’s Settings, still downloading, or not supported on your device or language. Snaglite tells you which.
     </p>
-
-    <p>
-      The available formatting options include:
-    </p>
-
-    <ul>
-      <li>bold</li>
-      <li>italic</li>
-      <li>highlight</li>
-      <li>strikethrough</li>
-      <li>code</li>
-      <li>link</li>
-      <li>heading</li>
-      <li>list</li>
-      <li>numbered list</li>
-      <li>task list</li>
-    </ul>
-
-    <p>
-      In practice, the most useful options for inspection notes are usually emphasis, highlight and simple lists. Use heavier formatting only where it adds genuine value.
-    </p>
-
-    <div class="example">
-      <p><strong>Example</strong></p>
-      <p>Access restricted before <strong>08:00</strong>. Call ahead to reserve the right parking bay.</p>
-      <p><strong>Site Manager details:</strong></p>
-      <ul class="example-list">
-        <li>Ned Miller</li>
-        <li>07890 123456</li>
-      </ul>
-      <p>Use <em>italic</em>, <strong>bold</strong>, <mark>highlighted text</mark>, lists and links where they genuinely improve clarity.</p>
-    </div>
-
-    <p>
-      Use formatting with restraint. Inspection notes are usually most effective when they are factual, direct and easy to scan.
-    </p>
-
-    <p>
-      Where notes appear in PDF reports, the rendered formatting carries through into the report. The report shows the formatted output rather than raw markdown symbols.
-    </p>
-
-    <h2>When to use notes instead of the snag title</h2>
-    <p>
-      The snag title or main description should identify the issue itself. Notes should be used for supporting detail rather than repeating the same wording.
-    </p>
-
-    <p>
-      A useful approach is:
-    </p>
-
-    <ul>
-      <li><strong>Snag title:</strong> the core defect</li>
-      <li><strong>Notes:</strong> extra explanation, qualifiers or follow-up detail</li>
-    </ul>
-
-    <div class="example">
-      <p><strong>Example</strong></p>
-      <p><strong>Snag:</strong> Damage to skirting board at bedroom entrance.</p>
-      <p><strong>Note:</strong> Appears to have been caused during flooring works. Check adjacent trim before making good.</p>
-    </div>
 
     <h2>Good practice for notes</h2>
     <ul>
-      <li>keep wording factual</li>
-      <li>avoid long paragraphs unless genuinely necessary</li>
-      <li>use formatting only where it improves readability</li>
-      <li>do not let notes become repetitive</li>
-      <li>review the final wording before export</li>
-    </ul>
-
-    <h2>AI note improvement</h2>
-    <p>
-      Where available, Snaglite may offer AI assistance to improve a draft note. This can help refine wording, grammar or structure.
-    </p>
-
-    <p>
-      AI assistance should be treated as an editing aid, not as a substitute for inspection judgement. Always check the final wording before saving or reporting.
-    </p>
-
-    <ul>
-      <li>make sure the issue is still described accurately</li>
-      <li>remove wording that sounds too vague or too certain</li>
-      <li>check that responsibility or causation has not been overstated</li>
-      <li>confirm the final note still reflects what was actually observed on site</li>
+      <li>Keep wording factual</li>
+      <li>Avoid long paragraphs unless they are really needed</li>
+      <li>Use formatting only where it makes notes easier to read</li>
+      <li>Review the final wording before exporting a report</li>
     </ul>
 
     <div class="next-link">
-      <p><a href="manual-photos.html"><strong>Next: Photos and Annotations</strong></a></p>
+      <p><a href="manual-photos.html"><strong>Next: Photos and Markup</strong></a></p>
     </div>
   </main>
 </body>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Siri, Shortcuts and Widgets – Snaglite User Manual</title>
+  <link rel="stylesheet" href="manual.css">
+</head>
+<body>
+  <main class="container">
+    <a class="back-link" href="manual.html">← Back to User Manual</a>
+
+    <h1>Siri, Shortcuts and Widgets <span class="new-badge">NEW IN 1.1</span></h1>
+
+    <p class="intro">
+      Ask Siri about your snags, jump back into an inspection from the Home Screen, and automate report filing with the Shortcuts app.
+    </p>
+
+    <h2>Home Screen widget</h2>
+    <div class="split">
+      <div>
+        <p>
+          The <strong>Inspection Hub</strong> widget comes in small and medium sizes. It shows:
+        </p>
+        <ul>
+          <li><strong>Continue</strong> – the site and unit you were last working in. Tap to go straight back to it.</li>
+          <li><strong>No Photo</strong> – how many snags have no photos yet. Tap to open the Missing Photos list.</li>
+          <li><strong>Snags</strong> – your snag total. Tap to open Recent Snags.</li>
+        </ul>
+        <p>
+          To add it, press and hold an empty area of the Home Screen, tap <strong>Edit → Add Widget</strong>, search for Snaglite and choose a size.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/widget.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/widget.png" alt="Snaglite Inspection Hub widget">
+        </a>
+        <figcaption>The Inspection Hub widget</figcaption>
+      </figure>
+    </div>
+
+    <h2>Asking Siri</h2>
+    <p>These phrases work straight away, with no setup:</p>
+    <table>
+      <tr><th>Say</th><th>What happens</th></tr>
+      <tr><td>“Continue my inspection in Snaglite”</td><td>Opens the unit you were last working in.</td></tr>
+      <tr><td>“Count snags in Snaglite”</td><td>Tells you the total, open and closed counts. You can also say “Count open snags” or “Count closed snags”.</td></tr>
+      <tr><td>“Show snags in Snaglite”</td><td>Asks which location, then opens its snags.</td></tr>
+      <tr><td>“Find snags in Snaglite”</td><td>Finds snags matching a site, unit, location, status, assignee or text.</td></tr>
+      <tr><td>“Add a site note in Snaglite”</td><td>Asks which site and what to add, then adds the note to the end of that site’s notes.</td></tr>
+    </table>
+    <p class="small">
+      Siri asks for anything it needs, such as which site or unit. Snaglite needs your device to be unlocked to show inspection details. Archived sites that have had their full-sized photos removed are read-only, so notes cannot be added to them.
+    </p>
+
+    <h2>Shortcuts actions</h2>
+    <p>Snaglite adds these actions to the Shortcuts app:</p>
+    <ul>
+      <li><strong>Create Inspection Reports</strong> – creates PDF reports you can pass to Mail, Save File or other actions</li>
+      <li><strong>Show Snag Results</strong> – opens a filtered list of snags in Snaglite</li>
+      <li><strong>Count Snags</strong> – returns a count you can use in other actions</li>
+      <li><strong>Continue Inspection</strong>, <strong>Show Snags in a Location</strong> and <strong>Append Site Note</strong></li>
+    </ul>
+
+    <h3>Create Inspection Reports</h3>
+    <p>Choose a <strong>Report Scope</strong>:</p>
+    <table>
+      <tr><th>Scope</th><th>Reports on</th></tr>
+      <tr><td>Selected Unit</td><td>One unit you choose when you set up the shortcut.</td></tr>
+      <tr><td>Last Inspected Unit</td><td>The unit you opened most recently.</td></tr>
+      <tr><td>Units Visited Today</td><td>Every unit you opened on this device today – one PDF per unit.</td></tr>
+      <tr><td>Filtered Snags</td><td>Snags matching a site, location name, assignee, status or text, grouped into one PDF per unit.</td></tr>
+    </table>
+    <p>
+      You can also set the report style (Standard, Back Snag or Custom), which snags to include (All, Open or Closed), grouping, assignees, General Notes and weather. Your saved company, inspector and logo are used automatically.
+    </p>
+
+    <div class="example">
+      <div class="example-label">Example: email a back snag report to a contractor</div>
+      <ol>
+        <li>In Shortcuts, create a new shortcut.</li>
+        <li>Add Snaglite’s <strong>Create Inspection Reports</strong>. Choose <strong>Selected Unit</strong>, pick the unit, and set Report Style to <strong>Back Snag</strong>.</li>
+        <li>Add Mail’s <strong>Send Email</strong>, with the reports as the attachment and the contractor as the recipient.</li>
+        <li>Run it and check the email before it is sent.</li>
+      </ol>
+    </div>
+
+    <div class="example">
+      <div class="example-label">Example: file today’s inspections</div>
+      <ol>
+        <li>Add <strong>Create Inspection Reports</strong> with scope <strong>Units Visited Today</strong>.</li>
+        <li>Add <strong>Save File</strong> and choose a folder.</li>
+        <li>Name the shortcut “File today’s inspections” and run it at the end of the day.</li>
+      </ol>
+    </div>
+
+    <div class="callout">
+      “Units Visited Today” is based on the units you open in Snaglite on this device. It is not location tracking, and it only covers today.
+    </div>
+
+    <h2>Spotlight</h2>
+    <p>
+      With <strong>Settings → Preferences → Show Inspection Records in Search</strong> turned on, you can find sites, units, locations and snags from the iPhone’s Spotlight search and open them directly.
+    </p>
+
+    <div class="next-link">
+      <p><a href="manual-tips.html"><strong>Next: Tips and Tricks</strong></a></p>
+    </div>
+  </main>
+</body>
+</html>

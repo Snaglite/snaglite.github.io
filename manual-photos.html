@@ -3,221 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photos and Annotations – Snaglite User Manual</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1f2328;
-      --muted: #59636e;
-      --link: #0969da;
-      --border: #d0d7de;
-      --panel: #f6f8fa;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d1117;
-        --text: #e6edf3;
-        --muted: #9da7b3;
-        --link: #58a6ff;
-        --border: #30363d;
-        --panel: #161b22;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 56px;
-    }
-
-    h1, h2 {
-      line-height: 1.2;
-      margin: 0 0 16px;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 36px;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul, ol {
-      margin: 0 0 16px 24px;
-      padding: 0;
-    }
-
-    li {
-      margin: 0 0 8px;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0 32px;
-    }
-
-    .next-link {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .example {
-      margin: 20px 0;
-      padding: 16px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: transparent;
-    }
-  </style>
+  <title>Photos and Markup – Snaglite User Manual</title>
+  <link rel="stylesheet" href="manual.css">
 </head>
 <body>
   <main class="container">
     <a class="back-link" href="manual.html">← Back to User Manual</a>
 
-    <h1>Photos and Annotations</h1>
+    <h1>Photos and Markup</h1>
 
-    <p>
-      Photographs are one of the most important parts of a snag record. They help identify the issue clearly, support follow-up actions and improve the quality of the final report.
+    <p class="intro">
+      Photos are one of the most important parts of a snag. They identify the issue, support follow-up work and make the report much easier to act on.
     </p>
 
     <div class="panel">
-      <p><strong>Good snag photos should be:</strong></p>
+      <p><strong>Good snag photos are:</strong></p>
       <ul>
-        <li>clear</li>
-        <li>well framed</li>
+        <li>clear and well lit</li>
         <li>close enough to show the issue</li>
-        <li>wide enough to show context where needed</li>
+        <li>wide enough to show where it is, where needed</li>
         <li>checked before you move on</li>
       </ul>
     </div>
 
     <h2>Adding photos</h2>
-    <p>
-      Photos can be added to a snag as part of the snag detail or snag creation process.
-    </p>
-
-    <p>
-      Depending on the situation, you may be able to:
-    </p>
-
-    <ul>
-      <li>take a new photo in the app</li>
-      <li>choose one or more photos from your photo library</li>
-    </ul>
-
-    <p>
-      It is generally better to add photos at the time of inspection rather than trying to match them later.
-    </p>
-
-    <h2>What makes a useful inspection photo</h2>
-    <ul>
-      <li>Show the defect clearly</li>
-      <li>Include surrounding context where that helps identify the location</li>
-      <li>Take a second wider shot if the close-up lacks context</li>
-      <li>Avoid blurred or poorly lit images where possible</li>
-      <li>Check that the issue is actually visible before saving</li>
-    </ul>
-
-    <h2>Annotating photos</h2>
-    <p>
-      Snaglite allows you to annotate photos so the defect is easier to identify. This is useful where the issue might otherwise be missed in a report image. 
-    </p>
-    <p>
-      Similar markup tools may also be available in attachment areas, including for PDF files, so supporting documents can be annotated in the same general way as snag images.
-    </p>
-    <p>
-      Typical annotation uses include:
-    </p>
-
-    <ul>
-      <li>circling a defect</li>
-      <li>drawing a line or arrow to the affected point</li>
-      <li>marking a small or visually unclear issue</li>
-      <li>making the report image quicker to understand</li>
-    </ul>
-
-    <h2>Shape recognition</h2>
-    <p>
-      Where shape recognition is available, pause briefly at the end of the stroke to allow the shape to snap into place.
-    </p>
-
-    <div class="example">
-      <p><strong>Tip</strong></p>
-      <p>
-        If the shape does not snap correctly, redraw it more deliberately and pause again at the end.
-      </p>
+    <div class="split">
+      <div>
+        <p>Each snag can hold up to <strong>three photos</strong>. On a new or saved snag:</p>
+        <ul>
+          <li>tap <strong>Take Photo</strong> to use the camera, or</li>
+          <li>tap <strong>Photo Library</strong> to choose existing photos, or</li>
+          <li>on iPad, drag images in from another app.</li>
+        </ul>
+        <p>
+          The first photo becomes the <strong>Primary</strong> photo. It is the main image on reports, in the long-press preview and on the Share Snag image. To change it, press and hold another photo and choose <strong>Make Primary</strong>. To remove a photo, press and hold it and choose <strong>Delete Photo</strong>.
+        </p>
+        <p class="small">
+          To keep a copy of every photo you take in your iPhone’s Photos library, turn on <strong>Settings → Preferences → Save New Photos to Library</strong>.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/snag-detail.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/snag-detail.png" alt="Snag with one primary photo">
+        </a>
+        <figcaption>Photos on a snag</figcaption>
+      </figure>
     </div>
 
-    <p>
-      Shape recognition is intended to improve neatness, but it may not interpret every hand-drawn mark perfectly every time.
-    </p>
+    <h2>Marking up a photo</h2>
+    <div class="split">
+      <div>
+        <p>
+          Tap the pen button on a photo thumbnail to open the editor. Your edits never overwrite the original photo. You can reset them at any time.
+        </p>
+        <table>
+          <tr><th>Tool</th><th>What it does</th></tr>
+          <tr><td>Draw</td><td>Draw freehand in the chosen colour. Hold still at the end of a stroke to snap it into a neat shape.</td></tr>
+          <tr><td>Crop</td><td>Trim the photo. Tap Apply Crop when you are done.</td></tr>
+          <tr><td>Pixelate</td><td>Paint over faces, number plates or other private details to blur them into a mosaic.</td></tr>
+          <tr><td>Number</td><td>Drop numbered markers (1, 2, 3…) to point out several issues in one photo.</td></tr>
+          <tr><td>Text</td><td>Add a short label, such as a measurement (“550mm”).</td></tr>
+          <tr><td>Undo</td><td>Step back through your last changes.</td></tr>
+          <tr><td>⋯</td><td>Reset Edits, or Share the edited or original image.</td></tr>
+        </table>
+        <p>
+          Drag a number or text marker to move it. Tap it to edit or delete it. Tap the tick to save.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/photo-markup.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/photo-markup.png" alt="Photo with a circled scratch, a number marker and a text label">
+        </a>
+        <figcaption>A circle, number and label</figcaption>
+      </figure>
+    </div>
 
-    <h2>Using annotations well</h2>
+    <h2>Shape snapping</h2>
+    <p>
+      Draw a line, circle, oval, rectangle or arrow, then <strong>hold your finger or Pencil still at the end of the stroke</strong>. Snaglite replaces the rough stroke with a clean shape. If you lift straight away, the stroke stays freehand.
+    </p>
+    <div class="callout">
+      If a shape does not snap the way you wanted, tap Undo, redraw it more deliberately and hold still again at the end.
+    </div>
+
+    <h2>Apple Pencil</h2>
+    <p>On iPad with Apple Pencil:</p>
     <ul>
-      <li>Keep annotations simple</li>
-      <li>Use one clear mark rather than several unnecessary ones</li>
-      <li>Do not cover the defect itself if that would reduce clarity</li>
-      <li>Check the final image before saving</li>
-      <li>Use annotation only where it adds value</li>
+      <li>once you draw with the Pencil, only the Pencil draws. Your finger can then pan and zoom without leaving marks. This also follows the iPad’s own “Only Draw with Apple Pencil” setting.</li>
+      <li>an <strong>Eraser</strong> tool appears in the toolbar once a Pencil is in use. If your Pencil’s double-tap is set to switch to the eraser, double-tap works too.</li>
+      <li>squeeze Apple Pencil Pro to bring up the tool palette next to the tip (when the iPad’s squeeze setting is Show Tool Palette)</li>
     </ul>
 
-    <h2>Primary or preferred photo</h2>
-    <p>
-      Where several photos are attached to a snag, one image may be more suitable than the others as the main reference image. Choose the clearest and most useful image where that option is available.
-    </p>
-
-    <h2>Good practice</h2>
+    <h2>Using markup well</h2>
     <ul>
-      <li>Take the photo before leaving the area</li>
-      <li>Use both context shots and close-up shots where needed</li>
-      <li>Annotate only where the issue is not obvious enough without it</li>
-      <li>Review saved images to make sure they support the snag properly</li>
-      <li>Do not rely on memory to explain a weak or unclear image later</li>
+      <li>Keep marks simple. One clear circle is better than several scribbles.</li>
+      <li>Do not cover the defect itself.</li>
+      <li>Use numbers when one photo shows more than one issue.</li>
+      <li>Pixelate anything personal before you share a report outside your company.</li>
+      <li>Check the final image before saving.</li>
     </ul>
+
+    <p>
+      PDF attachments and drawings have their own markup tools. See <a href="manual-drawings.html">Attachments and Drawings</a>.
+    </p>
 
     <div class="next-link">
-      <p><a href="manual-reports.html"><strong>Next: Reports and Export</strong></a></p>
+      <p><a href="manual-drawings.html"><strong>Next: Attachments and Drawings</strong></a></p>
     </div>
   </main>
 </body>

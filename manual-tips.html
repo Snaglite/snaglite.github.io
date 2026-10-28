@@ -4,179 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tips and Tricks – Snaglite User Manual</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1f2328;
-      --muted: #59636e;
-      --link: #0969da;
-      --border: #d0d7de;
-      --panel: #f6f8fa;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d1117;
-        --text: #e6edf3;
-        --muted: #9da7b3;
-        --link: #58a6ff;
-        --border: #30363d;
-        --panel: #161b22;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px 56px;
-    }
-
-    h1, h2, h3 {
-      line-height: 1.2;
-      margin: 0 0 16px;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.35rem;
-      margin-top: 40px;
-    }
-
-    h3 {
-      font-size: 1.05rem;
-      margin-top: 0;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul {
-      margin: 0 0 16px 24px;
-      padding: 0;
-    }
-
-    li {
-      margin: 0 0 8px;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0 32px;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .tips-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .tip-card {
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 18px;
-      background: transparent;
-    }
-
-    .thumb-link {
-      display: inline-block;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .thumb-link img {
-      display: block;
-      width: 100%;
-      max-width: 240px;
-      height: auto;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: var(--panel);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      transition: transform 0.15s ease;
-    }
-
-    .thumb-link:hover img {
-      transform: scale(1.02);
-    }
-
-    .thumb-caption {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .callout {
-      border-left: 4px solid var(--link);
-      padding: 12px 14px;
-      margin: 16px 0;
-      background: var(--panel);
-      border-radius: 8px;
-    }
-
-    .stack {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .widget-thumb {
-      margin-top: 140px;
-    }
-
-    .next-link {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    @media (max-width: 800px) {
-      .tips-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .thumb-link img {
-        max-width: 220px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="manual.css">
 </head>
 <body>
   <main class="container">
@@ -184,204 +12,128 @@
 
     <h1>Tips and Tricks</h1>
 
-    <p>
-      This page highlights useful features that can speed up navigation, reduce storage use and make day-to-day inspection work more efficient.
+    <p class="intro">
+      Shortcuts and hidden features that speed up day-to-day inspection work. Tap any screenshot to open it full size.
     </p>
 
-    <div class="panel">
-      <p><strong>Useful features to look out for:</strong></p>
-      <ul>
-        <li>Inspection Hub shortcuts</li>
-        <li>Home Screen widgets</li>
-        <li>site archiving options</li>
-        <li>swipe actions on rows</li>
-        <li>bulk actions in snag lists</li>
-        <li>quick look preview for photos</li>
-        <li>copying location headings between units</li>
-        <li>PDF and attachment markup</li>
-      </ul>
-      <p class="small">
-        Tap any screenshot thumbnail to open the full image in a new tab.
-      </p>
-    </div>
+    <h2>Swipes and long presses</h2>
+    <table>
+      <tr><th>Row</th><th>Swipe right</th><th>Swipe left</th><th>Press and hold</th></tr>
+      <tr><td>Site</td><td>–</td><td>Edit Site, Archive Site, Delete</td><td>Edit Site, Archive Site, Delete</td></tr>
+      <tr><td>Unit</td><td>–</td><td>Export PDF, Edit Details, Delete</td><td>Edit Details, Copy Locations</td></tr>
+      <tr><td>Location</td><td>Mark all snags Open or Closed</td><td>Rename, Delete</td><td>Rename, Delete</td></tr>
+      <tr><td>Snag</td><td>Mark Closed / Reopen</td><td>Assign, Delete</td><td>Photo preview, Share Snag, Mark Closed, Assign, Delete</td></tr>
+      <tr><td>Attachment</td><td>Use as Drawing</td><td>Delete</td><td>Open, Share, Rename, Delete</td></tr>
+    </table>
 
-    <h2>Inspection Hub and widgets</h2>
     <div class="tips-grid">
       <section class="tip-card">
-        <h3>Inspection Hub shortcuts</h3>
+        <h3>Preview without opening</h3>
         <p>
-          The Inspection Hub provides three quick shortcuts to help you get back to useful parts of the app more quickly:
+          Press and hold a snag to see its primary photo, markup included, without leaving the list.
         </p>
-        <ul>
-          <li><strong>Continue Inspection</strong> – returns you to your current or most recent inspection flow</li>
-          <li><strong>Missing Photos</strong> – helps identify snag records without attached images</li>
-          <li><strong>Recent Snags</strong> – shows recently active snag records</li>
-        </ul>
-        <a class="thumb-link" href="manual-home.png" target="_blank" rel="noopener noreferrer">
-          <img src="manual-home.png" alt="Inspection Hub on the Sites screen">
-          <div class="thumb-caption">Inspection Hub on the Sites screen</div>
-        </a>
+        <figure class="shot">
+          <a href="images/snag-quick-look.png" target="_blank" rel="noopener noreferrer">
+            <img src="images/snag-quick-look.png" alt="Long-press preview of a snag photo">
+          </a>
+          <figcaption>Long-press preview</figcaption>
+        </figure>
       </section>
 
       <section class="tip-card">
-        <h3>Small and medium widgets</h3>
+        <h3>Bulk changes</h3>
         <p>
-          Snaglite also provides small and medium Home Screen widgets which mirror these shortcut ideas, making it faster to jump into active inspection work without opening the app and navigating manually.
+          In any snag list, tap <strong>⋯ → Select</strong>, pick the snags, then use <strong>⋯</strong> to Set Status, Assign, Set Priority, Move or Export them together. Use <strong>Select All</strong> to pick everything.
         </p>
-        <a class="thumb-link widget-thumb" href="widget.png" target="_blank" rel="noopener noreferrer">
-          <img src="widget.png" alt="Snaglite widget showing quick shortcuts">
-          <div class="thumb-caption">Small and medium widget options</div>
-        </a>
+        <figure class="shot">
+          <a href="images/all-snags-bulk.png" target="_blank" rel="noopener noreferrer">
+            <img src="images/all-snags-bulk.png" alt="Bulk actions menu">
+          </a>
+          <figcaption>Bulk actions</figcaption>
+        </figure>
       </section>
     </div>
 
-    <h2>Archiving sites</h2>
+    <h2>Setting up faster</h2>
     <div class="tips-grid">
       <section class="tip-card">
-        <h3>Archive options</h3>
+        <h3>Default unit names</h3>
         <p>
-          Sites can be archived in two ways:
+          Set a <strong>Default Unit Name</strong> such as “Plot” on the site. When you add a unit, “Plot ” is already filled in. Just type the number.
         </p>
-        <ul>
-          <li><strong>Archive Only</strong></li>
-          <li><strong>Archive and Remove Full-Sized Photos</strong></li>
-        </ul>
-        <p>
-          Both options move the site into an archive section within the Sites list. Archived sites can be hidden from view, and the associated map pin can also be hidden.
-        </p>
-        <a class="thumb-link" href="site-swipe.png" target="_blank" rel="noopener noreferrer">
-          <img src="site-swipe.png" alt="Site row swipe actions including archive">
-          <div class="thumb-caption">Site row swipe actions</div>
-        </a>
       </section>
 
       <section class="tip-card">
-        <div class="stack">
-          <div>
-            <h3>Archive and Remove Full-Sized Photos</h3>
-            <p>
-              This option archives the site and permanently removes stored full-sized photos to reduce storage use. Small thumbnails are retained where available. Notes, snag data and other project information remain available.
-            </p>
-          </div>
+        <h3>Copy locations</h3>
+        <p>
+          Press and hold a unit that has its locations set up and choose <strong>Copy Locations</strong>. Then select other units and choose <strong>⋯ → Paste Locations</strong> to add the same rooms to all of them at once.
+        </p>
+      </section>
 
-          <div class="callout">
-            This will archive the site and permanently remove stored full-sized photos to reduce storage usage. Small thumbnails will be retained where available. Notes, snag data and other project information will remain.
-          </div>
+      <section class="tip-card">
+        <h3>Site defaults</h3>
+        <p>
+          Fill in client, contractor, address, inspection date and default assignee on the site. Every unit and snag picks them up, so you only enter them once.
+        </p>
+      </section>
 
-          <div class="callout">
-            The site becomes read-only. You will still be able to browse and export, but not edit. You may wish to export a PDF report first if you need a visual record. This action cannot be undone.
-          </div>
-        </div>
+      <section class="tip-card">
+        <h3>Site drawings for house types</h3>
+        <p>
+          Add your house-type plans as site drawings, then use <strong>⋯ → Choose Site Drawings…</strong> on each unit to show only the plans for that type.
+        </p>
       </section>
     </div>
 
-    <h2>Swipe actions</h2>
+    <h2>On site</h2>
     <div class="tips-grid">
       <section class="tip-card">
-        <h3>Location row swipe actions</h3>
+        <h3>Pick up where you left off</h3>
         <p>
-          Many rows in Snaglite support swipe actions for quicker access to common functions. Depending on the screen, this can include actions such as opening, closing, assigning, archiving or deleting.
+          <strong>Continue Inspection</strong> on the Inspection Hub, the Home Screen widget, or “Continue my inspection in Snaglite” to Siri all take you straight back to your last unit.
         </p>
-        <a class="thumb-link" href="location-swipe.png" target="_blank" rel="noopener noreferrer">
-          <img src="location-swipe.png" alt="Swipe actions on a location row">
-          <div class="thumb-caption">Location row swipe actions</div>
-        </a>
       </section>
 
       <section class="tip-card">
-        <h3>Snag row swipe actions</h3>
+        <h3>Find what still needs photos</h3>
         <p>
-          Snag rows also support swipe gestures for rapid management. This is useful when updating several items during an inspection or review.
+          The <strong>Missing Photos</strong> tile lists every snag without a photo, so you can catch them before you leave site.
         </p>
-        <a class="thumb-link" href="swipe-status.png" target="_blank" rel="noopener noreferrer">
-          <img src="swipe-status.png" alt="Swipe action to reopen or update snag status">
-          <div class="thumb-caption">Swipe action for status changes</div>
-        </a>
       </section>
 
       <section class="tip-card">
-        <h3>Quick assign and delete</h3>
+        <h3>Search in plain English</h3>
         <p>
-          Some swipe actions expose immediate shortcuts, such as assigning an item or deleting it, reducing the need to open the full detail screen.
+          Type things like <code>open kitchen snags</code>, <code>unassigned</code> or <code>no photos</code> into Search.
         </p>
-        <a class="thumb-link" href="swipe-to-assign.png" target="_blank" rel="noopener noreferrer">
-          <img src="swipe-to-assign.png" alt="Swipe action showing assign and delete shortcuts">
-          <div class="thumb-caption">Swipe shortcuts for assign and delete</div>
-        </a>
       </section>
 
       <section class="tip-card">
-        <h3>Bulk actions in All Snags</h3>
+        <h3>Rotation lock</h3>
         <p>
-          The All Snags view supports bulk actions, which can be useful when managing several records together. Depending on context, bulk actions may include selecting all, setting status, assigning, moving or exporting selected items.
+          When you turn your iPhone, a lock button briefly appears. Tap it to keep Snaglite in its current orientation, which is handy when photographing ceilings and floors.
         </p>
-        <a class="thumb-link" href="all-snags.png" target="_blank" rel="noopener noreferrer">
-          <img src="all-snags.png" alt="All Snags bulk action menu">
-          <div class="thumb-caption">Bulk actions in All Snags</div>
-        </a>
+      </section>
+
+      <section class="tip-card">
+        <h3>Undo a delete</h3>
+        <p>
+          After deleting a snag, location, unit or site, tap <strong>Undo</strong> on the banner at the bottom of the screen.
+        </p>
+      </section>
+
+      <section class="tip-card">
+        <h3>Drag and drop</h3>
+        <p>
+          On iPad, drag photos straight onto a snag, or images and PDFs into Attachments or Drawings, from Files, Photos, Mail or Safari.
+        </p>
       </section>
     </div>
 
-    <h2>Copy locations between units</h2>
-    <div class="tips-grid">
-      <section class="tip-card">
-        <h3>Reuse location headings</h3>
-        <p>
-          If several units share the same layout, you can copy location headings from one unit to another instead of creating each location again manually.
-        </p>
-        <p>
-          This is useful where multiple plots, apartments or rooms follow the same arrangement and you want to set up the inspection structure more quickly and consistently.
-        </p>
-      </section>
-
-      <section class="tip-card">
-        <h3>How to access it</h3>
-        <p>
-          Press and hold the relevant unit row to open the pop-up menu. From there, choose <strong>Copy Locations</strong>.
-        </p>
-        <a class="thumb-link" href="copy-locations.png" target="_blank" rel="noopener noreferrer">
-          <img src="copy-locations.png" alt="Long press menu on a unit row showing Copy Locations">
-          <div class="thumb-caption">Long press a unit row to access Copy Locations</div>
-        </a>
-      </section>
-    </div>
-    <h2>PDF and attachment markup</h2>
-    <div class="tips-grid">
-      <section class="tip-card">
-        <h3>Annotate PDFs and attachment files</h3>
-        <p>
-          Snaglite supports markup of attachment files, including PDFs. This allows you to annotate supporting documents directly within the app, for example by circling areas, drawing shapes or adding text to highlight relevant information.
-        </p>
-        <p>
-          This is particularly useful for site plans, layouts, technical drawings and other reference documents that need visual clarification.
-        </p>
-      </section>
-
-      <section class="tip-card">
-        <h3>Consistent markup tools</h3>
-        <p>
-          The markup approach used for snag images is also available in attachment areas, so the workflow remains consistent across photos and supporting documents.
-        </p>
-        <a class="thumb-link" href="pdf-markup.png" target="_blank" rel="noopener noreferrer">
-          <img src="pdf-markup.png" alt="PDF attachment markup in Snaglite">
-          <div class="thumb-caption">Markup tools used on a PDF attachment</div>
-        </a>
-      </section>
-    </div>
-    
-    <h2>Quick look for photos</h2>
-    <div class="tips-grid">
-      <section class="tip-card">
-        <h3>Preview without fully opening the snag</h3>
-        <p>
-          Where available, photo quick look allows you to preview an attached image more quickly. This is useful when you want to check the visual record without leaving the list context for longer than necessary. Just press and hold a record to quickly view the image.
-        </p>
-        <a class="thumb-link" href="photo-quick-look.png" target="_blank" rel="noopener noreferrer">
-          <img src="photo-quick-look.png" alt="Quick look preview of a snag photo">
-          <div class="thumb-caption">Quick look image preview</div>
-        </a>
-      </section>
-    </div>
+    <h2>Saving storage</h2>
+    <p>
+      When a job is finished, archive the site with <strong>Archive and Remove Full-Sized Photos</strong>. Thumbnails, notes and snag details are kept, and you can still export reports. This cannot be undone, so export the full PDF report and make a backup first. See <a href="manual-sites.html">Sites, Units and Locations</a>.
+    </p>
 
     <div class="next-link">
       <p><a href="manual-faq.html"><strong>Next: FAQ</strong></a></p>

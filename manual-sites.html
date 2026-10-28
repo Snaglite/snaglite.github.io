@@ -4,112 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sites, Units and Locations – Snaglite User Manual</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1f2328;
-      --muted: #59636e;
-      --link: #0969da;
-      --border: #d0d7de;
-      --panel: #f6f8fa;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d1117;
-        --text: #e6edf3;
-        --muted: #9da7b3;
-        --link: #58a6ff;
-        --border: #30363d;
-        --panel: #161b22;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 56px;
-    }
-
-    h1, h2 {
-      line-height: 1.2;
-      margin: 0 0 16px;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 36px;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul, ol {
-      margin: 0 0 16px 24px;
-      padding: 0;
-    }
-
-    li {
-      margin: 0 0 8px;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 24px 0 32px;
-    }
-
-    .next-link {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .term {
-      margin: 20px 0;
-      padding: 16px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: transparent;
-    }
-  </style>
+  <link rel="stylesheet" href="manual.css">
 </head>
 <body>
   <main class="container">
@@ -117,95 +12,173 @@
 
     <h1>Sites, Units and Locations</h1>
 
-    <p>
-      Snaglite is built around a simple structure that keeps inspection data organised and easy to report.
+    <p class="intro">
+      Snaglite is built around a simple structure that keeps inspection data organised and easy to report: <strong>Site → Unit → Location → Snag</strong>.
     </p>
 
-    <div class="panel">
-      <p><strong>Inspection hierarchy:</strong></p>
-      <p><strong>Site → Unit → Location → Snag</strong></p>
-      <p class="small">
-        Each level sits inside the one above it. This means snags belong to locations, locations belong to units, and units belong to sites.
-      </p>
+    <h2>The Sites screen and Inspection Hub</h2>
+    <div class="split">
+      <div>
+        <p>The Sites screen is the home of the app. At the top is the <strong>Inspection Hub</strong>, which shows:</p>
+        <ul>
+          <li>the number of <strong>active sites</strong>, <strong>open snags</strong> and <strong>closed snags</strong>. Tap the arrow beside them to open <a href="#insights">Portfolio Insights</a>.</li>
+          <li><strong>Continue Inspection</strong> – goes straight back to the last unit you were working in.</li>
+          <li><strong>Missing Photos</strong> – lists snags that have no photos yet.</li>
+          <li><strong>Recent Snags</strong> – lists snags by most recent activity.</li>
+          <li><strong>Mapped Sites</strong> – a map with a pin for each site that has an address, plus a weather badge showing current conditions where you are.</li>
+        </ul>
+        <p>Your sites are listed below the hub. Each row shows the number of units and how many snags are closed.</p>
+        <p>
+          Use <strong>⋯</strong> to sort sites (name or date), show or hide archived sites, and open Settings.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/sites-hub.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/sites-hub.png" alt="Sites screen with Inspection Hub and map">
+        </a>
+        <figcaption>Inspection Hub and site map</figcaption>
+      </figure>
+    </div>
+
+    <div class="callout">
+      A site appears on the map only when its <strong>Default Site Address</strong> can be found on a map. Tap the ⓘ button on the map to see how many sites are shown and to include archived sites.
     </div>
 
     <h2>Sites</h2>
-    <div class="term">
-      <p><strong>Site</strong></p>
-      <p>
-        A site is the top-level record in Snaglite. It will usually represent the overall development, scheme, property or job.
-      </p>
-      <p>
-        Examples might include a housing development, an apartment block, a school project or a commercial fit-out.
-      </p>
+    <div class="split">
+      <div>
+        <p>
+          A site is the top-level record. It usually represents the overall development, scheme, property or job. Create a separate site for each project or inspection commission.
+        </p>
+        <p>Tap <strong>+</strong> on the Sites screen to add a site. As well as the name, you can set:</p>
+        <ul>
+          <li><strong>Site colour</strong> – shown on the site row and its map pin.</li>
+          <li><strong>Default Unit Name</strong> – for example “Plot”. New units start with this name, so you only need to type the number.</li>
+          <li><strong>Unit defaults</strong> – reference number, client, contractor, site address and inspection date. Units use these unless you override them.</li>
+          <li><strong>Default Assignee</strong> – applied to new snags created on this site.</li>
+        </ul>
+        <p>To change these later, swipe left on the site and tap <strong>Edit Site</strong>, or press and hold the site row.</p>
+      </div>
+      <figure class="shot">
+        <a href="images/site-edit.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/site-edit.png" alt="Edit Site screen">
+        </a>
+        <figcaption>Edit Site</figcaption>
+      </figure>
     </div>
-
-    <p>
-      You will normally create a separate site for each distinct project or inspection commission.
-    </p>
 
     <h2>Units</h2>
-    <div class="term">
-      <p><strong>Unit</strong></p>
-      <p>
-        A unit sits within a site. It represents the individual property, plot, apartment, house, block or other inspection division that you are inspecting.
-      </p>
-      <p>
-        The right unit structure will depend on the job. On a housing development, each plot may be a unit. On a larger building, a floor, flat or tenancy area may be a unit.
-      </p>
+    <div class="split">
+      <div>
+        <p>
+          A unit sits within a site. It is the plot, apartment, house, block or other division you are inspecting. On a housing development each plot might be a unit; on a larger building, a floor or flat might be.
+        </p>
+        <p>
+          Each unit has its own reference number, client, contractor, address and inspection date. Leave a field blank to use the site default. Turn on <strong>Use Site Inspection Date</strong> to keep the unit in step with the site.
+        </p>
+        <p>The Units screen also holds:</p>
+        <ul>
+          <li><strong>Site Notes</strong> – general notes for the whole site.</li>
+          <li><strong>Attachments</strong> (in ⋯) – documents that apply to every unit.</li>
+        </ul>
+        <p>
+          The ⋯ menu lets you sort units, select several at once, and export reports for the selected units in one go. Units are sorted in a natural order, so “Plot 9” comes before “Plot 10”.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/units.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/units.png" alt="Units screen">
+        </a>
+        <figcaption>Units in a site</figcaption>
+      </figure>
     </div>
-
-    <p>
-      Keep unit names consistent. This makes navigation, search and reporting much clearer.
-    </p>
 
     <h2>Locations</h2>
-    <div class="term">
-      <p><strong>Location</strong></p>
-      <p>
-        A location sits within a unit. It is the specific room, area or sub-space where the snag is found.
-      </p>
-      <p>
-        Typical examples include Kitchen, Bedroom 1, Bathroom, Hallway, Plant Room, External Works or Communal Corridor.
-      </p>
+    <div class="split">
+      <div>
+        <p>
+          A location is the specific room, area or space where a snag is found, such as Kitchen, Bedroom 1, Plant Room or External Works. Use names another person would understand without explanation.
+        </p>
+        <p>Opening a unit shows:</p>
+        <ul>
+          <li><strong>General Notes</strong> for the unit. Press and hold to choose whether they appear on the report.</li>
+          <li><strong>Attachments</strong> and <strong>Drawings</strong> for the unit. See <a href="manual-drawings.html">Attachments and Drawings</a>.</li>
+          <li><strong>All Snags</strong> – every snag in the unit in one list.</li>
+          <li>Your <strong>locations</strong>, each with a progress bar showing how many snags are closed.</li>
+        </ul>
+        <p>
+          Swipe right on a location to mark all of its snags <strong>Open</strong> or <strong>Closed</strong>. Swipe left to <strong>Rename</strong> or <strong>Delete</strong> it. Locations can be sorted by name or snag count, or kept in your own manual order.
+        </p>
+      </div>
+      <figure class="shot">
+        <a href="images/locations.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/locations.png" alt="Locations screen for a unit">
+        </a>
+        <figcaption>A unit’s locations</figcaption>
+      </figure>
     </div>
 
+    <h3>Copying locations between units</h3>
     <p>
-      Location names should be specific enough that another person can understand the record without explanation.
+      If several units share the same layout, set up the locations once and copy them:
     </p>
+    <ol>
+      <li>Press and hold the unit that already has the locations, and choose <strong>Copy Locations</strong>.</li>
+      <li>Tap <strong>⋯ → Select</strong>, select the units you want to fill, then choose <strong>⋯ → Paste Locations</strong>.</li>
+    </ol>
+    <p class="small">Only location names are copied, not snags. Locations that already exist in a unit are skipped. A banner confirms how many were added.</p>
 
-    <h2>How this structure works in practice</h2>
-    <p>
-      A typical example might look like this:
-    </p>
+    <h2 id="insights">Portfolio Insights</h2>
+    <div class="split">
+      <div>
+        <p>
+          Portfolio Insights shows where the open work is across all your active sites. Open it from the arrow beside the counts on the Inspection Hub.
+        </p>
+        <ul>
+          <li><strong>Work Concentration</strong> – open snags per unit for each site, compared with your average.</li>
+          <li><strong>Unit Hotspots</strong> – units ranked by high or critical open snags, then by total open snags.</li>
+          <li><strong>Responsibility</strong> – how many open snags each assignee has.</li>
+          <li><strong>Recurring Locations</strong> – room types, such as bathrooms, where open snags keep appearing across at least three matching locations.</li>
+        </ul>
+        <p>Tap a unit hotspot to go straight to it.</p>
+      </div>
+      <figure class="shot">
+        <a href="images/portfolio-insights.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/portfolio-insights.png" alt="Portfolio Insights screen">
+        </a>
+        <figcaption>Portfolio Insights</figcaption>
+      </figure>
+    </div>
 
-    <ul>
-      <li><strong>Site:</strong> Oak View Development</li>
-      <li><strong>Unit:</strong> Plot 12</li>
-      <li><strong>Location:</strong> Kitchen</li>
-      <li><strong>Snag:</strong> Scratch to worktop edge adjacent to hob</li>
-    </ul>
-
-    <p>
-      This structure keeps each defect tied to the correct place in the inspection record.
-    </p>
-
-    <h2>Notes and attachments</h2>
-    <p>
-      Depending on how you use the app, sites and units may also include broader notes or attachments. These are useful for holding context or supporting information that does not belong to one individual snag.
-    </p>
-
-    <p>
-      Examples might include drawings, specifications, on-site scans, general inspection notes or supporting photographs.
-    </p>
+    <h2>Archiving sites</h2>
+    <div class="split">
+      <div>
+        <p>When a job is finished, swipe left on the site and tap <strong>Archive Site</strong>. You can choose:</p>
+        <ul>
+          <li><strong>Archive Only</strong> – moves the site into the archive. You can unarchive it at any time.</li>
+          <li><strong>Archive and Remove Full-Sized Photos</strong> – archives the site and permanently deletes the full-size photos to save storage. Small thumbnails, notes and snag details are kept.</li>
+        </ul>
+        <div class="callout warning">
+          <p>
+            Removing full-sized photos cannot be undone, and the site becomes read-only. You can still browse and export it, but not edit it. Export a PDF report first if you need a full visual record.
+          </p>
+        </div>
+        <p>Use <strong>⋯ → Show Archived</strong> on the Sites screen to show or hide archived sites.</p>
+      </div>
+      <figure class="shot">
+        <a href="images/site-swipe.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/site-swipe.png" alt="Swipe actions on a site row">
+        </a>
+        <figcaption>Swipe left on a site</figcaption>
+      </figure>
+    </div>
 
     <h2>Good practice</h2>
     <ul>
-      <li>Use clear, recognisable site names</li>
-      <li>Keep unit naming consistent across the project</li>
-      <li>Use practical location names that match how the building is actually described on site</li>
-      <li>Avoid duplicate or vague labels where possible</li>
-      <li>Set up the structure properly before adding a large number of snags</li>
+      <li>Fill in the site defaults first, so every new unit starts with the right details</li>
+      <li>Keep unit names consistent across the project</li>
+      <li>Use location names that match how the building is described on site</li>
+      <li>Set up the structure before adding a large number of snags</li>
     </ul>
 
     <div class="next-link">
