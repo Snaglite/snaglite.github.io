@@ -214,6 +214,56 @@ th {
   max-width: 100%;
 }
 
+/* Phone screenshots sit in an iPhone-style bezel with a Dynamic Island drawn over the
+   top. Report pages and exported images (.page, .plain) keep the plain border. */
+.shot:not(.page):not(.plain) a {
+  position: relative;
+  max-width: 260px;
+  margin: 0 auto;
+  --bezel: 7px;
+}
+
+.shot:not(.page):not(.plain) img {
+  border: var(--bezel) solid #1c1c1e;
+  border-radius: 34px;
+  background: #000;
+  box-shadow:
+    0 0 0 1.5px #48484a,
+    0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.shot:not(.page):not(.plain) a::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--bezel) + 1.2%);
+  left: 50%;
+  width: 30%;
+  aspect-ratio: 126 / 37;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #000;
+  pointer-events: none;
+  transition: transform 0.15s ease;
+}
+
+.shot:not(.page):not(.plain) a:hover::after {
+  transform: translateX(-50%) scale(1.02);
+}
+
+.shots-row .shot:not(.page):not(.plain) a,
+.tip-card .shot:not(.page):not(.plain) a {
+  --bezel: 6px;
+}
+
+.shots-row .shot:not(.page):not(.plain) img,
+.tip-card .shot:not(.page):not(.plain) img {
+  border-radius: 28px;
+}
+
+.tip-card .shot:not(.page):not(.plain) a {
+  max-width: 220px;
+}
+
 .shot a:hover img {
   transform: scale(1.02);
 }
