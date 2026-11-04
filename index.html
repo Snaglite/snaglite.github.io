@@ -227,6 +227,128 @@
       margin-bottom: 8px;
     }
 
+    /* Screenshot gallery: a dark band that scrolls sideways, in the style of the App Store images. */
+    .gallery {
+      margin: 48px 0 8px;
+      padding: 32px 0 28px;
+      background: linear-gradient(160deg, #2a2d34 0%, #1b1d22 100%);
+      border-radius: 24px;
+      color: #f5fcff;
+    }
+
+    .gallery-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0 32px;
+      margin-bottom: 20px;
+    }
+
+    .gallery h2 {
+      margin: 0 0 4px;
+      color: #f5fcff;
+    }
+
+    .gallery-head p {
+      margin: 0;
+      color: #8fa3c4;
+    }
+
+    .gallery-buttons {
+      display: flex;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .gallery-button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      color: #f5fcff;
+      font: 600 1.4rem/1 -apple-system, BlinkMacSystemFont, sans-serif;
+      cursor: pointer;
+    }
+
+    .gallery-button:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .gallery-button:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 28px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 0 32px;
+      padding: 4px 32px 12px;
+      scrollbar-width: none;
+      outline: none;
+    }
+
+    .gallery-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-track figure {
+      flex: 0 0 210px;
+      margin: 0;
+      scroll-snap-align: start;
+      text-align: center;
+    }
+
+    .gallery-track img {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.45));
+    }
+
+    .gallery-track figcaption {
+      margin-top: 14px;
+      color: #8fa3c4;
+      font-size: 0.88rem;
+      line-height: 1.4;
+    }
+
+    .gallery-track figcaption strong {
+      display: block;
+      color: #f5fcff;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        padding: 24px 0 20px;
+        border-radius: 20px;
+      }
+
+      .gallery-head {
+        padding: 0 20px;
+      }
+
+      .gallery-buttons {
+        display: none;
+      }
+
+      .gallery-track {
+        gap: 20px;
+        padding: 4px 20px 10px;
+        scroll-padding: 0 20px;
+      }
+
+      .gallery-track figure {
+        flex-basis: 170px;
+      }
+    }
+
     @media (max-width: 800px) {
       .landing-hero,
       .feature,
@@ -289,7 +411,7 @@
       </div>
 
       <figure class="shot">
-        <img src="images/sites-hub.png" alt="Snaglite Sites screen with the Inspection Hub and a map of sites">
+        <img src="images/home/sites.png" alt="Snaglite Sites screen with the Inspection Hub, a map of sites and the site list">
       </figure>
     </section>
 
@@ -308,6 +430,49 @@
         <span>Make a numbered snag list as a PDF with photos and drawings, or as a CSV spreadsheet, and share or print it.</span>
       </li>
     </ol>
+
+    <section class="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-head">
+        <div>
+          <h2 id="gallery-title">Take a look inside</h2>
+          <p>Swipe through the app as it looks today.</p>
+        </div>
+        <div class="gallery-buttons">
+          <button type="button" class="gallery-button" data-dir="-1" aria-label="Previous screenshots">‹</button>
+          <button type="button" class="gallery-button" data-dir="1" aria-label="Next screenshots">›</button>
+        </div>
+      </div>
+      <div class="gallery-track" tabindex="0" aria-label="Snaglite screenshots">
+        <figure>
+          <img src="images/home/drawing-pins.png" alt="A floor plan with numbered snag pins in rooms" loading="lazy" width="560" height="1154">
+          <figcaption><strong>Pin snags to drawings</strong>See exactly where each one is</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/mark-up.png" alt="A site photo of a house marked up with a numbered marker, a circle and a Flue label" loading="lazy" width="560" height="1154">
+          <figcaption><strong>Mark up every photo</strong>Arrows, numbers, labels and pixelate</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/organised.png" alt="A site with its notes, attachments and a list of plots with snag counts" loading="lazy" width="560" height="1154">
+          <figcaption><strong>Organised your way</strong>Site, Unit and Location</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/review-snags.png" alt="A list of snags showing location, assignee, open or closed status and photo count" loading="lazy" width="560" height="1154">
+          <figcaption><strong>Review your snags</strong>Assignee, status and photo count</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/export.png" alt="The Export Report screen with filters, grouping and report contents" loading="lazy" width="560" height="1154">
+          <figcaption><strong>Reports your way</strong>Filter, group, and export PDF or CSV</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/report.png" alt="A PDF snag schedule with photos, notes and a tick box for each snag" loading="lazy" width="560" height="1154">
+          <figcaption><strong>Reports ready to print</strong>Photos, notes and a tick box for every snag</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/dark-mode.png" alt="The Sites screen in dark mode" loading="lazy" width="560" height="1154">
+          <figcaption><strong>Light and dark mode</strong>Easy on the eyes, indoors or out</figcaption>
+        </figure>
+      </div>
+    </section>
 
     <div id="features"></div>
 
@@ -410,5 +575,27 @@
       <p>© 2026 Snaglite. Apple, the Apple logo, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
     </footer>
   </main>
+  <script>
+    // Gallery arrows: scroll by about two screenshots, and grey out at either end.
+    (function () {
+      var track = document.querySelector(".gallery-track");
+      var buttons = document.querySelectorAll(".gallery-button");
+      if (!track) return;
+      function update() {
+        var max = track.scrollWidth - track.clientWidth - 2;
+        buttons[0].disabled = track.scrollLeft <= 2;
+        buttons[1].disabled = track.scrollLeft >= max;
+      }
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var step = track.querySelector("figure").getBoundingClientRect().width + 28;
+          track.scrollBy({ left: Number(button.dataset.dir) * step * 2, behavior: "smooth" });
+        });
+      });
+      track.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
+    })();
+  </script>
 </body>
 </html>
