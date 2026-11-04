@@ -104,6 +104,53 @@
       border-radius: 4px;
     }
 
+    /* Each checklist is a card, so rooms read as separate blocks. */
+    .card {
+      margin: 40px 0 0;
+      padding: 22px 24px 18px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .card h2,
+    .guide .card h2 {
+      margin: 0 0 14px;
+    }
+
+    .card .checklist {
+      margin-bottom: 0;
+    }
+
+    .card .checklist li {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      margin: 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .card .checklist li:first-child {
+      border-top: 0;
+    }
+
+    .card .checklist li::before {
+      top: calc(7px + 0.25em);
+    }
+
+    .take {
+      background: var(--panel);
+    }
+
+    .tips ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Ruled lines for handwritten notes: shown on paper only. */
+    .notes,
+    .print-header,
+    .print-footer {
+      display: none;
+    }
+
     .app-note {
       margin: 48px 0 0;
       padding: 24px;
@@ -149,39 +196,215 @@
       }
     }
 
+    /* Printed version: a compact A4 inspection form. */
+    @page {
+      size: A4;
+      margin: 12mm 13mm 12mm;
+    }
+
     @media print {
       :root {
         --bg: #ffffff;
-        --text: #000000;
-        --muted: #444444;
-        --border: #999999;
-        --panel: #ffffff;
+        --text: #111111;
+        --muted: #555555;
+        --border: #c8c8c8;
+        --panel: #f3f4f6;
+      }
+
+      html,
+      body {
+        font-size: 9.5pt;
+        line-height: 1.4;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .breadcrumbs,
-      .print-button,
-      .toc-section,
+      .screen-only,
       .app-note,
       .footer {
         display: none;
       }
 
-      .container {
+      .container,
+      .container.guide {
+        max-width: none;
         padding: 0;
-      }
-
-      .guide h2 {
-        break-after: avoid;
-        margin-top: 28px;
-      }
-
-      .checklist li {
-        break-inside: avoid;
+        margin: 0;
       }
 
       a {
         color: inherit;
         text-decoration: none;
+      }
+
+      /* Header with the app icon and blank fields to fill in. */
+      .print-header {
+        display: block;
+        margin-bottom: 4mm;
+      }
+
+      .print-title {
+        display: flex;
+        align-items: center;
+        gap: 3mm;
+        padding-bottom: 3mm;
+        border-bottom: 2px solid var(--text);
+      }
+
+      .print-title img {
+        width: 11mm;
+        height: 11mm;
+        border-radius: 2.5mm;
+      }
+
+      .print-title strong {
+        display: block;
+        font-size: 16pt;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+      }
+
+      .print-title span {
+        color: var(--muted);
+        font-size: 8.5pt;
+      }
+
+      .print-fields {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 4mm;
+        margin-top: 4mm;
+      }
+
+      .field {
+        height: 9mm;
+        border-bottom: 1px solid var(--muted);
+        color: var(--muted);
+        font-size: 7.5pt;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      /* Tips: a shaded box in two columns. */
+      .tips {
+        margin: 0 0 3mm;
+        padding: 3mm 4mm 1mm;
+        background: var(--panel);
+        border-radius: 2mm;
+        break-inside: avoid;
+      }
+
+      .guide .tips h2 {
+        margin: 0 0 1.5mm;
+        font-size: 10pt;
+      }
+
+      .tips ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6mm;
+        margin: 0;
+        padding-left: 4mm;
+        font-size: 8pt;
+        line-height: 1.35;
+      }
+
+      .tips ul li {
+        margin: 0 0 1.5mm;
+        break-inside: avoid;
+      }
+
+      /* Checklist cards. */
+      .card {
+        margin: 0 0 2.5mm;
+        padding: 2mm 4mm 1.5mm;
+        border: 1px solid var(--border);
+        border-radius: 2mm;
+        break-inside: avoid;
+      }
+
+      .guide .card h2 {
+        margin: 0 0 1mm;
+        font-size: 11pt;
+      }
+
+      .card .checklist li {
+        padding: 1mm 0 1mm 6mm;
+      }
+
+      .card .checklist li::before {
+        top: 1.3mm;
+        width: 3mm;
+        height: 3mm;
+        border: 1px solid var(--text);
+        border-radius: 0.6mm;
+      }
+
+      .take {
+        background: none;
+      }
+
+      .take .checklist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6mm;
+      }
+
+      .take .checklist li {
+        padding-top: 0.8mm;
+        padding-bottom: 0.8mm;
+      }
+
+      .take .checklist li::before {
+        top: 1.1mm;
+      }
+
+      .take .checklist li {
+        break-inside: avoid;
+        border-top: 0;
+      }
+
+      .notes {
+        display: block;
+        margin-top: 0.5mm;
+        height: 10mm;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding-top: 0.8mm;
+        color: var(--muted);
+        font-size: 7pt;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .after {
+        break-inside: avoid;
+        margin-top: 3mm;
+        font-size: 8.5pt;
+      }
+
+      .guide .after h2 {
+        margin: 0 0 1.5mm;
+        font-size: 11pt;
+      }
+
+      .after ol {
+        margin: 0 0 0 5mm;
+      }
+
+      .after li {
+        margin: 0 0 1mm;
+      }
+
+      .print-footer {
+        display: block;
+        margin: 2mm 0 0;
+        padding-top: 1.5mm;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 7pt;
+        break-inside: avoid;
       }
     }
   </style>
@@ -190,6 +413,23 @@
   <main class="container guide">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="./">Snaglite</a><span aria-hidden="true">›</span><span aria-current="page">New build snagging checklist</span></nav>
 
+    <!-- Printed version only: a form header in place of the article introduction. -->
+    <header class="print-header" aria-hidden="true">
+      <div class="print-title">
+        <img src="app-icon.png" alt="">
+        <div>
+          <strong>New build snagging checklist</strong>
+          <span>From Snaglite, the snagging app for iPhone and iPad · snaglite.github.io</span>
+        </div>
+      </div>
+      <div class="print-fields">
+        <div class="field wide">Property</div>
+        <div class="field">Date</div>
+        <div class="field">Inspected by</div>
+      </div>
+    </header>
+
+    <div class="screen-only">
     <h1>New build snagging checklist: how to snag a new home room by room</h1>
     <p class="meta">Updated 4 November 2026 · About a 10-minute read</p>
 
@@ -225,9 +465,11 @@
     <p>
       Most new homes in the UK come with a 10-year structural warranty, and in the first two years the builder is usually responsible for fixing defects. Check your own warranty documents for the exact terms. It is worth doing a second check, sometimes called a back snag, a few weeks after the builder says the first list is done. Do a final one before the two years are up, as some problems such as shrinkage cracks only show once the house has dried out.
     </p>
+    </div>
 
-    <h2 id="take">What to take</h2>
-    <ul class="checklist">
+    <section class="card take" aria-labelledby="take">
+      <h2 id="take">What to take</h2>
+      <ul class="checklist">
       <li>A phone or tablet to photograph and record each snag</li>
       <li>A bright torch, to shine along walls and ceilings at a low angle</li>
       <li>A spirit level, the longest you can manage</li>
@@ -237,8 +479,10 @@
       <li>A small step ladder, for the loft hatch and high-level checks</li>
       <li>Masking tape or small stickers to mark snags on site, if the builder agrees</li>
       <li>The floor plans and your specification, so you can check what was promised</li>
-    </ul>
+      </ul>
+    </section>
 
+    <section class="tips" aria-labelledby="how">
     <h2 id="how">How to work through the house</h2>
     <ul>
       <li><strong>Use the same order in every room.</strong> Start at the door and go clockwise. Look at the ceiling, then the walls, windows, doors, floor and finally the fittings. Using the same order every time means you won't miss anything.</li>
@@ -248,9 +492,11 @@
       <li><strong>Use daylight and the torch.</strong> Shining a torch along a wall at a shallow angle shows up uneven plaster and poor paintwork that you can't see head on.</li>
       <li><strong>Try everything that moves.</strong> Open and close every door, window, drawer and tap. Flush every toilet. Switch on every light.</li>
     </ul>
+    </section>
 
-    <h2 id="outside">Outside</h2>
-    <ul class="checklist">
+    <section class="card room" aria-labelledby="outside">
+      <h2 id="outside">Outside</h2>
+      <ul class="checklist">
       <li>Brickwork: chipped or cracked bricks, mortar smears, gaps or holes in the joints, and patches that don't match</li>
       <li>Pointing around windows and doors is complete and the mastic seal is continuous</li>
       <li>Roof: no slipped or broken tiles, and the ridge and verge are neat (use the binoculars)</li>
@@ -261,19 +507,25 @@
       <li>Fences and gates are complete, upright and open and close properly</li>
       <li>Outside lights, the outside tap and any outside socket work</li>
       <li>The garden is free of builders' rubble, especially just under the turf</li>
-    </ul>
+      </ul>
+      <div class="notes" aria-hidden="true"><span>Notes</span></div>
+    </section>
 
-    <h2 id="hall">Hall, stairs and landing</h2>
-    <ul class="checklist">
+    <section class="card room" aria-labelledby="hall">
+      <h2 id="hall">Hall, stairs and landing</h2>
+      <ul class="checklist">
       <li>The front door opens, closes and locks easily, and the seals touch all round</li>
       <li>There are no draughts or light showing around the front door frame</li>
       <li>Stair treads don't creak or move, and the handrail and spindles are firm</li>
       <li>Smoke and heat alarms are fitted and working</li>
       <li>The doorbell, intercom and any alarm panel work</li>
-    </ul>
+      </ul>
+      <div class="notes" aria-hidden="true"><span>Notes</span></div>
+    </section>
 
-    <h2 id="kitchen">Kitchen</h2>
-    <ul class="checklist">
+    <section class="card room" aria-labelledby="kitchen">
+      <h2 id="kitchen">Kitchen</h2>
+      <ul class="checklist">
       <li>Cupboard doors and drawers are level, evenly spaced and close fully</li>
       <li>The worktops have no chips, scratches or open joints, and the upstands are sealed</li>
       <li>The sink and taps work, there are no leaks underneath, and the sink drains quickly</li>
@@ -282,10 +534,13 @@
       <li>The extractor fan works and vents outside</li>
       <li>The tiling and grout are even and complete, with no cracked tiles</li>
       <li>The plinths and end panels are fitted</li>
-    </ul>
+      </ul>
+      <div class="notes" aria-hidden="true"><span>Notes</span></div>
+    </section>
 
-    <h2 id="bathrooms">Bathrooms and en suites</h2>
-    <ul class="checklist">
+    <section class="card room" aria-labelledby="bathrooms">
+      <h2 id="bathrooms">Bathrooms and en suites</h2>
+      <ul class="checklist">
       <li>Silicone around the bath, shower tray and basin is continuous and neat, with no gaps</li>
       <li>The shower runs at a steady temperature and the screen doesn't leak</li>
       <li>The bath and shower tray are free of chips and scratches, and drain fully</li>
@@ -293,10 +548,13 @@
       <li>The extractor fan works, including any overrun after the light goes off</li>
       <li>Tiles are level and fully grouted, and none sound hollow when tapped</li>
       <li>The towel radiator heats up</li>
-    </ul>
+      </ul>
+      <div class="notes" aria-hidden="true"><span>Notes</span></div>
+    </section>
 
-    <h2 id="rooms">Living rooms and bedrooms</h2>
-    <ul class="checklist">
+    <section class="card room" aria-labelledby="rooms">
+      <h2 id="rooms">Living rooms and bedrooms</h2>
+      <ul class="checklist">
       <li>Ceilings are free of cracks, nail pops and uneven patches, checked with the torch</li>
       <li>Walls are flat and the paint coverage is even, with no patches, drips or bare corners</li>
       <li>Windows open, close, lock and have keys, and the restrictors work on upper floors</li>
@@ -306,10 +564,13 @@
       <li>The floor is level, with no creaks, gaps or damaged flooring</li>
       <li>Every socket, switch and light works, and the faceplates are straight</li>
       <li>Wardrobes and fitted furniture are complete and the doors line up</li>
-    </ul>
+      </ul>
+      <div class="notes" aria-hidden="true"><span>Notes</span></div>
+    </section>
 
-    <h2 id="services">Heating, electrics and plumbing</h2>
-    <ul class="checklist">
+    <section class="card room" aria-labelledby="services">
+      <h2 id="services">Heating, electrics and plumbing</h2>
+      <ul class="checklist">
       <li>The boiler or heat pump fires up, and you have the manuals and the commissioning certificate</li>
       <li>Every radiator gets hot all over, and the valves aren't leaking</li>
       <li>The thermostat and heating controls work and are explained to you</li>
@@ -317,16 +578,22 @@
       <li>The stopcock is accessible and you know where it is</li>
       <li>The water pressure is reasonable at every tap, and the hot water arrives in a reasonable time</li>
       <li>You know where the gas, electricity and water meters are, and have noted the first readings</li>
-    </ul>
+      </ul>
+      <div class="notes" aria-hidden="true"><span>Notes</span></div>
+    </section>
 
-    <h2 id="loft">Loft and garage</h2>
-    <ul class="checklist">
+    <section class="card room" aria-labelledby="loft">
+      <h2 id="loft">Loft and garage</h2>
+      <ul class="checklist">
       <li>Loft insulation is laid evenly with no gaps, and doesn't block the eaves vents</li>
       <li>There is no daylight through the roof and no sign of leaks or damp</li>
       <li>The garage door opens and locks smoothly, and any remote control works</li>
       <li>The garage floor is free of large cracks, and power and lights work if specified</li>
-    </ul>
+      </ul>
+      <div class="notes" aria-hidden="true"><span>Notes</span></div>
+    </section>
 
+    <section class="after" aria-labelledby="after">
     <h2 id="after">After the inspection</h2>
     <ol>
       <li><strong>Write it up straight away.</strong> Number every snag and include the photos, so the builder's site team can find each one.</li>
@@ -335,6 +602,7 @@
       <li><strong>Back snag.</strong> Check each item off on the original list, and send a new list of anything still outstanding.</li>
       <li><strong>Keep everything</strong> until the end of the builder's warranty period.</li>
     </ol>
+    </section>
 
     <aside class="app-note">
       <img class="icon" src="app-icon.png" alt="">
@@ -351,6 +619,10 @@
     <p class="footer">
       This checklist is general guidance, not a substitute for a professional survey or your warranty provider's terms.<br>
       <a href="./">Snaglite home</a> · <a href="manual.html">User Manual</a> · <a href="support.html">Support</a>
+    </p>
+
+    <p class="print-footer" aria-hidden="true">
+      General guidance, not a substitute for a professional survey. Record snags with photos and make a PDF snag list on site with Snaglite: <strong>snaglite.github.io</strong>
     </p>
   </main>
 </body>
