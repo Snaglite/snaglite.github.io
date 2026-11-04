@@ -227,6 +227,54 @@
       margin-bottom: 8px;
     }
 
+    /* Hero: the app preview video inside an iPhone frame. Positions are the frame's screen area. */
+    .hero-device {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      aspect-ratio: 560 / 1154;
+      filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.18));
+    }
+
+    .hero-video {
+      position: absolute;
+      left: 4.107%;
+      top: 1.733%;
+      width: 91.786%;
+      height: 96.62%;
+      object-fit: cover;
+      background: #f2f2f7;
+      border-radius: 12%/5.5%;
+    }
+
+    .hero-frame {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    /* Feature rows with a landscape iPad image get a wider image column. */
+    .feature.landscape {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    }
+
+    .feature.flip.landscape {
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    }
+
+    .feature.landscape .shot,
+    .wide-feature .shot.ipad {
+      margin: 0;
+    }
+
+    .feature.landscape .shot img,
+    .feature.landscape .shot a {
+      max-width: 100%;
+    }
+
     /* Screenshot gallery: a dark band that scrolls sideways, in the style of the App Store images. */
     .gallery {
       margin: 48px 0 8px;
@@ -352,7 +400,9 @@
     @media (max-width: 800px) {
       .landing-hero,
       .feature,
-      .feature.flip {
+      .feature.flip,
+      .feature.landscape,
+      .feature.flip.landscape {
         grid-template-columns: 1fr;
         gap: 24px;
       }
@@ -410,8 +460,10 @@
         <p class="platforms">For iPhone, iPad and iPhone Duo. Your inspections sync through iCloud.</p>
       </div>
 
-      <figure class="shot">
-        <img src="images/home/sites.png" alt="Snaglite Sites screen with the Inspection Hub, a map of sites and the site list">
+      <figure class="hero-device">
+        <!-- The app preview plays behind an iPhone frame whose screen is transparent. -->
+        <video class="hero-video" src="images/home/hero.mp4" poster="images/home/hero-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Snaglite in use: the Sites screen, logging a snag with photos, marking up a photo, pinning snags on a drawing and exporting a PDF report"></video>
+        <img class="hero-frame" src="images/home/iphone-frame.png" alt="" width="560" height="1154">
       </figure>
     </section>
 
@@ -435,7 +487,7 @@
       <div class="gallery-head">
         <div>
           <h2 id="gallery-title">Take a look inside</h2>
-          <p>Swipe through the app as it looks today.</p>
+          <p>From the first snag to the finished report.</p>
         </div>
         <div class="gallery-buttons">
           <button type="button" class="gallery-button" data-dir="-1" aria-label="Previous screenshots">‹</button>
@@ -490,9 +542,9 @@
       </figure>
     </section>
 
-    <section class="feature flip">
-      <figure class="shot">
-        <img src="images/drawing-with-pins.png" alt="A site drawing with numbered snag pins" loading="lazy">
+    <section class="feature flip landscape">
+      <figure class="shot ipad">
+        <img src="images/home/ipad-drawing-pins.png" alt="Snaglite on iPad showing a floor plan with numbered snag pins and Apple Pencil handwriting" loading="lazy" width="1200" height="866">
       </figure>
       <div>
         <h2>Pin snags on the drawings</h2>
@@ -501,7 +553,7 @@
       </div>
     </section>
 
-    <section class="feature">
+    <section class="feature landscape">
       <div>
         <h2>Reports that are ready to hand over</h2>
         <p>Export a PDF with your company name and logo, a cover page, a numbered snag schedule with photos, and the marked-up drawings. Choose a standard report, a back snag report for the return visit, or your own title, such as Punch List or Defects List.</p>
@@ -511,14 +563,14 @@
           <li>Export a CSV that uses the same numbering</li>
         </ul>
       </div>
-      <figure class="shot page">
-        <img src="images/report-schedule.png" alt="A page of a Snaglite PDF snag report showing numbered snags with photos" loading="lazy">
+      <figure class="shot ipad">
+        <img src="images/home/ipad-report.png" alt="A Snaglite back snag PDF report open on iPad, with numbered snags, status, assignee, photos and tick boxes" loading="lazy" width="1200" height="866">
       </figure>
     </section>
 
     <section class="feature flip">
       <figure class="shot">
-        <img src="images/notes-editor.png" alt="Writing formatted snag notes in Snaglite" loading="lazy">
+        <img src="images/home/capture-snag.png" alt="Writing up a snag in Snaglite with three photos, notes, Draft with Apple Intelligence, status and priority" loading="lazy" width="560" height="1154">
       </figure>
       <div>
         <h2>Quick to write up</h2>
@@ -531,7 +583,7 @@
       <h2>Bigger screens when you want them</h2>
       <p>Snaglite runs on iPhone, iPad and iPhone Duo. Use the sidebar on iPad, or unfold an iPhone Duo mid-inspection and carry on exactly where you were.</p>
       <figure class="shot ipad">
-        <img src="images/ipad-drawing.png" alt="Snaglite on iPad showing a drawing with snag pins beside the snag list" loading="lazy">
+        <img src="images/home/duo-book.png" alt="Snaglite on an unfolded iPhone Duo with the sites sidebar and map beside a site's units" loading="lazy" width="1200" height="860">
       </figure>
     </section>
 
@@ -576,6 +628,15 @@
     </footer>
   </main>
   <script>
+    // Respect Reduce Motion: keep the hero video paused on its poster.
+    (function () {
+      var video = document.querySelector(".hero-video");
+      if (video && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        video.removeAttribute("autoplay");
+        video.pause();
+      }
+    })();
+
     // Gallery arrows: scroll by about two screenshots, and grey out at either end.
     (function () {
       var track = document.querySelector(".gallery-track");
