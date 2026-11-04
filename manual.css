@@ -482,18 +482,51 @@ th {
     0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
-/* iPhone Duo images come from the App Store set and already have their own frame. */
-.shot.duo {
+/* iPhone Duo: folded (outer screen) beside unfolded (inner screen). */
+.duo-pair {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
   margin: 8px 0 28px;
 }
 
-.shot.duo img {
-  max-width: 760px;
-  border: 0;
-  border-radius: 16px;
+.duo-pair .shot {
+  margin: 0;
+}
+
+.duo-pair .duo-folded {
+  flex: 0 0 30%;
+}
+
+.duo-pair .duo-open {
+  flex: 0 1 62%;
+}
+
+.duo-pair .duo-folded img {
+  max-width: 100%;
+  border: 7px solid #1c1c1e;
+  border-radius: 26px;
+  background: #000;
+  box-shadow:
+    0 0 0 1.5px #48484a,
+    0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.duo-pair .duo-open img {
+  max-width: 100%;
 }
 
 @media (max-width: 800px) {
+  .duo-pair {
+    gap: 12px;
+  }
+
+  .duo-pair .duo-folded img {
+    border-width: 4px;
+    border-radius: 14px;
+  }
+
   .shot.ipad img {
     border-width: 5px;
     border-radius: 14px;
