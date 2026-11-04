@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snaglite – Snagging app for iPhone and iPad</title>
+  <meta name="description" content="Snaglite is a snagging app for iPhone, iPad and iPhone Duo. Record defects with photos and markup, pin them on drawings, and export a clear PDF snag report on site.">
+  <link rel="canonical" href="https://snaglite.github.io/">
+  <link rel="icon" href="app-icon.png">
+  <link rel="apple-touch-icon" href="app-icon.png">
+
+  <!-- Safari on iPhone and iPad shows an Open / Get banner for the app. -->
+  <meta name="apple-itunes-app" content="app-id=6761205223">
+
+  <!-- Link previews in Messages, WhatsApp, LinkedIn and others. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Snaglite">
+  <meta property="og:title" content="Snaglite – Snagging app for iPhone and iPad">
+  <meta property="og:description" content="Record snags with photos, pin them on drawings and export a clear PDF report, all on site.">
+  <meta property="og:url" content="https://snaglite.github.io/">
+  <meta property="og:image" content="https://snaglite.github.io/app-icon.png">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Snaglite",
+    "operatingSystem": "iOS, iPadOS",
+    "applicationCategory": "BusinessApplication",
+    "description": "A snagging app for recording construction defects with photos, markup and drawings, and exporting PDF snag reports.",
+    "url": "https://snaglite.github.io/",
+    "downloadUrl": "https://apps.apple.com/app/snaglite/id6761205223",
+    "image": "https://snaglite.github.io/app-icon.png"
+  }
+  </script>
+
+  <link rel="stylesheet" href="manual.css">
+  <style>
+    /* Landing page additions on top of the shared manual styles. */
+    .site-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .site-nav .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .site-nav .brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+    }
+
+    .site-nav nav {
+      display: flex;
+      gap: 20px;
+      font-size: 0.95rem;
+    }
+
+    .site-nav nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .site-nav nav a:hover {
+      color: var(--link);
+    }
+
+    .landing-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 48px;
+      align-items: center;
+      margin-bottom: 56px;
+    }
+
+    .landing-hero h1 {
+      font-size: 2.8rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+
+    .landing-hero .intro {
+      font-size: 1.2rem;
+    }
+
+    .landing-hero .shot a,
+    .landing-hero .shot img {
+      max-width: 300px;
+    }
+
+    .platforms {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: -12px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin: 20px 0 8px;
+      padding: 0;
+      list-style: none;
+      counter-reset: step;
+    }
+
+    .steps li {
+      margin: 0;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      counter-increment: step;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      background: var(--link);
+      color: var(--bg);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .steps strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .steps span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      gap: 40px;
+      align-items: center;
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .feature.flip {
+      grid-template-columns: 240px minmax(0, 1fr);
+    }
+
+    .feature.flip .shot {
+      order: -1;
+    }
+
+    .feature h2 {
+      margin-top: 0;
+    }
+
+    .feature .shot a,
+    .feature .shot img {
+      max-width: 240px;
+    }
+
+    .feature ul {
+      color: var(--muted);
+    }
+
+    .wide-feature {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .wide-feature h2 {
+      margin-top: 0;
+    }
+
+    .points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .points div {
+      padding: 18px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .points strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .points span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 48px 20px;
+      margin-top: 40px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+    }
+
+    .cta .store-link {
+      margin: 20px 0 0;
+    }
+
+    .cta .store-link a img {
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 800px) {
+      .landing-hero,
+      .feature,
+      .feature.flip {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .feature.flip .shot {
+        order: 0;
+      }
+
+      .landing-hero h1 {
+        font-size: 2.1rem;
+      }
+
+      .steps,
+      .points {
+        grid-template-columns: 1fr;
+      }
+
+      .site-nav nav {
+        gap: 14px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .site-nav nav a.optional {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container wide">
+    <header class="site-nav">
+      <a class="brand" href="./">
+        <img src="app-icon.png" alt="">
+        Snaglite
+      </a>
+      <nav aria-label="Site">
+        <a class="optional" href="#features">Features</a>
+        <a href="manual.html">Manual</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <section class="landing-hero">
+      <div>
+        <h1>Snag on site. Hand over a clear report.</h1>
+        <p class="intro">
+          Snaglite is a snagging app for site inspections. Record each defect with photos, markup and notes. Pin it on the drawing, then export a PDF report that is ready to send or print before you leave the property.
+        </p>
+        <div class="store-link">
+          <a href="https://apps.apple.com/app/snaglite/id6761205223" aria-label="Download Snaglite on the App Store">
+            <img src="black.svg" alt="Download on the App Store">
+          </a>
+        </div>
+        <p class="platforms">For iPhone, iPad and iPhone Duo. Your inspections sync through iCloud.</p>
+      </div>
+
+      <figure class="shot">
+        <img src="images/sites-hub.png" alt="Snaglite Sites screen with the Inspection Hub and a map of sites">
+      </figure>
+    </section>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <strong>Set up the site</strong>
+        <span>Add a site, its units (plots, flats or houses) and the rooms or areas inside them.</span>
+      </li>
+      <li>
+        <strong>Walk round and snag</strong>
+        <span>Add a photo, mark it up, add a note and set the priority and assignee. One issue per snag.</span>
+      </li>
+      <li>
+        <strong>Export the report</strong>
+        <span>Make a numbered PDF with photos and drawings, or a CSV spreadsheet, and share or print it.</span>
+      </li>
+    </ol>
+
+    <div id="features"></div>
+
+    <section class="feature" style="margin-top: 40px;">
+      <div>
+        <h2>Photos that show exactly what’s wrong</h2>
+        <p>Take up to three photos per snag and mark them up with arrows, shapes, numbered markers and text. Draw roughly, hold still, and Snaglite neatens the stroke into a clean shape.</p>
+        <ul>
+          <li>Pixelate faces, number plates or anything private</li>
+          <li>Your markup is stored separately, so the original photo is never changed</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <img src="images/photo-markup-downpipe.png" alt="Snaglite's photo editor with a red circle marking a hole in the brickwork beside a downpipe bracket" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="feature flip">
+      <figure class="shot">
+        <img src="images/drawing-with-pins.png" alt="A site drawing with numbered snag pins" loading="lazy">
+      </figure>
+      <div>
+        <h2>Pin snags on the drawings</h2>
+        <p>Import a plan as a PDF or image and drop a pin where each snag is. Share one site drawing across every unit that uses it, or keep a drawing private to one unit. Mark up drawings with Apple Pencil on iPad.</p>
+        <p class="small">Pins carry the snag number, so the tradesperson can find the right spot from the printed report.</p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div>
+        <h2>Reports that are ready to hand over</h2>
+        <p>Export a PDF with your company name and logo, a cover page, a numbered snag schedule with photos, and the marked-up drawings. Choose a standard report, a back snag report for the return visit, or your own title.</p>
+        <ul>
+          <li>Filter by status, or send each contractor only their own snags</li>
+          <li>Group the report by location or assignee</li>
+          <li>Export a CSV that uses the same numbering</li>
+        </ul>
+      </div>
+      <figure class="shot page">
+        <img src="images/report-schedule.png" alt="A page of a Snaglite PDF snag report showing numbered snags with photos" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="feature flip">
+      <figure class="shot">
+        <img src="images/notes-editor.png" alt="Writing formatted snag notes in Snaglite" loading="lazy">
+      </figure>
+      <div>
+        <h2>Quick to write up</h2>
+        <p>Dictate with the keyboard microphone and format notes with lists and headings. On supported devices, Draft with Apple Intelligence turns rough notes into a title and a tidy description. It runs entirely on your device.</p>
+        <p class="small">Swipe actions, bulk select and search keep long snag lists manageable.</p>
+      </div>
+    </section>
+
+    <section class="wide-feature">
+      <h2>Bigger screens when you want them</h2>
+      <p>Snaglite runs on iPhone, iPad and iPhone Duo. Use the sidebar on iPad, or unfold an iPhone Duo mid-inspection and carry on exactly where you were.</p>
+      <figure class="shot ipad">
+        <img src="images/ipad-drawing.png" alt="Snaglite on iPad showing a drawing with snag pins beside the snag list" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="wide-feature">
+      <h2>Your data stays yours</h2>
+      <div class="points">
+        <div>
+          <strong>No account to create</strong>
+          <span>Inspections are stored on your device and sync through your own iCloud account.</span>
+        </div>
+        <div>
+          <strong>No ads or tracking</strong>
+          <span>Your content is never sold or used for advertising. See the <a href="privacy.html">privacy policy</a>.</span>
+        </div>
+        <div>
+          <strong>Backups you control</strong>
+          <span>Save a backup file whenever you like, and recover single sites or units from it as new copies.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Try Snaglite on your next inspection</h2>
+      <p class="small">Snaglite is a subscription app. New subscribers can start with a free trial where one is offered.</p>
+      <div class="store-link">
+        <a href="https://apps.apple.com/app/snaglite/id6761205223" aria-label="Download Snaglite on the App Store">
+          <img src="black.svg" alt="Download on the App Store">
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="manual.html">User Manual</a>
+        <a href="manual-faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+      <p>© 2026 Snaglite. Apple, the Apple logo, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+    </footer>
+  </main>
+</body>
+</html>
