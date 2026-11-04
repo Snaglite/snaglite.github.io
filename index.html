@@ -40,26 +40,12 @@
     /* Landing page additions on top of the shared manual styles. */
     .site-nav {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 40px;
+      justify-content: flex-end;
+      margin-bottom: 24px;
     }
 
-    .site-nav .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: var(--text);
-      text-decoration: none;
-    }
-
-    .site-nav .brand img {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
+    .landing-hero .brand-card {
+      margin-bottom: 28px;
     }
 
     .site-nav nav {
@@ -275,10 +261,6 @@
 <body>
   <main class="container wide">
     <header class="site-nav">
-      <a class="brand" href="./">
-        <img src="app-icon.png" alt="">
-        Snaglite
-      </a>
       <nav aria-label="Site">
         <a class="optional" href="#features">Features</a>
         <a href="manual.html">Manual</a>
@@ -288,6 +270,9 @@
 
     <section class="landing-hero">
       <div>
+        <div class="brand-card" aria-label="Snaglite app icon">
+          <img src="app-icon.png" alt="Snaglite app icon">
+        </div>
         <h1>Snag on site. Hand over a clear report.</h1>
         <p class="intro">
           Snaglite is a snagging app for site inspections. Record each defect with photos, markup and notes. Pin it on the drawing, then export a PDF report that is ready to send or print before you leave the property.
