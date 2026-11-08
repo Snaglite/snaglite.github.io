@@ -1,0 +1,471 @@
+/* Shared styles for KeyCheck web pages. Colours come from the KeyCheck app icon. */
+:root {
+  color-scheme: light dark;
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --text: #1c1f24;
+  --muted: #5f6672;
+  --border: #e2e5ea;
+  --link: #c8621c;
+  --accent: #f17a25;
+  --accent-light: #fda05a;
+  --accent-soft: #fff3e8;
+  --accent-edge: #f8c9a0;
+  --info-soft: #eef2f7;
+  --warn-soft: #fff8e1;
+  --warn-edge: #f2d27a;
+  --hero-top: #1e232c;
+  --hero-bottom: #0e121a;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 4px 16px rgba(16, 24, 40, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0e13;
+    --card: #151a21;
+    --text: #e8ebf0;
+    --muted: #9aa3b0;
+    --border: #262d37;
+    --link: #fda05a;
+    --accent-soft: #2a1d12;
+    --accent-edge: #5c3518;
+    --info-soft: #1a212b;
+    --warn-soft: #2a2412;
+    --warn-edge: #5a4a1c;
+    --shadow: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 16px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+code {
+  font: 0.9em ui-monospace, "SF Mono", Menlo, monospace;
+  background: var(--info-soft);
+  border-radius: 6px;
+  padding: 0.1em 0.4em;
+}
+
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+
+.hero {
+  background:
+    radial-gradient(ellipse 60% 80% at 85% 0%, rgba(241, 122, 37, 0.28), transparent 70%),
+    linear-gradient(180deg, var(--hero-top), var(--hero-bottom));
+  color: #f5f6f8;
+  padding: 56px 0 80px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-icon {
+  flex: none;
+  width: 112px;
+  height: 112px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 3px 11px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent-light), var(--accent));
+  color: #241104;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 560px;
+  color: #b9c0cb;
+  font-size: 1.1rem;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 16px;
+  color: #8f98a5;
+  font-size: 0.92rem;
+}
+
+/* Cards and sections */
+
+main {
+  margin-top: -40px;
+  padding-bottom: 40px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 28px 32px;
+  margin-bottom: 20px;
+}
+
+.card > :first-child {
+  margin-top: 0;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 6px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.section-number {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: linear-gradient(180deg, var(--accent-light), var(--accent));
+  color: #241104;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.section-lede {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+h3 {
+  margin: 28px 0 8px;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+ul {
+  margin: 0 0 14px;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+li::marker {
+  color: var(--accent);
+}
+
+/* Numbered steps */
+
+ol.steps {
+  list-style: none;
+  counter-reset: step;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+ol.steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 12px;
+  min-height: 28px;
+}
+
+ol.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-edge);
+  color: var(--link);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Quick start */
+
+.quick-start {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.quick-step {
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.quick-step strong {
+  display: block;
+  margin: 10px 0 4px;
+  font-size: 1rem;
+}
+
+.quick-step .quick-desc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+.quick-step .section-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  font-size: 0.95rem;
+}
+
+/* Contents */
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.contents a {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  font-weight: 650;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.contents a span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
+.contents a b {
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+.contents a:hover,
+.contents a:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Notes */
+
+.note {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: var(--info-soft);
+}
+
+.note.warning {
+  background: var(--warn-soft);
+  border: 1px solid var(--warn-edge);
+}
+
+.note.ask {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-edge);
+}
+
+.note-label {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.note.ask .note-label {
+  color: var(--link);
+}
+
+.note > :last-child {
+  margin-bottom: 0;
+}
+
+/* Tables */
+
+.table-wrap {
+  margin: 8px 0 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.97rem;
+}
+
+th,
+td {
+  padding: 11px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+th {
+  background: var(--info-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+td:first-child {
+  width: 36%;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.footer {
+  padding: 8px 0 48px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+/* Small screens, such as an iPhone */
+
+@media (max-width: 720px) {
+  .quick-start,
+  .contents {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 36px 0 52px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .hero-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+  }
+
+  .hero h1 {
+    font-size: 1.95rem;
+  }
+
+  .card {
+    padding: 22px 20px;
+    border-radius: 16px;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+  }
+
+  th,
+  td {
+    padding: 10px 12px;
+  }
+
+  td:first-child {
+    width: 42%;
+  }
+}

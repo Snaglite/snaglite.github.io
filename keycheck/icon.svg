@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E232C"/>
+      <stop offset="1" stop-color="#0E121A"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="-200" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDA05A"/>
+      <stop offset="1" stop-color="#F17A25"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gap" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <path d="M 281.33 500.17 L 417.75 636.60 L 749.67 304.67 A 74 74 0 0 1 854.33 409.33 L 470.08 793.58 A 74 74 0 0 1 365.42 793.58 L 176.67 604.83 A 74 74 0 0 1 281.33 500.17 Z" fill="#000"/>
+    </mask>
+    <clipPath id="tile">
+      <rect width="1024" height="1024" rx="230"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <g mask="url(#gap)">
+      <path fill="url(#orange)" fill-rule="evenodd" transform="translate(455 385) rotate(45)" d="
+        M 0 -147 A 147 147 0 0 1 120.4 -84.3 L 120 -82 L 200 -82 L 200 -56
+        L 496 -56 L 530 -22 L 530 36 L 496 70 L 460 70 L 434 40 L 418 40 L 394 70
+        L 364 70 L 344 50 L 324 50 L 302 70 L 200 70 L 200 84 L 120 84 L 120.4 84.3
+        A 147 147 0 1 1 0 -147 Z
+        M -61.5 0 m -39 0 a 39 39 0 1 0 78 0 a 39 39 0 1 0 -78 0 Z"/>
+      <rect x="250" y="-17" width="233" height="12" rx="6" transform="translate(455 385) rotate(45)" fill="#C8621C"/>
+    </g>
+    <path d="M 265.24 516.26 L 417.75 668.77 L 765.76 320.76 A 51.25 51.25 0 0 1 838.24 393.24 L 453.99 777.49 A 51.25 51.25 0 0 1 381.51 777.49 L 192.76 588.74 A 51.25 51.25 0 0 1 265.24 516.26 Z" fill="#FFFFFF"/>
+    <rect width="1024" height="1024" fill="url(#shine)"/>
+  </g>
+</svg>
