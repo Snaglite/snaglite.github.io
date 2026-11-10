@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1e232c">
+  <title>3. Creating a project – KeyCheck User Manual</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="keycheck.css">
+</head>
+<body>
+  <header class="hero hero-compact" id="top">
+    <div class="wrap hero-inner">
+      <img class="hero-icon" src="icon.svg" alt="KeyCheck app icon">
+      <div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="manual.html">KeyCheck User Manual</a><span aria-hidden="true">›</span><span aria-current="page">Chapter 3</span></nav>
+        <h1>Creating a project</h1>
+        <p>Plots, spreadsheet imports and form items</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="creating-a-project">
+      <p class="section-lede">Set up a new site: create the project, add plots, import addresses and meter details from a spreadsheet, and choose what goes on the handover form.</p>
+      <p>You can set a project up on site, but it's often quicker at a desk before the first visit, with the client's plot schedule to hand.</p>
+
+      <h3>What to have to hand</h3>
+      <ul>
+        <li>The site name, and the client and contractor if you want them on the PDFs.</li>
+        <li>The plot numbers, for example "1 to 40, except 13".</li>
+        <li>Optional: the client's plot schedule as a spreadsheet, with postal addresses, tenures or meter numbers. KeyCheck can read these in, so you don't have to type them.</li>
+      </ul>
+
+      <h3>Creating the project</h3>
+      <ol class="steps">
+        <li>On the <strong>Projects</strong> screen, tap <strong>New project</strong>.</li>
+        <li>Fill in the sections described below. Only <strong>Project name</strong> is needed. Everything else can be added or changed later.</li>
+        <li>Tap <strong>Create</strong>. The project opens, ready to use.</li>
+      </ol>
+
+      <h4>Project</h4>
+      <p><strong>Project name</strong>, <strong>Client</strong>, <strong>Contractor</strong>, <strong>Site address</strong> and <strong>Postcode</strong>. These appear on your PDFs. The postcode is also given to each new plot, and the site address and postcode put the project on the project map (chapter 9).</p>
+
+      <h4>Form</h4>
+      <ul>
+        <li><strong>Start from</strong>: the starting list of form items.
+          <ul>
+            <li><strong>Residential plot</strong>: houses and flats, with tenure, the usual house keys, and the documents a new home needs.</li>
+            <li><strong>Commercial building</strong>: offices, units and other commercial buildings. There are no keys to start with, because every building is different: you add them on each building's form.</li>
+            <li>Any <strong>reusable templates</strong> you've saved also appear here (see the end of this chapter).</li>
+          </ul>
+        </li>
+        <li><strong>Each handover is a</strong>: <strong>Plot</strong>, <strong>Flat</strong>, <strong>Unit</strong>, <strong>Building</strong> or <strong>Block</strong>. This is the word KeyCheck uses throughout the project and on the PDFs. This manual says "plot" throughout.</li>
+        <li><strong>Branding</strong>: the branding profile for this project's PDFs (chapter 2).</li>
+      </ul>
+      <figure class="shot">
+        <a href="images/new-project.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/new-project.png" alt="The New project screen, with the Project, Form and Meters sections" loading="lazy">
+        </a>
+        <figcaption>The New project screen</figcaption>
+      </figure>
+
+      <h4>Meters</h4>
+      <ul>
+        <li><strong>Gas supply</strong>: switch on if the site has gas. This also shows the gas, boiler and CO detector documents. With no gas, KeyCheck uses a heat detector document instead.</li>
+        <li>The other meters (electricity, water and solar PV) can be switched on or off. Switching off <strong>Solar PV</strong> also hides the solar documents.</li>
+      </ul>
+
+      <h4>Documents</h4>
+      <p><strong>Add or manage documents</strong> shows how many documents are on each plot's form (<strong>unit</strong> documents) and how many are recorded once for the whole site (<strong>project</strong> documents, such as the fire strategy). You can leave these as they are and adjust them later. Chapter 6 covers documents in detail.</p>
+
+      <h4>Plots to add (optional)</h4>
+      <p>This section appears when each handover is a <strong>Plot</strong>.</p>
+      <ul>
+        <li><strong>Plot numbers</strong>: type the plots, for example <code>2-16, 18, 22</code>. The line underneath shows how many plots will be added, so you can check before tapping <strong>Create</strong>. The next section explains what you can type.</li>
+        <li><strong>Street</strong> and <strong>Town</strong>: given to every plot you add here. Leave them blank if the plots are on different streets.</li>
+      </ul>
+      <p>You can also leave this blank and add plots after creating the project.</p>
+      <figure class="shot">
+        <a href="images/new-project-plots.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/new-project-plots.png" alt="Plot numbers set to 1-16 + 2 studios, with the line underneath saying 18 plots will be added" loading="lazy">
+        </a>
+        <figcaption>Typing plot numbers. The line underneath shows how many will be added.</figcaption>
+      </figure>
+
+      <h3>Typing plot numbers</h3>
+      <p>Type plot numbers and ranges separated by commas. KeyCheck understands these:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>You type</th><th>KeyCheck adds</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>1-20</code> or <code>1 to 20</code></td><td>Plots 1 to 20</td></tr>
+            <tr><td><code>2-16, 18, 22</code></td><td>Plots 2 to 16, then 18 and 22</td></tr>
+            <tr><td><code>1-16 + 2 studios</code></td><td>Plots 1 to 16, then Studio 1 and Studio 2</td></tr>
+            <tr><td><code>12A</code></td><td>Plot 12A</td></tr>
+            <tr><td><code>A-F</code></td><td>Plots A to F</td></tr>
+            <tr><td><code>Unit A-F</code></td><td>Unit A to Unit F</td></tr>
+            <tr><td><code>A1-A6</code></td><td>A1 to A6</td></tr>
+            <tr><td><code>Block 01-06</code></td><td>Block 01 to Block 06, keeping the zeros</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li><strong>And</strong> and <strong>plus</strong> work the same as <strong>+</strong>, so <code>1-16 and 2 studios</code> also works.</li>
+        <li>A range can hold up to 500 plots.</li>
+        <li>Plots already in the project are skipped, so you can't add the same plot twice.</li>
+        <li>If KeyCheck can't make sense of what you've typed, the line underneath turns orange and says no plot numbers were recognised.</li>
+      </ul>
+      <p>Postal numbers (house numbers) rarely follow plot numbers, so KeyCheck doesn't try to guess them. Type them on each plot, or import them from a spreadsheet (see below).</p>
+
+      <h3>Adding more plots later</h3>
+      <ol class="steps">
+        <li>Open the project and tap <strong>Add plots</strong> (the <strong>+</strong> button, top right).</li>
+        <li>Choose <strong>Range of numbers</strong>, or <strong>One by name</strong> for a single building or unit with a name, such as "Main building".</li>
+        <li>Type the numbers or name.</li>
+        <li>Optionally, fill in <strong>Street</strong>, <strong>Town</strong>, <strong>Tenure</strong>, <strong>Property type</strong>, <strong>Block</strong> and <strong>House type</strong>. These are given to every plot you're adding, which saves time when a run of plots are all the same, for example "plots 20 to 28, Shared Ownership flats, Block B".</li>
+        <li>Tap <strong>Add</strong>.</li>
+      </ol>
+      <p>On projects where each handover is a unit, building or block, <strong>One by name</strong> is chosen to start with.</p>
+      <figure class="shot">
+        <a href="images/add-plots.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/add-plots.png" alt="The Add plots screen with plots 40-48, tenure Rent and property type Flat, saying 9 new plots will be added" loading="lazy">
+        </a>
+        <figcaption>Adding a run of plots with the same tenure and property type</figcaption>
+      </figure>
+
+      <h3>Importing addresses and meter details from a spreadsheet</h3>
+      <p>If the client or developer has a plot schedule in Excel or Numbers, KeyCheck can read postal addresses, tenures, property details, handover dates and meter numbers from it. It can also create any plots that aren't in the project yet.</p>
+      <p>KeyCheck reads <strong>CSV</strong> files. CSV ("comma-separated values") is a plain spreadsheet format that every spreadsheet app can save.</p>
+
+      <h4>Saving the spreadsheet as CSV</h4>
+      <ul>
+        <li><strong>Excel</strong>: <strong>File → Save As</strong>, and choose <strong>CSV UTF-8</strong>.</li>
+        <li><strong>Numbers</strong>: <strong>File → Export To → CSV</strong>.</li>
+      </ul>
+      <p>Save it somewhere your iPhone or iPad can reach, such as iCloud Drive or OneDrive. Files in OneDrive, SharePoint or Teams appear in the file picker once the OneDrive app is installed. You can also send a CSV straight to KeyCheck from Mail, Outlook or Teams (chapter 13).</p>
+
+      <h4>Importing it</h4>
+      <ol class="steps">
+        <li>Open the project and tap <strong>Project setup</strong> (the sliders button, top right).</li>
+        <li>Under <strong>Import</strong>, tap <strong>Addresses and meter details…</strong>.</li>
+        <li>Tap <strong>Choose CSV file…</strong> and pick the file.</li>
+        <li>Check the screen that opens:
+          <ul>
+            <li><strong>Headings are on row</strong>: the row with the column headings. KeyCheck finds this itself, but some schedules have a title or notes above the headings, so check it's right.</li>
+            <li><strong>Columns</strong>: which column in the sheet holds each detail. KeyCheck works this out from the headings, such as "Postcode" or "MPAN". Anything it couldn't match says <strong>Not used</strong>. Tap a row to choose a different column. The plot number column is the only one that's needed.</li>
+            <li><strong>Import options</strong>: see below.</li>
+            <li><strong>Preview</strong>: the first few plots as KeyCheck will import them, then a count of how many plots will be updated, created and skipped.</li>
+          </ul>
+        </li>
+        <li>Tap <strong>Import</strong> (the button shows how many plots will be imported).</li>
+        <li>A summary shows what was updated, created and filled in. Tap <strong>OK</strong>.</li>
+      </ol>
+      <figure class="shot">
+        <a href="images/csv-import-columns.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/csv-import-columns.png" alt="The Import CSV screen, showing the file, the headings row and the columns KeyCheck has matched" loading="lazy">
+        </a>
+        <figcaption>KeyCheck matches the sheet's columns from their headings</figcaption>
+      </figure>
+
+      <h4>Import options</h4>
+      <ul>
+        <li><strong>Add missing plots</strong> (on to start with): creates plots that are in the sheet but not in the project.</li>
+        <li><strong>Replace existing values</strong> (off to start with): when off, KeyCheck only fills in empty boxes and never changes anything you've already recorded. Turn it on only if the sheet is more up to date than KeyCheck.</li>
+      </ul>
+      <figure class="shot">
+        <a href="images/csv-import-preview.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/csv-import-preview.png" alt="Import options with Add missing plots on and Replace existing values off, and a preview of plots with addresses and handover dates" loading="lazy">
+        </a>
+        <figcaption>Import options and the preview</figcaption>
+      </figure>
+
+      <h4>What KeyCheck can read</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Column</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Plot no.</td><td>Needed. "Plot 218", "P218" and "218" all match plot 218, and "12a" matches plot 12A.</td></tr>
+            <tr><td>Postal no.</td><td>The house number or name.</td></tr>
+            <tr><td>Street, Town, Postcode</td><td></td></tr>
+            <tr><td>Full address</td><td>Use this instead if the address is all in one column.</td></tr>
+            <tr><td>Tenure</td><td>For example Rent or Shared Ownership.</td></tr>
+            <tr><td>Property type</td><td>House, Bungalow, Flat, Maisonette or Commercial.</td></tr>
+            <tr><td>House type</td><td>For example "Type F1".</td></tr>
+            <tr><td>Bedrooms/people</td><td>For example 3B4P.</td></tr>
+            <tr><td>Block, Floor</td><td>For flats. Floor can be "Ground", "1st" and so on.</td></tr>
+            <tr><td>Handover date</td><td>Use day/month/year, for example 28/05/2027. Dates KeyCheck can't read are left out, and the preview warns you.</td></tr>
+            <tr><td>MPAN, Electricity meter serial</td><td></td></tr>
+            <tr><td>MPRN (gas), Gas meter serial</td><td></td></tr>
+            <tr><td>Water meter serial, Solar PV meter serial</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Good to know:</p>
+      <ul>
+        <li><strong>Rows that aren't plots are skipped.</strong> Schedules often include landlord supplies, such as "Opp Plot 20". Only rows with a plot number like 218 or 12A create new plots.</li>
+        <li><strong>Meters switch on when needed.</strong> If the sheet has gas details but the project has no gas meter, KeyCheck switches gas on for the project and says so in the summary.</li>
+        <li><strong>Importing again is safe.</strong> With <strong>Replace existing values</strong> off, a second import only fills gaps, so you can import an updated schedule later.</li>
+      </ul>
+
+      <h4>The blank CSV template</h4>
+      <p>If there's no schedule to start from, tap <strong>Get a blank KeyCheck CSV template</strong> on the first import screen. It makes a spreadsheet with the right headings and a row for each plot already in the project. Fill it in on a computer, save it as CSV, and import it. The second row is an example showing how to fill each column. KeyCheck ignores it when importing.</p>
+
+      <h3>Form items</h3>
+      <p><strong>Form items</strong> is the list of what's recorded for every plot: meters, keys, documents and sign-off roles. Each project has its own copy, so changes only affect this project.</p>
+      <ol class="steps">
+        <li>Open the project and tap <strong>Project setup → Form items</strong>.</li>
+        <li>Make your changes (see below).</li>
+        <li>Tap <strong>Done</strong> to save, or <strong>Cancel</strong> to leave the form as it was.</li>
+      </ol>
+      <p>Switch items off rather than deleting them if you might need them again. A switched-off item is hidden from the form but stays in the list.</p>
+
+      <h4>General</h4>
+      <ul>
+        <li><strong>Template name</strong>: the name of this list, used if you save it as a reusable template.</li>
+        <li><strong>Unit called</strong>: the word used for each handover, such as Plot or Flat.</li>
+        <li><strong>Tenure field</strong>: shows <strong>Tenure</strong> on each plot. <strong>Field label</strong> lets you call it something else.</li>
+        <li><strong>Property details</strong>: shows property type, house type, size, block and floor on each plot.</li>
+        <li><strong>Outstanding items</strong>: shows the <strong>Defects / outstanding items</strong> section for final snags.</li>
+      </ul>
+      <figure class="shot">
+        <a href="images/form-items.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/form-items.png" alt="The Form items screen, showing the General settings and the meters with their switches" loading="lazy">
+        </a>
+        <figcaption>Form items: General and Meters</figcaption>
+      </figure>
+
+      <h4>Meters</h4>
+      <p>Switch on the meters the site has. Tap a meter's name (or the <strong>ⓘ</strong> button) to change it:</p>
+      <ul>
+        <li><strong>Name</strong>, <strong>Type</strong> and <strong>Symbol</strong> (the small picture beside it).</li>
+        <li><strong>Fields</strong>: the boxes recorded for the meter, such as reading, serial number and supplier. Switch fields on or off, rename them, or tap <strong>Add field</strong>.</li>
+        <li><strong>Same on every plot</strong>: for fields such as the supplier, which are usually the same across the site. <strong>Copy from</strong> (chapter 4) copies these from one plot to another.</li>
+      </ul>
+      <p>Tap <strong>Save</strong> when you've finished. To add another meter, such as a second electricity meter or a heat meter, tap <strong>Add meter</strong>. Choose <strong>Custom meter…</strong> for anything not listed.</p>
+
+      <h4>Keys</h4>
+      <ul>
+        <li><strong>Door refs &amp; key suites</strong>: shows door references on keys (for example ED0.04), and lets a building have a master key suite. Mostly useful for commercial buildings and blocks of flats. Chapter 4 explains key suites.</li>
+        <li>Switch keys on or off. Tap a key to change its <strong>Name</strong>, <strong>Group</strong>, <strong>Door reference</strong>, <strong>Usual quantity</strong> and <strong>Type</strong>. The usual quantity is what <strong>Fill with usual quantities</strong> puts in on each plot (chapter 4).</li>
+        <li><strong>Add key</strong> adds a key to a group. <strong>Add key group</strong> starts a new group.</li>
+      </ul>
+
+      <h4>Unit documents</h4>
+      <p>The documents recorded on every plot, in groups such as <strong>Heating &amp; hot water</strong> or <strong>Electrical &amp; safety</strong>. Each group's heading shows how many of its documents are switched on.</p>
+      <ul>
+        <li>Switch documents on or off. Tap a document's name to rename it.</li>
+        <li>Swipe left on a document to <strong>Move</strong> it to another group or <strong>Delete</strong> it.</li>
+        <li><strong>Add document</strong> adds one to a group. <strong>Add unit documents from library</strong> lists the documents KeyCheck knows about, so you can pick several at once. <strong>Add document group</strong> starts a new group.</li>
+      </ul>
+      <p>Project-wide documents, such as the fire strategy, are set up separately. Chapter 6 covers them.</p>
+      <figure class="shot">
+        <a href="images/form-items-documents.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/form-items-documents.png" alt="The Heating and hot water document group, with 5 of 9 documents switched on" loading="lazy">
+        </a>
+        <figcaption>A document group, showing which documents are switched on</figcaption>
+      </figure>
+
+      <h4>Sign-off</h4>
+      <p>The people who sign each handover, for example <strong>Client representative</strong> and <strong>Contractor</strong>. Tap a role to rename it, tap <strong>Add signatory</strong> for another, or swipe left to delete one.</p>
+
+      <h4>Reordering</h4>
+      <p>To change the order of meters or documents, open the <strong>More</strong> button (<strong>•••</strong>, top right), tap <strong>Edit</strong>, and drag the handles. Tap <strong>Done</strong> when you've finished.</p>
+
+      <h3>Tenure exceptions</h3>
+      <p>On mixed-tenure sites, some documents aren't needed for every tenure. For example, a housing association may not want a particular group of documents for its Rent plots. <strong>Tenure exceptions</strong> hide a whole document group for the tenures that don't need it, so it doesn't appear on those plots at all.</p>
+      <ol class="steps">
+        <li>Tap <strong>Project setup → Form items</strong>.</li>
+        <li>Open the <strong>More</strong> button (<strong>•••</strong>, top right) and tap <strong>Tenure exceptions</strong>. (This only appears when <strong>Tenure field</strong> is on.)</li>
+        <li>Tap <strong>Add tenure exception</strong> and choose a document group.</li>
+        <li>Under <strong>Required for</strong>, switch off the tenures that don't need it. The standard tenures are <strong>Rent</strong>, <strong>Shared Ownership</strong> and <strong>Market Rent</strong>.</li>
+        <li>Go back, then tap <strong>Done</strong> on Form items to save.</li>
+      </ol>
+      <figure class="shot">
+        <a href="images/tenure-exceptions.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/tenure-exceptions.png" alt="The Renewables and EV tenure exception, required for Rent and Market Rent but switched off for Shared Ownership" loading="lazy">
+        </a>
+        <figcaption>A tenure exception: Renewables &amp; EV documents aren't needed for Shared Ownership plots</figcaption>
+      </figure>
+      <p>Good to know:</p>
+      <ul>
+        <li><strong>Plots need a tenure for this to work.</strong> Set it on each plot's <strong>Details</strong>, when adding plots, or by importing it from a spreadsheet. Plots with no tenure, or a tenure you've typed yourself (an "Other" tenure), always show every group.</li>
+        <li><strong>To undo an exception</strong>, swipe left on it under <strong>Current exceptions</strong> and delete it. The group is then needed for every tenure again.</li>
+        <li>For a single document that doesn't apply to one plot, mark it <strong>Not applicable</strong> on that plot instead (chapter 6).</li>
+      </ul>
+
+      <h3>Reusable templates</h3>
+      <p>If you set up lots of similar sites, save your form items once and start new projects from them.</p>
+      <ul>
+        <li><strong>Save one</strong>: open a project you've set up, tap <strong>Share and export → Save as reusable template</strong>. It then appears under <strong>Start from</strong> on the <strong>New project</strong> screen.</li>
+        <li><strong>Manage them</strong> in <strong>Settings → Reusable templates</strong>. Tap one to edit it, or swipe left to <strong>Rename</strong>, <strong>Share</strong> or <strong>Delete</strong> it.</li>
+        <li><strong>Start from a built-in one</strong>: tap <strong>Copy "Residential plot" starter to edit</strong> (or the commercial one) in Settings to make your own version.</li>
+        <li><strong>Give one to a colleague</strong>: swipe left on it in Settings and tap <strong>Share</strong>, or use <strong>Share and export → Share form template</strong> in a project, then send it by AirDrop or email. They can open it in KeyCheck to add it to their own templates.</li>
+      </ul>
+
+      <h3>Changing project details later</h3>
+      <p>To change the name, client, contractor, address or branding, open the project and tap <strong>Project setup → Project details</strong>. Tap <strong>Done</strong> when you've finished.</p>
+
+      <div class="note">
+        <span class="note-label">From the office</span>
+        <p>Employer's agents and contract administrators often set a project up before anyone goes to site. Import the developer's plot schedule, switch off the documents the contract doesn't need, and add tenure exceptions. Then share the project with the site team (chapter 12), so everyone works from the same list.</p>
+      </div>
+    </section>
+
+    <nav class="chapter-nav" aria-label="Chapters">
+      <a class="prev" href="manual-setting-up.html"><span>Previous</span>2. Setting up</a>
+      <a class="next" href="manual.html"><span>Back to</span>Contents</a>
+    </nav>
+  </main>
+
+  <footer class="footer wrap">
+    KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
+    <a class="back-to-top" href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
