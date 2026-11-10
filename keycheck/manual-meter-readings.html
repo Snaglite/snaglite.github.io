@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1e232c">
+  <title>5. Meter readings – KeyCheck User Manual</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="keycheck.css">
+</head>
+<body>
+  <header class="hero hero-compact" id="top">
+    <div class="wrap hero-inner">
+      <img class="hero-icon" src="icon.svg" alt="KeyCheck app icon">
+      <div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="manual.html">KeyCheck User Manual</a><span aria-hidden="true">›</span><span aria-current="page">Chapter 5</span></nav>
+        <h1>Meter readings</h1>
+        <p>Readings, meter photos, reading photos on your device, and tips</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="meter-readings">
+      <p class="section-lede">This chapter covers the <strong>Meters</strong> part of a plot's form: typing readings and serial numbers, adding meter photos, and letting KeyCheck read the numbers from a photo for you.</p>
+      <p>Meter reading from photos is new and marked <strong>Experimental</strong> in the app. It's usually right, but it can misread a number, so KeyCheck always shows you what it found and lets you check it before anything goes on the form.</p>
+
+      <h3>The meters on the form</h3>
+      <p>Each meter the site has gets its own section on the plot's form, with its own icon and colour. The meters and their boxes are chosen in <strong>Project setup → Form items</strong> (chapter 3). To start with, they are:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Meter</th><th>Boxes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Electricity</strong></td><td>On peak, Off peak, Electricity supplier, Import reading (kWh), Export reading (kWh), MPAN, serial number.</td></tr>
+            <tr><td><strong>Gas</strong></td><td>Gas supplier, Meter reading (m³), MPRN, serial number.</td></tr>
+            <tr><td><strong>Water</strong></td><td>Water supplier, serial number, Meter reading (m³).</td></tr>
+            <tr><td><strong>Solar PV</strong></td><td>Generation serial number, Generation reading (kWh).</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A few terms you'll see:</p>
+      <ul>
+        <li><strong>MPAN</strong> (electricity) and <strong>MPRN</strong> (gas) are the supply numbers that identify the property's supply. They're usually on the meter or the supplier's paperwork.</li>
+        <li><strong>Import</strong> is the electricity the home uses from the grid. <strong>Export</strong> is electricity sent back, for example from solar panels. Most meters only need the import reading.</li>
+        <li><strong>On peak</strong> and <strong>Off peak</strong> are for meters with day and night rates. Tap <strong>Yes</strong> or <strong>N/A</strong> for each.</li>
+      </ul>
+      <p>Gas only appears if the project has a gas supply, and Solar PV only if it's switched on (chapter 3).</p>
+
+      <h3>Typing a reading</h3>
+      <p>Tap a box and type. Reading boxes open a number keypad.</p>
+      <p>A meter counts as done in <strong>What's left</strong> (chapter 4) once one of its readings is filled in. Serial numbers, supply numbers and suppliers are recorded on the handover form but don't count towards the ring.</p>
+      <h4>Saving typing</h4>
+      <ul>
+        <li><strong>Suppliers</strong>: the supplier boxes are marked <strong>Same on every plot</strong>, so <strong>Copy from</strong> and <strong>Apply setup to several</strong> (chapter 4) copy them from plot to plot. Readings and serial numbers are never copied.</li>
+        <li><strong>Serial numbers and supply numbers</strong>: if the client's plot schedule lists MPANs, MPRNs or meter serial numbers, import them from a spreadsheet before you go to site (chapter 3).</li>
+      </ul>
+
+      <h3>Adding a meter photo</h3>
+      <p>A photo of the meter is the best record of the reading on the day. Under each meter's boxes:</p>
+      <ul>
+        <li>Tap <strong>Photo</strong> to take a picture with the camera.</li>
+        <li>Tap <strong>Library</strong> to choose one you've already taken, for example if you photographed all the meters first and are filling in the forms afterwards.</li>
+      </ul>
+      <p>(On an iPad without a camera, there's just <strong>Add meter photo</strong>.)</p>
+      <p>The photo is saved to that meter straight away, and shows as a small picture under the boxes. A photo from your library keeps the date and time it was taken. You can add more than one photo to a meter, for example one of the display and one of the serial number.</p>
+      <p>Meter photos appear on the plot's handover PDF, beside the readings (chapter 10).</p>
+      <figure class="shot">
+        <a href="images/plot-meters.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/plot-meters.png" alt="Plot 12's Electricity section: On peak Yes, Off peak N/A, supplier Eon, an import reading, MPAN and serial number filled in, a meter photo, and the Photo and Library buttons" loading="lazy">
+        </a>
+        <figcaption>A plot's Electricity meter, with a photo added</figcaption>
+      </figure>
+      <p>To look at a photo, tap it. The photo opens full screen, with the date and time it was taken at the top. To delete it, tap <strong>Delete</strong>.</p>
+
+      <h3>Letting KeyCheck read the photo</h3>
+      <p>As soon as you add a photo, KeyCheck reads it and opens a screen named after the meter, for example <strong>Electricity</strong>. After a moment it shows what it <strong>Found on photo</strong>: usually the reading and the serial number, and the MPAN if it's printed on the meter.</p>
+      <ol>
+        <li>Check each value against the photo at the top. Pinch or double-tap the photo to zoom in.</li>
+        <li>Each value has a label:
+          <ul>
+            <li><strong>Clear</strong>: KeyCheck read it the same way twice, so it's very likely right.</li>
+            <li><strong>Check</strong>: KeyCheck isn't sure. Compare it carefully with the photo.</li>
+          </ul>
+        </li>
+        <li>If a value is wrong, tap it and correct it.</li>
+        <li>Each value has a switch. Values for empty boxes are switched on. If a box on the form already has something in it, the value says <strong>Currently …, turn on to replace</strong> and is switched off, so nothing you've typed is replaced unless you choose to.</li>
+        <li>Tap <strong>Add to Form</strong> to fill in the values that are switched on. Or tap <strong>Close</strong> to leave the form as it was.</li>
+      </ol>
+      <p>Either way, the photo stays saved to the meter.</p>
+      <figure class="shot">
+        <a href="images/meter-scan-found.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/meter-scan-found.png" alt="The Electricity scan screen: the meter photo, then Found on photo with Import reading 00240 and Meter serial number 25J0347659, both marked Clear and switched on, and Add to Form at the top right" loading="lazy">
+        </a>
+        <figcaption>What KeyCheck found on a photo, ready to add to the form</figcaption>
+      </figure>
+      <p>If KeyCheck can't find anything, it says so. Tap <strong>Done</strong> and type the values yourself.</p>
+      <h4>Warnings</h4>
+      <p>If the photo looks like a different type of meter, KeyCheck shows an orange warning. For example: "This looks like a Gas meter, but it's being added to Electricity." It's there to catch a mix-up before it reaches the handover form. If KeyCheck is wrong, ignore the warning and carry on.</p>
+      <p>On electricity meters, it may also tell you the display is showing the export reading rather than the import. Press the button on the meter until it shows the import (often labelled <strong>+A</strong>) and take the photo again.</p>
+      <h4>Reading a saved photo again</h4>
+      <p>To read a photo again, for example one you added with automatic reading turned off, tap the photo, then tap <strong>Read meter</strong> (the button at the bottom of the screen, which looks like a page inside a frame).</p>
+      <figure class="shot">
+        <a href="images/meter-photo-viewer.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/meter-photo-viewer.png" alt="A saved meter photo open full screen, with Close, the date and time 10 Nov 2026 at 9:47, Delete, and the Read meter button at the bottom" loading="lazy">
+        </a>
+        <figcaption>A saved meter photo, with the Read meter button at the bottom</figcaption>
+      </figure>
+
+      <h3>Tips for a good reading</h3>
+      <ul>
+        <li>Get close, so the display and the serial number fill most of the photo.</li>
+        <li>Hold the phone square on to the display to avoid glare and reflections. Shade the display with your hand if the sun is on it.</li>
+        <li>Make sure the display is lit. Smart meters often go dark after a few seconds: press a button to wake them.</li>
+        <li>On electricity meters, show the import reading (<strong>+A</strong>), not the export.</li>
+        <li>If a reading comes back as <strong>Check</strong>, take a second, closer photo rather than guessing.</li>
+      </ul>
+      <p>If KeyCheck finds the serial number but not the reading, it says so under the values and suggests moving closer:</p>
+      <figure class="shot">
+        <a href="images/meter-scan-no-reading.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/meter-scan-no-reading.png" alt="The Electricity scan screen with only the meter serial number found, and a note saying no reading was found and to move closer so the display fills the frame" loading="lazy">
+        </a>
+        <figcaption>Serial number found, but no reading: try a closer photo</figcaption>
+      </figure>
+
+      <h3>Apple Intelligence</h3>
+      <p>On iPhones and iPads that support Apple Intelligence, with it turned on, KeyCheck also uses it to double-check what it read. This can make readings more accurate. It still runs entirely on your device.</p>
+      <p>To see whether it's being used, go to <strong>Settings → Meter photos</strong>. <strong>Apple Intelligence</strong> shows <strong>Available</strong>, or <strong>Not available – using text rules only</strong>. Meter reading works either way.</p>
+
+      <h3>Turning off automatic reading</h3>
+      <p>If you'd rather type every reading yourself, go to <strong>Settings → Meter photos</strong> and turn off <strong>Auto-read meter photos</strong>. Photos are then saved to the meter without being read. You can still read any photo later by tapping it and tapping <strong>Read meter</strong> at the bottom of the screen.</p>
+      <figure class="shot">
+        <a href="images/settings-meter-photos.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/settings-meter-photos.png" alt="Settings showing the Meter photos section, marked Experimental, with Auto-read meter photos switched on, Apple Intelligence Available, and the note about photos being read on this device" loading="lazy">
+        </a>
+        <figcaption>Settings → Meter photos</figcaption>
+      </figure>
+
+      <h3>Privacy</h3>
+      <p>Meter photos are read <strong>on your device only</strong>. They're never sent anywhere to be read, and KeyCheck never fills in the form without showing you the values first.</p>
+      <p>With iCloud sync off, photos stay on your device. With it on, they're stored in your own iCloud with the rest of the project, and shared with anyone you share the project with (chapter 12).</p>
+
+      <h3>Communal meters</h3>
+      <p>Meters that serve a whole block or site, such as a landlord supply or EV chargers, are recorded once for the project, as <strong>Communal meters</strong>. Photos and reading work the same way. Chapter 7 explains them.</p>
+
+      <div class="note">
+        <span class="note-label">From the office</span>
+        <p>Employer's agents and contract administrators can open a plot's meter photos to check a reading without a site visit, and <strong>What's left</strong> shows which plots still need readings. Before the first handover, importing the MPANs, MPRNs and serial numbers from the client's schedule (chapter 3) means the site team only need to record the readings.</p>
+      </div>
+    </section>
+
+    <nav class="chapter-nav" aria-label="Chapters">
+      <a class="prev" href="manual-recording-a-plot-handover.html"><span>Previous</span>4. Recording a plot handover</a>
+      <a class="next" href="manual.html"><span>Back to</span>Contents</a>
+    </nav>
+  </main>
+
+  <footer class="footer wrap">
+    KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
+    <a class="back-to-top" href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
