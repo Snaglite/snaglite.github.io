@@ -419,6 +419,33 @@ td:first-child {
 
 /* Small screens, such as an iPhone */
 
+/* Phone screenshots in the manual. */
+.shot {
+  margin: 20px 0 24px;
+  text-align: center;
+}
+
+.shot a {
+  display: block;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.shot figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 @media (max-width: 720px) {
   .quick-start,
   .contents {
