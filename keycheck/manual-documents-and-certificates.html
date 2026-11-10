@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1e232c">
+  <title>6. Documents and certificates – KeyCheck User Manual</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="keycheck.css">
+</head>
+<body>
+  <header class="hero hero-compact" id="top">
+    <div class="wrap hero-inner">
+      <img class="hero-icon" src="icon.svg" alt="KeyCheck app icon">
+      <div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="manual.html">KeyCheck User Manual</a><span aria-hidden="true">›</span><span aria-current="page">Chapter 6</span></nav>
+        <h1>Documents and certificates</h1>
+        <p>Marking documents, the dates KeyCheck keeps, chasing, and site-wide documents</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="documents-and-certificates">
+      <p class="section-lede">Chasing paperwork is often the slowest part of a handover. KeyCheck records <strong>when</strong> each document was asked for, chased and received. You can see how long you've been waiting for something, show when it arrived, and list everything still missing on the progress report.</p>
+      <p>This chapter covers marking documents, the dates KeyCheck keeps, chasing lots of plots at once, and the project's own site-wide documents.</p>
+
+      <h3>Plot documents and project documents</h3>
+      <p>KeyCheck has two kinds of document:</p>
+      <ul>
+        <li><strong>Plot documents</strong> are needed for every plot, such as the gas safety certificate, EPC or warranty cover note. They're under <strong>Instructions &amp; certificates</strong> on each plot's form.</li>
+        <li><strong>Project documents</strong> are needed once for the whole site, such as the fire strategy, collateral warranties or the O&amp;M manual. They're on the project's <strong>Project documents</strong> screen.</li>
+      </ul>
+      <p>Both work the same way. Which documents are on each list is set up in <strong>Project setup → Form items</strong> (chapter 3) for plot documents, and on the Project documents screen for project documents (see below).</p>
+
+      <h3>Marking a document</h3>
+      <p>Each document has two buttons, <strong>✓</strong> and <strong>✗</strong>:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>What you do</th><th>Status</th><th>Meaning</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tap <strong>✓</strong> (green)</td><td><strong>Received</strong></td><td>You have the document.</td></tr>
+            <tr><td>Tap <strong>✗</strong> (red)</td><td><strong>Outstanding</strong></td><td>You've asked for it and are waiting for it.</td></tr>
+            <tr><td>Leave both unselected</td><td><strong>Not checked</strong></td><td>Nobody has looked at this document yet.</td></tr>
+            <tr><td>Touch and hold, then choose <strong>Not applicable</strong></td><td><strong>Not applicable</strong></td><td>This document doesn't apply to this plot.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Tap a selected button again to clear it back to Not checked.</p>
+      <div class="note">
+        <span class="note-label">Tip</span>
+        <p>Tap <strong>✗</strong> on the day you ask for a document. That's when its waiting time starts on the progress report. Documents left as Not checked are still listed as missing, but with no waiting time.</p>
+      </div>
+      <p>At the top of <strong>Instructions &amp; certificates</strong>, <strong>All documents</strong> shows how many are done, for example "18 of 24 complete". Each group, such as <strong>Heating &amp; hot water</strong>, has its own count. Tap a group's name to fold it away when you've finished with it.</p>
+
+      <figure class="shot">
+        <a href="images/plot-documents.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/plot-documents.png" alt="Plot 8's documents, with Water &amp; plumbing 3 of 3 complete and Compliance &amp; warranties 4 of 5 complete. EPC shows Waiting 32 days, Warranty cover note shows Waiting 36 days · chased 5 Nov with a purple note, and received documents show their dates" loading="lazy">
+        </a>
+        <figcaption>Documents on a plot, with the date lines and a note under Warranty cover note</figcaption>
+      </figure>
+      <h4>Not applicable</h4>
+      <p><strong>Not applicable</strong> is for one-off exceptions, such as no gas certificate on an all-electric plot.</p>
+      <ol>
+        <li>Touch and hold the document.</li>
+        <li>Choose <strong>Not applicable</strong>.</li>
+      </ol>
+      <p>The name turns grey, "Not applicable" appears under it, and it no longer counts as missing on reports. The handover PDF shows it as N/A. To undo it, touch and hold again and choose <strong>Mark as applicable</strong>.</p>
+      <p>If a document never applies to a whole tenure, for example Shared Ownership plots, hide its group for that tenure with <strong>Tenure exceptions</strong> instead (chapter 3), so it doesn't appear on those plots at all. If it isn't needed anywhere on the site, switch it off in <strong>Form items</strong>.</p>
+
+      <h4>Notes</h4>
+      <p>Tap the note button beside a document (the small page icon, left of ✓) to add a note, such as "Assessor booked for Friday". The note shows in purple under the document's name. You can also touch and hold the document and choose <strong>Add / edit note</strong>.</p>
+      <p>Notes appear on the handover PDF and, for documents still missing, on the progress report.</p>
+
+      <h3>The dates KeyCheck keeps</h3>
+      <p>Whenever a document's status changes, KeyCheck saves the date. You don't have to do anything. A short grey line under the document's name shows where it stands, for example:</p>
+      <ul>
+        <li><em>Requested today</em></li>
+        <li><em>Waiting 5 days · chased yesterday</em></li>
+        <li><em>Received 3 Nov</em></li>
+      </ul>
+      <p>The full dates are on the document's history screen, the progress report and the PDFs.</p>
+
+      <h4>Seeing a document's history</h4>
+      <p>Tap the document's name (or touch and hold it and choose <strong>Dates and history</strong>). The history screen shows:</p>
+      <ul>
+        <li>its current <strong>Status</strong></li>
+        <li>every change, newest first: when it was marked outstanding, chased, received, marked N/A or cleared</li>
+        <li>on shared projects, who made each change. That comes from <strong>Settings → You → Your name</strong> (chapter 2). If you haven't entered your name, the screen reminds you.</li>
+      </ul>
+
+      <figure class="shot">
+        <a href="images/document-history.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/document-history.png" alt="The history screen for EPC, showing Status Outstanding, Outstanding since 09/10/2026 · chased 10/11/2026, Mark as chased today, and a history with Chased 10 Nov 2026 and Marked outstanding 9 Oct 2026" loading="lazy">
+        </a>
+        <figcaption>A document's history: tap a date to correct it</figcaption>
+      </figure>
+      <h4>Correcting a date</h4>
+      <p>Ticked something off late? Tap the date beside the entry and pick the right day. For example, if a certificate arrived on Monday but you only ticked it on Wednesday, change the <strong>Received</strong> date to Monday. Reports use the corrected date. Dates can't be in the future.</p>
+
+      <h4>Recording a chase</h4>
+      <p>When you chase a document that still hasn't arrived:</p>
+      <ol>
+        <li>Touch and hold the document. (This option only appears when the document is Outstanding.)</li>
+        <li>Choose <strong>Mark as chased today</strong>.</li>
+      </ol>
+      <p>The grey line and the progress report then show the date of the latest chase.</p>
+      <p>You can also tap <strong>Mark as chased today</strong> on the document's history screen. There it works for Not checked documents too, and marks them Outstanding from today, so their waiting time starts.</p>
+      <p><strong>To remove a chase</strong> recorded by mistake, swipe left on it in the history and tap <strong>Delete</strong>. Only chases can be deleted. Other entries stay, so the record of when things happened is complete.</p>
+
+      <h4>Clearing a document's history</h4>
+      <p>To start a document's dates again, touch and hold it and choose <strong>Clear history</strong>, then confirm. The button is also at the bottom of the history screen.</p>
+      <p>This removes all of the document's dates, but its current ✓ or ✗ stays as it is. On a shared project, the history is cleared for everyone.</p>
+
+      <h3>Marking a whole group on one plot</h3>
+      <p>The <strong>⋯</strong> button beside each group's name changes every document in that group at once. The button beside <strong>All documents</strong> does the same for every document on the plot. Choose:</p>
+      <ul>
+        <li><strong>Mark all as received</strong></li>
+        <li><strong>Mark all as outstanding</strong></li>
+        <li><strong>Mark all as not applicable</strong></li>
+        <li><strong>Clear all</strong></li>
+      </ul>
+      <p>These changes are dated too. A banner offers <strong>Undo</strong> straight afterwards.</p>
+
+      <h3>Chasing or updating many plots at once</h3>
+      <p>On a big site you'll often chase or receive the same documents for lots of plots at once. For example, you might chase the gas certificates and EPCs for a whole street in one phone call, or receive a batch of EPCs by email.</p>
+      <ol>
+        <li>Open the project and tap <strong>Project setup</strong> (the sliders button, top right).</li>
+        <li>Choose <strong>Chase or update documents…</strong>.</li>
+        <li>Tap <strong>Documents</strong> and tick the ones you want. <strong>All</strong> beside a group's heading ticks the whole group. Then go back.</li>
+        <li>Under <strong>Mark as</strong>, choose what happened:
+          <ul>
+            <li><strong>Chased</strong>: you've chased them.</li>
+            <li><strong>Outstanding</strong>: you've just asked for them. Their waiting time starts from the date you set.</li>
+            <li><strong>Received</strong>: they've arrived.</li>
+          </ul>
+        </li>
+        <li>Check the <strong>Date</strong>. It starts as today; change it if the chase or delivery was earlier.</li>
+        <li>Choose the plots. KeyCheck ticks every plot that's still missing any of the chosen documents and isn't handed over yet. Use <strong>Missing</strong>, <strong>All</strong> or <strong>None</strong> to change the selection, or tap plots one by one. Each plot shows what it's missing, for example "2 of 3 missing: Gas safety certificate, EPC".</li>
+        <li>Tap <strong>Apply to</strong> (the button shows how many plots are ticked) and confirm. The confirmation says exactly what will happen, for example "Chase 2 documents on 18 plots?".</li>
+      </ol>
+      <figure class="shot">
+        <a href="images/chase-documents.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/chase-documents.png" alt="Chase or update documents with EPC +1 chosen, Chased selected, today's date, and a list of plots showing All received or what each is missing, for example Plot 7: 2 of 2 missing, EPC, Warranty cover note" loading="lazy">
+        </a>
+        <figcaption>Chase or update documents, ready to chase two documents</figcaption>
+      </figure>
+      <p>Good to know:</p>
+      <ul>
+        <li><strong>Only documents still missing are changed.</strong> If a plot already has its EPC, chasing "Gas and EPC" records the chase on the gas certificate only. Received and N/A documents are never changed here.</li>
+        <li><strong>Chasing a Not checked document also marks it Outstanding</strong> from that date, so the report can show how long it has been waited for.</li>
+        <li><strong>Documents hidden for a tenure</strong> are skipped on plots with that tenure.</li>
+        <li><strong>There's no undo.</strong> If you chase the wrong document, remove the chase from each plot's history.</li>
+        <li>This screen is for plot documents only. Project documents are updated on their own screen.</li>
+      </ul>
+
+      <h3>Copying documents between plots</h3>
+      <p><strong>Copy from</strong>, <strong>Paste setup</strong> and <strong>Apply setup to several</strong> (chapter 4) can copy document statuses from one plot to another. The copied statuses are dated with the day you copy them, not the dates on the plot you copied from, because this plot's documents won't necessarily have arrived on the same days.</p>
+
+      <h3>Project documents</h3>
+      <p>Open a project and tap <strong>Project documents</strong>, near the top. The row shows how many have been looked at, for example "6 of 11 reviewed". (Reviewed means Received, Outstanding or Not applicable: anything that's been checked.)</p>
+      <p>The screen works like the documents on a plot: tap ✓ or ✗, tap a name for its history, and touch and hold a document for <strong>Dates and history</strong>, <strong>Mark as chased today</strong>, <strong>Not applicable</strong>, <strong>Add / edit note</strong>, <strong>Rename…</strong>, <strong>Clear history</strong> and <strong>Remove from project</strong>. You can also swipe right on a document to add a <strong>Note</strong>.</p>
+      <p>At the top, a ring shows how many are reviewed, with a summary such as "4 received · 2 outstanding · 1 N/A".</p>
+      <p>When you've finished, tap <strong>Done</strong> to save your changes. <strong>Cancel</strong> closes the screen without saving them.</p>
+
+      <figure class="shot">
+        <a href="images/project-documents.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/project-documents.png" alt="The Project documents screen, with a ring showing 10 of 10 reviewed, 4 received · 5 outstanding · 1 N/A, and the Collateral warranties bundle opened to show 2 of 5 received and its items" loading="lazy">
+        </a>
+        <figcaption>Project documents, with the Collateral warranties bundle opened</figcaption>
+      </figure>
+      <h4>Choosing the project documents</h4>
+      <p>The first time, the screen is empty. Tap <strong>Add documents</strong> to choose some. Later, tap the <strong>⋯</strong> button (top right) and choose <strong>Manage document list</strong>. Then:</p>
+      <ul>
+        <li><strong>Add project documents from library</strong> lists the site-wide documents KeyCheck knows about, such as fire-safety records, warranties and novation agreements. Tick the ones you need and tap <strong>Add</strong>.</li>
+        <li><strong>Add custom project document</strong> adds one of your own.</li>
+        <li>Switch documents on or off, and change which group each one is in.</li>
+      </ul>
+      <p>Tap <strong>Save</strong> to keep the changes.</p>
+      <p>To take a document off the project, touch and hold it and choose <strong>Remove from project</strong> (or swipe left and tap <strong>Delete</strong>). If you add it back later, what was recorded for it is still there.</p>
+
+      <h4>Bundles: documents made of several parts</h4>
+      <p>Some requirements are really several separate documents. Collateral warranties, for example, come from the main contractor and from each designer and subcontractor. Ticking one "Collateral warranties" document when the last one arrives would hide which ones you're still waiting for.</p>
+      <p>A <strong>bundle</strong> solves this. It's one heading with a list of items underneath, and each item is tracked on its own. In the <strong>Riverside Business Park</strong> sample project, <strong>Collateral warranties</strong> is a bundle with five items, one each from the main contractor, M&amp;E subcontractor, roofing subcontractor, cladding subcontractor and structural engineer.</p>
+      <p>To make a bundle:</p>
+      <ol>
+        <li>On the <strong>Project documents</strong> screen, touch and hold the document and choose <strong>Convert to bundle…</strong>, then confirm. (Or, in <strong>Manage document list</strong>, use the options button beside it and choose <strong>Convert to bundle</strong>.)</li>
+        <li>In <strong>Manage document list</strong>, rename the bundle if you need to, then tap <strong>Add item</strong> for each part, for example "Roofing subcontractor".</li>
+        <li>Tap <strong>Save</strong>.</li>
+      </ol>
+      <figure class="shot">
+        <a href="images/manage-project-documents.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/manage-project-documents.png" alt="Manage project documents, showing the Collateral warranties bundle with items Main contractor, M&amp;E subcontractor, Roofing subcontractor, Cladding subcontractor and Structural engineer, each with move and remove buttons, and Add item" loading="lazy">
+        </a>
+        <figcaption>A bundle in Manage document list</figcaption>
+      </figure>
+      <p>On the Project documents screen, tap the bundle to open or close its list of items. Each item has its own ✓ and ✗, dates, chases and note, just like any other document. The bundle shows how far along it is, for example <strong>3 of 5 received</strong>, and becomes Received by itself when every item has arrived. Items marked N/A are left out of the count.</p>
+      <p>Good to know:</p>
+      <ul>
+        <li>Converting a document keeps its old status, note and history, but they no longer decide the bundle's status. That comes from its items.</li>
+        <li>To save space, items are shown without the bundle's name in front. An item named "Collateral warranty – Roofing subcontractor" shows as "Roofing subcontractor", on screen and in the PDFs.</li>
+        <li>Items left without a name are removed when you save the document list.</li>
+        <li>To rename a bundle or an item, touch and hold it and choose <strong>Rename…</strong>.</li>
+        <li>To turn a bundle back into a single document, touch and hold it and choose <strong>Convert to single document…</strong>. You can keep its items as separate documents or remove them. The document goes back to the status, note and history it had before.</li>
+      </ul>
+      <p>Planning conditions are kept as bundles too, and can be read from the council's decision notice. Chapter 7 explains them.</p>
+
+      <h4>Exporting the project documents</h4>
+      <p>Tap <strong>⋯ → Export PDF</strong> to make a PDF of the project documents, with their statuses, dates and notes, ready to email or print.</p>
+
+      <h3>Where the dates show up</h3>
+      <ul>
+        <li><strong>Progress report</strong> (chapter 11): <strong>What's changed</strong> lists documents received and chased in the period. <strong>Documents not received</strong> lists everything still missing on plots that aren't handed over, with how long you've waited and when it was last chased.</li>
+        <li><strong>Handover PDF</strong> (chapter 10): each plot's documents, with N/A shown where it applies.</li>
+        <li><strong>Insights</strong> (chapter 9), opened by tapping the progress summary at the top of a project: includes a list of <strong>Project documents still needed</strong>, with a <strong>Copy</strong> button that puts it on the clipboard, ready to paste into an email.</li>
+      </ul>
+
+      <div class="note">
+        <span class="note-label">From the office</span>
+        <p>Employer's agents and contract administrators usually chase paperwork by phone and email rather than on site. Before a progress meeting, use <strong>Chase or update documents…</strong> to record that day's chases and arrivals for the whole site in one go, and correct any dates from the history screen. The progress report's <strong>Documents not received</strong> then shows how long each document has been outstanding and when it was last chased. On a shared project (chapter 12), everyone sees the same dates, and the history shows who recorded each one.</p>
+      </div>
+    </section>
+
+    <nav class="chapter-nav" aria-label="Chapters">
+      <a class="prev" href="manual-meter-readings.html"><span>Previous</span>5. Meter readings</a>
+      <a class="next" href="manual.html"><span>Back to</span>Contents</a>
+    </nav>
+  </main>
+
+  <footer class="footer wrap">
+    KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
+    <a class="back-to-top" href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
