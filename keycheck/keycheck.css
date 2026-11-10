@@ -419,7 +419,8 @@ td:first-child {
 
 /* Small screens, such as an iPhone */
 
-/* Phone screenshots in the manual. */
+/* Phone screenshots in the manual. They already carry an iPhone frame, so they get a soft
+   shadow that follows the frame's outline instead of a border. */
 .shot {
   margin: 20px 0 24px;
   text-align: center;
@@ -435,9 +436,7 @@ td:first-child {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  box-shadow: var(--shadow);
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.16));
 }
 
 .shot figcaption {
