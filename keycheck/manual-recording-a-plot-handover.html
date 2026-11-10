@@ -23,16 +23,25 @@
   </header>
 
   <main class="wrap">
+    <div class="manual-search" data-manual-search hidden>
+      <form role="search">
+        <label class="visually-hidden" for="manual-search-input">Search the manual</label>
+        <input id="manual-search-input" type="search" placeholder="Search the manual" autocomplete="off" enterkeyhint="search">
+      </form>
+      <p class="manual-search-status" aria-live="polite"></p>
+      <ol class="manual-search-results"></ol>
+    </div>
+
     <section class="card" id="recording-a-plot-handover">
       <p class="section-lede">Go through a plot's handover form from top to bottom: details, keys, final snags, notes and signatures. The chapter ends with the shortcuts for plots that are set up the same way, which save most of the typing on a big site.</p>
       <p>Meters and documents have chapters of their own (chapters 5 and 6), so they're only covered briefly here.</p>
       <p>KeyCheck saves as you go. There's no Save button on a plot, and you can leave a form half-filled and come back to it.</p>
 
-      <h3>Opening a plot</h3>
+      <h3 id="opening-a-plot">Opening a plot</h3>
       <p>Open a project and tap a plot in the list. The handover form opens.</p>
       <p>To move to the next or previous plot without going back to the list, swipe sideways. Or tap the plot's name at the top of the screen and choose <strong>Next</strong> or <strong>Previous</strong>. Under the name, KeyCheck shows where you are in the list, for example "7 of 40".</p>
 
-      <h3>The top of the form</h3>
+      <h3 id="the-top-of-the-form">The top of the form</h3>
       <p>The ring at the top fills up as the form is completed. Beside it are the plot's status and how complete it is, for example "In progress · 64% complete".</p>
       <div class="table-wrap">
         <table>
@@ -49,7 +58,7 @@
       </div>
       <p>The same statuses appear in the plot list, so you can see at a glance where each plot stands. On the project screen, the tiles above the list show how many plots have each status. Tap a tile to show only those plots, and tap it again to show them all.</p>
 
-      <h4>What's left</h4>
+      <h4 id="what-s-left">What's left</h4>
       <p>Underneath is <strong>What's left</strong>, with a count of what still needs doing. Tap it to see the list, for example "Gas", "3 keys" or "Contractor signature". Tap an item to jump straight to it.</p>
       <p>The ring counts meters, keys, documents and signatures. Final snags and notes don't count towards it, because a plot can be handed over with snags still open.</p>
       <figure class="shot">
@@ -59,7 +68,7 @@
         <figcaption>The top of the form, with What's left opened</figcaption>
       </figure>
 
-      <h3>The sections of the form</h3>
+      <h3 id="the-sections-of-the-form">The sections of the form</h3>
       <div class="table-wrap">
         <table>
           <thead>
@@ -79,7 +88,7 @@
       </div>
       <p>Sections you've switched off in <strong>Form items</strong> (chapter 3) don't appear.</p>
 
-      <h3>Details and postal address</h3>
+      <h3 id="details-and-postal-address">Details and postal address</h3>
       <p><strong>Details</strong> and <strong>Postal address</strong> fold up to a one-line summary once they're filled in, for example "Rent · 3b4p House · Type F1". Tap the summary to open them again.</p>
       <p>In <strong>Details</strong>:</p>
       <ul>
@@ -90,11 +99,11 @@
       </ul>
       <p>Most of these can be filled in for lots of plots at once when adding plots, or by importing a spreadsheet (chapter 3).</p>
 
-      <h3>Keys</h3>
+      <h3 id="keys">Keys</h3>
       <p>Each key has a row of buttons: <strong>0</strong>, <strong>1</strong>, <strong>2</strong> and <strong>3</strong>. Tap the number handed over. For more than 3, tap <strong>…</strong> and choose a number, or tap <strong>Enter number…</strong> to type one. To empty a key again, tap <strong>…</strong> and then <strong>Clear</strong>.</p>
       <p>Tap <strong>0</strong> when none of that key is handed over, rather than leaving it blank. A blank key still shows in <strong>What's left</strong>. A <strong>0</strong> counts as done.</p>
 
-      <h4>Filling in several keys at once</h4>
+      <h4 id="filling-in-several-keys-at-once">Filling in several keys at once</h4>
       <p>Each key group has a <strong>Set all</strong> button (<strong>⋯</strong>) beside its heading:</p>
       <ul>
         <li><strong>Fill with usual quantities</strong>: puts in the usual quantity for each key, as set in <strong>Form items</strong> (chapter 3). This only appears if your keys have usual quantities.</li>
@@ -110,14 +119,14 @@
         <figcaption>Keys, with the Set all menu open</figcaption>
       </figure>
 
-      <h4>Keys that aren't on the list</h4>
+      <h4 id="keys-that-aren-t-on-the-list">Keys that aren't on the list</h4>
       <p>Tap <strong>Add another key</strong> (or <strong>Add key</strong>, on a form with no key list, such as a commercial building) to add a key just for this plot. Type its name, for example "Garage", and use <strong>+</strong> and <strong>−</strong> to set how many.</p>
       <p>To delete one of these keys, touch and hold it and tap <strong>Delete</strong>. (Swiping sideways moves between plots, so deleting uses touch and hold instead.)</p>
 
-      <h3>Key suites</h3>
+      <h3 id="key-suites">Key suites</h3>
       <p>Skip this section unless the building's doors are on a master key suite. Most houses don't need it. It's mainly for commercial buildings and blocks of flats.</p>
 
-      <h4>What a key suite is</h4>
+      <h4 id="what-a-key-suite-is">What a key suite is</h4>
       <ul>
         <li>Normally each door has its <strong>own key</strong>, which opens only that door.</li>
         <li>A <strong>master key</strong> opens lots of doors, for example every door in one building. It saves the building manager carrying a big bunch of keys.</li>
@@ -128,7 +137,7 @@
       <p>So a door can have its own key and also be opened by a master. That's normal.</p>
       <p>At handover, the building manager needs to know two things: how many of each key they're getting, and which key opens which door. KeyCheck records both. If the lock supplier gave you a keying schedule (a chart of which key opens which door), work from that.</p>
 
-      <h4>An example</h4>
+      <h4 id="an-example">An example</h4>
       <p>In the <strong>Riverside Business Park</strong> sample project, Unit 2 has:</p>
       <ul>
         <li>a <strong>Master</strong> for the whole unit</li>
@@ -144,11 +153,11 @@
         <figcaption>Unit 2's master key suite</figcaption>
       </figure>
 
-      <h4>Step 1: Switch it on</h4>
+      <h4 id="step-1-switch-it-on">Step 1: Switch it on</h4>
       <p>Key suites need <strong>Door refs &amp; key suites</strong> switched on in <strong>Project setup → Form items</strong> (chapter 3). It's already on for commercial buildings.</p>
       <p>With it on, each key can have a <strong>door ref</strong>: the door's reference from the drawings or door schedule, for example D0.10.</p>
 
-      <h4>Step 2: Add the suite keys</h4>
+      <h4 id="step-2-add-the-suite-keys">Step 2: Add the suite keys</h4>
       <ol class="steps">
         <li>Under the keys, tap <strong>Add master key suite</strong>. A <strong>Master key suite</strong> section appears with one master key in it.</li>
         <li>To add a sub-master or grand master, tap <strong>Add suite key or set</strong> and choose it.</li>
@@ -156,7 +165,7 @@
         <li>Tap the number buttons beside each suite key to record how many are handed over, the same as other keys.</li>
       </ol>
 
-      <h4>Step 3: Say which key opens each door</h4>
+      <h4 id="step-3-say-which-key-opens-each-door">Step 3: Say which key opens each door</h4>
       <p>Do this for each door on the suite:</p>
       <ol class="steps">
         <li>Tap the door's name. (For a key you added on this plot, tap the orange <strong>Details</strong> line under it instead.)</li>
@@ -171,24 +180,24 @@
         <figcaption>The plant room is opened by the Unit 2 master, and shares a key with Set B</figcaption>
       </figure>
 
-      <h4>Step 4: Check it</h4>
+      <h4 id="step-4-check-it">Step 4: Check it</h4>
       <ul>
         <li>A line under each door shows how it's keyed, for example "Master · Unit 2 · Set B".</li>
         <li>Each suite key shows how many doors it opens, for example "Opens 5 doors", and each set shows how many doors are in it. If a number looks wrong, a door has been missed or put in the wrong place.</li>
       </ul>
       <p>To rename a set, tap it. To delete a suite key or set, touch and hold it.</p>
 
-      <h4>Grand masters for the whole site</h4>
+      <h4 id="grand-masters-for-the-whole-site">Grand masters for the whole site</h4>
       <p>A grand master that opens doors in more than one building is recorded once, with the project's <strong>Communal keys</strong> (chapter 7), rather than on each building. It then appears under <strong>Also opened by</strong> on every building, marked "(site-wide)".</p>
 
-      <h3>Meters and documents</h3>
+      <h3 id="meters-and-documents">Meters and documents</h3>
       <p>These have their own chapters, but in short:</p>
       <ul>
         <li><strong>Meters</strong>: type the reading and serial number, or tap <strong>Photo</strong> and let KeyCheck read them from the picture (chapter 5).</li>
         <li><strong>Documents</strong>: tap <strong>✓</strong> when you have a document and <strong>✗</strong> when you've asked for it and are still waiting. If a document doesn't apply to this plot, touch and hold it and choose <strong>Not applicable</strong>. Each group has a <strong>Set all</strong> button (<strong>⋯</strong>) to mark the whole group at once, and the button beside <strong>All documents</strong> marks every document on the plot. A banner offers <strong>Undo</strong> straight afterwards (chapter 6).</li>
       </ul>
 
-      <h3>Final snags</h3>
+      <h3 id="final-snags">Final snags</h3>
       <p><strong>Defects / outstanding items</strong> is for final snags that are still open at handover, so the handover form shows what's left to fix and who's fixing it.</p>
       <ol class="steps">
         <li>Tap <strong>Add outstanding item</strong> and describe the snag.</li>
@@ -205,10 +214,10 @@
       </figure>
       <p>KeyCheck isn't a full snagging app. If you need to manage snagging across a whole site, with photos, drawings and trades, try <a href="https://apps.apple.com/app/snaglite/id6761205223">Snaglite</a>.</p>
 
-      <h3>Notes</h3>
+      <h3 id="notes">Notes</h3>
       <p><strong>Notes</strong> is for anything else worth recording on this plot, such as "Resident collecting spare fob on Friday". Notes appear on the handover form, and can be included in the progress report.</p>
 
-      <h3>Signatures</h3>
+      <h3 id="signatures">Signatures</h3>
       <p><strong>Sign-off</strong> lists the people who sign the handover, for example <strong>Client representative</strong> and <strong>Contractor</strong>. The roles are set in <strong>Form items</strong> (chapter 3).</p>
       <ol class="steps">
         <li>Type the person's <strong>Name</strong>.</li>
@@ -232,11 +241,11 @@
         <figcaption>Both roles signed</figcaption>
       </figure>
 
-      <h3>Saving time on similar plots</h3>
+      <h3 id="saving-time-on-similar-plots">Saving time on similar plots</h3>
       <p>Plots on the same street or in the same block are often set up the same way: the same keys, the same meter suppliers and often the same documents. KeyCheck has three ways to copy them, so you only type them once.</p>
       <p>Whichever you use, <strong>readings, serial numbers, photos and signatures are never copied</strong>. These are different on every plot.</p>
 
-      <h4>Copy from another plot</h4>
+      <h4 id="copy-from-another-plot">Copy from another plot</h4>
       <ol class="steps">
         <li>Open the plot you want to fill in.</li>
         <li>Tap <strong>Copy from</strong> (the two-pages button, top right).</li>
@@ -257,7 +266,7 @@
         <figcaption>The Copy from menu</figcaption>
       </figure>
 
-      <h4>Copy and paste a setup</h4>
+      <h4 id="copy-and-paste-a-setup">Copy and paste a setup</h4>
       <p>To copy a setup to a plot in a different project:</p>
       <ol class="steps">
         <li>Open the plot to copy from, tap <strong>Copy from</strong>, then <strong>Copy this setup</strong>.</li>
@@ -265,7 +274,7 @@
       </ol>
       <p>This copies keys, suppliers and document statuses.</p>
 
-      <h4>Apply setup to several plots</h4>
+      <h4 id="apply-setup-to-several-plots">Apply setup to several plots</h4>
       <p>To copy one plot's setup to lots of plots in one go:</p>
       <ol class="steps">
         <li>Open the project and tap <strong>Project setup → Apply setup to several…</strong>. (Or touch and hold a plot in the list and choose <strong>Apply setup to several…</strong>.)</li>
@@ -282,13 +291,13 @@
         <figcaption>Apply setup, copying Plot 1 to four plots</figcaption>
       </figure>
 
-      <h4>Copied document dates</h4>
+      <h4 id="copied-document-dates">Copied document dates</h4>
       <p>KeyCheck dates each document when its status changes (chapter 6). Copied document statuses are dated with the day you copied them, not the dates on the plot you copied from, because this plot's documents won't necessarily have arrived on the same days.</p>
 
-      <h3>Exporting the handover form</h3>
+      <h3 id="exporting-the-handover-form">Exporting the handover form</h3>
       <p>When the form is done, tap <strong>Export this handover</strong> (the share button, top right) to make a PDF of it, ready to email, print or save. Chapter 10 explains what's on it.</p>
 
-      <h3>If you can't change anything</h3>
+      <h3 id="if-you-can-t-change-anything">If you can't change anything</h3>
       <p>If a <strong>View only</strong> notice appears at the top of the form, you can read and export the plot but not change it. This happens when:</p>
       <ul>
         <li>you don't have <strong>KeyCheck Pro</strong> (chapter 2), or</li>
@@ -311,5 +320,7 @@
     KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
     <a class="back-to-top" href="#top">Back to top ↑</a>
   </footer>
+  <script src="manual-search-index.js" defer></script>
+  <script src="manual-search.js" defer></script>
 </body>
 </html>

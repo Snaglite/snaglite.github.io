@@ -397,6 +397,124 @@ ol.steps > li::before {
   text-decoration: none;
 }
 
+/* Manual search */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.manual-search {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.manual-search input {
+  width: 100%;
+  padding: 14px 18px 14px 46px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239aa3b0' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='M15.5 15.5 21 21'/%3E%3C/svg%3E") no-repeat 16px center / 20px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  font: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.manual-search input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.manual-search-status {
+  margin: 8px 4px 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.manual-search-status:empty {
+  display: none;
+}
+
+.manual-search-results {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.manual-search:not(.has-results) .manual-search-results {
+  display: none;
+}
+
+.manual-search-results li {
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+
+.manual-search-results li:first-child {
+  border-top: none;
+}
+
+.manual-search-results a {
+  display: block;
+  padding: 12px 18px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.manual-search-results a:hover,
+.manual-search-results a:focus-visible {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.manual-search-place {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.manual-search-heading {
+  display: block;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.manual-search-snippet {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.manual-search-snippet mark {
+  background: none;
+  color: var(--link);
+  font-weight: 650;
+}
+
+/* A heading opened from a search result is briefly marked so it's easy to spot. */
+h3:target,
+h4:target {
+  animation: search-target 2s ease-out;
+}
+
+@keyframes search-target {
+  from { background: var(--accent-soft); }
+  to { background: transparent; }
+}
+
 /* Notes */
 
 .note {

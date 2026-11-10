@@ -35,6 +35,15 @@
   </header>
 
   <main class="wrap">
+    <div class="manual-search" data-manual-search hidden>
+      <form role="search">
+        <label class="visually-hidden" for="manual-search-input">Search the manual</label>
+        <input id="manual-search-input" type="search" placeholder="Search the manual" autocomplete="off" enterkeyhint="search">
+      </form>
+      <p class="manual-search-status" aria-live="polite"></p>
+      <ol class="manual-search-results"></ol>
+    </div>
+
     <nav class="contents" aria-label="Contents" style="margin-bottom: 20px;">
       <a href="manual-what-keycheck-does.html"><b>1</b> What KeyCheck does<span>Projects, plots, paperwork and reports</span></a>
       <a href="manual-setting-up.html"><b>2</b> Setting up<span>KeyCheck Pro, your name, branding and the samples</span></a>
@@ -64,5 +73,7 @@
     KeyCheck · <a href="privacy.html">Privacy Policy</a><br>
     <a class="back-to-top" href="#top">Back to top ↑</a>
   </footer>
+  <script src="manual-search-index.js" defer></script>
+  <script src="manual-search.js" defer></script>
 </body>
 </html>

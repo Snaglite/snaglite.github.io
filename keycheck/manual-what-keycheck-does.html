@@ -23,6 +23,15 @@
   </header>
 
   <main class="wrap">
+    <div class="manual-search" data-manual-search hidden>
+      <form role="search">
+        <label class="visually-hidden" for="manual-search-input">Search the manual</label>
+        <input id="manual-search-input" type="search" placeholder="Search the manual" autocomplete="off" enterkeyhint="search">
+      </form>
+      <p class="manual-search-status" aria-live="polite"></p>
+      <ol class="manual-search-results"></ol>
+    </div>
+
     <section class="card" id="what-keycheck-does">
       <p class="section-lede">KeyCheck keeps track of everything needed to hand over new homes and commercial buildings.</p>
 
@@ -37,7 +46,7 @@
         <p>KeyCheck records the final snags still open at handover, not a complete snagging inspection. For detailed snag lists with photos, drawings and reports, use <a href="https://apps.apple.com/app/snaglite/id6761205223">Snaglite</a>, our snagging app.</p>
       </div>
 
-      <h3>Who it's for</h3>
+      <h3 id="who-it-s-for">Who it's for</h3>
       <p>KeyCheck is for everyone involved in getting plots ready to hand over, whether on site or in the office:</p>
       <ul>
         <li><strong>Site managers and handover staff</strong> walk each plot with the app, counting keys, scanning meters, listing any final snags and collecting signatures.</li>
@@ -48,7 +57,7 @@
         This manual is written for all of these readers. Chapters about using the app on site and in the office are labelled, and the chapters on reports explain what each part of a PDF means for anyone receiving one.
       </p>
 
-      <h3>Projects</h3>
+      <h3 id="projects">Projects</h3>
       <p>
         A <strong>project</strong> is one site or development, such as "Meadow View Phase 2". The <strong>Projects</strong> screen lists all of your projects, with a ring showing how far along each one is.
       </p>
@@ -59,7 +68,7 @@
         <figcaption>The Projects screen, with the two sample projects</figcaption>
       </figure>
 
-      <h3>Plots</h3>
+      <h3 id="plots">Plots</h3>
       <p>
         Each project is divided into the things you hand over one at a time. On a housing site these are usually <strong>plots</strong>, but a project can use <strong>flats</strong>, <strong>units</strong>, <strong>buildings</strong> or <strong>blocks</strong> instead. This manual says "plot" throughout, but everything works the same whichever name your project uses.
       </p>
@@ -87,7 +96,7 @@
         <figcaption>The handover form for a handed-over plot</figcaption>
       </figure>
 
-      <h3>Records for the whole project</h3>
+      <h3 id="records-for-the-whole-project">Records for the whole project</h3>
       <p>Some things belong to the whole site rather than one plot. These are kept on the project screen, above the plot list:</p>
       <div class="table-wrap">
         <table>
@@ -110,12 +119,12 @@
         <figcaption>A project screen, with the records for the whole project</figcaption>
       </figure>
 
-      <h3>The form</h3>
+      <h3 id="the-form">The form</h3>
       <p>
         Every site is different, so the list of keys, meters, documents and sign-off roles can be changed for each project. This list is called <strong>Form items</strong>. You can also hide items for a particular tenure, for example a document that doesn't apply to Shared Ownership plots.
       </p>
 
-      <h3>Tracking essential paperwork</h3>
+      <h3 id="tracking-essential-paperwork">Tracking essential paperwork</h3>
       <p>
         A plot often can't be handed over until its paperwork is complete, and waiting for documents is often what holds a handover up. KeyCheck tracks the paperwork so you can see what's missing and how long you've been waiting.
       </p>
@@ -141,7 +150,7 @@
         <p>Documents can be updated one plot at a time on site, or for many plots at once from the office. For example, if the EPCs for plots 12 to 20 arrive in one email, you can mark them all as received in one go.</p>
       </div>
 
-      <h3>Reports</h3>
+      <h3 id="reports">Reports</h3>
       <p>KeyCheck makes two main kinds of PDF:</p>
       <ul>
         <li><strong>Handover forms</strong>: one per plot, recording what was handed over, the meter readings, the documents and the signatures. These are for the client's and residents' records.</li>
@@ -155,7 +164,7 @@
         <figcaption>A progress report for Meadow View Phase 2</figcaption>
       </figure>
 
-      <h3>Working with a team</h3>
+      <h3 id="working-with-a-team">Working with a team</h3>
       <p>
         With <strong>iCloud sync</strong> turned on, your projects stay up to date across your iPhone and iPad. You can also <strong>share</strong> a project with colleagues, so the site team and the office see each other's changes as they happen. For example, the site manager can tick off a snag on site, and the employer's agent sees it in the office.
       </p>
@@ -163,7 +172,7 @@
         iCloud sync is off until you turn it on. Your projects, photos and signatures are stored on your device and in your own iCloud. KeyCheck doesn't send them anywhere else.
       </p>
 
-      <h3>KeyCheck Pro</h3>
+      <h3 id="keycheck-pro">KeyCheck Pro</h3>
       <p>
         Creating projects and making changes needs a <strong>KeyCheck Pro</strong> subscription, which starts with a 7-day free trial. Without a subscription, the subscription screen appears when you open KeyCheck, but you can close it. You can still open, read and export everything, and a <strong>View only</strong> notice appears at the top of each project.
       </p>
@@ -171,7 +180,7 @@
         This also applies to shared projects. Anyone you share a project with can open and export it for free. To make changes, they need their own KeyCheck Pro subscription, and you need to have given them permission to make changes.
       </p>
 
-      <h3>Try it with the sample projects</h3>
+      <h3 id="try-it-with-the-sample-projects">Try it with the sample projects</h3>
       <p>The first time you open KeyCheck, it adds two example sites:</p>
       <ul>
         <li><strong>Meadow View Phase 2</strong>: a housing site with plots at every stage, from not started to handed over and signed.</li>
@@ -190,5 +199,7 @@
     KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
     <a class="back-to-top" href="#top">Back to top ↑</a>
   </footer>
+  <script src="manual-search-index.js" defer></script>
+  <script src="manual-search.js" defer></script>
 </body>
 </html>

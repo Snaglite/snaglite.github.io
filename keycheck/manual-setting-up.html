@@ -23,11 +23,20 @@
   </header>
 
   <main class="wrap">
+    <div class="manual-search" data-manual-search hidden>
+      <form role="search">
+        <label class="visually-hidden" for="manual-search-input">Search the manual</label>
+        <input id="manual-search-input" type="search" placeholder="Search the manual" autocomplete="off" enterkeyhint="search">
+      </form>
+      <p class="manual-search-status" aria-live="polite"></p>
+      <ol class="manual-search-results"></ol>
+    </div>
+
     <section class="card" id="setting-up">
       <p class="section-lede">Get KeyCheck ready to use: install it, subscribe to KeyCheck Pro, add your name and branding, and try the sample projects.</p>
       <p>It takes about five minutes. Settings is on the <strong>Projects</strong> screen: tap <strong>Settings</strong> (the gear button).</p>
 
-      <h3>Installing KeyCheck</h3>
+      <h3 id="installing-keycheck">Installing KeyCheck</h3>
       <p>KeyCheck runs on iPhone and iPad with iOS 26 or iPadOS 26 or later.</p>
       <ol class="steps">
         <li>Open the <strong>App Store</strong> on your iPhone or iPad.</li>
@@ -35,10 +44,10 @@
       </ol>
       <p>Updates keep your projects. If you use KeyCheck on more than one device, iCloud sync keeps them in step (chapter 12).</p>
 
-      <h3>KeyCheck Pro</h3>
+      <h3 id="keycheck-pro">KeyCheck Pro</h3>
       <p>Creating projects and making changes needs a <strong>KeyCheck Pro</strong> subscription. There's a monthly plan and a yearly plan, and new subscribers can start with a <strong>7-day free trial</strong>. The subscription screen shows the current prices.</p>
 
-      <h4>Subscribing</h4>
+      <h4 id="subscribing">Subscribing</h4>
       <ol class="steps">
         <li>Open the subscription screen. It appears when you open KeyCheck without a subscription. You can also tap <strong>View plans</strong> on the <strong>View only</strong> notice at the top of a project, or go to <strong>Settings → Subscription → KeyCheck Pro</strong>.</li>
         <li>Under <strong>Choose a Plan</strong>, pick <strong>Monthly</strong> or <strong>Yearly</strong>.</li>
@@ -53,20 +62,20 @@
         <figcaption>The subscription screen, with a plan to choose</figcaption>
       </figure>
 
-      <h4>Without a subscription</h4>
+      <h4 id="without-a-subscription">Without a subscription</h4>
       <p>You can close the subscription screen and keep using KeyCheck to read. Everything you've recorded can still be opened and exported, including PDFs, but nothing can be changed, and a <strong>View only</strong> notice appears at the top of each project. Your projects are never deleted when a subscription ends.</p>
 
-      <h4>Checking, restoring or cancelling</h4>
+      <h4 id="checking-restoring-or-cancelling">Checking, restoring or cancelling</h4>
       <ul>
         <li><strong>Settings → Subscription</strong> shows whether KeyCheck Pro is active and which plan you're on.</li>
         <li>On a new iPhone or iPad, or after reinstalling, tap <strong>Restore Purchases</strong> if KeyCheck doesn't recognise your subscription straight away.</li>
         <li>To change plan or cancel, open the subscription screen and tap <strong>Manage in App Store</strong>, or go to your Apple Account settings. Cancel at least 24 hours before the renewal date to avoid being charged for the next period.</li>
       </ul>
 
-      <h4>Shared projects</h4>
+      <h4 id="shared-projects">Shared projects</h4>
       <p>If someone shares a project with you, you can open and export it without a subscription. To make changes, you need your own KeyCheck Pro, and the owner must have given you permission to make changes. Chapter 12 explains sharing.</p>
 
-      <h3>Your name</h3>
+      <h3 id="your-name">Your name</h3>
       <p>Go to <strong>Settings → You</strong> and type your name in <strong>Your name</strong>.</p>
       <ul>
         <li>It appears as <strong>Prepared by</strong> at the top of every PDF: handover forms, the progress report, communal keys and project documents.</li>
@@ -81,10 +90,10 @@
         <figcaption>Settings, with your subscription, your name and your branding profiles</figcaption>
       </figure>
 
-      <h3>Branding</h3>
+      <h3 id="branding">Branding</h3>
       <p><strong>Branding</strong> controls how your PDFs look: your logo, company name, colours and footer. KeyCheck starts with one profile called <strong>Default</strong>. You can keep more than one <strong>branding profile</strong>, for example one for each employer or client you work for. Each project uses one profile.</p>
 
-      <h4>Setting up a profile</h4>
+      <h4 id="setting-up-a-profile">Setting up a profile</h4>
       <ol class="steps">
         <li>Go to <strong>Settings → Branding</strong> and tap a profile, or tap <strong>Add branding profile</strong> to make a new one.</li>
         <li>Fill in the parts you want (see the table below).</li>
@@ -120,20 +129,20 @@
       </figure>
       <p>Changes save as you go.</p>
 
-      <h4>Choosing a project's branding</h4>
+      <h4 id="choosing-a-project-s-branding">Choosing a project's branding</h4>
       <ul>
         <li>When you create a project, pick a profile under <strong>Branding</strong> on the <strong>New project</strong> screen.</li>
         <li>To change it later, open the project, tap <strong>Project setup</strong> (the sliders button, top right), then <strong>Project details</strong>, and choose a <strong>Branding profile</strong>. Choose <strong>None</strong> for plain PDFs.</li>
       </ul>
 
-      <h4>Other branding options</h4>
+      <h4 id="other-branding-options">Other branding options</h4>
       <ul>
         <li><strong>Show "Prepared with KeyCheck"</strong>: a small line beside the page number on each PDF. Turn it off in <strong>Settings → Branding</strong> if you'd rather not show it.</li>
         <li>To give a profile to a colleague, swipe left on it and tap <strong>Share</strong>, then send it by AirDrop or email. They can open it in KeyCheck to add it to their own Settings.</li>
         <li>To delete a profile, swipe left on it and tap <strong>Delete</strong>. Projects using it go back to plain PDFs. You always keep at least one profile.</li>
       </ul>
 
-      <h3>The sample projects</h3>
+      <h3 id="the-sample-projects">The sample projects</h3>
       <p>The first time you open KeyCheck, it adds two example sites:</p>
       <ul>
         <li><strong>Meadow View Phase 2</strong>: a housing site with plots at every stage. Plots 1 to 4 are handed over and signed; plots 12 to 15 haven't been started.</li>
@@ -152,13 +161,13 @@
         <p>Open Meadow View Phase 2 and compare plot 1 with plot 12. Then tap <strong>Share and export → Export progress report…</strong> to see the kind of report KeyCheck makes.</p>
       </div>
 
-      <h4>Removing and adding back the samples</h4>
+      <h4 id="removing-and-adding-back-the-samples">Removing and adding back the samples</h4>
       <ul>
         <li>To remove a sample, swipe left on it in the Projects list and tap <strong>Delete</strong>.</li>
         <li>To add them back, go to <strong>Settings → Import → Add sample projects</strong>. This is greyed out while samples are already there, so delete both first if you want a fresh copy.</li>
       </ul>
 
-      <h3>Other settings worth knowing</h3>
+      <h3 id="other-settings-worth-knowing">Other settings worth knowing</h3>
       <p>You don't need to change these to get started. Chapter 14 covers every setting.</p>
       <ul>
         <li><strong>Feedback → Button haptics</strong>: a light tap when you press a button or flip a switch. Turn it off if you find it distracting.</li>
@@ -177,5 +186,7 @@
     KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
     <a class="back-to-top" href="#top">Back to top ↑</a>
   </footer>
+  <script src="manual-search-index.js" defer></script>
+  <script src="manual-search.js" defer></script>
 </body>
 </html>
