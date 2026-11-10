@@ -331,6 +331,72 @@ ol.steps > li::before {
   text-decoration: none;
 }
 
+/* Chapter pages: breadcrumb in the header, and previous / next links */
+
+.hero-compact {
+  padding: 40px 0 72px;
+}
+
+.hero-compact .hero-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+  color: #8f98a5;
+  font-size: 0.92rem;
+}
+
+.breadcrumbs a {
+  color: var(--accent-light);
+}
+
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.chapter-nav a {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  font-weight: 650;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.chapter-nav a span {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.chapter-nav .next {
+  grid-column: 2;
+  text-align: right;
+}
+
+.chapter-nav a:hover,
+.chapter-nav a:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
 /* Notes */
 
 .note {
@@ -455,6 +521,14 @@ td:first-child {
   .quick-start,
   .contents {
     grid-template-columns: 1fr;
+  }
+
+  .chapter-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-nav .next {
+    grid-column: auto;
   }
 }
 
