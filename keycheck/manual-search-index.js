@@ -190,7 +190,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "3. Creating a project",
   "heading": "Meters",
   "url": "manual-creating-a-project.html#meters",
-  "text": "Gas supply : switch on if the site has gas. This also shows the gas, boiler and CO detector documents. With no gas, KeyCheck uses a heat detector document instead. The other meters (electricity, water and solar PV) can be switched on or off. Switching off Solar PV also hides the solar documents."
+  "text": "Gas supply : switch on if the site has gas. Residential projects then use boiler instructions, boiler warranty, heating commissioning, controls instructions, a Landlord gas safety certificate and CO detector instructions. Without gas, the residential starter uses heat-pump instructions, warranty and MCS certificate instead, together with heating commissioning and controls instructions. Commercial heating records can be added from the document library because commercial systems vary. The other meters (electricity, water and solar PV) can be switched on or off. Switching off Solar PV also hides the solar documents."
  },
  {
   "chapter": "3. Creating a project",
@@ -652,7 +652,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "6. Documents and certificates",
   "heading": "Choosing the project documents",
   "url": "manual-documents-and-certificates.html#choosing-the-project-documents",
-  "text": "The first time, the screen is empty. Tap Add documents to choose some. Later, tap the ⋯ button (top right) and choose Manage document list . Then: Add project documents from library lists the site-wide documents KeyCheck knows about, such as fire-safety records, warranties and novation agreements. Tick the ones you need and tap Add . Add custom project document adds one of your own. Add high-risk building documents adds the bundles for a higher-risk building (see High-risk buildings below). Switch documents on or off, and change which group each one is in. Tap Save to keep the changes. To take a document off the project, touch and hold it and choose Remove from project (or swipe left and tap Delete ). If you add it back later, what was recorded for it is still there."
+  "text": "The first time, the screen is empty. Tap Add documents to choose some. Later, tap the ⋯ button (top right) and choose Manage document list . Then: Add project documents from library lists the site-wide documents KeyCheck knows about, such as fire-safety records, warranties and novation agreements. Tick the ones you need and tap Add . Add custom project document adds one of your own. Type its name, then tap the folder row beneath it to choose an existing group. Choose New group… if none of the groups fit. Add high-risk building documents adds the bundles for a higher-risk building (see High-risk buildings below). Switch documents on or off, and change which group each one is in. Tap Save to keep the changes. To take a document off the project, touch and hold it and choose Remove from project (or swipe left and tap Delete ). If you add it back later, what was recorded for it is still there."
  },
  {
   "chapter": "6. Documents and certificates",
