@@ -334,7 +334,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "4. Recording a plot handover",
   "heading": "The top of the form",
   "url": "manual-recording-a-plot-handover.html#the-top-of-the-form",
-  "text": "The ring at the top fills up as the form is completed. Beside it are the plot's status and how complete it is, for example \"In progress · 64% complete\". Status What it means Not started Nothing recorded yet. In progress Some of the form is filled in. Awaiting sign-off Everything is recorded except the signatures. Handed over Everyone in Sign-off has signed. The same statuses appear in the plot list, so you can see at a glance where each plot stands. On the project screen, the tiles above the list show how many plots have each status. Tap a tile to show only those plots, and tap it again to show them all."
+  "text": "The ring at the top fills up as the form is completed. Beside it are the plot's status and how complete it is, for example \"In progress · 64% complete\". Status What it means Not started Nothing recorded yet. In progress Some of the form is filled in. Awaiting sign-off Everything is recorded except the signatures. Handed over Everyone in Sign-off has signed, or a previous agent handed it over. The same statuses appear in the plot list, so you can see at a glance where each plot stands. On the project screen, the tiles above the list show how many plots have each status. Tap a tile to show only those plots, and tap it again to show them all."
  },
  {
   "chapter": "4. Recording a plot handover",
@@ -443,6 +443,12 @@ window.KEYCHECK_MANUAL_INDEX = [
   "heading": "Signatures",
   "url": "manual-recording-a-plot-handover.html#signatures",
   "text": "Sign-off lists the people who sign the handover, for example Client representative and Contractor . The roles are set in Form items (chapter 3). Type the person's Name . Tap Sign and hand them the phone. They sign in the box. Tap Clear to start again if they need to. Tap Done . Signing the handover The signature appears with the date it was signed, and Signed shows beside the role. If the plot doesn't have a handover date yet, the first signature sets it to today. To redo a signature, tap Clear beside it and sign again. When everyone in Sign-off has signed, the plot's status changes to Handed over . Both roles signed"
+ },
+ {
+  "chapter": "4. Recording a plot handover",
+  "heading": "Plots handed over by a previous agent",
+  "url": "manual-recording-a-plot-handover.html#plots-handed-over-by-a-previous-agent",
+  "text": "If you take on a site part-way through, some plots may already have been handed over by someone who's no longer involved, so there's nobody left to sign. To record one: Open the plot and scroll to the bottom. Under Sign-off , tap Handed over by a previous agent? (it only shows while nobody has signed). Tap Mark as handed over . Add the handover date in Details when you have it. The plot's status changes to Handed over without signatures, and its handover form says Handed over by a previous agent in place of the signature boxes. To take signatures after all, tap Take signatures instead ."
  },
  {
   "chapter": "4. Recording a plot handover",
