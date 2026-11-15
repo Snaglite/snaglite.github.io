@@ -39,10 +39,10 @@
       <h3 id="plot-documents-and-project-documents">Plot documents and project documents</h3>
       <p>KeyCheck has two kinds of document:</p>
       <ul>
-        <li><strong>Plot documents</strong> are needed for every plot, such as the gas safety certificate, EPC or warranty cover note. They're under <strong>Instructions &amp; certificates</strong> on each plot's form.</li>
-        <li><strong>Project documents</strong> are needed once for the whole site, such as the fire strategy, collateral warranties or the O&amp;M manual. They're on the project's <strong>Project documents</strong> screen.</li>
+        <li><strong>Plot documents</strong> are needed for every plot, such as the gas safety certificate, EPC or warranty cover note. They're in the documents section of each plot's form.</li>
+        <li><strong>Project documents</strong> are needed once for the whole site, such as the fire strategy, collateral warranties or the O&amp;M manual. They're on the project's <strong>Documents</strong> tab.</li>
       </ul>
-      <p>Both work the same way. Which documents are on each list is set up in <strong>Project setup → Form items</strong> (chapter 3) for plot documents, and on the Project documents screen for project documents (see below).</p>
+      <p>Both work the same way. Which documents are on each list is set up in <strong>Project settings → Form items</strong> (chapter 3) for plot documents, and on the Documents tab for project documents (see below).</p>
 
       <h3 id="marking-a-document">Marking a document</h3>
       <p>Each document has a status icon on the right. Swipe across the document, or tap the icon and choose a status:</p>
@@ -64,7 +64,7 @@
         <span class="note-label">Tip</span>
         <p>Mark a document <strong>Outstanding</strong> on the day you ask for it. That's when its waiting time starts on the progress report. Documents left as Not checked are still listed as missing, but with no waiting time.</p>
       </div>
-      <p>At the top of <strong>Instructions &amp; certificates</strong>, <strong>All documents</strong> shows how many are done, for example "18 of 24 complete". Received and Not applicable documents count as complete. Outstanding ones don't, because they haven't arrived yet. Each group, such as <strong>Heating &amp; hot water</strong>, has its own count. Tap a group's name to fold it away when you've finished with it.</p>
+      <p>On a plot, documents are listed under a heading for each group, such as <strong>Heating &amp; hot water</strong>, with a count of how many are done, for example "Heating &amp; hot water · 3 of 5". (If the project has only one group, the heading is <strong>Instructions &amp; certificates</strong>.) Received and Not applicable documents count as done. Outstanding ones don't, because they haven't arrived yet.</p>
 
       <figure class="shot">
         <a href="images/plot-documents.png" target="_blank" rel="noopener noreferrer">
@@ -126,20 +126,21 @@
       <p>This removes all of the document's dates, but its current status stays as it is. On a shared project, the history is cleared for everyone.</p>
 
       <h3 id="marking-a-whole-group-on-one-plot">Marking a whole group on one plot</h3>
-      <p>The <strong>⋯</strong> button beside each group's name changes every document in that group at once. The button beside <strong>All documents</strong> does the same for every document on the plot. Choose:</p>
+      <p>The <strong>⋯</strong> button beside each group's heading changes every document in that group at once. Choose:</p>
       <ul>
         <li><strong>Mark all as received</strong></li>
         <li><strong>Mark all as outstanding</strong></li>
         <li><strong>Mark all as not applicable</strong></li>
         <li><strong>Clear all</strong></li>
       </ul>
+      <p>To change every document on the plot, not just one group, open the same <strong>⋯</strong> menu and choose from its <strong>All documents</strong> menu instead. (A project with only one group doesn't need it, so it isn't shown.)</p>
       <p>These changes are dated too. A banner offers <strong>Undo</strong> straight afterwards.</p>
 
       <h3 id="chasing-or-updating-many-plots-at-once">Chasing or updating many plots at once</h3>
       <p>On a big site you'll often chase or receive the same documents for lots of plots at once. For example, you might chase the gas certificates and EPCs for a whole street in one phone call, or receive a batch of EPCs by email.</p>
       <ol>
-        <li>Open the project and tap <strong>Project setup</strong> (the sliders button, top right).</li>
-        <li>Choose <strong>Chase or update documents…</strong>.</li>
+        <li>Open the project's <strong>Documents</strong> tab and tap <strong>⋯</strong> (top right).</li>
+        <li>Choose <strong>Chase or update documents…</strong>. (It's on the Documents tab, but it changes the documents on the plots.)</li>
         <li>Tap <strong>Documents</strong> and tick the ones you want. <strong>All</strong> beside a group's heading ticks the whole group. Then go back.</li>
         <li>Under <strong>Mark as</strong>, choose what happened:
           <ul>
@@ -164,17 +165,17 @@
         <li><strong>Chasing a Not checked document also marks it Outstanding</strong> from that date, so the report can show how long it has been waited for.</li>
         <li><strong>Documents hidden for a tenure</strong> are skipped on plots with that tenure.</li>
         <li><strong>There's no undo.</strong> If you chase the wrong document, remove the chase from each plot's history.</li>
-        <li>This screen is for plot documents only. Project documents are updated on their own screen.</li>
+        <li>This screen is for plot documents only. Project documents are updated on the Documents tab.</li>
       </ul>
 
       <h3 id="copying-documents-between-plots">Copying documents between plots</h3>
-      <p><strong>Copy from</strong>, <strong>Paste setup</strong> and <strong>Apply setup to several</strong> (chapter 4) can copy document statuses from one plot to another. The copied statuses are dated with the day you copy them, not the dates on the plot you copied from, because this plot's documents won't necessarily have arrived on the same days.</p>
+      <p><strong>Copy from</strong> and <strong>Apply setup to several</strong> (chapter 4) can copy document statuses from one plot to another. The copied statuses are dated with the day you copy them, not the dates on the plot you copied from, because this plot's documents won't necessarily have arrived on the same days.</p>
 
       <h3 id="project-documents">Project documents</h3>
-      <p>Open a project and tap <strong>Project documents</strong>, near the top. The row shows how many are complete, for example "6 of 11 complete". (Complete means Received or Not applicable. Outstanding documents are still waiting, so they don't count.)</p>
+      <p>Open a project and tap the <strong>Documents</strong> tab. Below the <strong>Attachments</strong> row (chapter 7) are the project documents.</p>
       <p>The screen works like the documents on a plot: swipe or tap the status icon to mark a document, and tap a name for its history. Swiping left shows <strong>Outstanding</strong> and <strong>More</strong>. <strong>More</strong>, or touching and holding a document, lists <strong>Add note</strong>, <strong>Dates and history</strong>, <strong>Mark as chased today</strong> (for outstanding documents), <strong>Rename…</strong>, <strong>Convert to bundle…</strong>, <strong>Clear history</strong> and <strong>Remove from project</strong>, with Received, Outstanding and Not applicable as a row of buttons at the top.</p>
-      <p>At the top, a ring shows how many are complete, with a summary such as "4 received · 2 outstanding · 1 N/A".</p>
-      <p>When you've finished, tap <strong>Done</strong> to save your changes. <strong>Cancel</strong> closes the screen without saving them.</p>
+      <p>At the top, a ring shows how many are complete, for example "6 of 11 complete", with a summary such as "4 received · 2 outstanding · 1 N/A". (Complete means Received or Not applicable. Outstanding documents are still waiting, so they don't count.)</p>
+      <p>Changes save as you make them. There's no Done button.</p>
 
       <figure class="shot">
         <a href="images/project-documents.png" target="_blank" rel="noopener noreferrer">
@@ -198,7 +199,7 @@
       <p>A <strong>bundle</strong> solves this. It's one heading with a list of items underneath, and each item is tracked on its own. In the <strong>Riverside Business Park</strong> sample project, <strong>Collateral warranties</strong> is a bundle with five items, one each from the main contractor, M&amp;E subcontractor, roofing subcontractor, cladding subcontractor and structural engineer.</p>
       <p>To make a bundle:</p>
       <ol>
-        <li>On the <strong>Project documents</strong> screen, touch and hold the document and choose <strong>Convert to bundle…</strong>, then confirm. (Or, in <strong>Manage document list</strong>, use the options button beside it and choose <strong>Convert to bundle</strong>.)</li>
+        <li>On the <strong>Documents</strong> tab, touch and hold the document and choose <strong>Convert to bundle…</strong>, then confirm. (Or, in <strong>Manage document list</strong>, use the options button beside it and choose <strong>Convert to bundle</strong>.)</li>
         <li>In <strong>Manage document list</strong>, rename the bundle if you need to, then tap <strong>Add item</strong> for each part, for example "Roofing subcontractor".</li>
         <li>Tap <strong>Save</strong>.</li>
       </ol>
@@ -208,7 +209,7 @@
         </a>
         <figcaption>A bundle in Manage document list</figcaption>
       </figure>
-      <p>On the Project documents screen, tap the bundle to open or close its list of items. Each item has its own status, dates, chases and note, just like any other document. The bundle shows how far along it is, for example <strong>3 of 5 received</strong>, and becomes Received by itself when every item has arrived. Items marked N/A are left out of the count.</p>
+      <p>On the Documents tab, tap the bundle to open or close its list of items. Each item has its own status, dates, chases and note, just like any other document. The bundle shows how far along it is, for example <strong>3 of 5 received</strong>, and becomes Received by itself when every item has arrived. Items marked N/A are left out of the count.</p>
       <p>Good to know:</p>
       <ul>
         <li>Converting a document keeps its old status, note and history, but they no longer decide the bundle's status. That comes from its items.</li>
@@ -218,7 +219,7 @@
         <li>To rename a bundle or an item, touch and hold it and choose <strong>Rename…</strong>.</li>
         <li>To turn a bundle back into a single document, touch and hold it and choose <strong>Convert to single document…</strong>. You can keep its items as separate documents or remove them. The document goes back to the status, note and history it had before.</li>
       </ul>
-      <p><strong>Planning</strong> has its own experimental section at the top of <strong>Project documents</strong>. It tracks the site's planning decisions, conditions, discharges and S106 obligations, and is covered in <a href="manual-project-wide-records.html#planning">chapter 7</a>.</p>
+      <p>Planning has its own experimental tab, <strong>Planning</strong>, which tracks the site's planning decisions, conditions, discharges and S106 obligations. <a href="manual-project-wide-records.html#planning">Chapter 7</a> covers it.</p>
 
       <h4 id="high-risk-buildings">High-risk buildings</h4>
       <p>For a higher-risk building (18 m or taller, or at least 7 storeys, with at least 2 homes), KeyCheck can add a ready-made set of bundles for the Building Safety Regulator's paperwork. Switch on <strong>High-risk building</strong> when you create the project (chapter 3), or for an existing project, open <strong>Manage document list</strong> and tap <strong>Add high-risk building documents</strong>, then <strong>Save</strong>.</p>
@@ -239,7 +240,7 @@
       <ul>
         <li><strong>Progress report</strong> (chapter 11): <strong>What's changed</strong> lists documents received and chased in the period. <strong>Documents not received</strong> lists everything still missing on plots that aren't handed over, with how long you've waited and when it was last chased.</li>
         <li><strong>Handover PDF</strong> (chapter 10): each plot's documents, with N/A shown where it applies.</li>
-        <li><strong>Insights</strong> (chapter 9), opened by tapping the progress summary at the top of a project: includes a list of <strong>Project documents still needed</strong>, with a <strong>Copy</strong> button that puts it on the clipboard, ready to paste into an email.</li>
+        <li><strong>Insights</strong> (chapter 9), at the top of the project's <strong>Site</strong> tab: includes a list of <strong>Project documents still needed</strong>, with a <strong>Copy</strong> button that puts it on the clipboard, ready to paste into an email.</li>
       </ul>
 
       <div class="note">
