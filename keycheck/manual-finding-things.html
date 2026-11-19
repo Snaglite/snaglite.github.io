@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1e232c">
+  <title>9. Finding things – KeyCheck User Manual</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="keycheck.css">
+</head>
+<body>
+  <header class="hero hero-compact" id="top">
+    <div class="wrap hero-inner">
+      <img class="hero-icon" src="icon.svg" alt="KeyCheck app icon">
+      <div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="manual.html">KeyCheck User Manual</a><span aria-hidden="true">›</span><span aria-current="page">Chapter 9</span></nav>
+        <h1>Finding things</h1>
+        <p>Search, the plot list, Insights, the plot map and the projects map</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="manual-search" data-manual-search hidden>
+      <form role="search">
+        <label class="visually-hidden" for="manual-search-input">Search the manual</label>
+        <input id="manual-search-input" type="search" placeholder="Search the manual" autocomplete="off" enterkeyhint="search">
+      </form>
+      <p class="manual-search-status" aria-live="polite"></p>
+      <ol class="manual-search-results"></ol>
+    </div>
+
+    <section class="card" id="finding-things">
+      <p class="section-lede">On a big site, the question is usually "which plot was that?" or "what's still missing?". This chapter covers the ways KeyCheck helps you find things: search, sorting and filtering the plot list, Insights and the plot map, and the projects map with its weather badge.</p>
+
+      <h3 id="searching-a-project">Searching a project</h3>
+      <p>Open a project and tap the <strong>Search</strong> tab (the magnifying glass, far right of the tab bar). Type in <strong>Search this project</strong>.</p>
+      <p>You can find plots by number or address, and by almost anything recorded on them:</p>
+      <ul>
+        <li>the plot number, postal number, postcode, tenure, house type, property type and block</li>
+        <li>meter readings, serial numbers, MPANs and suppliers, and the reason a meter wasn't fitted</li>
+        <li>keys added on that plot, suite keys and keyed alike sets</li>
+        <li>final snags and who's fixing them</li>
+        <li>notes, document notes and the names on signatures</li>
+      </ul>
+      <p>Communal keys and meters are searched too, by name, location, who they were handed to, readings and notes.</p>
+      <p>Results are grouped under <strong>Plots &amp; units</strong>, <strong>Communal keys</strong> and <strong>Communal meters</strong>, with the best matches first. Each result says why it matched, for example "Electricity: Meter serial number". Tap a plot to open it, or a communal key or meter to go to it on the Site tab.</p>
+
+      <figure class="shot">
+        <a href="images/project-search.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/project-search.png" alt="The Search tab with harebell typed: under Plots &amp; units, Plots 7 to 12 on Harebell Close in Meadow View Phase 2, each with its status" loading="lazy">
+        </a>
+        <figcaption>Searching a project</figcaption>
+      </figure>
+
+      <h4 id="search-tips">Search tips</h4>
+      <ul>
+        <li><strong>Every word has to match</strong>, so add words to narrow it down: "Harebell rent" finds Rent plots on Harebell Close.</li>
+        <li><strong>Capitals, accents and spaces don't matter.</strong> "st174qh" finds ST17 4QH.</li>
+        <li><strong>Search by status</strong>: type "handed over", "in progress", "not started" or "awaiting sign off" (or just "ready").</li>
+        <li>Small words such as "show", "find", "all" and "plots" are ignored, so "show all plots awaiting sign off" works too.</li>
+        <li>A single letter or number only matches the start of a word, so "7" finds Plot 7 but not Plot 17.</li>
+      </ul>
+
+      <h3 id="searching-all-your-projects">Searching all your projects</h3>
+      <p>On the <strong>Projects</strong> screen, tap the search button at the bottom and type in <strong>Search all projects</strong>. It searches every project in the same way, including archived ones, and also finds projects by name, client, contractor, site address and postcode. Tap a plot in the results to open it in its project.</p>
+      <p>KeyCheck keeps your search when you open a result, so you can go back and try the next one.</p>
+
+      <h3 id="sorting-and-filtering-the-plot-list">Sorting and filtering the plot list</h3>
+      <p>On the <strong>Plots</strong> tab:</p>
+      <ul>
+        <li><strong>Filter by status</strong>: tap one of the four tiles at the top (<strong>Not started</strong>, <strong>Handed over</strong>, <strong>Awaiting sign-off</strong> or <strong>In progress</strong>) to show only those plots. The line underneath says "Showing … only". Tap the tile again to show every plot.</li>
+        <li><strong>Sort</strong>: tap the menu beside the number of plots, for example <strong>Plot number</strong>, and choose <strong>Plot number</strong>, <strong>Status</strong> (least finished first) or <strong>Handover date</strong> (earliest first). Handover date uses the target date until a plot is handed over, and plots with no date go last. KeyCheck remembers your choice.</li>
+        <li><strong>Group by street</strong>: in the same menu, when the site has more than one street. Each street gets a heading with how many plots are on it.</li>
+      </ul>
+      <p>On the Mac, the plots are a table: click a column heading to sort by it, and use the filter button in the header to show one status. Type in the search field at the top of the table (⌘F) to find a plot by number, address or postcode. Right-click a column heading to show or hide columns, such as <strong>Keys</strong>, <strong>Meters</strong> and <strong>Docs Missing</strong>.</p>
+
+      <h3 id="insights">Insights</h3>
+      <p>Insights is an overview of the whole site on one screen: how far along it is, what's changed recently and which documents are still needed. Open it from the <strong>Site</strong> tab (the first card), or touch and hold the "4 of 14 handed over" summary at the top of the Plots tab and choose <strong>Insights</strong>. On the Mac, it's on the <strong>Site</strong> page, or choose <strong>Project → Insights</strong>.</p>
+      <p>Insights has these parts, from the top:</p>
+      <ul>
+        <li><strong>Summary</strong>: how many plots are not started, in progress, awaiting sign-off and handed over, with a bar showing the mix. Underneath is a line such as "13 outstanding items (2 overdue) · 150 documents needed · 2 plots past target handover".</li>
+        <li><strong>Plot map</strong>: every plot as a coloured tile (see below).</li>
+        <li><strong>What's changed</strong>: plots handed over, documents received, documents chased and still needed, and outstanding items completed, since the last progress report (or in the last 14 days, if you haven't made one yet). Each list shows five lines, then "and 3 more".</li>
+        <li><strong>Progress by block</strong> and <strong>Progress by street</strong>: a bar for each, on sites with more than one.</li>
+        <li><strong>Document progress</strong>: for plots not yet handed over, a bar for each document showing how many have been received, and which plots are still waiting, for example "Still needed: Plots 1–3, 5 · waiting since 21/10/2026 (17 days)". Documents nobody has ticked off count as still needed.</li>
+        <li><strong>Project documents still needed</strong>: the site-wide documents still to come. Tap <strong>Copy</strong> to copy the list, ready to paste into an email.</li>
+      </ul>
+
+      <figure class="shot">
+        <a href="images/insights.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/insights.png" alt="Insights: the Summary card with 61% recorded overall, tiles for 3 not started, 5 in progress, 2 awaiting sign-off and 4 handed over, and 13 outstanding items · 150 documents needed · 1 plot past target handover, then the plot map with a coloured tile for each plot and plot 9 marked Overdue" loading="lazy">
+        </a>
+        <figcaption>Insights: the Summary and the plot map</figcaption>
+      </figure>
+
+      <h4 id="the-plot-map">The plot map</h4>
+      <p>The plot map isn't a street map. It's a grid with a tile for each plot, coloured by status: grey for not started, orange for in progress, purple for awaiting sign-off and green for handed over. The Summary tiles above it are the key.</p>
+      <p>Each tile shows the plot number and its handover date, or its target date until it's handed over. A plot past its target shows <strong>Overdue</strong> in red. Tap a tile to open the plot.</p>
+      <div class="note">
+        <span class="note-label">From the office</span>
+        <p>Insights is a quick check before a phone call or meeting. <strong>Document progress</strong> shows which certificate is holding up the most plots, and the <strong>Copy</strong> button turns the project documents still needed into a list for an email to the contractor. For the full picture to hand round at a meeting, use the progress report (chapter 11).</p>
+      </div>
+
+      <h3 id="the-projects-map-and-weather">The projects map and weather</h3>
+      <p>At the top of the <strong>Projects</strong> screen, a map shows where your projects are. A project appears once its <strong>Site address</strong> and <strong>Postcode</strong> are filled in (in <strong>Project settings → Project details</strong>), and KeyCheck can find them on the map. Projects close together are grouped into a numbered circle; tap it to zoom in. Archived projects aren't shown.</p>
+      <ul>
+        <li>Tap the location button (top left) to centre the map on where you are.</li>
+        <li>Tap <strong>i</strong> (top right) to see how many projects are on the map, and why any are missing.</li>
+      </ul>
+      <p>The badge at the bottom right shows the current weather and temperature where you are, from Apple Weather, which is handy before heading out to site. It needs permission to use your location; without it, the badge says <strong>Weather unavailable</strong>. Your location is only used for the map and the weather.</p>
+      <p>On the Mac, choose <strong>All Projects</strong> at the top of the sidebar (⌘0) for the same map, totals for all your projects, and a table of projects you can sort by clicking a column heading.</p>
+
+      <h3 id="sorting-and-archiving-projects">Sorting and archiving projects</h3>
+      <ul>
+        <li><strong>Sort the Projects list</strong>: tap <strong>More</strong> (<strong>…</strong>) → <strong>Sort by</strong>, and choose <strong>Newest first</strong>, <strong>Oldest first</strong>, <strong>Name A–Z</strong>, <strong>Name Z–A</strong> or <strong>Progress</strong>. On the Mac, choose <strong>View → Sort Projects By</strong>.</li>
+        <li><strong>Archived projects</strong> are kept in a folded <strong>Archived</strong> section at the bottom of the list. Tap it to show them. They're left out of the map and the totals at the top, but still turn up in search.</li>
+      </ul>
+
+    </section>
+
+    <nav class="chapter-nav" aria-label="Chapters">
+      <a class="prev" href="manual-the-project-log.html"><span>Previous</span>8. The project log</a>
+      <a class="next" href="manual-the-handover-pdf.html"><span>Next</span>10. The handover PDF</a>
+    </nav>
+  </main>
+
+  <footer class="footer wrap">
+    KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
+    <a class="back-to-top" href="#top">Back to top ↑</a>
+  </footer>
+  <script src="manual-search-index.js" defer></script>
+  <script src="manual-search.js" defer></script>
+</body>
+</html>

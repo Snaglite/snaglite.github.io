@@ -16,7 +16,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "1. What KeyCheck does",
   "heading": "Projects",
   "url": "manual-what-keycheck-does.html#projects",
-  "text": "A project is one site or development, such as \"Meadow View Phase 2\". The Projects screen lists all of your projects, with a ring showing how far along each one is. Tap a project to open it. The Projects screen, with the two sample projects"
+  "text": "A project is one site or development, such as \"Meadow View Phase 2\". The Projects screen lists all of your projects, with a coloured bar showing how far along each one is. Tap a project to open it. The Projects screen, with the two sample projects"
  },
  {
   "chapter": "1. What KeyCheck does",
@@ -310,7 +310,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "3. Creating a project",
   "heading": "Tenure exceptions",
   "url": "manual-creating-a-project.html#tenure-exceptions",
-  "text": "On mixed-tenure sites, some documents aren't needed for every tenure. For example, a housing association may not want a particular group of documents for its Rent plots. Tenure exceptions hide a whole document group for the tenures that don't need it, so it doesn't appear on those plots at all. Tap Project settings → Form items . Open the More button ( ••• , top right) and tap Tenure exceptions . (This only appears when Tenure field is on.) Tap Add tenure exception and choose a document group. Under Required for , switch off the tenures that don't need it. The standard tenures are Rent , Shared Ownership and Market Rent . Go back, then tap Done on Form items to save. A tenure exception: Renewables & EV documents aren't needed for Shared Ownership plots Good to know: Plots need a tenure for this to work. Set it on each plot's Details , when adding plots, or by importing it from a spreadsheet. Plots with no tenure, or a tenure you've typed yourself (an \"Other\" tenure), always show every group. To undo an exception , swipe left on it under Current exceptions and delete it. The group is then needed for every tenure again. For a single document that doesn't apply to one plot, mark it Not applicable on that plot instead (chapter 6)."
+  "text": "On mixed-tenure sites, some documents aren't needed for every tenure. For example, a housing association may not want a particular group of documents for its Rent plots. Tenure exceptions hide a whole document group for the tenures that don't need it, so it doesn't appear on those plots at all. Tap Project settings → Form items . Open the More button ( ••• , top right) and tap Tenure exceptions . (This only appears when Tenure field is on.) Tap Add tenure exception and choose a document group. Under Required for , switch off the tenures that don't need it. The standard tenures are Rent , Shared Ownership and Market Rent . Go back, then tap Done on Form items to save. A tenure exception: kitchen appliance documents aren't needed for Rent plots Good to know: Plots need a tenure for this to work. Set it on each plot's Details , when adding plots, or by importing it from a spreadsheet. Plots with no tenure, or a tenure you've typed yourself (an \"Other\" tenure), always show every group. To undo an exception , swipe left on it under Current exceptions and delete it. The group is then needed for every tenure again. For a single document that doesn't apply to one plot, mark it Not applicable on that plot instead (chapter 6)."
  },
  {
   "chapter": "3. Creating a project",
@@ -340,13 +340,13 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "4. Recording a plot handover",
   "heading": "The top of the form",
   "url": "manual-recording-a-plot-handover.html#the-top-of-the-form",
-  "text": "The top of the form is one row. A small ring fills up as the form is completed. Beside it is What's left , with the plot's status and how complete it is underneath, for example \"In progress · 64% complete\", and an orange count of what still needs doing on the right. Status What it means Not started Nothing recorded yet. In progress Some of the form is filled in. Awaiting sign-off Everything is recorded except the signatures. Handed over Everyone in Sign-off has signed, or a previous agent handed it over. The same statuses appear in the plot list, so you can see at a glance where each plot stands. On the Plots tab, the tiles at the top show how many plots have each status. Tap a tile to show only those plots, and tap it again to show them all."
+  "text": "The top of the form is the What's left card: the plot's status and how complete it is, for example \"In progress · 70% complete\", with a bar that fills up as the form is completed, and the number of things still to do on the right. Status What it means Not started Nothing recorded yet. In progress Some of the form is filled in. Awaiting sign-off Everything is recorded except the signatures. Handed over Everyone in Sign-off has signed, or a previous agent handed it over. The same statuses appear in the plot list, so you can see at a glance where each plot stands. On the Plots tab, the tiles at the top show how many plots have each status. Tap a tile to show only those plots, and tap it again to show them all."
  },
  {
   "chapter": "4. Recording a plot handover",
   "heading": "What's left",
   "url": "manual-recording-a-plot-handover.html#what-s-left",
-  "text": "Tap What's left to see what still needs doing, for example \"Gas\", \"3 keys\" or \"Contractor signature\". Tap an item to jump straight to it. When everything's done, the row shows the plot's status and \"Everything is recorded\". The ring counts meters, keys, documents and signatures. A document counts once it's Received or Not applicable. One marked Outstanding has been asked for but hasn't arrived, so it still shows in What's left , for example \"2 documents (1 outstanding)\". Final snags and notes don't count towards the ring, because a plot can be handed over with snags still open. The top of the form, with What's left opened"
+  "text": "Tap What's left to see what still needs doing, for example \"Gas\", \"3 keys\" or \"Contractor signature\". Tap an item to jump straight to it. When everything's done, the row shows the plot's status and \"Everything is recorded\". The bar counts meters, keys, documents and signatures. A document counts once it's Received or Not applicable. One marked Outstanding has been asked for but hasn't arrived, so it still shows in What's left , for example \"2 documents (1 outstanding)\". Final snags and notes don't count towards it, because a plot can be handed over with snags still open. The top of the form, with What's left opened"
  },
  {
   "chapter": "4. Recording a plot handover",
@@ -412,7 +412,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "4. Recording a plot handover",
   "heading": "Step 3: Say which key opens each door",
   "url": "manual-recording-a-plot-handover.html#step-3-say-which-key-opens-each-door",
-  "text": "Do this for each door on the suite: Tap the door's name. (For a key you added on this plot, tap the orange Details line under it instead.) Under Also opened by , tap the suite key that also opens this door, for example Master . Choose Not on the suite if no suite key opens it. Under Keyed alike , leave it on Own key , unless this door shares its key with other doors. If it does, tap the set they share, or tap New set to start one. Sets are named Set A, Set B and so on. Tap Done . The plant room is opened by the Unit 2 master, and shares a key with Set B"
+  "text": "Do this for each door on the suite: Tap the door's name. (For a key you added on this plot, tap the Details line under it instead.) Under Also opened by , tap the suite key that also opens this door, for example Master . Choose Not on the suite if no suite key opens it. Under Keyed alike , leave it on Own key , unless this door shares its key with other doors. If it does, tap the set they share, or tap New set to start one. Sets are named Set A, Set B and so on. Tap Done . The plant room is opened by the Unit 2 master, and shares a key with Set B"
  },
  {
   "chapter": "4. Recording a plot handover",
@@ -472,7 +472,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "4. Recording a plot handover",
   "heading": "Apply setup to several plots",
   "url": "manual-recording-a-plot-handover.html#apply-setup-to-several-plots",
-  "text": "To copy one plot's setup to lots of plots in one go: Open the project and tap Project settings (the gear at the top right of the Plots tab), then Apply setup to several… . (Or touch and hold a plot in the list and choose Apply setup to several… .) Under Copy from , choose the plot to copy. Choose what to copy: Keys , Meter suppliers and Document statuses . Document statuses are off to start with, because each plot's documents usually need checking one by one. Under Apply to , tick the plots to copy it to. All and None tick or untick every plot. Tap Apply to (the button shows how many plots you've ticked). This replaces the keys and document statuses already on the ticked plots, so check you've ticked the right ones. Apply setup, copying Plot 1 to four plots"
+  "text": "To copy one plot's setup to lots of plots in one go: Open the project and tap Project settings (the gear at the top right of the Plots tab), then Apply setup to several… . (Or touch and hold a plot in the list and choose Apply setup to several… .) Under Copy from , choose the plot to copy. Choose what to copy: Keys , Meter suppliers and Document statuses . Document statuses are off to start with, because each plot's documents usually need checking one by one. Under Apply to , tick the plots to copy it to. All and None tick or untick every plot. Tap Apply to (the button shows how many plots you've ticked). This replaces the keys and document statuses already on the ticked plots, so check you've ticked the right ones. Apply setup, copying Plot 2 to three plots"
  },
  {
   "chapter": "4. Recording a plot handover",
@@ -508,7 +508,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "5. Meter readings",
   "heading": "Typing a reading",
   "url": "manual-meter-readings.html#typing-a-reading",
-  "text": "Tap a box and type. Reading boxes open a number keypad. A meter counts as done in What's left (chapter 4) once one of its readings is filled in. Serial numbers, supply numbers and suppliers are recorded on the handover form but don't count towards the ring."
+  "text": "Tap a box and type. Reading boxes open a number keypad. A meter counts as done in What's left (chapter 4) once one of its readings is filled in. Serial numbers, supply numbers and suppliers are recorded on the handover form but don't count towards how complete the plot is."
  },
  {
   "chapter": "5. Meter readings",
@@ -640,7 +640,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "6. Documents and certificates",
   "heading": "Chasing or updating many plots at once",
   "url": "manual-documents-and-certificates.html#chasing-or-updating-many-plots-at-once",
-  "text": "On a big site you'll often chase or receive the same documents for lots of plots at once. For example, you might chase the gas certificates and EPCs for a whole street in one phone call, or receive a batch of EPCs by email. Open the project's Documents tab and tap ⋯ (top right). Choose Chase or update documents… . (It's on the Documents tab, but it changes the documents on the plots.) Tap Documents and tick the ones you want. All beside a group's heading ticks the whole group. Then go back. Under Mark as , choose what happened: Chased : you've chased them. Outstanding : you've just asked for them. Their waiting time starts from the date you set. Received : they've arrived. Check the Date . It starts as today; change it if the chase or delivery was earlier. Choose the plots. KeyCheck ticks every plot that's still missing any of the chosen documents and isn't handed over yet. Use Missing , All or None to change the selection, or tap plots one by one. Each plot shows what it's missing, for example \"2 of 3 missing: Gas safety certificate, EPC\". Tap Apply to (the button shows how many plots are ticked) and confirm. The confirmation says exactly what will happen, for example \"Chase 2 documents on 18 plots?\". Chase or update documents, ready to chase two documents Good to know: Only documents still missing are changed. If a plot already has its EPC, chasing \"Gas and EPC\" records the chase on the gas certificate only. Received and N/A documents are never changed here. Chasing a Not checked document also marks it Outstanding from that date, so the report can show how long it has been waited for. Documents hidden for a tenure are skipped on plots with that tenure. There's no undo. If you chase the wrong document, remove the chase from each plot's history. This screen is for plot documents only. Project documents are updated on the Documents tab."
+  "text": "On a big site you'll often chase or receive the same documents for lots of plots at once. For example, you might chase the gas certificates and EPCs for a whole street in one phone call, or receive a batch of EPCs by email. Open the project's Documents tab and tap ⋯ (top right). Choose Chase or update documents… . (It's on the Documents tab, but it changes the documents on the plots.) Tap Documents and tick the ones you want. All beside a group's heading ticks the whole group. Then go back. Under Mark as , choose what happened: Chased : you've chased them. Outstanding : you've just asked for them. Their waiting time starts from the date you set. Received : they've arrived. Check the Date . It starts as today; change it if the chase or delivery was earlier. Choose the plots. KeyCheck ticks every plot that's still missing any of the chosen documents and isn't handed over yet. Use Missing , All or None to change the selection, or tap plots one by one. Each plot shows what it's missing, for example \"2 of 3 missing: Gas safety certificate, EPC\". Tap Apply to (the button shows how many plots are ticked) and confirm. The confirmation says exactly what will happen, for example \"Chase 2 documents on 18 plots?\". Chase or update documents, ready to record a chase Good to know: Only documents still missing are changed. If a plot already has its EPC, chasing \"Gas and EPC\" records the chase on the gas certificate only. Received and N/A documents are never changed here. Chasing a Not checked document also marks it Outstanding from that date, so the report can show how long it has been waited for. Documents hidden for a tenure are skipped on plots with that tenure. There's no undo. If you chase the wrong document, remove the chase from each plot's history. This screen is for plot documents only. Project documents are updated on the Documents tab."
  },
  {
   "chapter": "6. Documents and certificates",
@@ -652,7 +652,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "6. Documents and certificates",
   "heading": "Project documents",
   "url": "manual-documents-and-certificates.html#project-documents",
-  "text": "Open a project and tap the Documents tab. Below the Attachments row (chapter 7) are the project documents. The screen works like the documents on a plot: swipe or tap the status icon to mark a document, and tap a name for its history. Swiping left shows Outstanding and More . More , or touching and holding a document, lists Add note , Dates and history , Mark as chased today (for outstanding documents), Rename… , Convert to bundle… , Clear history and Remove from project , with Received, Outstanding and Not applicable as a row of buttons at the top. At the top, a ring shows how many are complete, for example \"6 of 11 complete\", with a summary such as \"4 received · 2 outstanding · 1 N/A\". (Complete means Received or Not applicable. Outstanding documents are still waiting, so they don't count.) Changes save as you make them. There's no Done button. The Documents tab, with Attachments at the top and the Collateral warranties bundle opened"
+  "text": "Open a project and tap the Documents tab. Below the Attachments row (chapter 7) are the project documents. The screen works like the documents on a plot: swipe or tap the status icon to mark a document, and tap a name for its history. Swiping left shows Outstanding and More . More , or touching and holding a document, lists Add note , Dates and history , Mark as chased today (for outstanding documents), Rename… , Convert to bundle… , Clear history and Remove from project , with Received, Outstanding and Not applicable as a row of buttons at the top. At the top, a bar shows how many are complete, for example \"6 of 11 complete\", with a summary such as \"4 received · 2 outstanding · 1 N/A\". (Complete means Received or Not applicable. Outstanding documents are still waiting, so they don't count.) Changes save as you make them. There's no Done button. The Documents tab, with Attachments at the top and the Collateral warranties bundle opened"
  },
  {
   "chapter": "6. Documents and certificates",
@@ -820,7 +820,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Timeline",
   "url": "manual-project-wide-records.html#timeline",
-  "text": "The Timeline tab tells the story of the site's planning, from the first permission to the latest discharge. Building under at the top is a summary: the permission the site is being built under (the working route ), a ring showing how many conditions needing approval are discharged, and what's next. Below it, decisions run down the screen in date order. Each planning route has its own coloured line, so you can see which variations and appeals follow on from which permission. Each row shows the decision's type and date, how many conditions it has, and how it relates to an earlier decision, such as \"Varies 24/02154/VAR\". The decision types are: Outline permission , Full permission and Reserved matters Planning appeal Section 73 variation : a new permission that changes conditions on an earlier one Section 96A amendment : a small, non-material change Discharge of conditions Refused application Other planning decision Discharge decisions are folded into a line under the permission whose conditions they discharge, for example \"3 discharge decisions\". Tap it to see them. Tap any decision to see its reference, date and conditions, the decisions related to it, and the original document under Source document ."
+  "text": "The Timeline tab tells the story of the site's planning, from the first permission to the latest discharge. Building under at the top is a summary: the permission the site is being built under (the working route ), how many conditions needing approval are discharged (for example \"7 of 10 discharged\"), and what's next. Below it, Outstanding counts what's still to do: Pre-commencement , Pre-occupation , S106 and CIL and To do . Below it, decisions run down the screen in date order. Each planning route has its own coloured line, so you can see which variations and appeals follow on from which permission. Each row shows the decision's type and date, how many conditions it has, and how it relates to an earlier decision, such as \"Varies 24/02154/VAR\". The decision types are: Outline permission , Full permission and Reserved matters Planning appeal Section 73 variation : a new permission that changes conditions on an earlier one Section 96A amendment : a small, non-material change Discharge of conditions Refused application Other planning decision Discharge decisions are folded into a line under the permission whose conditions they discharge, for example \"3 discharge decisions\". Tap it to see them. Tap any decision to see its reference, date and conditions, the decisions related to it, and the original document under Source document ."
  },
  {
   "chapter": "7. Project-wide records",
@@ -874,7 +874,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Planning in the reports",
   "url": "manual-project-wide-records.html#planning-in-the-reports",
-  "text": "Progress report (chapter 11): a Planning conditions section with the Building under summary and discharge progress, a drawn timeline, and the conditions under each heading with discharge decisions and dates. It's followed by an S106 / CIL obligations section, grouped by when they're due, with how many are outstanding, for example \"1 of 5 outstanding\". Handover pack (chapter 10): the project documents PDF has a Planning conditions section listing outstanding, discharged and compliance conditions, and an S106 / CIL obligations section. Conditions replaced by the working variation aren't listed. From the office Planning is mostly office work: a user can import each discharge decision as it arrives, and everyone on a shared project (chapter 12) sees the up-to-date list. Before a progress meeting, check To do and the Conditions tab with Outstanding only switched on. The Pre-commencement and Pre-occupation headings show exactly what's left before work starts and before the first homes are occupied, and the progress report sets this out for the meeting."
+  "text": "Progress report (chapter 11): a Planning section with the Building under summary and discharge progress, a drawn timeline, and the conditions under each heading with discharge decisions and dates. It's followed by an S106 / CIL obligations section, grouped by when they're due, with how many are outstanding, for example \"1 of 5 outstanding\". Handover pack (chapter 10): the project documents PDF has a Planning conditions section listing outstanding, discharged and compliance conditions, and an S106 / CIL obligations section. Conditions replaced by the working variation aren't listed. From the office Planning is mostly office work: a user can import each discharge decision as it arrives, and everyone on a shared project (chapter 12) sees the up-to-date list. Before a progress meeting, check To do and the Conditions tab with Outstanding only switched on. The Pre-commencement and Pre-occupation headings show exactly what's left before work starts and before the first homes are occupied, and the progress report sets this out for the meeting."
  },
  {
   "chapter": "8. The project log",
@@ -935,5 +935,269 @@ window.KEYCHECK_MANUAL_INDEX = [
   "heading": "On the Mac",
   "url": "manual-the-project-log.html#on-the-mac",
   "text": "The log works the same way on the Mac. Choose Site (⌘4) and click Project log . Right-click an entry for Edit , Copy text and Delete , and press ⌘[ or click Back to return to the Site page. Dictation uses the Mac's microphone. From the office The log is the site's memory. Record each chase, phone call and decision on the day, even in a few words, and before a progress meeting the report's Project log section shows everything that happened since the last one. Use Filter → Issue to check nothing has been left unresolved, and Filter → Decision when someone asks what was agreed and when."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Finding things",
+  "url": "manual-finding-things.html",
+  "text": "On a big site, the question is usually \"which plot was that?\" or \"what's still missing?\". This chapter covers the ways KeyCheck helps you find things: search, sorting and filtering the plot list, Insights and the plot map, and the projects map with its weather badge."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Searching a project",
+  "url": "manual-finding-things.html#searching-a-project",
+  "text": "Open a project and tap the Search tab (the magnifying glass, far right of the tab bar). Type in Search this project . You can find plots by number or address, and by almost anything recorded on them: the plot number, postal number, postcode, tenure, house type, property type and block meter readings, serial numbers, MPANs and suppliers, and the reason a meter wasn't fitted keys added on that plot, suite keys and keyed alike sets final snags and who's fixing them notes, document notes and the names on signatures Communal keys and meters are searched too, by name, location, who they were handed to, readings and notes. Results are grouped under Plots & units , Communal keys and Communal meters , with the best matches first. Each result says why it matched, for example \"Electricity: Meter serial number\". Tap a plot to open it, or a communal key or meter to go to it on the Site tab. Searching a project"
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Search tips",
+  "url": "manual-finding-things.html#search-tips",
+  "text": "Every word has to match , so add words to narrow it down: \"Harebell rent\" finds Rent plots on Harebell Close. Capitals, accents and spaces don't matter. \"st174qh\" finds ST17 4QH. Search by status : type \"handed over\", \"in progress\", \"not started\" or \"awaiting sign off\" (or just \"ready\"). Small words such as \"show\", \"find\", \"all\" and \"plots\" are ignored, so \"show all plots awaiting sign off\" works too. A single letter or number only matches the start of a word, so \"7\" finds Plot 7 but not Plot 17."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Searching all your projects",
+  "url": "manual-finding-things.html#searching-all-your-projects",
+  "text": "On the Projects screen, tap the search button at the bottom and type in Search all projects . It searches every project in the same way, including archived ones, and also finds projects by name, client, contractor, site address and postcode. Tap a plot in the results to open it in its project. KeyCheck keeps your search when you open a result, so you can go back and try the next one."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Sorting and filtering the plot list",
+  "url": "manual-finding-things.html#sorting-and-filtering-the-plot-list",
+  "text": "On the Plots tab: Filter by status : tap one of the four tiles at the top ( Not started , Handed over , Awaiting sign-off or In progress ) to show only those plots. The line underneath says \"Showing … only\". Tap the tile again to show every plot. Sort : tap the menu beside the number of plots, for example Plot number , and choose Plot number , Status (least finished first) or Handover date (earliest first). Handover date uses the target date until a plot is handed over, and plots with no date go last. KeyCheck remembers your choice. Group by street : in the same menu, when the site has more than one street. Each street gets a heading with how many plots are on it. On the Mac, the plots are a table: click a column heading to sort by it, and use the filter button in the header to show one status. Type in the search field at the top of the table (⌘F) to find a plot by number, address or postcode. Right-click a column heading to show or hide columns, such as Keys , Meters and Docs Missing ."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Insights",
+  "url": "manual-finding-things.html#insights",
+  "text": "Insights is an overview of the whole site on one screen: how far along it is, what's changed recently and which documents are still needed. Open it from the Site tab (the first card), or touch and hold the \"4 of 14 handed over\" summary at the top of the Plots tab and choose Insights . On the Mac, it's on the Site page, or choose Project → Insights . Insights has these parts, from the top: Summary : how many plots are not started, in progress, awaiting sign-off and handed over, with a bar showing the mix. Underneath is a line such as \"13 outstanding items (2 overdue) · 150 documents needed · 2 plots past target handover\". Plot map : every plot as a coloured tile (see below). What's changed : plots handed over, documents received, documents chased and still needed, and outstanding items completed, since the last progress report (or in the last 14 days, if you haven't made one yet). Each list shows five lines, then \"and 3 more\". Progress by block and Progress by street : a bar for each, on sites with more than one. Document progress : for plots not yet handed over, a bar for each document showing how many have been received, and which plots are still waiting, for example \"Still needed: Plots 1–3, 5 · waiting since 21/10/2026 (17 days)\". Documents nobody has ticked off count as still needed. Project documents still needed : the site-wide documents still to come. Tap Copy to copy the list, ready to paste into an email. Insights: the Summary and the plot map"
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "The plot map",
+  "url": "manual-finding-things.html#the-plot-map",
+  "text": "The plot map isn't a street map. It's a grid with a tile for each plot, coloured by status: grey for not started, orange for in progress, purple for awaiting sign-off and green for handed over. The Summary tiles above it are the key. Each tile shows the plot number and its handover date, or its target date until it's handed over. A plot past its target shows Overdue in red. Tap a tile to open the plot. From the office Insights is a quick check before a phone call or meeting. Document progress shows which certificate is holding up the most plots, and the Copy button turns the project documents still needed into a list for an email to the contractor. For the full picture to hand round at a meeting, use the progress report (chapter 11)."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "The projects map and weather",
+  "url": "manual-finding-things.html#the-projects-map-and-weather",
+  "text": "At the top of the Projects screen, a map shows where your projects are. A project appears once its Site address and Postcode are filled in (in Project settings → Project details ), and KeyCheck can find them on the map. Projects close together are grouped into a numbered circle; tap it to zoom in. Archived projects aren't shown. Tap the location button (top left) to centre the map on where you are. Tap i (top right) to see how many projects are on the map, and why any are missing. The badge at the bottom right shows the current weather and temperature where you are, from Apple Weather, which is handy before heading out to site. It needs permission to use your location; without it, the badge says Weather unavailable . Your location is only used for the map and the weather. On the Mac, choose All Projects at the top of the sidebar (⌘0) for the same map, totals for all your projects, and a table of projects you can sort by clicking a column heading."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Sorting and archiving projects",
+  "url": "manual-finding-things.html#sorting-and-archiving-projects",
+  "text": "Sort the Projects list : tap More ( … ) → Sort by , and choose Newest first , Oldest first , Name A–Z , Name Z–A or Progress . On the Mac, choose View → Sort Projects By . Archived projects are kept in a folded Archived section at the bottom of the list. Tap it to show them. They're left out of the map and the totals at the top, but still turn up in search."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "The handover PDF",
+  "url": "manual-the-handover-pdf.html",
+  "text": "Each plot's handover form becomes a PDF: a record of what was handed over, the meter readings, the paperwork and the signatures, for the client's and the residents' files. This chapter explains how to make it and what each part means, for anyone who receives one."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Making a handover PDF",
+  "url": "manual-the-handover-pdf.html#making-a-handover-pdf",
+  "text": ""
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "One plot",
+  "url": "manual-the-handover-pdf.html#one-plot",
+  "text": "Open the plot and tap the share button at the top right ( Export this handover ). KeyCheck prepares the PDF, then opens the share sheet, where you can email it, save it to Files or OneDrive, AirDrop it or print it."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Several plots",
+  "url": "manual-the-handover-pdf.html#several-plots",
+  "text": "On the Plots tab, tap the menu beside the number of plots, choose Select plots , select the ones you want, and choose Export handover PDFs . Each plot gets its own form."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "The whole site",
+  "url": "manual-the-handover-pdf.html#the-whole-site",
+  "text": "On the Site tab, find Handover forms and tap Export All… . This makes one PDF, often called the handover pack, with: the project documents, followed by the planning conditions and S106 / CIL obligations, if there are any a handover form for every plot that has something recorded (plots with nothing recorded yet are left out) the communal keys, at the end"
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "On the Mac",
+  "url": "manual-the-handover-pdf.html#on-the-mac",
+  "text": "Select one or more plots in the table and choose Plot → Export Handover PDF… (⌘E), or right-click them. To print one plot's form, select it and choose File → Print Handover Form… (⌘P)."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "File names",
+  "url": "manual-the-handover-pdf.html#file-names",
+  "text": "The file is named using the File name in the project's branding profile (chapter 2), which starts as {project} - {unit} Handover . KeyCheck fills in the project name, the plot (or \"All plots\"), and the date as year-month-day. For example: Meadow View Phase 2 - Plot 7 Handover.pdf ."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "What's on the form",
+  "url": "manual-the-handover-pdf.html#whats-on-the-form",
+  "text": "Handover forms are A4 portrait. Here's what each part means, from top to bottom."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "The header",
+  "url": "manual-the-handover-pdf.html#the-header",
+  "text": "The coloured bar, title ( HANDOVER FORM unless the branding changes it), logo or company name come from the project's branding profile. With no branding, the form is plain black and white. Below it is a shaded panel with the project, client and contractor; the plot's postal address and postcode (or the site's, if the plot has none); the plot number, tenure and Handover date ; and, if they're recorded, the house type, property and block and floor. Prepared by is the name in Settings → You of the person who made the PDF. A dash (—) means nothing was recorded. The target handover date is never printed. The form only ever shows the real handover date. The first page of a handover form"
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Meter readings",
+  "url": "manual-the-handover-pdf.html#meter-readings",
+  "text": "A card for each meter: the supplier, readings, serial number and reference numbers (MPAN or MPRN), with any meter photos and the date they were taken. A meter marked as not fitted shows NOT FITTED with the reason, or \"No meter at handover\"."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Keys",
+  "url": "manual-the-handover-pdf.html#keys",
+  "text": "How many of each key, fob or card was handed over, grouped as on the form. If the project uses key suites (chapter 4), the Master key suite comes first, and keys show which suite they belong to, for example \"Master · Set A\". The heading says how many keys were handed over in total."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Instructions and certificates",
+  "url": "manual-the-handover-pdf.html#instructions-and-certificates",
+  "text": "The plot's documents, under their group headings, each with a status: Status on the PDF What it means RECEIVED The document has been received. The date it was received is shown. OUTSTANDING It's been asked for and hasn't arrived. Shows when it was marked outstanding and last chased. NOT RECEIVED Nobody has recorded it either way. N/A It doesn't apply to this plot. The row is greyed out. PREVIOUS AGENT Only on plots handed over by a previous agent: dealt with before the site was taken on (chapter 4). Any note on a document is printed beside it. The heading has a summary, such as \"18 received · 2 outstanding · 3 N/A\". Documents switched off in Form items , and documents hidden for this plot's tenure (chapter 3), aren't printed at all. Documents, outstanding items and sign-off"
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Defects / outstanding items",
+  "url": "manual-the-handover-pdf.html#defects-outstanding-items",
+  "text": "The final snags still open at handover, with who's fixing them, the due date and the completed date. Each is marked OPEN or DONE , and the heading says how many are still open, for example \"2 open of 3\". This section only appears if the project uses outstanding items and the plot has some."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Notes",
+  "url": "manual-the-handover-pdf.html#notes",
+  "text": "The plot's notes, if there are any."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "Sign-off",
+  "url": "manual-the-handover-pdf.html#sign-off",
+  "text": "A box for each sign-off role, such as the client representative and contractor, with the signature, name and date. For a plot handed over by a previous agent, there's a single box instead, saying Handed over by a previous agent and No signatures were taken in KeyCheck , with the handover date."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "The footer",
+  "url": "manual-the-handover-pdf.html#the-footer",
+  "text": "Every page has the company name and footer text on the left, and the page number on the right, for example \"Page 1 of 2\". Prepared with KeyCheck appears beside it unless you've turned it off in Settings → Branding . Sections with nothing in them are left out, so a form is only as long as it needs to be."
+ },
+ {
+  "chapter": "10. The handover PDF",
+  "heading": "The communal keys and project documents PDFs",
+  "url": "manual-the-handover-pdf.html#the-communal-keys-and-project-documents-pdfs",
+  "text": "These are also in the handover pack, and can be made on their own: Communal keys (chapter 7): tap Export communal keys (PDF) at the bottom of the Communal keys screen. It lists each key, its block or entrance, quantity, who it was handed to, the date and any note. Project documents (chapter 6): on the Documents tab, tap ⋯ → Export PDF . It lists every project document with its status, dates and notes, with bundles and their items. If the project has planning conditions, it adds a Planning conditions section (outstanding, discharged and compliance-only conditions) and an S106 / CIL obligations section. Planning conditions come with a note that they're a record of the documents imported into KeyCheck, not a legal certificate of compliance. For clients and residents If you've received a handover form, the most important parts are usually the meter readings (take a photo of your own meters on the day you move in, to check them), the keys you should have, and any items still OPEN under Defects / outstanding items , with who's fixing them. Documents marked OUTSTANDING or NOT RECEIVED are still to come."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "The progress report",
+  "url": "manual-the-progress-report.html",
+  "text": "The progress report is a PDF summary of the whole site, made for progress meetings and for clients. It shows how far along each plot is, what's changed since the last report, the snags still open, every document still missing with how long you've been waiting, and the site's planning position. This chapter covers making the report, choosing what goes in it, and what each section means."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Making the report",
+  "url": "manual-the-progress-report.html#making-the-report",
+  "text": "Open the project's Site tab and find Progress report , under Reports . Tap Create Report… . Choose the Period and the sections to include (see below). Tap Create . KeyCheck makes the PDF and opens the share sheet, so you can email it, save it to Files or print it. The file is called, for example, Meadow View Phase 2 - Progress report 2026-11-19.pdf . The report is A4 landscape, with the project's branding, and the title PROGRESS REPORT . On the Mac, the report is on the Site page too. After it's made, choose Share… or Save… ."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Choosing what goes in it",
+  "url": "manual-the-progress-report.html#choosing-what-goes-in-it",
+  "text": ""
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "The period",
+  "url": "manual-the-progress-report.html#the-period",
+  "text": "Changes sets the period that What's changed and the project log cover: Since last report : everything since the last report you counted (see below). This only appears once a report has been counted. Last 7 days , Last 14 days or Last 30 days . Since a date : choose the date under From . Until a report has been counted, the period starts as Last 14 days ."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Sections",
+  "url": "manual-the-progress-report.html#sections",
+  "text": "Under Include , switch on the sections you want: Summary , What's changed , Plot tracker , Outstanding items , Documents not received , Planning , Plot notes , Project log (with Whole project log , see chapter 8), Communal keys and Communal meters . KeyCheck remembers your choice on this device for next time. Sections with nothing to show are left out of the report. Choosing the period and sections"
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Counting it as the latest report",
+  "url": "manual-the-progress-report.html#counting-it-as-the-latest-report",
+  "text": "Count as the latest report is on unless you turn it off. When it's on and you share or save the report, KeyCheck remembers its date, so next time Since last report starts from there. Turn it off for a draft or a one-off report, so the next real report still covers everything since the last meeting. Closing the share sheet without sharing or saving doesn't count the report. On a shared project, everyone uses the same last report, so it doesn't matter who made it. \"Since last report\" starts at the beginning of that report's day, so nothing done that day is missed. Something done earlier on the same day may appear in both reports."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "What's in the report",
+  "url": "manual-the-progress-report.html#whats-in-the-report",
+  "text": ""
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "The cover",
+  "url": "manual-the-progress-report.html#the-cover",
+  "text": "The top of the first page shows the project, client and contractor, the site address, the report date, Prepared by (your name from Settings → You ), the number of plots, and under Changes the period the report covers. The first page of a progress report"
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Summary",
+  "url": "manual-the-progress-report.html#summary",
+  "text": "How many plots are not started, in progress, awaiting sign-off and handed over, with a coloured bar and a line such as \"4 of 14 plots handed over · 13 outstanding items (2 overdue) · 5 documents outstanding · 982 not yet checked\". On sites with more than one block or street, tables show the progress of each. Sign-off left means everything is recorded except the signatures."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Plot tracker",
+  "url": "manual-the-progress-report.html#plot-tracker",
+  "text": "A row for each plot: its address, tenure and type, and how much of each part of the form is done, for example meters \"3/3\" and documents \"8/12\". Open items is the number of snags still open. Handover shows the real handover date once a plot is handed over. Until then it shows the target date in grey, or red once the target has passed, and the heading counts how many are past target. PA means the plot was handed over by a previous agent, who dealt with its meters, keys, documents and sign-off before the site was taken on (chapter 4)."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "What's changed",
+  "url": "manual-the-progress-report.html#whats-changed",
+  "text": "What happened in the period, starting with a line such as \"1 plot handed over · 12 documents received · 4 chased · 3 actions completed\": Plots handed over : with the date they were signed off. Documents received : by date, newest first, with the plots. Project documents are listed as \"Project\". On a shared project, By shows who recorded each one. Documents chased · still not received : documents chased in the period that haven't arrived yet, with the date of the latest chase. Outstanding items completed : snags ticked off in the period, with their completed date. If nothing happened in the period, the section says so."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Outstanding items",
+  "url": "manual-the-progress-report.html#outstanding-items",
+  "text": "Every snag still open, with the plot, who's fixing it and the due date. Overdue ones come first, marked Overdue ."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Documents not received",
+  "url": "manual-the-progress-report.html#documents-not-received",
+  "text": "Every document still missing on plots that aren't handed over yet, and the project documents still needed. The heading gives the totals, for example \"5 outstanding · 982 not yet checked\". For plot documents, each row shows: Missing : how many plots are missing it, for example \"6 of 10\". Plots still to receive : which plots, for example \"Plots 5–8, 12\". All means every plot not yet handed over. Waiting since : the earliest date it was marked outstanding on any of them, with how long ago, for example \"21/10/2026 (17 days)\". Last chased : the latest chase. Notes : any document notes, with the plot. The last three columns only appear when there's something in them. Documents nobody has ticked off either way on any plot are listed together in three columns, under \"Not yet checked on any of the 10 plots\", so the report doesn't fill up with rows that say the same thing. As the report explains, some of these may have arrived without anyone recording it, and waiting time only starts when a document is marked outstanding. Project documents are listed after the plot documents, each marked Outstanding or Not received . A bundle shows how many items have arrived, with the missing ones underneath. Tip The quickest way to make this section useful is to mark documents Outstanding on the day you ask for them, and record each chase (chapter 6). Then the report shows how long everyone has been waiting. Documents not received"
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Planning",
+  "url": "manual-the-progress-report.html#planning",
+  "text": "If the project has planning decisions (chapter 7): Building under : the permission the site is being built under, and how many conditions are discharged. A warning if homes are handed over while pre-commencement or pre-occupation conditions are still outstanding. Planning history : a drawn timeline of the decisions, with a coloured line for each planning route and the discharge decisions beside each permission. The conditions, under Pre-commencement , Pre-occupation and Compliance only , with their status and the discharge decision that approved them. Notes , for example suggestions in To do that haven't been confirmed yet. The report doesn't count them until you confirm them. It's followed by S106 / CIL obligations , grouped by when they're due, with the amount, the date complied and the status: Outstanding , Complied or Not required . The Planning switch covers both. The report notes that this is a record of the planning documents imported into KeyCheck, not a legal certificate of planning compliance."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Plot notes",
+  "url": "manual-the-progress-report.html#plot-notes",
+  "text": "The notes on each plot that isn't handed over yet."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Project log",
+  "url": "manual-the-progress-report.html#project-log",
+  "text": "The log entries for the period, or the whole log (chapter 8)."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Communal keys and communal meters",
+  "url": "manual-the-progress-report.html#communal-keys-and-communal-meters",
+  "text": "The communal keys, with who they were handed to and when, or Not handed over . The communal meters, with their location, serial number and reading, or Not read ."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Using the report at progress meetings",
+  "url": "manual-the-progress-report.html#using-the-report-at-progress-meetings",
+  "text": "From the office Before the meeting: Record the week's chases and arrivals with Chase or update documents… (chapter 6), and add any calls or decisions to the project log. Check To do in Planning, so suggestions are confirmed before they reach the report. Create the report with Since last report and Count as the latest report on, and send it round. At the meeting, What's changed is the update since last time, Outstanding items and Documents not received are the actions, and the Plot tracker shows which plots are next and which are past their target. If you need a draft first, turn Count as the latest report off, so the real report still covers the whole period."
  }
 ];
