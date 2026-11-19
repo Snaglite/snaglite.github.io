@@ -946,7 +946,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "9. Finding things",
   "heading": "Searching a project",
   "url": "manual-finding-things.html#searching-a-project",
-  "text": "Open a project and tap the Search tab (the magnifying glass, far right of the tab bar). Type in Search this project . You can find plots by number or address, and by almost anything recorded on them: the plot number, postal number, postcode, tenure, house type, property type and block meter readings, serial numbers, MPANs and suppliers, and the reason a meter wasn't fitted keys added on that plot, suite keys and keyed alike sets final snags and who's fixing them notes, document notes and the names on signatures Communal keys and meters are searched too, by name, location, who they were handed to, readings and notes. Results are grouped under Plots & units , Communal keys and Communal meters , with the best matches first. Each result says why it matched, for example \"Electricity: Meter serial number\". Tap a plot to open it, or a communal key or meter to go to it on the Site tab. Searching a project"
+  "text": "Open a project and tap the Search tab (the magnifying glass, far right of the tab bar). Type in Search this project . You can find plots by number or address, and by almost anything recorded on them: the plot number, postal number, postcode, tenure, house type, property type and block meter readings, serial numbers, MPANs and suppliers, and the reason a meter wasn't fitted keys added on that plot, suite keys and keyed alike sets final snags and who's fixing them notes, document notes and the names on signatures Communal keys and meters are searched too, by name, location, who they were handed to, readings and notes. So are site contacts (name, role, company, phone numbers, email and note), the text on the Site details screen (site hours, access, parking, site notes and the contract details) and project log entries. Results are grouped under Plots & units , Communal keys , Communal meters , Site contacts , Site details and Project log , with the best matches first. Each result says why it matched, for example \"Electricity: Meter serial number\". Tap a plot to open it, or a communal key or meter to go to the Site tab. A contact or site details result opens Site details , and a log entry opens the Project log . Searching a project"
  },
  {
   "chapter": "9. Finding things",
@@ -1018,7 +1018,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "10. The handover PDF",
   "heading": "The whole site",
   "url": "manual-the-handover-pdf.html#the-whole-site",
-  "text": "On the Site tab, find Handover forms and tap Export All… . This makes one PDF, often called the handover pack, with: the project documents, followed by the planning conditions and S106 / CIL obligations, if there are any a handover form for every plot that has something recorded (plots with nothing recorded yet are left out) the communal keys, at the end"
+  "text": "On the Site tab, find Handover forms and tap Export all… . This makes one PDF, often called the handover pack, with: the project documents, followed by the planning conditions and S106 / CIL obligations, if there are any a handover form for every plot that has something recorded (plots with nothing recorded yet are left out) the communal keys, at the end"
  },
  {
   "chapter": "10. The handover PDF",
@@ -1102,7 +1102,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "11. The progress report",
   "heading": "Making the report",
   "url": "manual-the-progress-report.html#making-the-report",
-  "text": "Open the project's Site tab and find Progress report , under Reports . Tap Create Report… . Choose the Period and the sections to include (see below). Tap Create . KeyCheck makes the PDF and opens the share sheet, so you can email it, save it to Files or print it. The file is called, for example, Meadow View Phase 2 - Progress report 2026-11-19.pdf . The report is A4 landscape, with the project's branding, and the title PROGRESS REPORT . On the Mac, the report is on the Site page too. After it's made, choose Share… or Save… ."
+  "text": "Open the project's Site tab and find Progress report , under Reports . Tap Create report… . Choose the Period and the sections to include (see below). Tap Create . KeyCheck makes the PDF and opens the share sheet, so you can email it, save it to Files or print it. The file is called, for example, Meadow View Phase 2 - Progress report 2026-11-19.pdf . The report is A4 landscape, with the project's branding, and the title PROGRESS REPORT . On the Mac, the report is on the Site page too. After it's made, choose Share… or Save… ."
  },
  {
   "chapter": "11. The progress report",
@@ -1156,7 +1156,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "11. The progress report",
   "heading": "What's changed",
   "url": "manual-the-progress-report.html#whats-changed",
-  "text": "What happened in the period, starting with a line such as \"1 plot handed over · 12 documents received · 4 chased · 3 actions completed\": Plots handed over : with the date they were signed off. Documents received : by date, newest first, with the plots. Project documents are listed as \"Project\". On a shared project, By shows who recorded each one. Documents chased · still not received : documents chased in the period that haven't arrived yet, with the date of the latest chase. Outstanding items completed : snags ticked off in the period, with their completed date. If nothing happened in the period, the section says so."
+  "text": "What happened in the period, starting with a line such as \"1 plot handed over · 12 documents received · 4 chased · 3 outstanding items completed\": Plots handed over : with the date they were signed off. Documents received : by date, newest first, with the plots. Project documents are listed as \"Project\". On a shared project, By shows who recorded each one. Documents chased · still not received : documents chased in the period that haven't arrived yet, with the date of the latest chase. Outstanding items completed : snags ticked off in the period, with their completed date. If nothing happened in the period, the section says so."
  },
  {
   "chapter": "11. The progress report",
