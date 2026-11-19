@@ -4,7 +4,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "1. What KeyCheck does",
   "heading": "What KeyCheck does",
   "url": "manual-what-keycheck-does.html",
-  "text": "KeyCheck keeps track of everything needed to hand over new homes and commercial buildings. On site, it records the keys, meter readings, any outstanding final snags and signatures for each plot. In the office, it tracks the paperwork that has to be in place before a plot can be handed over: certificates, warranties and planning conditions, with dates showing when each one was asked for, chased and received to provide a full audit trail. It turns all of this into PDFs: a handover form for each plot, and a progress report for meetings and clients. KeyCheck runs on iPhone and iPad. Need full snagging? KeyCheck records the final snags still open at handover, not a complete snagging inspection. For detailed snag lists with photos, drawings and reports, use Snaglite , our snagging app."
+  "text": "KeyCheck keeps track of everything needed to hand over new homes and commercial buildings. On site, it records the keys, meter readings, any outstanding final snags and signatures for each plot. In the office, it tracks the paperwork that has to be in place before a plot can be handed over: certificates, warranties and planning conditions, with dates showing when each one was asked for, chased and received to provide a full audit trail. It turns all of this into PDFs: a handover form for each plot, and a progress report for meetings and clients. KeyCheck runs on iPhone, iPad and Mac. Need full snagging? KeyCheck records the final snags still open at handover, not a complete snagging inspection. For detailed snag lists with photos, drawings and reports, use Snaglite , our snagging app."
  },
  {
   "chapter": "1. What KeyCheck does",
@@ -22,7 +22,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "1. What KeyCheck does",
   "heading": "Inside a project",
   "url": "manual-what-keycheck-does.html#inside-a-project",
-  "text": "An open project fills the screen, with a tab bar at the bottom: Tab What's on it Plots The list of plots, with a summary of how many are handed over. Documents The project's site-wide documents, and its attachments. Planning Planning decisions, conditions and S106 obligations. Site Insights, reports, the project log, communal keys and meters, and sharing. Search (magnifying glass) Searches everything in the project. On iPad, the tabs are a sidebar down the left. To go back to the Projects screen, tap Projects at the top left, or on iPhone swipe right from the left edge of the screen. KeyCheck remembers the last project you had open and goes back to it next time. A project's Plots tab, with the tabs along the bottom"
+  "text": "An open project fills the screen, with a tab bar at the bottom: Tab What's on it Plots The list of plots, with a summary of how many are handed over. Documents The project's site-wide documents, and its attachments. Planning Planning decisions, conditions and S106 obligations. Site Insights, site details, the project log, reports, communal keys and meters, and sharing. Search (magnifying glass) Searches everything in the project. On iPad, the tabs are a sidebar down the left. To go back to the Projects screen, tap Projects at the top left, or on iPhone swipe right from the left edge of the screen. KeyCheck remembers the last project you had open and goes back to it next time. On the Mac, your projects are in a sidebar down the left, with All Projects at the top for an overview of every site. Choose a project, then switch between Plots , Documents , Planning and Site with the buttons at the top of the window, or press ⌘1 to ⌘4. Search is Edit → Find (⌘F). This manual describes the iPhone; on the Mac, click where it says tap, and right-click where it says touch and hold. A project's Plots tab, with the tabs along the bottom"
  },
  {
   "chapter": "1. What KeyCheck does",
@@ -34,7 +34,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "1. What KeyCheck does",
   "heading": "Records for the whole project",
   "url": "manual-what-keycheck-does.html#records-for-the-whole-project",
-  "text": "Some things belong to the whole site rather than one plot. These have their own place in the project, on the Documents, Planning and Site tabs: Record What it holds Project documents Site-wide paperwork, such as the fire strategy and warranties. Planning Planning decisions, conditions and S106 obligations. Communal keys Keys and fobs for bin stores, cycle stores, plant rooms and communal doors. Communal meters Meters serving the whole block, such as a landlord supply or solar panels. Project log Dated notes of site visits, issues, decisions and chases. Attachments Site plans, letters, photos and scanned documents for reference."
+  "text": "Some things belong to the whole site rather than one plot. These have their own place in the project, on the Documents, Planning and Site tabs: Record What it holds Project documents Site-wide paperwork, such as the fire strategy and warranties. Planning Planning decisions, conditions and S106 obligations. Communal keys Keys and fobs for bin stores, cycle stores, plant rooms and communal doors. Communal meters Meters serving the whole block, such as a landlord supply or solar panels. Site details Contacts, site hours, access, parking and the contract. Project log Dated notes of site visits, issues, decisions and chases. Attachments Site plans, letters, photos and scanned documents for reference."
  },
  {
   "chapter": "1. What KeyCheck does",
@@ -58,7 +58,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "1. What KeyCheck does",
   "heading": "Working with a team",
   "url": "manual-what-keycheck-does.html#working-with-a-team",
-  "text": "With iCloud sync turned on, your projects stay up to date across your iPhone and iPad. You can also share a project with colleagues, so the site team and the office see each other's changes as they happen. For example, the site manager can tick off a snag on site, and the employer's agent sees it in the office. iCloud sync is off until you turn it on. Your projects, photos and signatures are stored on your device and in your own iCloud. KeyCheck doesn't send them anywhere else."
+  "text": "With iCloud sync turned on, your projects stay up to date across your iPhone, iPad and Mac. You can also share a project with colleagues, so the site team and the office see each other's changes as they happen. For example, the site manager can tick off a snag on site, and the employer's agent sees it in the office. iCloud sync is off until you turn it on. Your projects, photos and signatures are stored on your device and in your own iCloud. KeyCheck doesn't send them anywhere else."
  },
  {
   "chapter": "1. What KeyCheck does",
@@ -76,13 +76,13 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "2. Setting up",
   "heading": "Setting up",
   "url": "manual-setting-up.html",
-  "text": "Get KeyCheck ready to use: install it, subscribe to KeyCheck Pro, add your name and branding, and try the sample projects. It takes about five minutes. Settings is on the Projects screen: tap Settings (the gear button)."
+  "text": "Get KeyCheck ready to use: install it, subscribe to KeyCheck Pro, add your name and branding, and try the sample projects. It takes about five minutes. Settings is on the Projects screen: tap Settings (the gear button). On the Mac, choose KeyCheck → Settings (⌘,). The Mac's Settings window has tabs for General , Branding , Templates , iCloud and Subscription ."
  },
  {
   "chapter": "2. Setting up",
   "heading": "Installing KeyCheck",
   "url": "manual-setting-up.html#installing-keycheck",
-  "text": "KeyCheck runs on iPhone and iPad with iOS 26 or iPadOS 26 or later. Open the App Store on your iPhone or iPad. Search for KeyCheck and tap Get . Updates keep your projects. If you use KeyCheck on more than one device, iCloud sync keeps them in step (chapter 12)."
+  "text": "KeyCheck runs on iPhone and iPad with iOS 27 or iPadOS 27 or later, and on a Mac with macOS 27 or later. Open the App Store on your iPhone, iPad or Mac. Search for KeyCheck and tap Get . Updates keep your projects. If you use KeyCheck on more than one device, iCloud sync keeps them in step (chapter 12)."
  },
  {
   "chapter": "2. Setting up",
@@ -148,7 +148,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "2. Setting up",
   "heading": "The sample projects",
   "url": "manual-setting-up.html#the-sample-projects",
-  "text": "The first time you open KeyCheck, it adds two example sites: Meadow View Phase 2 : a housing site with plots at every stage. Plots 1 to 4 are handed over and signed; plots 12 to 15 haven't been started. Riverside Business Park : a commercial site, using units instead of plots. They include keys, meter readings, documents, communal keys and meters, planning conditions and log entries, so you can see what a busy project looks like and try the PDFs. Sample projects have a Sample badge in the Projects list. They stay on this device and are never synced or shared, so you can change anything in them without affecting anyone else. Editing them needs KeyCheck Pro, like any other project. The two sample projects, with their Sample badges Try this first Open Meadow View Phase 2 and compare plot 1 with plot 12. Then go to the Site tab and tap Progress report to see the kind of report KeyCheck makes."
+  "text": "The first time you open KeyCheck, it adds two example sites: Meadow View Phase 2 : a housing site with plots at every stage. Plots 2 to 4 are handed over and signed, and plot 1 was handed over by the previous employer's agent before the site changed hands. Plots 12 to 15 haven't been started, and plot 9 is past its target handover date. Riverside Business Park : a commercial site, using units instead of plots. They include keys, meter readings, documents, target handover dates, site details and contacts, communal keys and meters, planning conditions and log entries, so you can see what a busy project looks like and try the PDFs. Sample projects have a Sample badge in the Projects list. They stay on this device and are never synced or shared, so you can change anything in them without affecting anyone else. Editing them needs KeyCheck Pro, like any other project. The two sample projects, with their Sample badges Try this first Open Meadow View Phase 2 and compare plot 2 with plot 12. Then go to the Site tab and tap Progress report to see the kind of report KeyCheck makes."
  },
  {
   "chapter": "2. Setting up",
@@ -232,7 +232,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "3. Creating a project",
   "heading": "Importing addresses and meter details from a spreadsheet",
   "url": "manual-creating-a-project.html#importing-addresses-and-meter-details-from-a-spreadsheet",
-  "text": "If the client or developer has a plot schedule in Excel or Numbers, KeyCheck can read postal addresses, tenures, property details, handover dates and meter numbers from it. It can also create any plots that aren't in the project yet. KeyCheck reads CSV files. CSV (\"comma-separated values\") is a plain spreadsheet format that every spreadsheet app can save."
+  "text": "If the client or developer has a plot schedule in Excel or Numbers, KeyCheck can read postal addresses, tenures, property details, target and handover dates and meter numbers from it. It can also create any plots that aren't in the project yet. KeyCheck reads CSV files. CSV (\"comma-separated values\") is a plain spreadsheet format that every spreadsheet app can save."
  },
  {
   "chapter": "3. Creating a project",
@@ -256,7 +256,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "3. Creating a project",
   "heading": "What KeyCheck can read",
   "url": "manual-creating-a-project.html#what-keycheck-can-read",
-  "text": "Column Notes Plot no. Needed. \"Plot 218\", \"P218\" and \"218\" all match plot 218, and \"12a\" matches plot 12A. Postal no. The house number or name. Street, Town, Postcode Full address Use this instead if the address is all in one column. Tenure For example Rent or Shared Ownership. Property type House, Bungalow, Flat, Maisonette or Commercial. House type For example \"Type F1\". Bedrooms/people For example 3B4P. Block, Floor For flats. Floor can be \"Ground\", \"1st\" and so on. Handover date Use day/month/year, for example 28/05/2027. Dates KeyCheck can't read are left out, and the preview warns you. MPAN, Electricity meter serial MPRN (gas), Gas meter serial Water meter serial, Solar PV meter serial Good to know: Rows that aren't plots are skipped. Schedules often include landlord supplies, such as \"Opp Plot 20\". Only rows with a plot number like 218 or 12A create new plots. Meters switch on when needed. If the sheet has gas details but the project has no gas meter, KeyCheck switches gas on for the project and says so in the summary. Importing again is safe. With Replace existing values off, a second import only fills gaps, so you can import an updated schedule later."
+  "text": "Column Notes Plot no. Needed. \"Plot 218\", \"P218\" and \"218\" all match plot 218, and \"12a\" matches plot 12A. Postal no. The house number or name. Street, Town, Postcode Full address Use this instead if the address is all in one column. Tenure For example Rent or Shared Ownership. Property type House, Bungalow, Flat, Maisonette or Commercial. House type For example \"Type F1\". Bedrooms/people For example 3B4P. Block, Floor For flats. Floor can be \"Ground\", \"1st\" and so on. Target handover date The planned date, for example from the developer's programme. Headings such as \"Target handover\", \"Planned handover\", \"Handover date (forecast)\" or \"Completion date\" are matched here. Handover date (actual) The day a plot was actually handed over, if the sheet has one. For both dates use day/month/year, for example 28/05/2027. Dates KeyCheck can't read are left out, and the preview warns you. MPAN, Electricity meter serial MPRN (gas), Gas meter serial Water meter serial, Solar PV meter serial Good to know: Rows that aren't plots are skipped. Schedules often include landlord supplies, such as \"Opp Plot 20\". Only rows with a plot number like 218 or 12A create new plots. Meters switch on when needed. If the sheet has gas details but the project has no gas meter, KeyCheck switches gas on for the project and says so in the summary. Importing again is safe. With Replace existing values off, a second import only fills gaps, so you can import an updated schedule later."
  },
  {
   "chapter": "3. Creating a project",
@@ -352,13 +352,13 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "4. Recording a plot handover",
   "heading": "The sections of the form",
   "url": "manual-recording-a-plot-handover.html#the-sections-of-the-form",
-  "text": "Section What you record Details Plot number, tenure, property details and handover date. Postal address House number, street, town and postcode. Meters Readings, serial numbers, suppliers and photos (chapter 5). Keys How many of each key, fob or card are handed over. Documents The documents for the plot, under a heading for each group (chapter 6). Defects / outstanding items Final snags still open at handover. Notes Anything else. Sign-off Names and signatures. Details and Postal address share one card. Sections you've switched off in Form items (chapter 3) don't appear."
+  "text": "Section What you record Details Plot number, tenure, property details, target and handover dates. Postal address House number, street, town and postcode. Meters Readings, serial numbers, suppliers and photos (chapter 5). Keys How many of each key, fob or card are handed over. Documents The documents for the plot, under a heading for each group (chapter 6). Defects / outstanding items Final snags still open at handover. Notes Anything else. Sign-off Names and signatures. Details and Postal address share one card. Sections you've switched off in Form items (chapter 3) don't appear."
  },
  {
   "chapter": "4. Recording a plot handover",
   "heading": "Details and postal address",
   "url": "manual-recording-a-plot-handover.html#details-and-postal-address",
-  "text": "Details and Postal address share a card at the top of the form. Each folds up to a one-line summary once it's filled in, for example \"Rent · 3b4p House · Type F1\". Tap the summary to open them again. In Details : Plot no. : the plot number. Tenure : Rent, Shared Ownership, Market Rent, or Other to type your own. Tenure decides which documents the plot needs if the project has tenure exceptions (chapter 3). Property type , House type , Bedrooms and People (for example 3 bedrooms, 4 people), and Block and Floor for flats. Handover date : tap Set handover date to set it to today, then tap the date to change it. You don't have to set it yourself: the first signature sets it to today if it's empty. Most of these can be filled in for lots of plots at once when adding plots, or by importing a spreadsheet (chapter 3)."
+  "text": "Details and Postal address share a card at the top of the form. Each folds up to a one-line summary once it's filled in, for example \"Rent · 3b4p House · Type F1\". Tap the summary to open them again. In Details : Plot no. : the plot number. Tenure : Rent, Shared Ownership, Market Rent, or Other to type your own. Tenure decides which documents the plot needs if the project has tenure exceptions (chapter 3). Property type , House type , Bedrooms and People (for example 3 bedrooms, 4 people), and Block and Floor for flats. Target handover : the date the plot is planned to be handed over, for example from the developer's programme. Tap Set target handover , then tap the date to change it. Until the plot is handed over, the plot list, the plot map and the progress report show this date (in grey on the report), and Overdue appears once the day has passed. It's never used as the handover date on the handover form. Handover date : the day it was actually handed over. Tap Set handover date to set it to today, then tap the date to change it. You don't have to set it yourself: the first signature sets it to today if it's empty. Most of these can be filled in for lots of plots at once when adding plots, or by importing a spreadsheet (chapter 3)."
  },
  {
   "chapter": "4. Recording a plot handover",
@@ -436,7 +436,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "4. Recording a plot handover",
   "heading": "Final snags",
   "url": "manual-recording-a-plot-handover.html#final-snags",
-  "text": "Defects / outstanding items is for final snags that are still open at handover, so the handover form shows what's left to fix and who's fixing it. Tap Add outstanding item and describe the snag. Optionally, type Who is fixing it, and tap Due date to add a date it should be done by. Tap the date to change it. When it's fixed, tap the circle beside it. KeyCheck records today as the Completed date. Tap the date to correct it, for example if the snag was fixed a few days before you ticked it. A completed date can't be in the future. To reopen a snag, tap its circle again. This clears the completed date. To delete a snag, swipe left on it and tap Delete . Completed snags appear on the handover form and under Actions completed in the progress report (chapter 11). Open snags and a completed one KeyCheck isn't a full snagging app. If you need to manage snagging across a whole site, with photos, drawings and trades, try Snaglite ."
+  "text": "Defects / outstanding items is for final snags that are still open at handover, so the handover form shows what's left to fix and who's fixing it. Tap Add outstanding item and describe the snag. Optionally, type Who is fixing it, and tap Due date to add a date it should be done by. Tap the date to change it. When it's fixed, tap the circle beside it. KeyCheck records today as the Completed date. Tap the date to correct it, for example if the snag was fixed a few days before you ticked it. A completed date can't be in the future. To reopen a snag, tap its circle again. This clears the completed date. To delete a snag, swipe left on it and tap Delete . Completed snags appear on the handover form and under Outstanding items completed in the progress report (chapter 11). Open snags and a completed one KeyCheck isn't a full snagging app. If you need to manage snagging across a whole site, with photos, drawings and trades, try Snaglite ."
  },
  {
   "chapter": "4. Recording a plot handover",
@@ -454,7 +454,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "4. Recording a plot handover",
   "heading": "Plots handed over by a previous agent",
   "url": "manual-recording-a-plot-handover.html#plots-handed-over-by-a-previous-agent",
-  "text": "If you take on a site part-way through, some plots may already have been handed over by someone who's no longer involved, so there's nobody left to sign. To record one: Open the plot and scroll to the bottom. Under Sign-off , tap Handed over by a previous agent? (it only shows while nobody has signed). Tap Mark as handed over . Add the handover date in Details when you have it. The plot's status changes to Handed over without signatures, and its handover form says Handed over by a previous agent in place of the signature boxes. To take signatures after all, tap Take signatures instead ."
+  "text": "If you take on a site part-way through, some plots may already have been handed over by someone who's no longer involved, so there's nobody left to sign. To record one: Open the plot and scroll to the bottom. Under Sign-off , tap Handed over by a previous agent? (it only shows while nobody has signed). Tap Mark as handed over . Add the handover date in Details when you have it. The plot's status changes to Handed over without signatures, and its handover form says Handed over by a previous agent in place of the signature boxes. To take signatures after all, tap Take signatures instead . Anything nobody has recorded on the plot counts as dealt with by the previous agent, so it isn't listed in What's left or chased. On the handover form, those documents say Previous agent rather than Not received . If you mark a document Outstanding later, it's listed and chased as usual."
  },
  {
   "chapter": "4. Recording a plot handover",
@@ -598,7 +598,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "6. Documents and certificates",
   "heading": "Notes",
   "url": "manual-documents-and-certificates.html#notes",
-  "text": "Swipe left on a document and tap Note to add a note, such as \"Assessor booked for Friday\". The note shows in purple under the document's name. You can also tap the status icon and choose Add note , or touch and hold the document and choose Add / edit note . Notes appear on the handover PDF and, for documents still missing, on the progress report."
+  "text": "Tap a document's status icon and choose Add note to add a note, such as \"Assessor booked for Friday\". Type the note, which can run to several lines, and tap Save . The whole note shows in grey under the document's name. You can also swipe left and tap More , or touch and hold the document, and choose Add note (or Edit note once there is one). Notes appear on the handover PDF and, for documents still missing, on the progress report."
  },
  {
   "chapter": "6. Documents and certificates",
@@ -688,13 +688,37 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Project-wide records",
   "url": "manual-project-wide-records.html",
-  "text": "Some things belong to the whole site rather than to one plot: the bin store keys, the landlord's electricity meter, the site plan, and the planning permission the site is being built under. KeyCheck keeps these once, on the project. This chapter covers communal keys, communal meters, attachments and mark-up, and Planning (decision notices, conditions, discharges and S106 obligations). Project documents are covered in chapter 6, and the project log in chapter 8."
+  "text": "Some things belong to the whole site rather than to one plot: the site manager's phone number, the bin store keys, the landlord's electricity meter, the site plan, and the planning permission the site is being built under. KeyCheck keeps these once, on the project. This chapter covers site details, communal keys, communal meters, attachments and mark-up, and Planning (decision notices, conditions, discharges and S106 obligations). Project documents are covered in chapter 6, and the project log in chapter 8."
  },
  {
   "chapter": "7. Project-wide records",
   "heading": "Where to find them",
   "url": "manual-project-wide-records.html#where-to-find-them",
-  "text": "Open a project. The project's own records are on the tabs at the bottom of the screen: Documents : the project documents (chapter 6), with Attachments at the top Planning : decision notices, conditions, discharges and S106 obligations Site : Communal keys and Communal meters , together with the Project log (chapter 8), Insights, reports and sharing Changes on these screens save as you make them. There's no Done button."
+  "text": "Open a project. The project's own records are on the tabs at the bottom of the screen: Documents : the project documents (chapter 6), with Attachments at the top Planning : decision notices, conditions, discharges and S106 obligations Site : Site details , Communal keys and Communal meters , together with Insights, the Project log ( chapter 8 ), reports and sharing The Site tab is a set of cards. Each card shows a short summary, so you can see at a glance what's been recorded, and you tap it to open it. On the Mac, the same cards are on the Site page (⌘4). Attachments are on the Documents page: choose Attachments from Show at the top. Changes on these screens save as you make them. There's no Done button."
+ },
+ {
+  "chapter": "7. Project-wide records",
+  "heading": "Site details",
+  "url": "manual-project-wide-records.html#site-details",
+  "text": "Site details keeps the practical information about a site in one place: who's who, how to get in, where to park, and the contract. Anyone working on the project, including colleagues it's shared with, can find a phone number or the gate code without searching through emails. In the Riverside Business Park sample project, it has four contacts, the site hours, access and parking, and the contract details. On the Site tab, tap Site details . Once there's something in it, the card shows a summary, for example \"3 contacts · 2 site notes · Contract details\"."
+ },
+ {
+  "chapter": "7. Project-wide records",
+  "heading": "Contacts",
+  "url": "manual-project-wide-records.html#contacts",
+  "text": "Tap Add contact . Type a Role , or tap Choose a role and pick one: Site manager, Assistant site manager, Contracts manager, Project manager, Quantity surveyor, Employer's agent, Clerk of works, Client contact, Housing officer, Building control, Warranty inspector, Health and safety, Customer care or Sales. Fill in whichever of Name , Company , Mobile , Office and Email you have, and a Note if it helps, for example \"On site Tuesdays and Thursdays\". Tap Save . A contact needs at least a name or a role. Each contact shows their name, with their role and company underneath. Tap a phone number to call it, the Message button beside a mobile number to send a text, or an email address to write to them. Tap the name to change their details. To remove a contact, swipe left on it and tap Delete . A banner offers Undo straight afterwards. Touching and holding a contact also offers Edit , Copy text and Delete ."
+ },
+ {
+  "chapter": "7. Project-wide records",
+  "heading": "Site",
+  "url": "manual-project-wide-records.html#site-arrangements",
+  "text": "Address : the project's address, from Project details in Project settings . Tap Open in Maps to see it, or Directions to get there. Site hours : for example \"Mon–Fri 7:30am to 5pm\". Site access : the entrance to use, gate codes and signing in. Parking : where visitors can park. Other notes : anything else visitors should know, such as \"Hi-vis, boots and hard hat on site at all times\"."
+ },
+ {
+  "chapter": "7. Project-wide records",
+  "heading": "Contract",
+  "url": "manual-project-wide-records.html#contract",
+  "text": "Contract reference and Form of contract , for example \"JCT Design and Build\". Possession date and Contract completion : tap Set date , then tap the date to change it. Tap the × beside a date to clear it. Defects period : for example \"12 months\". Contract notes : for example sectional completion, retention and LADs. Site details save as you type. They aren't printed on the handover forms or the progress report, but they're kept with the project when you share it, export it or sync it with iCloud."
  },
  {
   "chapter": "7. Project-wide records",
@@ -706,7 +730,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Adding communal keys",
   "url": "manual-project-wide-records.html#adding-communal-keys",
-  "text": "On the Site tab, tap Communal keys . Tap Add common keys to start with a ready-made list: communal door (front and rear), post box, bin store, cycle store, lift and plant room. Remove any you don't need. Or tap Add communal key to add one at a time. Fill in each key: Key : its name, for example \"Bin store\". Block / entrance : optional, for sites with several blocks. Quantity : how many you're handing over. Type : key, fob and so on. Handed to : who received them, for example \"HA estates team\". Set date handed over : tap to record the date. It starts as today; tap the date to change it. Note : anything else, for example \"To hand over with POS adoption\". Each key folds up to one line once you've finished with it, showing its name and quantity. Tap it to open it again. Duplicate copies a key, which is handy for similar keys in different blocks. The Communal keys row on the Site tab shows how many keys have a quantity recorded, for example \"4 of 5 recorded\"."
+  "text": "On the Site tab, tap Communal keys . Tap Add common keys to start with a ready-made list: communal door (front and rear), post box, bin store, cycle store, lift and plant room. Remove any you don't need. Or tap Add communal key to add one at a time. Fill in each key: Key : its name, for example \"Bin store\". Block / entrance : optional, for sites with several blocks. Quantity : how many you're handing over. Type : key, fob and so on. Handed to : who received them, for example \"HA estates team\". Set date handed over : tap to record the date. It starts as today; tap the date to change it. Note : anything else, for example \"To hand over with POS adoption\". Each key folds up to one line once you've finished with it, showing its name and quantity. Tap it to open it again. Duplicate copies a key, which is handy for similar keys in different blocks. The Communal keys card on the Site tab shows how many keys have a quantity recorded, for example \"4 of 5 recorded\"."
  },
  {
   "chapter": "7. Project-wide records",
@@ -730,7 +754,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Communal meters",
   "url": "manual-project-wide-records.html#communal-meters",
-  "text": "Communal meters serve the whole block or site rather than one plot: the landlord's electricity supply, block solar panels, EV chargers or a shared water supply. The Meadow View Phase 2 sample project has a landlord supply and block solar PV. On the Site tab, tap Communal meters . Tap Add landlord supply, solar PV and EV charging to add those three. Remove any you don't need. Or tap Add communal meter and choose one: Landlord supply , Block solar PV , EV charging supply , Communal water or Other meter . For each meter, check its Meter name and add a Location , for example \"Block A plant room\". Fill in its details, such as the serial number and reading. Solar PV meters also have an export reading and export MPAN. Add a photo with Photo or Library . Meter photos and scanning work the same way as on a plot (chapter 5): KeyCheck can read the serial number and reading from the photo, on your iPhone, for you to check. To remove a meter, tap Remove at the bottom of it and confirm. Its readings and photos are removed with it. The Communal meters row on the Site tab shows how many have a reading, for example \"1 of 2 read\". Communal meters are included in the progress report (chapter 11). Tip If the plots don't have their own solar panels and only the block does, switch off Solar PV in Form items (chapter 3), so it doesn't appear on every plot."
+  "text": "Communal meters serve the whole block or site rather than one plot: the landlord's electricity supply, block solar panels, EV chargers or a shared water supply. The Meadow View Phase 2 sample project has a landlord supply and block solar PV. On the Site tab, tap Communal meters . Tap Add landlord supply, solar PV and EV charging to add those three. Remove any you don't need. Or tap Add communal meter and choose one: Landlord supply , Block solar PV , EV charging supply , Communal water or Other meter . For each meter, check its Meter name and add a Location , for example \"Block A plant room\". Fill in its details, such as the serial number and reading. Solar PV meters also have an export reading and export MPAN. Add a photo with Photo or Library . Meter photos and scanning work the same way as on a plot (chapter 5): KeyCheck can read the serial number and reading from the photo, on your iPhone, for you to check. To remove a meter, tap Remove at the bottom of it and confirm. Its readings and photos are removed with it. The Communal meters card on the Site tab shows how many have a reading, for example \"1 of 2 read\". Communal meters are included in the progress report (chapter 11). Tip If the plots don't have their own solar panels and only the block does, switch off Solar PV in Form items (chapter 3), so it doesn't appear on every plot."
  },
  {
   "chapter": "7. Project-wide records",
@@ -742,7 +766,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Adding attachments",
   "url": "manual-project-wide-records.html#adding-attachments",
-  "text": "Open the project's Documents tab and tap Attachments , at the top. Tap the + button (top right) and choose: Scan document : scan paper pages with the camera. All the pages go into one PDF. Take photo : take a photo with the camera. Choose photos : pick photos from your library. Import from Files : pick PDFs or images from Files, iCloud Drive or OneDrive. You can select several at once. You can also send a PDF or photo to KeyCheck from Mail, Files, Outlook or Teams: tap the share button on the file, choose KeyCheck , then pick the project (chapter 13)."
+  "text": "Open the project's Documents tab and tap Attachments , at the top. Tap the + button (top right) and choose: Scan document : scan paper pages with the camera. All the pages go into one PDF. Take photo : take a photo with the camera. Choose photos : pick photos from your library. Import from Files : pick PDFs or images from Files, iCloud Drive or OneDrive. You can select several at once. You can also send a PDF or photo to KeyCheck from Mail, Files, Outlook or Teams: tap the share button on the file, choose KeyCheck , then pick the project (chapter 13). On the Mac, you can also drag files from Finder into Attachments. Click an attachment to select it, and ⌘-click or Shift-click to select several (⌘A selects them all). Right-click the selection to share or delete them together, or press Delete. Double-click an attachment, or press Return, to open it."
  },
  {
   "chapter": "7. Project-wide records",
@@ -754,7 +778,25 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Marking up",
   "url": "manual-project-wide-records.html#marking-up",
-  "text": "You can draw on an attachment, for example to circle the plots handed over this week on the site plan, or number the snags on a photo. Open the attachment and tap Mark up . Choose a tool: Pen : draw freehand. Highlighter : see-through colour over text or an area. Pixelate : paint over names, phone numbers, faces or anything else private to turn it into coarse blocks. It uses the colours underneath, so the colour choice doesn't apply. Arrow , Rectangle and Ellipse : drag from one corner or end to the other. Text : tap where the label should go, type it and tap Add . Number : tap to place numbered circles, 1, 2, 3 and so on. Choose a colour: red, orange, yellow, green, blue, black or white. Tap the Move and zoom (hand) button when you want to move around or zoom in without drawing. Tap a tool to start drawing again. On a PDF with several pages, use the arrows to go to the next or previous page (\"Page 2 of 5\"). Tap Done to save. Undo takes back the last thing you drew. Clear page removes all the mark-up on the page you're looking at, after asking. Cancel asks whether to discard your changes. Mark-up is kept separately from the file, so the original is never changed. Labels placed near the edge of a page are moved inwards so they stay fully on the page. Pixelation is in every copy you share, but the original file kept in KeyCheck is unchanged, so you can remove it again. That means a project sent as a KeyCheck file, or shared through iCloud, still includes the original underneath. On a PDF, a page with pixelation is shared as a picture of the page, so its text can't be copied from under the blocks. Other pages stay sharp and their text can still be selected."
+  "text": "You can draw on an attachment, for example to circle the plots handed over this week on the site plan, or number the snags on a photo. Open the attachment and tap Mark up . Photos and PDFs have slightly different tools."
+ },
+ {
+  "chapter": "7. Project-wide records",
+  "heading": "Marking up a photo",
+  "url": "manual-project-wide-records.html#marking-up-a-photo",
+  "text": "Draw on the photo with your finger. To make a neat shape, hold still for a moment at the end of a line, circle, oval, rectangle or arrow, and it snaps into shape. The tools are along the bottom, with the colours above them: red, orange, yellow, green, blue and white. Crop : trim the photo to the part that matters, then tap Apply Crop , or Cancel Crop to leave it as it was. Pixelate : paint over names, phone numbers, faces or anything else private to turn it into coarse blocks. It uses the colours underneath, so the colour choice doesn't apply. Number : tap to place numbered markers, 1, 2, 3 and so on. Text : tap where the label should go, type it (for example \"550mm\") and tap Add . Undo : takes back the last change. More ( … ) → Reset Edits : removes all the mark-up and the crop. Tap a tool again to go back to drawing. To move a number or label, drag it. Tap it to change its text or delete it. With an Apple Pencil, an Eraser appears too."
+ },
+ {
+  "chapter": "7. Project-wide records",
+  "heading": "Marking up a PDF",
+  "url": "manual-project-wide-records.html#marking-up-a-pdf",
+  "text": "The pages scroll down the screen one after another. Pinch to zoom in. Pen : draw freehand. Highlighter : see-through colour over text or an area. Text : tap the page where the text should go, type it and tap Add . Undo : takes back the last change. With Pen or Highlighter on, one finger draws and two fingers move around and zoom. With an Apple Pencil, the Pencil draws and your finger moves the page. Tap the tool again to turn it off. As on photos, hold still at the end of a stroke to snap it into a shape. Tap a text label to choose Edit Text , or Edit Size and Position : then drag the bar to wrap the text, the dot to resize it, or the label to move it, and tap elsewhere when you're done. Tap any other mark to delete it. More ( … ) → Remove All Mark-up removes every mark on every page."
+ },
+ {
+  "chapter": "7. Project-wide records",
+  "heading": "Saving",
+  "url": "manual-project-wide-records.html#saving-mark-up",
+  "text": "Tap Done (the tick) to save, or Cancel (the cross), which asks whether to discard your changes. Mark-up is kept separately from the file, so the original is never changed. With VoiceOver, each mark is listed after the picture, with an action to delete it. Pixelation and cropping are in every copy you share, but the original photo kept in KeyCheck is unchanged, so you can undo them later. That means a project sent as a KeyCheck file, or shared through iCloud, still includes the original underneath."
  },
  {
   "chapter": "7. Project-wide records",
@@ -772,7 +814,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "Importing planning files",
   "url": "manual-project-wide-records.html#importing-planning-files",
-  "text": "KeyCheck reads conditions from the council's documents, so you don't have to type them in. If a document won't read, or a decision arrives by email without a PDF, add it by hand instead (see Adding conditions and discharges by hand below). Save the documents somewhere you can reach from your iPhone, such as Files, iCloud Drive or OneDrive. Download them from the council's planning portal, or save them from the emails they came in. In Planning, tap Import planning files (the document with a plus, top right). Select every file you have: the permission, any appeal decisions, variations, reserved matters and discharge decisions, all together. They can be in any order. KeyCheck sorts each file by what's in it. KeyCheck reads them one by one: Files that read cleanly are added straight away. If it's unsure about a file, it opens a review screen so you can check what it found before adding it. At the end, a summary lists every file and what it added. Tap Undo beside a file to take back everything that file added. Undoing a decision notice also removes the discharge results matched to its conditions. Tap Done . Good to know: Refused applications are added to the history, but without any conditions. Section 106 agreements and unilateral undertakings are recognised and left out. Add their obligations by hand in the S106 tab (see below). Everything is read on your iPhone. Nothing is sent anywhere. Each imported document is also saved in Attachments , so you can open the original. To read a decision notice that's already in Attachments, touch and hold it there and choose Read planning conditions . You can also send a PDF or Word decision notice to KeyCheck from another app (chapter 13). On iPhones with Apple Intelligence, KeyCheck can also identify unusual documents, match discharge letters that describe conditions in words rather than numbers, and write the summary at the top of the Timeline. This happens on the iPhone too, and anything from Apple Intelligence is labelled."
+  "text": "KeyCheck reads conditions from the council's documents, so you don't have to type them in. If a document won't read, or a decision arrives by email without a PDF, add it by hand instead (see Adding conditions and discharges by hand below). Save the documents somewhere you can reach from your iPhone, such as Files, iCloud Drive or OneDrive. Download them from the council's planning portal, or save them from the emails they came in. In Planning, tap Import planning files (the document with a plus, top right). Select every file you have: the permission, any appeal decisions, variations, reserved matters and discharge decisions, all together. They can be in any order. KeyCheck sorts each file by what's in it. KeyCheck reads them one by one: Files that read cleanly are added straight away. If it's unsure about a file, it opens a review screen so you can check what it found before adding it. At the end, a summary lists every file and what it added. Tap Undo beside a file to take back everything that file added. Undoing a decision notice also removes the discharge results matched to its conditions. Tap Done . Good to know: Refused applications are added to the history, but without any conditions. Section 106 agreements and unilateral undertakings are recognised and left out. Add their obligations by hand in the S106 tab (see below). Everything is read on your iPhone. Nothing is sent anywhere. Each imported document is also saved in Attachments , so you can open the original. To read a decision notice that's already in Attachments, touch and hold it there and choose Read planning conditions . You can also send a PDF or Word decision notice to KeyCheck from another app (chapter 13). On the Mac, Import planning files opens a window to choose the files. You can also drag PDFs from Finder onto Planning. On iPhones with Apple Intelligence, KeyCheck can also identify unusual documents, match discharge letters that describe conditions in words rather than numbers, and write the summary at the top of the Timeline. This happens on the iPhone too, and anything from Apple Intelligence is labelled."
  },
  {
   "chapter": "7. Project-wide records",
@@ -806,6 +848,12 @@ window.KEYCHECK_MANUAL_INDEX = [
  },
  {
   "chapter": "7. Project-wide records",
+  "heading": "Updating triggers from the wording",
+  "url": "manual-project-wide-records.html#updating-triggers-from-the-wording",
+  "text": "KeyCheck reads more from a condition's wording than it used to: deadlines on time-limit conditions (for example Reserved matters within 3 years of this permission ), a later step ( then before occupation ), conditions that apply each phase , and a second dwelling limit ( Before more than 50 dwellings are occupied (100 for later works) ). To add these to conditions you imported earlier, tap + , then Update triggers from wording . It only adds to a trigger, or fills in one that just said Keep to throughout , so anything you typed yourself stays. Sections and statuses don't change. KeyCheck also recognises conditions that start once a number of homes are occupied ( following the occupation of the 80th dwelling ), and conditions about one feature of the site, such as No works shall commence on the LEAP , which it shows as Before the relevant work starts ."
+ },
+ {
+  "chapter": "7. Project-wide records",
   "heading": "Adding conditions and discharges by hand",
   "url": "manual-project-wide-records.html#adding-by-hand",
   "text": "Use these when a document can't be imported: a notice that won't read, a condition KeyCheck missed, or a discharge decision sent by email. Tap the + at the top right of Planning, or use the buttons at the bottom of the Conditions tab. To add a condition: Tap + , then Add condition . Under Permission , choose the permission the condition is on. If it isn't on the Timeline yet, choose New permission… and fill in its reference (for example 24/02260/FUL), type and decision date. You can also choose the decision notice from Attachments. The permission is added to the Timeline. Fill in the condition's Number , a Short title , its Section and, if there is one, When it's due . Paste or type the Condition wording and the Reason . Tap Save . The condition starts as Outstanding , or Ongoing compliance under Compliance only. Each condition number can only be used once on a permission. If you type one that's already there, KeyCheck says so. To log a discharge: Tap + , then Log discharge , or open a condition and tap Log discharge . Type the Discharge reference (for example 25/00123/DIS) and set the date. If you have the council's letter in Attachments, choose it under Letter . For each condition the decision covers, choose Discharged , Partly discharged or Submitted for discharge . Leave the rest as Not included . Tap Save . The conditions change status, with the date and reference in their evidence history. With a reference, the discharge decision is also added to the Timeline under its permission, just like an imported one. When you've only sent the details in and the council hasn't given you a reference yet, leave Discharge reference blank and choose Submitted for discharge ."
@@ -820,12 +868,72 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "7. Project-wide records",
   "heading": "To do",
   "url": "manual-project-wide-records.html#to-do",
-  "text": "When KeyCheck spots something it thinks you should check, it goes in the To do tab rather than changing anything by itself. The tab's name shows how many are waiting, for example \"To do (3)\". Nothing changes until you confirm. Conditions to check : suggested status changes, with one card per permission. For example, when a variation repeats a condition that was already discharged on the earlier permission, KeyCheck suggests carrying the discharge over. Tap Confirm all to accept every suggestion on the card, or Review to see them and tap ✓ ( Confirm ) or ✗ ( Reject ) on each one. Links to check : links between decisions that KeyCheck isn't sure about, for example that one decision varies another. Missing documents : references mentioned in your documents that you haven't imported, such as an earlier permission. Import them to complete the history. Suggestions from Apple Intelligence are labelled Apple Intelligence suggestion ."
+  "text": "When KeyCheck spots something it thinks you should check, it goes in the To do tab rather than changing anything by itself. The tab's name shows how many are waiting, for example \"To do (3)\". Nothing changes until you confirm. Conditions to check : suggested status changes, with one card per permission. For example, when a variation repeats a condition that was already discharged on the earlier permission, KeyCheck suggests carrying the discharge over. Tap Confirm all to accept every suggestion on the card, or Review to see them and tap ✓ ( Confirm ) or ✗ ( Reject ) on each one. Reserved matters : when a reserved matters approval is linked to its outline permission, KeyCheck suggests marking the outline's condition asking for reserved matters approval as Formally discharged , with the note \"Reserved matters approved under\" and the approval's reference. It appears on a card headed with the reference and \"discharges to carry over\". Links to check : links between decisions that KeyCheck isn't sure about, for example that one decision varies another. Missing documents : references mentioned in your documents that you haven't imported, such as an earlier permission. Import them to complete the history. A condition with a suggestion waiting says Suggested change in To do . Suggestions from Apple Intelligence are labelled Apple Intelligence suggestion ."
  },
  {
   "chapter": "7. Project-wide records",
   "heading": "Planning in the reports",
   "url": "manual-project-wide-records.html#planning-in-the-reports",
-  "text": "Progress report (chapter 11): a Planning section with the Building under summary and discharge progress, a drawn timeline, the conditions under each heading with discharge decisions and dates, and the S106 obligations. Handover pack (chapter 10): the project documents PDF has a Planning conditions section listing outstanding, discharged and compliance conditions, and the S106 obligations. Conditions replaced by the working variation aren't listed. From the office Planning is mostly office work: a user can import each discharge decision as it arrives, and everyone on a shared project (chapter 12) sees the up-to-date list. Before a progress meeting, check To do and the Conditions tab with Outstanding only switched on. The Pre-commencement and Pre-occupation headings show exactly what's left before work starts and before the first homes are occupied, and the progress report sets this out for the meeting."
+  "text": "Progress report (chapter 11): a Planning conditions section with the Building under summary and discharge progress, a drawn timeline, and the conditions under each heading with discharge decisions and dates. It's followed by an S106 / CIL obligations section, grouped by when they're due, with how many are outstanding, for example \"1 of 5 outstanding\". Handover pack (chapter 10): the project documents PDF has a Planning conditions section listing outstanding, discharged and compliance conditions, and an S106 / CIL obligations section. Conditions replaced by the working variation aren't listed. From the office Planning is mostly office work: a user can import each discharge decision as it arrives, and everyone on a shared project (chapter 12) sees the up-to-date list. Before a progress meeting, check To do and the Conditions tab with Outstanding only switched on. The Pre-commencement and Pre-occupation headings show exactly what's left before work starts and before the first homes are occupied, and the progress report sets this out for the meeting."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "The project log",
+  "url": "manual-the-project-log.html",
+  "text": "The project log is a dated diary for the whole site: site visits, problems found, decisions made and paperwork chased. It's quick to add to on site, and it gives the office a record to look back on and report from at progress meetings. This chapter covers adding entries by typing or speaking, finding them again, and how the log appears in the progress report."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "Opening the log",
+  "url": "manual-the-project-log.html#opening-the-log",
+  "text": "Open a project, go to the Site tab and tap Project log . The card shows how many entries there are and when the latest was added, for example \"9 entries, latest today\". The Meadow View Phase 2 sample project has nine entries, from taking over the site from the previous agent to yesterday's note that the scaffold was struck on Harebell Close. It's a good place to look around. Entries are listed under date headings, such as Today , Yesterday or 12 November 2026 , with the newest at the top. Each entry shows its type, the text, and on a shared project who wrote it."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "Types of entry",
+  "url": "manual-the-project-log.html#types-of-entry",
+  "text": "Each entry can be given a type, so you can pick out what matters later: Type Use it for Example Note Anything else \"Scaffold struck on Harebell Close.\" Site visit Visits, inspections and walk-rounds \"Site visit with client. Plots 2–4 accepted subject to minor snags.\" Issue Problems that need dealing with \"Water ingress at plot 8 rear door threshold. Joiner to reseal.\" Decision Anything agreed, so there's a record of it \"Took over as employer's agent from Harper Lane.\" Chased Paperwork or answers you've asked for again \"Chased EPC assessor for plots 5 & 6.\""
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "Adding an entry",
+  "url": "manual-the-project-log.html#adding-an-entry",
+  "text": "Tap Add entry . Check the Date . It starts as today; tap it to change it, for example when writing up yesterday's visit. Choose a Type , or leave it as Note . Type the entry under What happened? Tap Save . If you tap Cancel after typing something, KeyCheck asks whether to discard it, so nothing is lost by accident. Entries record the day, not the time. If the order within a day matters, say so in the entry, for example \"Morning visit\"."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "Dictating an entry",
+  "url": "manual-the-project-log.html#dictating-an-entry",
+  "text": "On site, it's often easier to speak than type. Tap Dictate instead of Add entry , and KeyCheck starts listening straight away. Speak naturally. Your words appear as you speak: words still being worked out are shown in grey. Tap Stop when you've finished. Check the entry, then tap Save . You can change anything before saving, or tap Dictate again to start over. What happens after you stop depends on your iPhone: On iPhones with Apple Intelligence , KeyCheck tidies what you said into one to three short sentences, keeping every fact. It also chooses the type, and sets the date if you said when it happened, for example \"yesterday\" or \"last Tuesday\" (up to a month ago). What you actually said is shown above, under What you said , so you can check nothing was lost. Check the date, type and entry before saving. On other iPhones and iPads , your words go into the entry as you said them. Choose the type and date yourself. Good to know: The first time , KeyCheck asks to use the microphone. If you said no, dictation explains how to turn it on in Settings → Apps → KeyCheck . The first time in a language , your iPhone may need to download Apple's speech model, so be online. After that it works without a signal. Everything happens on your device. Your speech is turned into text on your iPhone, iPad or Mac, and isn't sent anywhere. The recording isn't kept. If nothing was heard, move a little closer to the microphone and try again. Dictation only fills in a new, empty entry, so it never replaces something you've already written."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "Finding entries",
+  "url": "manual-the-project-log.html#finding-entries",
+  "text": "When the log gets long, tap Filter (top right) to show one type at a time: Site visit , Issue , Decision or Chased . The screen's title changes to the type you've chosen. Choose All entries to see everything again."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "Changing, copying and deleting entries",
+  "url": "manual-the-project-log.html#changing-copying-and-deleting-entries",
+  "text": "Change an entry : tap it, make your changes and tap Save . Copy an entry's text , for example to paste into an email: touch and hold it and choose Copy text . Delete an entry : swipe left on it and tap Delete , or touch and hold it and choose Delete . A banner offers Undo for a few seconds."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "On shared projects",
+  "url": "manual-the-project-log.html#on-shared-projects",
+  "text": "On a shared project (chapter 12), KeyCheck adds your name from Settings → You → Your name when you save an entry, so everyone can see who wrote it. If someone else edits it later, it shows their name instead. On projects that aren't shared, no names are saved. The log is kept with the project when it syncs with iCloud, and when you send it as a KeyCheck file (chapter 13). People you've shared a project with as view only can read the log and copy entries, but can't add or change them."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "The log in the progress report",
+  "url": "manual-the-project-log.html#the-log-in-the-progress-report",
+  "text": "The progress report (chapter 11) has a Project log section, with the date, type and text of each entry, newest first. On a shared project it also shows who wrote each one. When you create the report, two switches under Include control the log: Project log : includes the section. Whole project log : includes every entry. When it's off, the report only includes entries in the report's period, such as Last 14 days or Since last report , and the section says so, for example \"3 entries in the last 14 days\"."
+ },
+ {
+  "chapter": "8. The project log",
+  "heading": "On the Mac",
+  "url": "manual-the-project-log.html#on-the-mac",
+  "text": "The log works the same way on the Mac. Choose Site (⌘4) and click Project log . Right-click an entry for Edit , Copy text and Delete , and press ⌘[ or click Back to return to the Site page. Dictation uses the Mac's microphone. From the office The log is the site's memory. Record each chase, phone call and decision on the day, even in a few words, and before a progress meeting the report's Project log section shows everything that happened since the last one. Use Filter → Issue to check nothing has been left unresolved, and Filter → Decision when someone asks what was agreed and when."
  }
 ];

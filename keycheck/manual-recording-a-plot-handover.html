@@ -63,7 +63,7 @@
       <p>The ring counts meters, keys, documents and signatures. A document counts once it's Received or Not applicable. One marked Outstanding has been asked for but hasn't arrived, so it still shows in <strong>What's left</strong>, for example "2 documents (1 outstanding)". Final snags and notes don't count towards the ring, because a plot can be handed over with snags still open.</p>
       <figure class="shot">
         <a href="images/plot-form-top.png" target="_blank" rel="noopener noreferrer">
-          <img src="images/plot-form-top.png" alt="The top of Plot 7's form: What's left opened, with In progress, 70% complete and an orange 3, listing 9 documents (5 outstanding), Client representative signature and Contractor signature, then the Details and Postal address card" loading="lazy">
+          <img src="images/plot-form-top.png" alt="The top of Plot 7's form: What's left opened, with In progress, 70% complete and an orange 3, listing 9 documents (5 outstanding), Client representative signature and Contractor signature, then the Details card with Rent, 2b3p Bungalow, The Linden and Target handover 9 Dec 2026, and the postal address" loading="lazy">
         </a>
         <figcaption>The top of the form, with What's left opened</figcaption>
       </figure>
@@ -75,7 +75,7 @@
             <tr><th>Section</th><th>What you record</th></tr>
           </thead>
           <tbody>
-            <tr><td><strong>Details</strong></td><td>Plot number, tenure, property details and handover date.</td></tr>
+            <tr><td><strong>Details</strong></td><td>Plot number, tenure, property details, target and handover dates.</td></tr>
             <tr><td><strong>Postal address</strong></td><td>House number, street, town and postcode.</td></tr>
             <tr><td><strong>Meters</strong></td><td>Readings, serial numbers, suppliers and photos (chapter 5).</td></tr>
             <tr><td><strong>Keys</strong></td><td>How many of each key, fob or card are handed over.</td></tr>
@@ -95,7 +95,8 @@
         <li><strong>Plot no.</strong>: the plot number.</li>
         <li><strong>Tenure</strong>: Rent, Shared Ownership, Market Rent, or <strong>Other</strong> to type your own. Tenure decides which documents the plot needs if the project has tenure exceptions (chapter 3).</li>
         <li><strong>Property type</strong>, <strong>House type</strong>, <strong>Bedrooms</strong> and <strong>People</strong> (for example 3 bedrooms, 4 people), and <strong>Block</strong> and <strong>Floor</strong> for flats.</li>
-        <li><strong>Handover date</strong>: tap <strong>Set handover date</strong> to set it to today, then tap the date to change it. You don't have to set it yourself: the first signature sets it to today if it's empty.</li>
+        <li><strong>Target handover</strong>: the date the plot is planned to be handed over, for example from the developer's programme. Tap <strong>Set target handover</strong>, then tap the date to change it. Until the plot is handed over, the plot list, the plot map and the progress report show this date (in grey on the report), and <strong>Overdue</strong> appears once the day has passed. It's never used as the handover date on the handover form.</li>
+        <li><strong>Handover date</strong>: the day it was actually handed over. Tap <strong>Set handover date</strong> to set it to today, then tap the date to change it. You don't have to set it yourself: the first signature sets it to today if it's empty.</li>
       </ul>
       <p>Most of these can be filled in for lots of plots at once when adding plots, or by importing a spreadsheet (chapter 3).</p>
 
@@ -205,7 +206,7 @@
         <li>When it's fixed, tap the circle beside it. KeyCheck records today as the <strong>Completed</strong> date. Tap the date to correct it, for example if the snag was fixed a few days before you ticked it. A completed date can't be in the future.</li>
       </ol>
       <p>To reopen a snag, tap its circle again. This clears the completed date. To delete a snag, swipe left on it and tap <strong>Delete</strong>.</p>
-      <p>Completed snags appear on the handover form and under <strong>Actions completed</strong> in the progress report (chapter 11).</p>
+      <p>Completed snags appear on the handover form and under <strong>Outstanding items completed</strong> in the progress report (chapter 11).</p>
       <figure class="shot">
         <a href="images/plot-snags.png" target="_blank" rel="noopener noreferrer">
           <img src="images/plot-snags.png" alt="Defects / outstanding items with two open snags, for the fire stopping contractor and the controls engineer, and one ticked snag completed on 11 Nov 2026" loading="lazy">
@@ -250,6 +251,7 @@
         <li>Add the handover date in <strong>Details</strong> when you have it.</li>
       </ol>
       <p>The plot's status changes to <strong>Handed over</strong> without signatures, and its handover form says <em>Handed over by a previous agent</em> in place of the signature boxes. To take signatures after all, tap <strong>Take signatures instead</strong>.</p>
+      <p>Anything nobody has recorded on the plot counts as dealt with by the previous agent, so it isn't listed in <strong>What's left</strong> or chased. On the handover form, those documents say <em>Previous agent</em> rather than <em>Not received</em>. If you mark a document <strong>Outstanding</strong> later, it's listed and chased as usual.</p>
 
       <h3 id="saving-time-on-similar-plots">Saving time on similar plots</h3>
       <p>Plots on the same street or in the same block are often set up the same way: the same keys, the same meter suppliers and often the same documents. KeyCheck has two ways to copy them, so you only type them once.</p>

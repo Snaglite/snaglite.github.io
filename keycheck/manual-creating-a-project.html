@@ -144,7 +144,7 @@
       </figure>
 
       <h3 id="importing-addresses-and-meter-details-from-a-spreadsheet">Importing addresses and meter details from a spreadsheet</h3>
-      <p>If the client or developer has a plot schedule in Excel or Numbers, KeyCheck can read postal addresses, tenures, property details, handover dates and meter numbers from it. It can also create any plots that aren't in the project yet.</p>
+      <p>If the client or developer has a plot schedule in Excel or Numbers, KeyCheck can read postal addresses, tenures, property details, target and handover dates and meter numbers from it. It can also create any plots that aren't in the project yet.</p>
       <p>KeyCheck reads <strong>CSV</strong> files. CSV ("comma-separated values") is a plain spreadsheet format that every spreadsheet app can save.</p>
 
       <h4 id="saving-the-spreadsheet-as-csv">Saving the spreadsheet as CSV</h4>
@@ -205,7 +205,8 @@
             <tr><td>House type</td><td>For example "Type F1".</td></tr>
             <tr><td>Bedrooms/people</td><td>For example 3B4P.</td></tr>
             <tr><td>Block, Floor</td><td>For flats. Floor can be "Ground", "1st" and so on.</td></tr>
-            <tr><td>Handover date</td><td>Use day/month/year, for example 28/05/2027. Dates KeyCheck can't read are left out, and the preview warns you.</td></tr>
+            <tr><td>Target handover date</td><td>The planned date, for example from the developer's programme. Headings such as "Target handover", "Planned handover", "Handover date (forecast)" or "Completion date" are matched here.</td></tr>
+            <tr><td>Handover date (actual)</td><td>The day a plot was actually handed over, if the sheet has one. For both dates use day/month/year, for example 28/05/2027. Dates KeyCheck can't read are left out, and the preview warns you.</td></tr>
             <tr><td>MPAN, Electricity meter serial</td><td></td></tr>
             <tr><td>MPRN (gas), Gas meter serial</td><td></td></tr>
             <tr><td>Water meter serial, Solar PV meter serial</td><td></td></tr>
