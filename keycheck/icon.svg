@@ -4,9 +4,9 @@
       <stop offset="0" stop-color="#1E232C"/>
       <stop offset="1" stop-color="#0E121A"/>
     </linearGradient>
-    <linearGradient id="orange" x1="0" y1="-200" x2="0" y2="180" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FDA05A"/>
-      <stop offset="1" stop-color="#F17A25"/>
+    <linearGradient id="blue" x1="0" y1="-200" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5AB2FF"/>
+      <stop offset="1" stop-color="#0A84FF"/>
     </linearGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
@@ -23,13 +23,13 @@
   <g clip-path="url(#tile)">
     <rect width="1024" height="1024" fill="url(#bg)"/>
     <g mask="url(#gap)">
-      <path fill="url(#orange)" fill-rule="evenodd" transform="translate(455 385) rotate(45)" d="
+      <path fill="url(#blue)" fill-rule="evenodd" transform="translate(455 385) rotate(45)" d="
         M 0 -147 A 147 147 0 0 1 120.4 -84.3 L 120 -82 L 200 -82 L 200 -56
         L 496 -56 L 530 -22 L 530 36 L 496 70 L 460 70 L 434 40 L 418 40 L 394 70
         L 364 70 L 344 50 L 324 50 L 302 70 L 200 70 L 200 84 L 120 84 L 120.4 84.3
         A 147 147 0 1 1 0 -147 Z
         M -61.5 0 m -39 0 a 39 39 0 1 0 78 0 a 39 39 0 1 0 -78 0 Z"/>
-      <rect x="250" y="-17" width="233" height="12" rx="6" transform="translate(455 385) rotate(45)" fill="#C8621C"/>
+      <rect x="250" y="-17" width="233" height="12" rx="6" transform="translate(455 385) rotate(45)" fill="#0062CC"/>
     </g>
     <path d="M 265.24 516.26 L 417.75 668.77 L 765.76 320.76 A 51.25 51.25 0 0 1 838.24 393.24 L 453.99 777.49 A 51.25 51.25 0 0 1 381.51 777.49 L 192.76 588.74 A 51.25 51.25 0 0 1 265.24 516.26 Z" fill="#FFFFFF"/>
     <rect width="1024" height="1024" fill="url(#shine)"/>

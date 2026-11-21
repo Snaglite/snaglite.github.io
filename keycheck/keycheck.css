@@ -6,11 +6,11 @@
   --text: #1c1f24;
   --muted: #5f6672;
   --border: #e2e5ea;
-  --link: #c8621c;
-  --accent: #f17a25;
-  --accent-light: #fda05a;
-  --accent-soft: #fff3e8;
-  --accent-edge: #f8c9a0;
+  --link: #0062cc;
+  --accent: #0a84ff;
+  --accent-light: #5ab2ff;
+  --accent-soft: #eaf3ff;
+  --accent-edge: #a9cdf7;
   --info-soft: #eef2f7;
   --warn-soft: #fff8e1;
   --warn-edge: #f2d27a;
@@ -26,9 +26,9 @@
     --text: #e8ebf0;
     --muted: #9aa3b0;
     --border: #262d37;
-    --link: #fda05a;
-    --accent-soft: #2a1d12;
-    --accent-edge: #5c3518;
+    --link: #5ab2ff;
+    --accent-soft: #10203a;
+    --accent-edge: #1d4a80;
     --info-soft: #1a212b;
     --warn-soft: #2a2412;
     --warn-edge: #5a4a1c;
@@ -81,7 +81,7 @@ code {
 
 .hero {
   background:
-    radial-gradient(ellipse 60% 80% at 85% 0%, rgba(241, 122, 37, 0.28), transparent 70%),
+    radial-gradient(ellipse 60% 80% at 85% 0%, rgba(10, 132, 255, 0.28), transparent 70%),
     linear-gradient(180deg, var(--hero-top), var(--hero-bottom));
   color: #f5f6f8;
   padding: 56px 0 80px;
@@ -107,7 +107,7 @@ code {
   padding: 3px 11px;
   border-radius: 999px;
   background: linear-gradient(180deg, var(--accent-light), var(--accent));
-  color: #241104;
+  color: #001326;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -179,7 +179,7 @@ main {
   height: 38px;
   border-radius: 11px;
   background: linear-gradient(180deg, var(--accent-light), var(--accent));
-  color: #241104;
+  color: #001326;
   font-size: 1.1rem;
   font-weight: 800;
 }
