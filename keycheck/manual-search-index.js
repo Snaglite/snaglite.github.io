@@ -160,7 +160,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "2. Setting up",
   "heading": "Other settings worth knowing",
   "url": "manual-setting-up.html#other-settings-worth-knowing",
-  "text": "You don't need to change these to get started. Chapter 14 covers every setting. Feedback → Button haptics : a light tap when you press a button or flip a switch. Turn it off if you find it distracting. Meter photos → Auto-read meter photos : KeyCheck reads meter photos as soon as you take them. Photos are read on your device and never sent anywhere to be read. Chapter 5 explains more. iCloud sync : off until you turn it on. Chapter 12 explains it."
+  "text": "You don't need to change these to get started. Chapter 14 covers every setting. Feedback → Button haptics : a light tap when you press a button or flip a switch. Turn it off if you find it distracting. Meter photos → Auto-read meter photos : KeyCheck reads meter photos as soon as you take them. Photos are read on your device and never sent anywhere to be read. Chapter 5 explains more. Needs attention → Chase documents after : how long an outstanding document can wait without a chase before it's listed under Needs attention (14 days to start with). Reminders turns on a notification on the morning something falls due. Chapter 9 explains both. iCloud sync : off until you turn it on. Chapter 12 explains it."
  },
  {
   "chapter": "3. Creating a project",
@@ -980,6 +980,24 @@ window.KEYCHECK_MANUAL_INDEX = [
  },
  {
   "chapter": "9. Finding things",
+  "heading": "Needs attention",
+  "url": "manual-finding-things.html#needs-attention",
+  "text": "Needs attention is a to-do list for the site, worked out from what's already recorded. Open it from the Site tab: the Needs attention card, next to Insights, shows how many things there are to act on. On the Mac, it's on the Site page. It lists: Planning : the planning warning, if plots are handed over while pre-commencement or pre-occupation conditions are still outstanding. Documents to chase : documents marked outstanding that nobody has chased for 14 days or more, grouped so one line covers every plot waiting for the same document, for example \"EPC · Plots 12–20 · waiting 31 days · last chased 3 Nov\". Swipe left on a line and tap Chased to record a chase today on every one of those plots (tap Undo if you didn't mean to). Touch and hold a line to copy it, ready for an email. Final snags overdue : snags still open after their due date. Past target handover : plots not handed over by their target date, with what's left to record. Handovers due this week and Final snags due this week : what's coming up in the next seven days. Tap a plot's line to open the plot. To change how long a document can wait before it's listed, go to Settings → Needs attention → Chase documents after ."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "Reminders",
+  "url": "manual-finding-things.html#reminders",
+  "text": "KeyCheck can remind you on the morning something falls due: a final snag on its due date, a plot a week before its target handover, and a document on the day it's due a chase. Each thing is reminded about once. Turn on Settings → Needs attention → Reminders , allow notifications when asked, and choose the time and the Days they come on (Monday to Friday to start with). Anything falling due on a day without reminders comes in the next reminder instead, saying when it was due. Tapping a reminder opens the project's Needs attention list. Reminders are worked out on your device. Sample and archived projects don't send them."
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "The widget",
+  "url": "manual-finding-things.html#the-widget",
+  "text": "On iPhone and iPad you can add a KeyCheck widget to the Home Screen or Lock Screen. It shows a project's name, how many things there are to act on and how many plots are handed over, and the larger size lists the most pressing items. Touch and hold the widget and choose Edit Widget to pick the project. Left as it is, it shows the project with most to act on. Tap the widget to open that project's Needs attention list. Open KeyCheck once after installing so the widget has figures to show."
+ },
+ {
+  "chapter": "9. Finding things",
   "heading": "The projects map and weather",
   "url": "manual-finding-things.html#the-projects-map-and-weather",
   "text": "At the top of the Projects screen, a map shows where your projects are. A project appears once its Site address and Postcode are filled in (in Project settings → Project details ), and KeyCheck can find them on the map. Projects close together are grouped into a numbered circle; tap it to zoom in. Archived projects aren't shown. Tap the location button (top left) to centre the map on where you are. Tap i (top right) to see how many projects are on the map, and why any are missing. The badge at the bottom right shows the current weather and temperature where you are, from Apple Weather, which is handy before heading out to site. It needs permission to use your location; without it, the badge says Weather unavailable . Your location is only used for the map and the weather. On the Mac, choose All Projects at the top of the sidebar (⌘0) for the same map, totals for all your projects, and a table of projects you can sort by clicking a column heading."
@@ -1199,5 +1217,11 @@ window.KEYCHECK_MANUAL_INDEX = [
   "heading": "Using the report at progress meetings",
   "url": "manual-the-progress-report.html#using-the-report-at-progress-meetings",
   "text": "From the office Before the meeting: Record the week's chases and arrivals with Chase or update documents… (chapter 6), and add any calls or decisions to the project log. Check To do in Planning, so suggestions are confirmed before they reach the report. Create the report with Since last report and Count as the latest report on, and send it round. At the meeting, What's changed is the update since last time, Outstanding items and Documents not received are the actions, and the Plot tracker shows which plots are next and which are past their target. If you need a draft first, turn Count as the latest report off, so the real report still covers the whole period."
+ },
+ {
+  "chapter": "11. The progress report",
+  "heading": "Spreadsheets for Excel or Numbers",
+  "url": "manual-the-progress-report.html#spreadsheets-for-excel-or-numbers",
+  "text": "For a tracker of your own, or to send figures to a client's system, KeyCheck can export the project as spreadsheets. On the Site tab, find Spreadsheets under Reports and tap Export… . Choose any of: Plots and meters : one row per plot, with the address, tenure, status, target and actual handover dates, meter details, how many documents are received and how many final snags are open. It uses the same columns as Import addresses & meters , so you can correct it in Excel and import it again. Plot documents : one row per plot and a column per document, saying for example \"Received 03/11/2026\" or \"Outstanding since 21/10/2026, chased 01/11/2026\". Project documents : each project document and bundle item, with its status and dates. Final snags : every snag, with who it's with, when it's due, whether it's open, overdue or done, and when it was completed. Tap Export . Each spreadsheet is a separate CSV file, which opens in Excel, Numbers or Google Sheets. Dates are written day first, and long numbers such as MPANs keep every digit."
  }
 ];
