@@ -629,6 +629,15 @@ td:first-child {
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.16));
 }
 
+/* iPad and Mac screenshots, in Apple Frames device frames: wider than the phone. */
+.shot.wide a {
+  max-width: 440px;
+}
+
+.shot.mac a {
+  max-width: 720px;
+}
+
 .shot figcaption {
   margin-top: 8px;
   color: var(--muted);
