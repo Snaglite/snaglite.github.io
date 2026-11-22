@@ -128,6 +128,19 @@ code {
   font-size: 1.1rem;
 }
 
+/* Contents page: the Mac, iPad and iPhone together under the title. */
+.hero-devices {
+  margin-top: 36px;
+}
+
+.hero-devices img {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
