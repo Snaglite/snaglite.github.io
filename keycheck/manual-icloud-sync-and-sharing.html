@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1e232c">
+  <title>12. iCloud sync and sharing – KeyCheck User Manual</title>
+  <link rel="icon" href="icon.svg?v=2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg?v=2">
+  <link rel="stylesheet" href="keycheck.css?v=5">
+</head>
+<body>
+  <header class="hero hero-compact" id="top">
+    <div class="wrap hero-inner">
+      <img class="hero-icon" src="icon.svg" alt="KeyCheck app icon">
+      <div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="manual.html">KeyCheck User Manual</a><span aria-hidden="true">›</span><span aria-current="page">Chapter 12</span></nav>
+        <h1>iCloud sync and sharing</h1>
+        <p>Keeping your devices in step, and working on a project with other people</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="manual-search" data-manual-search hidden>
+      <form role="search">
+        <label class="visually-hidden" for="manual-search-input">Search the manual</label>
+        <input id="manual-search-input" type="search" placeholder="Search the manual" autocomplete="off" enterkeyhint="search">
+      </form>
+      <p class="manual-search-status" aria-live="polite"></p>
+      <ol class="manual-search-results"></ol>
+    </div>
+
+    <section class="card" id="icloud-sync-and-sharing">
+      <p class="section-lede">iCloud sync keeps your projects up to date on your iPhone, iPad and Mac. Sharing goes a step further: you invite colleagues to a project, so the site team and the office work from the same plots, documents and log, and see each other's changes.</p>
+      <p>This chapter covers turning sync on, what it does when you're offline or two people change the same thing, and sharing a project with other people.</p>
+
+      <h3 id="turning-on-icloud-sync">Turning on iCloud sync</h3>
+      <p>iCloud sync is off until you turn it on.</p>
+      <ol>
+        <li>On the <strong>Projects</strong> screen, tap <strong>Settings</strong> (the gear button).</li>
+        <li>Under <strong>iCloud sync</strong>, tap <strong>Turn on iCloud sync…</strong>.</li>
+        <li>Read the message and tap <strong>Turn on</strong>.</li>
+        <li>Do the same on your other iPhone or iPad, signed in to the same Apple Account.</li>
+      </ol>
+      <p>Your projects are stored in <strong>your own iCloud</strong>, and use your iCloud storage. KeyCheck never sends them anywhere else.</p>
+      <p>If your device isn't signed in to iCloud, a message under <strong>iCloud sync</strong> says so, for example "Sign in to iCloud in the Settings app to sync your projects."</p>
+      <div class="shot-row">
+      <!-- Screenshot to come: images/icloud-sync-turn-on.png -->
+          <figure class="shot">
+          <div class="shot-placeholder" role="img" aria-label="Screenshot to come: The Turn on iCloud sync? message">
+            <strong>Screenshot coming soon</strong>
+            <span>The Turn on iCloud sync? message</span>
+          </div>
+          <figcaption>Turning on iCloud sync</figcaption>
+        </figure>
+      <!-- Screenshot to come: images/icloud-sync-settings.png -->
+          <figure class="shot">
+          <div class="shot-placeholder" role="img" aria-label="Screenshot to come: Settings with iCloud sync on and up to date">
+            <strong>Screenshot coming soon</strong>
+            <span>Settings with iCloud sync on and up to date</span>
+          </div>
+          <figcaption>iCloud sync in Settings</figcaption>
+        </figure>
+      </div>
+
+      <h3 id="what-syncs">What syncs</h3>
+      <p>With sync on, these are kept in step on all your devices:</p>
+      <ul>
+        <li>your projects and plots, with meter readings, keys, snags and signatures</li>
+        <li>photos, including meter photos (chapter 5)</li>
+        <li>documents and their history, attachments, site details, planning and the project log</li>
+        <li>your branding profiles and reusable templates</li>
+        <li>your name from <strong>Settings → You → Your name</strong>, and the names you've given the tag colours for attachments</li>
+      </ul>
+      <p><strong>Sample projects never sync.</strong> They stay on the device you added them to, and can't be shared. A <strong>Sample project</strong> notice at the top of each one says so.</p>
+
+      <h3 id="how-sync-works-day-to-day">How sync works day to day</h3>
+      <p>You don't need to do anything. A moment after you make a change, KeyCheck sends it to iCloud, and your other devices pick it up when they're online. When you open KeyCheck, it checks for changes straight away. Screens that are already open update by themselves.</p>
+      <p>The <strong>Status</strong> line under <strong>iCloud sync</strong> shows what's happening:</p>
+      <ul>
+        <li><strong>Syncing…</strong> while changes are going up or coming down.</li>
+        <li><strong>Up to date</strong>, with when it last synced.</li>
+        <li>A message in orange if something needs your attention (see below).</li>
+      </ul>
+      <p>Tap <strong>Sync now</strong> to sync straight away, for example just before you leave the office.</p>
+
+      <h4 id="working-without-a-signal">Working without a signal</h4>
+      <p>Everything works offline. Your changes are kept on your device and sent when you're back online. If changes are still waiting, the status says "Changes are waiting to upload. Try Sync now."</p>
+
+      <h4 id="when-two-people-change-the-same-thing">When two people change the same thing</h4>
+      <p>KeyCheck keeps as much of everyone's work as it can:</p>
+      <ul>
+        <li><strong>Different things on the same plot are both kept.</strong> If you take a meter reading while a colleague records the keys on the same plot, both survive.</li>
+        <li><strong>The same thing changed in two places:</strong> the later change wins. KeyCheck judges "later" by iCloud's clock, not each device's own clock, so a phone set to the wrong time doesn't always win or always lose.</li>
+        <li><strong>A change beats a deletion.</strong> If someone deletes a plot while you're adding a photo or signature to it on another device, the plot is kept with your work in it, rather than your work being lost.</li>
+      </ul>
+
+      <h4 id="messages-you-might-see">Messages you might see</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Message</th><th>What to do</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>"Your iCloud storage is full, so recent changes haven't synced. Free up space in iCloud settings."</td><td>Free up space or buy more iCloud storage in the Settings app. Your changes are safe on this device meanwhile.</td></tr>
+            <tr><td>"… is getting close to iCloud's size limit for one project. Long logs and planning registers count towards it."</td><td>Nothing yet. Photos and files don't count, only text such as the log, planning and document notes.</td></tr>
+            <tr><td>"… is too big to sync its log, planning and documents to iCloud. Its plots and photos still sync. Removing old log entries makes room."</td><td>Delete old log entries you no longer need (chapter 8).</td></tr>
+            <tr><td>"Your iCloud account changed, so sync was turned off. Your projects are still on this device. Turn sync on again to use the new account."</td><td>Turn sync on again if you want to use the new account.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="turning-sync-off">Turning sync off</h3>
+      <p>In <strong>Settings</strong>, under <strong>iCloud sync</strong>, tap <strong>Turn off iCloud sync</strong> and confirm with <strong>Turn off</strong>. Your projects stay on this device and in iCloud. Changes stop syncing until you turn it on again.</p>
+      <p>Nothing is deleted when you turn sync off.</p>
+
+      <h3 id="sharing-a-project">Sharing a project</h3>
+      <p>Sharing needs iCloud sync to be on, and starting to share needs KeyCheck Pro. The people you invite need an Apple Account and KeyCheck installed.</p>
+      <ol>
+        <li>Open the project (not a sample) and go to its <strong>Site</strong> tab.</li>
+        <li>Under <strong>Sharing</strong>, tap <strong>Share with others</strong>. The card says <strong>Preparing…</strong> for a moment while KeyCheck makes sure the project is in iCloud.</li>
+        <li>Apple's sharing screen opens. Choose how to send the invitation, for example Messages or Mail, and who to send it to. Use the email address or phone number they use for their Apple Account.</li>
+        <li>Choose what they can do: <strong>can make changes</strong> or <strong>view only</strong>. Only the people you invite can open the project.</li>
+      </ol>
+      <p>If sync is off, KeyCheck says "Turn on iCloud sync in Settings to share projects with other people." If the project hasn't reached iCloud yet, it says "This project hasn't finished uploading to iCloud yet. Check you're online, then try again in a moment."</p>
+      <p>Once you've invited someone, the card is called <strong>Manage sharing</strong> and says who it's shared with, for example "Shared with 2 people". In the <strong>Projects</strong> list, a small icon beside the project's name shows that it's shared.</p>
+      <p>Everything in the project is shared: plots, photos, signatures, documents, attachments, planning and the log. Your branding profiles and templates aren't.</p>
+      <p>Shared projects are stored in your iCloud and use your iCloud storage, not the storage of the people you invite.</p>
+      <div class="shot-row">
+      <!-- Screenshot to come: images/sharing-card.png -->
+          <figure class="shot">
+          <div class="shot-placeholder" role="img" aria-label="Screenshot to come: The Sharing card on a project&#x27;s Site tab">
+            <strong>Screenshot coming soon</strong>
+            <span>The Sharing card on a project&#x27;s Site tab</span>
+          </div>
+          <figcaption>The Sharing card</figcaption>
+        </figure>
+      <!-- Screenshot to come: images/sharing-screen.png -->
+          <figure class="shot">
+          <div class="shot-placeholder" role="img" aria-label="Screenshot to come: Apple&#x27;s sharing screen with the can make changes or view only choice">
+            <strong>Screenshot coming soon</strong>
+            <span>Apple&#x27;s sharing screen with the can make changes or view only choice</span>
+          </div>
+          <figcaption>Choosing who can make changes</figcaption>
+        </figure>
+      </div>
+
+      <h4 id="can-make-changes-or-view-only">Can make changes or view only</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>What they can do</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Can make changes</strong></td><td>Everything you can, as long as they have their own KeyCheck Pro. Their changes reach everyone on the project.</td></tr>
+            <tr><td><strong>View only</strong></td><td>Open the project, read everything, and make PDFs, reports and spreadsheets. They can't change anything.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Someone you've given <strong>can make changes</strong> still needs their own KeyCheck Pro subscription to edit. Without one, they can open and export the project, but a <strong>View only</strong> notice appears, as it does for their own projects (chapter 2).</p>
+
+      <h4 id="changing-who-has-access">Changing who has access</h4>
+      <p>Tap <strong>Manage sharing</strong> on the <strong>Site</strong> tab. Apple's sharing screen opens again, where you can invite more people, change what someone can do, or remove someone. Changing these doesn't need a subscription.</p>
+
+      <h4 id="stopping-sharing">Stopping sharing</h4>
+      <p>Tap <strong>Manage sharing</strong> and choose <strong>Stop Sharing</strong>. The project stays with you, but it's removed from everyone else's devices.</p>
+      <p>If you delete a shared project, it goes to <strong>Recently Deleted</strong> first. After 30 days it's deleted for good, from all your devices and for everyone it's shared with.</p>
+
+      <h3 id="when-a-project-is-shared-with-you">When a project is shared with you</h3>
+
+      <h4 id="accepting-an-invitation">Accepting an invitation</h4>
+      <p>Tap the link in the invitation. KeyCheck opens and the project appears in your <strong>Projects</strong> list once it has downloaded.</p>
+      <p>If your iCloud sync is off, KeyCheck asks <strong>Open shared project?</strong>, explaining that opening it needs iCloud sync, which also stores your own projects in your iCloud. Tap <strong>Turn on iCloud sync and open</strong>, or <strong>Not now</strong> to leave it.</p>
+
+      <h4 id="what-you-see">What you see</h4>
+      <p>At the top of the project, a notice says who shared it, for example <strong>Shared by Sam Patel</strong>:</p>
+      <ul>
+        <li>With <strong>can make changes</strong>, it says "Your changes are shared with everyone on this project."</li>
+        <li>With <strong>view only</strong>, it says "View only. You can look through and export, but not make changes. Ask the owner if you need to edit." The same notice appears at the top of each plot.</li>
+      </ul>
+      <p>In the <strong>Projects</strong> list, the icon beside the name is two people if you can make changes, or an eye if it's view only.</p>
+      <p>On the <strong>Site</strong> tab, the <strong>Sharing</strong> card is called <strong>Sharing details</strong>. Tap it to see who's on the project.</p>
+      <!-- Screenshot to come: images/shared-view-only.png -->
+      <figure class="shot">
+        <div class="shot-placeholder" role="img" aria-label="Screenshot to come: The Shared by notice on a project shared as view only">
+          <strong>Screenshot coming soon</strong>
+          <span>The Shared by notice on a project shared as view only</span>
+        </div>
+        <figcaption>A project shared with you as view only</figcaption>
+      </figure>
+
+      <h4 id="leaving-a-shared-project">Leaving a shared project</h4>
+      <p>On the <strong>Projects</strong> screen, swipe left on the project and tap <strong>Leave</strong>, or touch and hold it and choose <strong>Leave</strong>. A banner says "Left shared project", with <strong>Undo</strong> for a few seconds.</p>
+      <p>Leaving only removes the project from your devices. The owner keeps it, and so does everyone else. You can also leave from <strong>Sharing details</strong>, using Apple's <strong>Remove Me</strong>.</p>
+      <p>If the owner stops sharing or removes you, the project is removed from your devices.</p>
+
+      <h3 id="who-did-what">Who did what</h3>
+      <p>On a shared project, KeyCheck records your name from <strong>Settings → You → Your name</strong> so everyone can see who did what:</p>
+      <ul>
+        <li><strong>Project log</strong>: each entry shows who wrote it, or who last edited it (chapter 8).</li>
+        <li><strong>Document history</strong>: each change shows who recorded it (chapter 6). If you haven't entered your name, the history screen reminds you: "Add your name in Settings so others on this shared project can see who made changes."</li>
+        <li><strong>Progress report</strong>: the <strong>Documents received</strong> table has a <strong>By</strong> column (chapter 11).</li>
+      </ul>
+      <p>On projects that aren't shared, no names are recorded. Ask everyone on the project to enter their name before they start.</p>
+      <p>Your name is stored on your device, and with iCloud sync on it's the same on all your devices. It only goes anywhere else in a PDF you share, or in a shared project's history.</p>
+      <div class="note">
+        <span class="note-label">From the office</span>
+        <p>Set the project up in the office first: plots, documents, tenure exceptions and planning (chapters 3 and 7). Then share it with the site team with <strong>can make changes</strong>, and with the client or anyone who only needs to look with <strong>view only</strong>. Everyone works from the same list, chases and arrivals recorded on site appear in the office straight away, and the progress report shows who recorded each document. Don't send a KeyCheck file instead: that's a separate copy that isn't kept in step (chapter 13).</p>
+      </div>
+
+      <h3 id="on-the-mac-and-ipad">On the Mac and iPad</h3>
+      <ul>
+        <li><strong>Settings:</strong> on the Mac, choose <strong>KeyCheck → Settings</strong> (⌘,) and click the <strong>iCloud</strong> tab. Your name is on the <strong>General</strong> tab.</li>
+        <li><strong>Sharing:</strong> choose <strong>Site</strong> (⌘4) and click the <strong>Sharing</strong> card. The Mac's own sharing window opens, with the same choices.</li>
+        <li><strong>The view only notice</strong> appears at the top of each plot on the Mac.</li>
+        <li><strong>Leaving:</strong> on the Mac, and on an iPad in a wide window, right-click (or touch and hold) the project in the sidebar and choose <strong>Leave Shared Project…</strong>, then <strong>Leave Project</strong>. KeyCheck explains that the project is removed from this Mac or iPad and the owner keeps it.</li>
+      </ul>
+
+    </section>
+
+    <nav class="chapter-nav" aria-label="Chapters">
+      <a class="prev" href="manual-the-progress-report.html"><span>Previous</span>11. The progress report</a>
+      <a class="next" href="manual-moving-projects-around.html"><span>Next</span>13. Moving projects around</a>
+    </nav>
+  </main>
+
+  <footer class="footer wrap">
+    KeyCheck · <a href="manual.html">User Manual</a> · <a href="privacy.html">Privacy Policy</a><br>
+    <a class="back-to-top" href="#top">Back to top ↑</a>
+  </footer>
+  <script src="manual-search-index.js" defer></script>
+  <script src="manual-search.js" defer></script>
+</body>
+</html>

@@ -70,7 +70,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "1. What KeyCheck does",
   "heading": "KeyCheck Pro",
   "url": "manual-what-keycheck-does.html#keycheck-pro",
-  "text": "Creating projects and making changes needs a KeyCheck Pro subscription, which starts with a 7-day free trial. Without a subscription, the subscription screen appears when you open KeyCheck, but you can close it. You can still open, read and export everything, and a View only notice appears at the top of each project. This also applies to shared projects. Anyone you share a project with can open and export it for free. To make changes, they need their own KeyCheck Pro subscription, and you need to have given them permission to make changes. Chapter 2 explains how to subscribe."
+  "text": "Creating projects and making changes needs a KeyCheck Pro subscription, which starts with a 7-day free trial. Without a subscription, the subscription screen appears when you open KeyCheck, but you can close it. You can still open, read and export everything, and a View only notice appears at the top of each project. Importing a project from a KeyCheck file and restoring one from Recently Deleted count as changes, so they need KeyCheck Pro too. This also applies to shared projects. Anyone you share a project with can open and export it for free. To make changes, they need their own KeyCheck Pro subscription, and you need to have given them permission to make changes. Chapter 2 explains how to subscribe."
  },
  {
   "chapter": "1. What KeyCheck does",
@@ -94,7 +94,7 @@ window.KEYCHECK_MANUAL_INDEX = [
   "chapter": "2. Setting up",
   "heading": "KeyCheck Pro",
   "url": "manual-setting-up.html#keycheck-pro",
-  "text": "Creating projects and making changes needs a KeyCheck Pro subscription. There's a monthly plan and a yearly plan, and new subscribers can start with a 7-day free trial . The subscription screen shows the current prices."
+  "text": "Creating projects and making changes needs a KeyCheck Pro subscription. There's a monthly plan and a yearly plan, and new subscribers can start with a 7-day free trial . The subscription screen shows the current prices. Without a subscription you can still open, read, export and share everything. Anything that adds or changes a project needs KeyCheck Pro, including importing a project from a KeyCheck file ( chapter 13 ) and restoring one from Recently Deleted ( chapter 14 )."
  },
  {
   "chapter": "2. Setting up",
@@ -1271,5 +1271,305 @@ window.KEYCHECK_MANUAL_INDEX = [
   "heading": "Spreadsheets for Excel or Numbers",
   "url": "manual-the-progress-report.html#spreadsheets-for-excel-or-numbers",
   "text": "For a tracker of your own, or to send figures to a client's system, KeyCheck can export the project as spreadsheets. On the Site tab, find Spreadsheets under Reports and tap Export… . Choose any of: Plots and meters : one row per plot, with the address, tenure, status, target and actual handover dates, meter details, how many documents are received and how many final snags are open. It uses the same columns as the import in Project settings → Addresses and meter details (chapter 3), so you can correct it in Excel and import it again. Plot documents : one row per plot and a column per document, saying for example \"Received 03/11/2026\" or \"Outstanding since 21/10/2026, chased 01/11/2026\". Project documents : each project document and bundle item, with its status and dates. Final snags : every snag, with who it's with, when it's due, whether it's open, overdue or done, and when it was completed. Tap Export , then share or save the files as usual (on the Mac, choose Share… or Save… ). Each spreadsheet is a separate CSV file, which opens in Excel, Numbers or Google Sheets. Dates are written day first, and long numbers such as MPANs keep every digit. Choosing the spreadsheets"
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "iCloud sync and sharing",
+  "url": "manual-icloud-sync-and-sharing.html",
+  "text": "iCloud sync keeps your projects up to date on your iPhone, iPad and Mac. Sharing goes a step further: you invite colleagues to a project, so the site team and the office work from the same plots, documents and log, and see each other's changes. This chapter covers turning sync on, what it does when you're offline or two people change the same thing, and sharing a project with other people."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Turning on iCloud sync",
+  "url": "manual-icloud-sync-and-sharing.html#turning-on-icloud-sync",
+  "text": "iCloud sync is off until you turn it on. On the Projects screen, tap Settings (the gear button). Under iCloud sync , tap Turn on iCloud sync… . Read the message and tap Turn on . Do the same on your other iPhone or iPad, signed in to the same Apple Account. Your projects are stored in your own iCloud , and use your iCloud storage. KeyCheck never sends them anywhere else. If your device isn't signed in to iCloud, a message under iCloud sync says so, for example \"Sign in to iCloud in the Settings app to sync your projects.\" Screenshot coming soon The Turn on iCloud sync? message Turning on iCloud sync Screenshot coming soon Settings with iCloud sync on and up to date iCloud sync in Settings"
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "What syncs",
+  "url": "manual-icloud-sync-and-sharing.html#what-syncs",
+  "text": "With sync on, these are kept in step on all your devices: your projects and plots, with meter readings, keys, snags and signatures photos, including meter photos (chapter 5) documents and their history, attachments, site details, planning and the project log your branding profiles and reusable templates your name from Settings → You → Your name , and the names you've given the tag colours for attachments Sample projects never sync. They stay on the device you added them to, and can't be shared. A Sample project notice at the top of each one says so."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "How sync works day to day",
+  "url": "manual-icloud-sync-and-sharing.html#how-sync-works-day-to-day",
+  "text": "You don't need to do anything. A moment after you make a change, KeyCheck sends it to iCloud, and your other devices pick it up when they're online. When you open KeyCheck, it checks for changes straight away. Screens that are already open update by themselves. The Status line under iCloud sync shows what's happening: Syncing… while changes are going up or coming down. Up to date , with when it last synced. A message in orange if something needs your attention (see below). Tap Sync now to sync straight away, for example just before you leave the office."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Working without a signal",
+  "url": "manual-icloud-sync-and-sharing.html#working-without-a-signal",
+  "text": "Everything works offline. Your changes are kept on your device and sent when you're back online. If changes are still waiting, the status says \"Changes are waiting to upload. Try Sync now.\""
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "When two people change the same thing",
+  "url": "manual-icloud-sync-and-sharing.html#when-two-people-change-the-same-thing",
+  "text": "KeyCheck keeps as much of everyone's work as it can: Different things on the same plot are both kept. If you take a meter reading while a colleague records the keys on the same plot, both survive. The same thing changed in two places: the later change wins. KeyCheck judges \"later\" by iCloud's clock, not each device's own clock, so a phone set to the wrong time doesn't always win or always lose. A change beats a deletion. If someone deletes a plot while you're adding a photo or signature to it on another device, the plot is kept with your work in it, rather than your work being lost."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Messages you might see",
+  "url": "manual-icloud-sync-and-sharing.html#messages-you-might-see",
+  "text": "Message What to do \"Your iCloud storage is full, so recent changes haven't synced. Free up space in iCloud settings.\" Free up space or buy more iCloud storage in the Settings app. Your changes are safe on this device meanwhile. \"… is getting close to iCloud's size limit for one project. Long logs and planning registers count towards it.\" Nothing yet. Photos and files don't count, only text such as the log, planning and document notes. \"… is too big to sync its log, planning and documents to iCloud. Its plots and photos still sync. Removing old log entries makes room.\" Delete old log entries you no longer need (chapter 8). \"Your iCloud account changed, so sync was turned off. Your projects are still on this device. Turn sync on again to use the new account.\" Turn sync on again if you want to use the new account."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Turning sync off",
+  "url": "manual-icloud-sync-and-sharing.html#turning-sync-off",
+  "text": "In Settings , under iCloud sync , tap Turn off iCloud sync and confirm with Turn off . Your projects stay on this device and in iCloud. Changes stop syncing until you turn it on again. Nothing is deleted when you turn sync off."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Sharing a project",
+  "url": "manual-icloud-sync-and-sharing.html#sharing-a-project",
+  "text": "Sharing needs iCloud sync to be on, and starting to share needs KeyCheck Pro. The people you invite need an Apple Account and KeyCheck installed. Open the project (not a sample) and go to its Site tab. Under Sharing , tap Share with others . The card says Preparing… for a moment while KeyCheck makes sure the project is in iCloud. Apple's sharing screen opens. Choose how to send the invitation, for example Messages or Mail, and who to send it to. Use the email address or phone number they use for their Apple Account. Choose what they can do: can make changes or view only . Only the people you invite can open the project. If sync is off, KeyCheck says \"Turn on iCloud sync in Settings to share projects with other people.\" If the project hasn't reached iCloud yet, it says \"This project hasn't finished uploading to iCloud yet. Check you're online, then try again in a moment.\" Once you've invited someone, the card is called Manage sharing and says who it's shared with, for example \"Shared with 2 people\". In the Projects list, a small icon beside the project's name shows that it's shared. Everything in the project is shared: plots, photos, signatures, documents, attachments, planning and the log. Your branding profiles and templates aren't. Shared projects are stored in your iCloud and use your iCloud storage, not the storage of the people you invite. Screenshot coming soon The Sharing card on a project's Site tab The Sharing card Screenshot coming soon Apple's sharing screen with the can make changes or view only choice Choosing who can make changes"
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Can make changes or view only",
+  "url": "manual-icloud-sync-and-sharing.html#can-make-changes-or-view-only",
+  "text": "Permission What they can do Can make changes Everything you can, as long as they have their own KeyCheck Pro. Their changes reach everyone on the project. View only Open the project, read everything, and make PDFs, reports and spreadsheets. They can't change anything. Someone you've given can make changes still needs their own KeyCheck Pro subscription to edit. Without one, they can open and export the project, but a View only notice appears, as it does for their own projects (chapter 2)."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Changing who has access",
+  "url": "manual-icloud-sync-and-sharing.html#changing-who-has-access",
+  "text": "Tap Manage sharing on the Site tab. Apple's sharing screen opens again, where you can invite more people, change what someone can do, or remove someone. Changing these doesn't need a subscription."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Stopping sharing",
+  "url": "manual-icloud-sync-and-sharing.html#stopping-sharing",
+  "text": "Tap Manage sharing and choose Stop Sharing . The project stays with you, but it's removed from everyone else's devices. If you delete a shared project, it goes to Recently Deleted first. After 30 days it's deleted for good, from all your devices and for everyone it's shared with."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "When a project is shared with you",
+  "url": "manual-icloud-sync-and-sharing.html#when-a-project-is-shared-with-you",
+  "text": ""
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Accepting an invitation",
+  "url": "manual-icloud-sync-and-sharing.html#accepting-an-invitation",
+  "text": "Tap the link in the invitation. KeyCheck opens and the project appears in your Projects list once it has downloaded. If your iCloud sync is off, KeyCheck asks Open shared project? , explaining that opening it needs iCloud sync, which also stores your own projects in your iCloud. Tap Turn on iCloud sync and open , or Not now to leave it."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "What you see",
+  "url": "manual-icloud-sync-and-sharing.html#what-you-see",
+  "text": "At the top of the project, a notice says who shared it, for example Shared by Sam Patel : With can make changes , it says \"Your changes are shared with everyone on this project.\" With view only , it says \"View only. You can look through and export, but not make changes. Ask the owner if you need to edit.\" The same notice appears at the top of each plot. In the Projects list, the icon beside the name is two people if you can make changes, or an eye if it's view only. On the Site tab, the Sharing card is called Sharing details . Tap it to see who's on the project. Screenshot coming soon The Shared by notice on a project shared as view only A project shared with you as view only"
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Leaving a shared project",
+  "url": "manual-icloud-sync-and-sharing.html#leaving-a-shared-project",
+  "text": "On the Projects screen, swipe left on the project and tap Leave , or touch and hold it and choose Leave . A banner says \"Left shared project\", with Undo for a few seconds. Leaving only removes the project from your devices. The owner keeps it, and so does everyone else. You can also leave from Sharing details , using Apple's Remove Me . If the owner stops sharing or removes you, the project is removed from your devices."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "Who did what",
+  "url": "manual-icloud-sync-and-sharing.html#who-did-what",
+  "text": "On a shared project, KeyCheck records your name from Settings → You → Your name so everyone can see who did what: Project log : each entry shows who wrote it, or who last edited it (chapter 8). Document history : each change shows who recorded it (chapter 6). If you haven't entered your name, the history screen reminds you: \"Add your name in Settings so others on this shared project can see who made changes.\" Progress report : the Documents received table has a By column (chapter 11). On projects that aren't shared, no names are recorded. Ask everyone on the project to enter their name before they start. Your name is stored on your device, and with iCloud sync on it's the same on all your devices. It only goes anywhere else in a PDF you share, or in a shared project's history. From the office Set the project up in the office first: plots, documents, tenure exceptions and planning (chapters 3 and 7). Then share it with the site team with can make changes , and with the client or anyone who only needs to look with view only . Everyone works from the same list, chases and arrivals recorded on site appear in the office straight away, and the progress report shows who recorded each document. Don't send a KeyCheck file instead: that's a separate copy that isn't kept in step (chapter 13)."
+ },
+ {
+  "chapter": "12. iCloud sync and sharing",
+  "heading": "On the Mac and iPad",
+  "url": "manual-icloud-sync-and-sharing.html#on-the-mac-and-ipad",
+  "text": "Settings: on the Mac, choose KeyCheck → Settings (⌘,) and click the iCloud tab. Your name is on the General tab. Sharing: choose Site (⌘4) and click the Sharing card. The Mac's own sharing window opens, with the same choices. The view only notice appears at the top of each plot on the Mac. Leaving: on the Mac, and on an iPad in a wide window, right-click (or touch and hold) the project in the sidebar and choose Leave Shared Project… , then Leave Project . KeyCheck explains that the project is removed from this Mac or iPad and the owner keeps it."
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Moving projects around",
+  "url": "manual-moving-projects-around.html",
+  "text": "KeyCheck can save a whole project as one file, so you can send it to a colleague, keep a copy for your records, or move it to another device. It can also take in files sent from other apps, such as a plot schedule from Outlook or a decision notice from Teams. This chapter covers KeyCheck files, sending files to KeyCheck, duplicating, archiving and deleting projects, and doing all of this on the Mac."
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "KeyCheck files",
+  "url": "manual-moving-projects-around.html#keycheck-files",
+  "text": "A KeyCheck file ends in .keycheck . A project file holds everything in the project: the project details, form items and branding every plot, with its readings, keys, documents, snags, notes and dates meter photos, snag photos and signatures communal keys, communal meters, project documents and site details attachments, including their folders, tags and markup the planning register and the project log the date of the last progress report, so Since last report carries on ( chapter 11 ) Because photos and signatures are included, a busy site can make a large file. KeyCheck doesn't show the size, so if email won't take it, use AirDrop, or save it to OneDrive or iCloud Drive and send a link. There are also small KeyCheck files for a single form template or branding profile (see Templates and branding )."
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "A copy, not sharing",
+  "url": "manual-moving-projects-around.html#a-copy-not-sharing",
+  "text": "A KeyCheck file is a separate copy . Once your colleague opens it, their project and yours go their own ways: changes on one don't appear on the other. To work on the same project together, with changes appearing for everyone, share it through iCloud instead ( chapter 12 ). Use a KeyCheck file to hand a project over, send it to someone who doesn't use iCloud sharing, or keep a copy at a point in time, such as at practical completion."
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Sending one project",
+  "url": "manual-moving-projects-around.html#sending-one-project",
+  "text": "Open the project and tap Project settings (the gear at the top right of the Plots tab, or ⌥⌘, on the Mac). Under Files , tap Share editable project . The button shows Preparing , with a percentage, while KeyCheck writes the file. The share sheet opens. Choose AirDrop , Mail , Messages , Save to Files or another app, such as Outlook, Teams or OneDrive. Keep the screen open while it's preparing. If you close it, KeyCheck stops and nothing is sent. You can do this even without a KeyCheck Pro subscription, and on a project someone has shared with you as view only. Screenshot coming soon Project settings, with Share editable project Sending one project"
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Exporting several projects",
+  "url": "manual-moving-projects-around.html#exporting-several-projects",
+  "text": "To save several projects at once, for example to keep a backup or clear finished sites off your iPhone: On the Projects screen, tap ••• (top right) and choose Export projects… . Tap each project you want, or use Select all . If you have archived projects, Select archived only picks just those. Clear selection starts again. Tap Export (it shows how many you've chosen, for example Export 3 ). KeyCheck shows \"Preparing 1 of 3…\" while it works. Choose a folder, such as one in iCloud Drive, OneDrive or On My iPhone , and save. Each project is saved as its own .keycheck file, named after the project. If two projects have the same name, the second gets \"(2)\" on the end, so neither file replaces the other. To export just one project this way, touch and hold it in the Projects list (or swipe left and tap More ) and choose Export . The same screen opens with that project already ticked. If a project couldn't be written, KeyCheck says which: \"Some projects couldn't be exported\". Try exporting it on its own, or free up some space on the device. Screenshot coming soon Export projects, with both sample projects ticked Exporting several projects"
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Opening a KeyCheck file",
+  "url": "manual-moving-projects-around.html#opening-a-keycheck-file",
+  "text": "On the other iPhone, iPad or Mac: From Mail, Messages, Files or OneDrive : tap the file, then tap the share button and choose KeyCheck . A file sent by AirDrop opens in KeyCheck. From inside KeyCheck : go to Settings → Import and tap Import editable project… , then pick the file. (On the Mac, it's in Settings → Templates , or use File → Import… ; see On the Mac .) KeyCheck reads the file and shows a message such as \"Project “Meadow View Phase 2” imported with 14 plots.\" Tap OK . The project appears in the Projects list. Good to know: It's always added as a new project. Opening a file never replaces or changes a project you already have. If you already have a project with the same name, the new one is called, for example, \"Meadow View Phase 2 (2)\". Delete whichever you don't need. It needs KeyCheck Pro. Importing adds a new project, so, like creating one, it needs a subscription. Without one, Import editable project… in Settings is greyed out. You can still send and export projects without a subscription. It's yours. The imported project isn't shared with anyone, even if the original was. It arrives in the main list, even if it was archived when it was exported. Branding comes too. If you already have an identical branding profile, the project uses it. Otherwise KeyCheck adds the file's profile to Settings → Branding . Importing needs KeyCheck Pro. Without a subscription, KeyCheck says \"Importing a project needs a KeyCheck Pro subscription. Subscribe, then open the file again.\" A big project can take a while. The project only appears once every plot is in. If KeyCheck is closed part-way, what came in so far waits in Recently Deleted ; delete it and open the file again. \"This file was made by a newer version of KeyCheck\" means the sender's app is newer than yours. Update KeyCheck from TestFlight or the App Store, then try again. Screenshot coming soon The message saying a project has been imported A project imported from a KeyCheck file"
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Templates and branding",
+  "url": "manual-moving-projects-around.html#templates-and-branding",
+  "text": "Form templates and branding profiles can be sent as KeyCheck files too: A form template : in a project, tap Project settings → Share form template . Or in Settings → Reusable templates , touch and hold a template and choose Share . This copies just the form items, without any plots ( chapter 3 ). A branding profile : in Settings → Branding , touch and hold a profile and choose Share ( chapter 2 ). When your colleague opens the file in KeyCheck, it says \"Template “…” added. Choose it when creating a new project.\" or \"Branding “…” added. Pick it in a project's details.\""
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Sending files to KeyCheck from other apps",
+  "url": "manual-moving-projects-around.html#sending-files-to-keycheck-from-other-apps",
+  "text": "Colleagues often send plot schedules, site plans and decision notices by email or Teams. You can send these straight to KeyCheck without saving them first: In Mail, Outlook, Teams, OneDrive or Files, open or touch and hold the file and tap the share button. Choose KeyCheck . KeyCheck opens with the file's name at the top and a list of your projects. Tap the project it's for. What happens next depends on the file: File Screen title What happens when you pick a project CSV spreadsheet (plot schedule) Import CSV The CSV import screen opens with the file already loaded, so you can check which column is which before anything changes ( chapter 3 ). PDF Add to project KeyCheck asks what to do with it: Add to attachments , or Read planning conditions for a decision notice ( chapter 7 ). Reading the conditions also lets you keep the notice in Attachments. Photo Add to project It's added to the project's attachments straight away, and KeyCheck says \"Added\". Word document (.docx or .doc) Planning conditions KeyCheck reads it as a planning decision notice and shows the conditions to check before anything is added ( chapter 7 ). Good to know: Only projects you can change are listed. Archived projects and projects shared with you as view only are left out. Without KeyCheck Pro, the list is empty and says \"Adding files needs a KeyCheck Pro subscription.\" Word documents can only be read as decision notices. To keep any other Word document with a project, save it as a PDF first. The same file twice : if the PDF or photo is already in the project's attachments, KeyCheck says so and doesn't add it again. If a file won't open, KeyCheck suggests saving it to Files first, then importing it from the project, for example with Import from Files in Attachments. Tap Cancel to close without adding anything. From the office Most developers' schedules and planning letters arrive as email attachments, often on a Windows PC. Forward them to your work email on your iPhone, or open them in the Outlook or Teams app, and send them straight to KeyCheck. Colleagues on a PC can save the file to OneDrive or a Teams channel, and you can send it to KeyCheck from the OneDrive or Teams app. Screenshot coming soon Add to project, choosing which project a PDF goes into Sending a file to KeyCheck"
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Duplicating a project",
+  "url": "manual-moving-projects-around.html#duplicating-a-project",
+  "text": "To start a new phase or a similar site from one you've already set up, touch and hold the project in the Projects list (or swipe left and tap More ) and choose Duplicate , then: Setup and plots : copies the project details, form items, branding, site details, attachments, planning history and the list of plots, with their addresses and details. Readings, keys handed over, photos, signatures and dates start empty. Communal keys and meters are kept, without who received the keys or the readings. Everything : an exact copy, including every reading, photo and signature. The copy is called, for example, \"Meadow View Phase 2 copy\", and opens straight away. Rename it in Project settings → Project details . A duplicate is your own project, even if the original was shared with you, and it isn't shared with anyone. It stays on this device and your other devices (with iCloud sync on), so to give a copy to someone else, send it as a KeyCheck file. Screenshot coming soon The Duplicate menu with Setup and plots and Everything Duplicating a project"
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Archiving a project",
+  "url": "manual-moving-projects-around.html#archiving-a-project",
+  "text": "When a site is finished, archive it to clear it from the main list without deleting anything. To archive : swipe right on the project and tap Archive , or touch and hold it and choose Archive . To see archived projects : tap Archived at the bottom of the Projects list (it shows how many, for example Archived (2) ). Tap it again to hide them. To bring one back : swipe right on it in the Archived section and tap Unarchive , or touch and hold it and choose Unarchive . An archived project still opens and works as normal, and it's still found by search. Archiving syncs, so it moves to the Archived section on your other devices and for anyone it's shared with. You need to be able to change the project to archive it. With the Archived section open, Export archived projects at the bottom saves them as KeyCheck files, for example before deleting them."
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Deleting and Recently Deleted",
+  "url": "manual-moving-projects-around.html#deleting-and-recently-deleted",
+  "text": "To delete a project, swipe left on it and tap Delete , or touch and hold it and choose Delete . A banner says \"Moved to Recently Deleted\" with Undo for a few seconds. A deleted project isn't gone straight away. It waits in Recently Deleted for 30 days, then is deleted for good, from all your devices and for everyone it's shared with. On the Projects screen, tap ••• and choose Recently Deleted . Each project shows when it was deleted and how long is left, for example \"Deleted 12 November 2026 · 21 days left\". Tap Restore to put it back in the Projects list, just as it was. Restoring is a change, so it needs KeyCheck Pro; without it, Restore isn't shown. To delete one for good now, swipe left on it (or touch and hold it) and choose Delete Now , then confirm. This can't be undone. Tap Done to close. Recently Deleted keeps deleted projects for 30 days"
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "Leaving a shared project",
+  "url": "manual-moving-projects-around.html#leaving-a-shared-project",
+  "text": "If someone else shared a project with you ( chapter 12 ), you can't delete it, but you can leave it. Swipe left on it and tap Leave , or touch and hold it and choose Leave . A banner says \"Left shared project\" with Undo for a few seconds. The project is removed from your devices straight away. It doesn't go to Recently Deleted, and the owner and everyone else keep it. To get it back, ask the owner to invite you again. If the owner deletes a shared project, it goes to your Recently Deleted too. If you were allowed to make changes, you can Restore it, which brings it back for everyone. Only the owner can delete it for good."
+ },
+ {
+  "chapter": "13. Moving projects around",
+  "heading": "On the Mac",
+  "url": "manual-moving-projects-around.html#on-the-mac",
+  "text": "The Mac does all of the above, the Mac way. Export : right-click a project in the sidebar and choose Export… . The Export projects window opens with it ticked; tick any others, click Export , choose a folder and click Save Here . If a file of the same name is already there, the new one is numbered rather than replacing it. Share editable project : in Project Settings… (⌥⌘,), click Share editable project , then Share… for AirDrop, Mail or Messages, or Save… to choose where to save it. Import : choose File → Import… (⌘O) and pick a KeyCheck file, CSV, PDF, photo or Word document. It's handled just as on the iPhone: a KeyCheck file is imported, and anything else asks which project it's for. Drag files in : drag a file from Finder onto the KeyCheck window to open it the same way. Dragging onto particular places goes straight in: PDFs and photos dragged onto Attachments are added to them. PDFs dragged onto Planning go into the planning import ( chapter 7 ). Photos dragged onto a meter on a plot's form are added as meter photos. Drag files out : drag an attachment out of Attachments , or a plot out of the plot list to get its handover PDF, and drop it in Finder, Mail or another app. Duplicate, Archive and Delete : right-click a project in the sidebar. Duplicate has Setup and Plots and Everything . Delete… asks first, then moves the project to Recently Deleted. On a project shared with you, it's Leave Shared Project… . Archived projects are in the Archived section of the sidebar; click it to open or close it. In All Projects , turn on Show Archived to include them, and select several and right-click to archive them together. Recently Deleted is the bin button at the foot of the sidebar. It only appears when something's in it. Templates and branding : share them from the Templates and Branding tabs in KeyCheck → Settings (⌘,). On a wide iPad, the sidebar works the same way: touch and hold a project for Export… , Duplicate , Archive and Delete… , swipe for Archive and Delete , and find Recently Deleted at the end of the list. From the office When a site reaches the end of its defects period, export it as a KeyCheck file and keep it with the contract file in OneDrive or SharePoint. That gives a complete record, with every photo and signature, that can be opened again in KeyCheck years later. Then archive or delete the project to keep your list tidy."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Settings, your data and privacy",
+  "url": "manual-settings-your-data-and-privacy.html",
+  "text": "This chapter is a reference. It lists every setting in KeyCheck with what it starts as and where to read more, explains managing your subscription, and sets out where your data is kept, what KeyCheck does with it and how to back it up or delete it. To open Settings on an iPhone or iPad, go to the Projects screen and tap Settings (the gear button). On an iPad in a wide window, the gear is at the top of the sidebar. On the Mac, choose KeyCheck → Settings (⌘,)."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Every setting on the iPhone and iPad",
+  "url": "manual-settings-your-data-and-privacy.html#every-setting-on-the-iphone-and-ipad",
+  "text": "The sections appear in this order. Section Setting Starts as More in Subscription KeyCheck Pro : shows your status. Tap it for the subscription screen. This chapter, chapter 2 Restore Purchases This chapter You Your name Blank Chapter 2 Appearance Automatic , Light or Dark Automatic Chapter 2 Branding Your branding profiles, and Add branding profile One profile, called Default Chapter 2 Show \"Prepared with KeyCheck\" On Chapter 2 Reusable templates Your saved templates None Chapter 3 Copy \"Residential plot\" starter to edit and Copy \"Commercial building\" starter to edit Chapter 3 Import Import editable project… Chapter 13 Add sample projects (greyed out while the samples are in the Projects list) Chapter 2 iCloud sync Turn on iCloud sync… Off Chapter 12 Feedback Button haptics On Chapter 2 Needs attention Chase documents after : 7, 10, 14, 21 or 28 days 14 days Chapter 9 Reminders Off Chapter 9 Remind me at (shown when Reminders is on) 8:00 Chapter 9 Days (shown when Reminders is on) Weekdays Chapter 9 Meter photos Auto-read meter photos On Chapter 5 Apple Intelligence : Available , or Not available – using text rules only Chapter 5 About Version : the version of KeyCheck you have Tap Done to close Settings. Changes save as you go. A few things worth knowing: Meter photos has an Experimental badge. Meter reading can misread values, so check each one against the photo. Days opens a list of the days of the week. Reminders only come on the ticked days, and anything falling due on another day comes in the next ticked day's reminder. One day always stays ticked; to stop reminders altogether, turn Reminders off. When you turn Reminders on, KeyCheck asks to send you notifications. If you say no, Reminders stays off. If notifications for KeyCheck are turned off in the Settings app, the note under Needs attention says so. When iCloud sync is on, the iCloud sync section shows its Status , with Sync now and Turn off iCloud sync . Screenshot coming soon The top of Settings, with Subscription and Restore Purchases Settings: Subscription Screenshot coming soon Settings with Needs attention and Reminders turned on Settings: Needs attention"
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Which settings follow you to other devices",
+  "url": "manual-settings-your-data-and-privacy.html#which-settings-follow-you-to-other-devices",
+  "text": "Your branding profiles and reusable templates are kept with your projects, so with iCloud sync on they appear on all your devices. Your name is the same on all your devices too when sync is on. Everything else (appearance, haptics, Needs attention and meter photos) is set on each device separately."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "The Mac's Settings tabs",
+  "url": "manual-settings-your-data-and-privacy.html#the-macs-settings-tabs",
+  "text": "The Mac has the same settings, arranged in tabs: Tab What's in it General You , Appearance , Needs attention , Meter photos and About . On the Mac, Days is a row of tick boxes, one for each day. Branding Your profiles in a list on the left, with + and − buttons to add and delete them and a Share button for the one selected. The selected profile's details are on the right. The Show \"Prepared with KeyCheck\" on PDFs tick box is under the list. Templates Reusable templates and Import . Right-click a template to rename or share it. iCloud iCloud sync . Subscription KeyCheck Pro and Restore Purchases . There's no Feedback section on the Mac, as Macs don't have button haptics. Screenshot coming soon The Mac's Settings window on the General tab Settings on the Mac"
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Managing your subscription",
+  "url": "manual-settings-your-data-and-privacy.html#managing-your-subscription",
+  "text": "Settings → Subscription shows whether KeyCheck Pro is active. You'll see one of these: Status What it means Active Your subscription is running. Cancels at period end You've cancelled. It stays active until the current period ends. Switches to a plan You've changed plan, and the new one starts at the next renewal. Active, billing issue Apple couldn't take the payment but is still trying, and you can keep working. Update your payment details in the App Store. Billing retry Apple is still trying to take the payment. Until it goes through, projects can be opened and exported but not changed. Expired The subscription has ended. Revoked The App Store refunded or withdrew it. Contact Apple Support for billing questions. Not active You haven't subscribed on this Apple Account."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Restore Purchases",
+  "url": "manual-settings-your-data-and-privacy.html#restore-purchases",
+  "text": "On a new iPhone, iPad or Mac, or after reinstalling KeyCheck, tap Restore Purchases if KeyCheck doesn't recognise your subscription straight away. Use the same Apple Account you subscribed with. The note underneath says Active subscription restored. or No active subscription was found to restore."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Changing plan or cancelling",
+  "url": "manual-settings-your-data-and-privacy.html#changing-plan-or-cancelling",
+  "text": "Your subscription is with Apple, not with KeyCheck, so plan changes, cancelling and refunds are all handled by Apple. Tap Settings → Subscription → KeyCheck Pro . Tap Manage in App Store . You can also do it from your Apple Account settings. The subscription renews automatically unless you cancel at least 24 hours before the end of the current period."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "When a subscription ends",
+  "url": "manual-settings-your-data-and-privacy.html#when-a-subscription-ends",
+  "text": "Nothing is deleted. Your projects stay where they are and can still be opened, read and exported, including PDFs and .keycheck files. You just can't change anything, create projects, or add branding profiles or templates, and a View only notice appears at the top of each project. Subscribe again and everything can be changed as before."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Your data",
+  "url": "manual-settings-your-data-and-privacy.html#your-data",
+  "text": ""
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Where it's kept",
+  "url": "manual-settings-your-data-and-privacy.html#where-its-kept",
+  "text": "On your device. Your projects, plots, photos, signatures, documents, branding and templates are saved on the iPhone, iPad or Mac you're using. In your iCloud, if you turn on iCloud sync. They're then also stored in your own iCloud account, so they appear on your other devices. It uses your iCloud storage. Projects you share with others are stored in your iCloud too. iCloud sync is off until you turn it on ( chapter 12 ). KeyCheck's developer doesn't run any servers and never receives your project data."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "What leaves your device, and what never does",
+  "url": "manual-settings-your-data-and-privacy.html#what-leaves-your-device-and-what-never-does",
+  "text": "KeyCheck never sends your projects anywhere except your own iCloud (if sync is on) and the people you choose to share a project with. There are no adverts, no analytics and no tracking. A few features use Apple services: The weather badge sends your approximate location to Apple Weather to get the forecast. KeyCheck doesn't store your location or add it to your projects. The projects map sends a project's site address and postcode to Apple Maps to find where it is. No other project details are sent. The subscription is checked with Apple to see whether it's active. KeyCheck never sees your payment details. Anything else only leaves your device when you send it yourself: a PDF, a spreadsheet or a .keycheck file you email, AirDrop or save to Files. Where it goes after that is up to you."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Done on your device",
+  "url": "manual-settings-your-data-and-privacy.html#done-on-your-device",
+  "text": "These all happen on your iPhone, iPad or Mac. Nothing is uploaded to do them. Reading meter photos. Readings and serial numbers are read on your device, and always shown for you to confirm. Where Apple Intelligence is available, it double-checks the reading, still on your device ( chapter 5 ). Dictating log entries. Your speech is turned into text on your device and isn't sent anywhere. Where Apple Intelligence is available, it tidies what you said into an entry for you to check, also on your device ( chapter 8 ). Reading planning documents. Apple Intelligence helps sort planning conditions on your device ( chapter 7 ). Needs attention reminders. They're worked out on your device ( chapter 9 )."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Permissions KeyCheck asks for",
+  "url": "manual-settings-your-data-and-privacy.html#permissions-keycheck-asks-for",
+  "text": "KeyCheck only asks the first time you use a feature that needs it. You can change your answer at any time in the device's Settings app, under Privacy & Security (or in Settings → KeyCheck on an iPhone or iPad). Permission What it's for If you say no Camera Photographing meters and project records. You can't take photos in KeyCheck, but you can still choose meter photos from your photo library. Location (while using the app) Centring the projects map on where you are, and showing the weather there. The map still shows your projects, and the weather badge says Weather unavailable . Microphone and Speech recognition Dictating a project log entry. You can still type entries. Notifications Needs attention reminders. Asked when you turn Reminders on. Reminders stays off. Needs attention still works in the app. KeyCheck doesn't ask for access to your whole photo library. When you choose a photo or a logo, only the ones you pick are given to KeyCheck."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Backing up",
+  "url": "manual-settings-your-data-and-privacy.html#backing-up",
+  "text": "There are two ways to keep a safe copy of your projects, and it's worth using both. iCloud sync ( chapter 12 ) keeps a copy in your iCloud, so if you lose or replace a device, your projects come back when you sign in and turn sync on. But it's a copy that stays in step: if you delete a project, it's deleted everywhere. KeyCheck files are a separate copy that you keep. On the Projects screen, tap ••• then Export projects… , choose the projects and tap Export . Each project is saved as its own .keycheck file, with its plots, photos, signatures and documents. Save them somewhere safe, such as Files, OneDrive or your company's shared drive. On the Mac, right-click a project in the sidebar and choose Export… . To bring a project back from a file, open the file in KeyCheck, or go to Settings → Import → Import editable project… . Chapter 13 explains KeyCheck files in full. From the office Export your projects to .keycheck files at the end of each job, and keep them with the rest of the job's records. Then you have a copy that doesn't depend on any one device or iCloud account."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Recently Deleted",
+  "url": "manual-settings-your-data-and-privacy.html#recently-deleted",
+  "text": "When you delete one of your own projects, it moves to Recently Deleted for 30 days, so a mistake can be put right. After 30 days it's deleted for good, from all your devices and for everyone it's shared with. iPhone and iPad: on the Projects screen, tap ••• then Recently Deleted . On an iPad in a wide window, it's at the end of the sidebar list once something has been deleted. Mac: click the Recently Deleted button (the bin) at the foot of the sidebar. It only appears when something has been deleted. Each project shows when it was deleted and how many days are left. Tap Restore to put it back, or Delete Now to delete it straight away. Delete Now can't be undone: its plots, photos, signatures and documents are deleted from all your devices and for everyone it's shared with. Restoring a project counts as a change, so it needs KeyCheck Pro. If someone else shared a project with you, removing it is called Leave , not Delete . It's removed from your device straight away and doesn't go to Recently Deleted. The owner's copy isn't touched. Recently Deleted keeps deleted projects for 30 days"
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "Deleting everything",
+  "url": "manual-settings-your-data-and-privacy.html#deleting-everything",
+  "text": "There's no single button to delete all your data. To remove it: Delete each project in the Projects list, then open Recently Deleted and tap Delete Now on each one. With iCloud sync on, this removes them from iCloud and your other devices too. In Settings , delete any branding profiles and reusable templates you don't want. One branding profile always stays. Delete the KeyCheck app from the device. This removes everything KeyCheck has stored on that device. Deleting the app on its own doesn't remove what's in iCloud. If you used iCloud sync, either delete the projects in KeyCheck first (step 1), or remove KeyCheck's data from iCloud in your device's iCloud storage settings. .keycheck files and PDFs you've exported are separate copies. Delete those wherever you saved them."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "If KeyCheck can't open your data",
+  "url": "manual-settings-your-data-and-privacy.html#if-keycheck-cant-open-your-data",
+  "text": "Very rarely, KeyCheck may not be able to open its saved data when it starts, for example after a problem with the device's storage. Instead of closing, it shows Couldn't open your KeyCheck data . Your projects are still on the device. You can: Try again . Share data files , so they can be sent off to be recovered. Start with empty data… . This moves your current data aside into a backup on the device before starting fresh. It isn't deleted. If this happens, try Try again first, then get in touch before starting fresh."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "If you can't change anything",
+  "url": "manual-settings-your-data-and-privacy.html#if-you-cant-change-anything",
+  "text": "If a project shows a View only notice, or you can't edit things in Settings, it's for one of two reasons: There's no KeyCheck Pro subscription on this Apple Account, or it has ended. See Managing your subscription above, and chapter 2 . Someone shared the project with you as view only. Ask the owner to give you permission to make changes. Chapter 12 explains sharing. Either way, you can still open, read and export everything."
+ },
+ {
+  "chapter": "14. Settings, your data and privacy",
+  "heading": "The privacy policy",
+  "url": "manual-settings-your-data-and-privacy.html#the-privacy-policy",
+  "text": "The full KeyCheck privacy policy explains what data the app handles, where it's kept and your rights under UK and EU data protection law. It's also linked from the bottom of the subscription screen. If you record details about other people in KeyCheck, such as purchasers, residents or colleagues, your company is responsible for having a good reason to keep them and for telling those people how they're used."
  }
 ];
