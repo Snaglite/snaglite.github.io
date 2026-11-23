@@ -8,7 +8,7 @@
   <title>3. Creating a project – KeyCheck User Manual</title>
   <link rel="icon" href="icon.svg?v=2" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg?v=2">
-  <link rel="stylesheet" href="keycheck.css?v=3">
+  <link rel="stylesheet" href="keycheck.css?v=4">
 </head>
 <body>
   <header class="hero hero-compact" id="top">
@@ -33,7 +33,7 @@
     </div>
 
     <section class="card" id="creating-a-project">
-      <p class="section-lede">Set up a new site: create the project, add plots, import addresses and meter details from a spreadsheet, and choose what goes on the handover form.</p>
+      <p class="section-lede">This chapter sets up a new site in KeyCheck: creating the project, adding plots, importing addresses and meter details from a spreadsheet, and choosing what goes on the handover form.</p>
       <p>You can set a project up on site, but it's often quicker at a desk before the first visit, with the client's plot schedule to hand.</p>
 
       <h3 id="what-to-have-to-hand">What to have to hand</h3>
@@ -45,7 +45,7 @@
 
       <h3 id="creating-the-project">Creating the project</h3>
       <ol class="steps">
-        <li>On the <strong>Projects</strong> screen, tap <strong>New project</strong>.</li>
+        <li>On the <strong>Projects</strong> screen, tap <strong>New project</strong>. On the Mac, click <strong>New Project</strong> at the foot of the sidebar or choose <strong>File → New Project…</strong> (⌘N); on an iPad in a wide window, it's at the top of the sidebar.</li>
         <li>Fill in the sections described below. Only <strong>Project name</strong> is needed. Everything else can be added or changed later.</li>
         <li>Tap <strong>Create</strong>. The project opens, ready to use.</li>
       </ol>
@@ -74,7 +74,7 @@
 
       <h4 id="meters">Meters</h4>
       <ul>
-        <li><strong>Gas supply</strong>: switch on if the site has gas. Residential projects then use boiler instructions, boiler warranty, heating commissioning, controls instructions, a Landlord gas safety certificate and CO detector instructions. Without gas, the residential starter uses heat-pump instructions, warranty and MCS certificate instead, together with heating commissioning and controls instructions. Commercial heating records can be added from the document library because commercial systems vary.</li>
+        <li><strong>Gas supply</strong>: switch on if the site has gas. Residential projects then use boiler instructions, boiler warranty, heating commissioning, controls instructions, a Landlord's Gas Safety Record and CO detector instructions. Without gas, the residential starter uses heat-pump instructions, warranty and MCS certificate instead, together with heating commissioning and controls instructions. Commercial heating records can be added from the document library because commercial systems vary.</li>
         <li>The other meters (electricity, water and solar PV) can be switched on or off. Switching off <strong>Solar PV</strong> also hides the solar documents.</li>
       </ul>
 
@@ -84,7 +84,7 @@
       </ul>
 
       <h4 id="documents">Documents</h4>
-      <p><strong>Add or manage documents</strong> shows how many documents are on each plot's form (<strong>unit</strong> documents) and how many are recorded once for the whole site (<strong>project</strong> documents, such as the fire strategy). You can leave these as they are and adjust them later. Chapter 6 covers documents in detail.</p>
+      <p><strong>Add or manage documents</strong> shows how many documents are on each plot's form and how many are recorded once for the whole site (project documents, such as the fire strategy), for example "24 per plot · 6 for the project". You can leave these as they are and adjust them later. Chapter 6 covers documents in detail.</p>
 
       <h4 id="plots-to-add-optional">Plots to add (optional)</h4>
       <p>This section appears when each handover is a <strong>Plot</strong>.</p>
@@ -129,7 +129,7 @@
 
       <h3 id="adding-more-plots-later">Adding more plots later</h3>
       <ol class="steps">
-        <li>Open the project and, on the <strong>Plots</strong> tab, tap <strong>Add plots</strong> (the <strong>+</strong> button, top right).</li>
+        <li>Open the project and, on the <strong>Plots</strong> tab, tap <strong>Add plots</strong> (the <strong>+</strong> button, top right). On the Mac, choose <strong>Project → Add Plots…</strong> (⇧⌘N).</li>
         <li>Choose <strong>Range of numbers</strong>, or <strong>One by name</strong> for a single building or unit with a name, such as "Main building".</li>
         <li>Type the numbers or name.</li>
         <li>Optionally, fill in <strong>Street</strong>, <strong>Town</strong>, <strong>Tenure</strong>, <strong>Property type</strong>, <strong>Block</strong> and <strong>House type</strong>. These are given to every plot you're adding, which saves time when a run of plots are all the same, for example "plots 20 to 28, Shared Ownership flats, Block B".</li>
@@ -156,7 +156,7 @@
 
       <h4 id="importing-it">Importing it</h4>
       <ol class="steps">
-        <li>Open the project and tap <strong>Project settings</strong> (the gear at the top right of the <strong>Plots</strong> tab).</li>
+        <li>Open the project and tap <strong>Project settings</strong> (the gear at the top right of the <strong>Plots</strong> tab; on the Mac and a wide iPad it's in the toolbar of every section, or press ⌥⌘,).</li>
         <li>Under <strong>Import</strong>, tap <strong>Addresses and meter details…</strong>.</li>
         <li>Tap <strong>Choose CSV file…</strong> and pick the file.</li>
         <li>Check the screen that opens:
@@ -203,7 +203,7 @@
             <tr><td>Tenure</td><td>For example Rent or Shared Ownership.</td></tr>
             <tr><td>Property type</td><td>House, Bungalow, Flat, Maisonette or Commercial.</td></tr>
             <tr><td>House type</td><td>For example "Type F1".</td></tr>
-            <tr><td>Bedrooms/people</td><td>For example 3B4P.</td></tr>
+            <tr><td>Bedrooms/people</td><td>For example 3B4P, or separate <strong>Bedrooms</strong> and <strong>People</strong> columns.</td></tr>
             <tr><td>Block, Floor</td><td>For flats. Floor can be "Ground", "1st" and so on.</td></tr>
             <tr><td>Target handover date</td><td>The planned date, for example from the developer's programme. Headings such as "Target handover", "Planned handover", "Handover date (forecast)" or "Completion date" are matched here.</td></tr>
             <tr><td>Handover date (actual)</td><td>The day a plot was actually handed over, if the sheet has one. For both dates use day/month/year, for example 28/05/2027. Dates KeyCheck can't read are left out, and the preview warns you.</td></tr>
@@ -226,7 +226,7 @@
       <h3 id="form-items">Form items</h3>
       <p><strong>Form items</strong> is the list of what's recorded for every plot: meters, keys, documents and sign-off roles. Each project has its own copy, so changes only affect this project.</p>
       <ol class="steps">
-        <li>Open the project and tap <strong>Project settings</strong> (the gear at the top right of the <strong>Plots</strong> tab), then <strong>Form items</strong>.</li>
+        <li>Open the project and tap <strong>Project settings</strong> (the gear at the top right of the <strong>Plots</strong> tab, or ⌥⌘, on the Mac), then <strong>Form items</strong>.</li>
         <li>Make your changes (see below).</li>
         <li>Tap <strong>Done</strong> to save, or <strong>Cancel</strong> to leave the form as it was.</li>
       </ol>
@@ -316,7 +316,15 @@
       </ul>
 
       <h3 id="changing-project-details-later">Changing project details later</h3>
-      <p>To change the name, client, contractor, address or branding, open the project and tap <strong>Project settings → Project details</strong>. Tap <strong>Done</strong> when you've finished. You can also swipe right on the project in the Projects list and tap <strong>Edit</strong>.</p>
+      <p>To change the name, client, contractor, address or branding, open the project and tap <strong>Project settings → Project details</strong>. Tap <strong>Done</strong> when you've finished. You can also swipe right on the project in the Projects list and tap <strong>Edit</strong>. The same swipe has <strong>Archive</strong>, which moves a finished project into the <strong>Archived</strong> section at the bottom of the list.</p>
+
+      <h3 id="starting-a-similar-project">Starting a similar project</h3>
+      <p>To start a new phase or a similar site from one you've already set up, touch and hold the project in the Projects list (or swipe left and tap <strong>More</strong>) and choose <strong>Duplicate</strong>:</p>
+      <ul>
+        <li><strong>Setup and plots</strong> copies the project details, form items, branding, site details, attachments, planning history and the list of plots. Readings, keys handed over, photos, signatures and dates start empty.</li>
+        <li><strong>Everything</strong> makes an exact copy, including every reading, photo and signature.</li>
+      </ul>
+      <p>The copy opens straight away. Rename it in <strong>Project settings → Project details</strong>.</p>
 
       <div class="note">
         <span class="note-label">From the office</span>

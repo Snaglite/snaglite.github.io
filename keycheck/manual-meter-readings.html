@@ -8,7 +8,7 @@
   <title>5. Meter readings – KeyCheck User Manual</title>
   <link rel="icon" href="icon.svg?v=2" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg?v=2">
-  <link rel="stylesheet" href="keycheck.css?v=3">
+  <link rel="stylesheet" href="keycheck.css?v=4">
 </head>
 <body>
   <header class="hero hero-compact" id="top">
@@ -64,7 +64,7 @@
       <p>A meter counts as done in <strong>What's left</strong> (chapter 4) once one of its readings is filled in. Serial numbers, supply numbers and suppliers are recorded on the handover form but don't count towards how complete the plot is.</p>
       <h4 id="saving-typing">Saving typing</h4>
       <ul>
-        <li><strong>Suppliers</strong>: the supplier boxes are marked <strong>Same on every plot</strong>, so <strong>Copy from</strong> and <strong>Apply setup to several</strong> (chapter 4) copy them from plot to plot. Readings and serial numbers are never copied.</li>
+        <li><strong>Suppliers</strong>: the supplier boxes (and electricity's <strong>On peak</strong> and <strong>Off peak</strong>) are marked <strong>Same on every plot</strong>, so <strong>Copy from</strong> and <strong>Copy to other plots</strong> (chapter 4) copy them from plot to plot. Readings and serial numbers are never copied.</li>
         <li><strong>Serial numbers and supply numbers</strong>: if the client's plot schedule lists MPANs, MPRNs or meter serial numbers, import them from a spreadsheet before you go to site (chapter 3).</li>
       </ul>
 
@@ -74,7 +74,7 @@
         <li>Tap <strong>Photo</strong> to take a picture with the camera.</li>
         <li>Tap <strong>Library</strong> to choose one you've already taken, for example if you photographed all the meters first and are filling in the forms afterwards.</li>
       </ul>
-      <p>(On an iPad without a camera, there's just <strong>Add meter photo</strong>.)</p>
+      <p>(On an iPad without a camera, or on the Mac, there's just <strong>Add meter photo</strong>. On the Mac you can also drag photos from Finder onto a meter.)</p>
       <p>The photo is saved to that meter straight away, and shows as a small picture under the boxes. A photo from your library keeps the date and time it was taken. You can add more than one photo to a meter, for example one of the display and one of the serial number.</p>
       <p>Meter photos appear on the plot's handover PDF, beside the readings (chapter 10).</p>
       <figure class="shot">
@@ -83,7 +83,7 @@
         </a>
         <figcaption>A plot's Electricity meter, with a photo added</figcaption>
       </figure>
-      <p>To look at a photo, tap it. The photo opens full screen, with the date and time it was taken at the top. To delete it, tap <strong>Delete</strong>.</p>
+      <p>To look at a photo, tap it. The photo opens full screen, with the date and time it was taken at the top. To delete it, tap <strong>Delete</strong>, then <strong>Delete photo</strong>. This can't be undone. Tap <strong>Close</strong> to go back to the form.</p>
 
       <h3 id="letting-keycheck-read-the-photo">Letting KeyCheck read the photo</h3>
       <p>As soon as you add a photo, KeyCheck reads it and opens a screen named after the meter, for example <strong>Electricity</strong>. After a moment it shows what it <strong>Found on photo</strong>: usually the reading and the serial number, and the MPAN if it's printed on the meter.</p>
@@ -95,17 +95,25 @@
             <li><strong>Check</strong>: KeyCheck isn't sure. Compare it carefully with the photo.</li>
           </ul>
         </li>
-        <li>If a value is wrong, tap it and correct it.</li>
-        <li>Each value has a switch. Values for empty boxes are switched on. If a box on the form already has something in it, the value says <strong>Currently …, turn on to replace</strong> and is switched off, so nothing you've typed is replaced unless you choose to.</li>
-        <li>Tap <strong>Add to Form</strong> to fill in the values that are switched on. Or tap <strong>Close</strong> to leave the form as it was.</li>
+        <li>If a value is wrong, tap it and correct it. Editing a value switches it on.</li>
+        <li>Each value has a switch. Values for empty boxes are switched on. If a box on the form already has something in it, the value says <strong>Currently … – turn on to replace</strong> and is switched off, so nothing you've typed is replaced unless you choose to.</li>
+        <li>Tap <strong>Fill In Form</strong> to fill in the values that are switched on. Or tap <strong>Photo Only</strong> to keep just the photo and leave the form as it was.</li>
       </ol>
       <p>Either way, the photo stays saved to the meter.</p>
-      <figure class="shot">
-        <a href="images/meter-scan-found.png" target="_blank" rel="noopener noreferrer">
-          <img src="images/meter-scan-found.png" alt="The Electricity scan screen: the meter photo, then Found on photo with Import reading 00336 and Meter serial number 26J0165067, both marked Clear and switched on, and Add to Form at the top right" loading="lazy">
-        </a>
-        <figcaption>What KeyCheck found on a photo, ready to add to the form</figcaption>
-      </figure>
+      <div class="shot-row">
+        <figure class="shot">
+          <a href="images/meter-scan-found.png" target="_blank" rel="noopener noreferrer">
+            <img src="images/meter-scan-found.png" alt="The Electricity scan screen with Photo Only and Fill In Form at the top, the meter photo, and Found on photo with Import reading 50086 and Meter serial number 17M1102259, both marked Clear and switched on, each showing the value currently on the form" loading="lazy">
+          </a>
+          <figcaption>What KeyCheck found on a photo, ready to fill in the form</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="images/meter-scan-check.png" target="_blank" rel="noopener noreferrer">
+            <img src="images/meter-scan-check.png" alt="The same screen with the import reading marked Check and switched off, because a second read didn&#x27;t confirm it, and the serial number marked Clear and switched on" loading="lazy">
+          </a>
+          <figcaption>A reading marked Check stays off until you&#x27;ve compared it with the photo</figcaption>
+        </figure>
+      </div>
       <p>If KeyCheck can't find anything, it says so. Tap <strong>Done</strong> and type the values yourself.</p>
       <h4 id="warnings">Warnings</h4>
       <p>If the photo looks like a different type of meter, KeyCheck shows an orange warning. For example: "This looks like a Gas meter, but it's being added to Electricity." It's there to catch a mix-up before it reaches the handover form. If KeyCheck is wrong, ignore the warning and carry on.</p>
@@ -127,7 +135,6 @@
         <li>On electricity meters, show the import reading (<strong>+A</strong>), not the export.</li>
         <li>If a reading comes back as <strong>Check</strong>, take a second, closer photo rather than guessing.</li>
       </ul>
-      <p>If KeyCheck finds the serial number but not the reading, it says so under the values and suggests moving closer:</p>
       <figure class="shot">
         <a href="images/meter-scan-no-reading.png" target="_blank" rel="noopener noreferrer">
           <img src="images/meter-scan-no-reading.png" alt="The Electricity scan screen with only the meter serial number found, and a note saying no reading was found and to move closer so the display fills the frame" loading="lazy">

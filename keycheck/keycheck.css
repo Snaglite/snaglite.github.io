@@ -651,6 +651,33 @@ td:first-child {
   max-width: 720px;
 }
 
+/* Two or more screenshots side by side. They wrap onto separate lines on a narrow screen. */
+.shot-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px 32px;
+  margin: 20px 0 24px;
+}
+
+.shot-row .shot {
+  flex: 0 1 240px;
+  margin: 0;
+}
+
+.shot-row .shot a {
+  max-width: 240px;
+}
+
+.shot-row .shot.wide {
+  flex-basis: 440px;
+}
+
+.shot-row .shot.wide a {
+  max-width: 440px;
+}
+
 .shot figcaption {
   margin-top: 8px;
   color: var(--muted);

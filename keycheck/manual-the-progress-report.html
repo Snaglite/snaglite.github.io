@@ -8,7 +8,7 @@
   <title>11. The progress report – KeyCheck User Manual</title>
   <link rel="icon" href="icon.svg?v=2" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg?v=2">
-  <link rel="stylesheet" href="keycheck.css?v=3">
+  <link rel="stylesheet" href="keycheck.css?v=4">
 </head>
 <body>
   <header class="hero hero-compact" id="top">
@@ -38,13 +38,14 @@
 
       <h3 id="making-the-report">Making the report</h3>
       <ol>
-        <li>Open the project's <strong>Site</strong> tab and find <strong>Progress report</strong>, under <strong>Reports</strong>.</li>
+        <li>Open the project's <strong>Site</strong> tab and find <strong>Progress report</strong>, under <strong>Reports</strong>. (The card can't be tapped until the project has plots.)</li>
         <li>Tap <strong>Create report…</strong>.</li>
         <li>Choose the <strong>Period</strong> and the sections to include (see below).</li>
         <li>Tap <strong>Create</strong>. KeyCheck makes the PDF and opens the share sheet, so you can email it, save it to Files or print it.</li>
       </ol>
       <p>The file is called, for example, <em>Meadow View Phase 2 - Progress report 2026-11-19.pdf</em>. The report is A4 landscape, with the project's branding, and the title <strong>PROGRESS REPORT</strong>.</p>
       <p>On the Mac, the report is on the <strong>Site</strong> page too. After it's made, choose <strong>Share…</strong> or <strong>Save…</strong>.</p>
+      <p>See an example: the <a href="samples/meadow-view-progress-report.pdf">sample progress report</a> for Meadow View Phase 2 (PDF, 10 pages).</p>
 
       <h3 id="choosing-what-goes-in-it">Choosing what goes in it</h3>
 
@@ -60,7 +61,6 @@
       <h4 id="sections">Sections</h4>
       <p>Under <strong>Include</strong>, switch on the sections you want: <strong>Summary</strong>, <strong>What's changed</strong>, <strong>Plot tracker</strong>, <strong>Outstanding items</strong>, <strong>Documents not received</strong>, <strong>Planning</strong>, <strong>Plot notes</strong>, <strong>Project log</strong> (with <strong>Whole project log</strong>, see chapter 8), <strong>Communal keys</strong> and <strong>Communal meters</strong>. KeyCheck remembers your choice on this device for next time.</p>
       <p>Sections with nothing to show are left out of the report.</p>
-
       <figure class="shot">
         <a href="images/report-options.png" target="_blank" rel="noopener noreferrer">
           <img src="images/report-options.png" alt="The Progress report options: Period set to Since last report, with the last report on 12 November 2026, and Include with Summary, What&#x27;s changed, Plot tracker, Outstanding items, Documents not received, Planning, Plot notes, Project log, Communal keys and Communal meters switched on" loading="lazy">
@@ -69,15 +69,14 @@
       </figure>
 
       <h4 id="counting-it-as-the-latest-report">Counting it as the latest report</h4>
-      <p><strong>Count as the latest report</strong> is on unless you turn it off. When it's on and you share or save the report, KeyCheck remembers its date, so next time <strong>Since last report</strong> starts from there. Turn it off for a draft or a one-off report, so the next real report still covers everything since the last meeting.</p>
+      <p><strong>Count as the latest report</strong> is on unless you turn it off. (It isn't shown if you can only view the project.) When it's on and you share or save the report, KeyCheck remembers its date, so next time <strong>Since last report</strong> starts from there. Turn it off for a draft or a one-off report, so the next real report still covers everything since the last meeting.</p>
       <p>Closing the share sheet without sharing or saving doesn't count the report. On a shared project, everyone uses the same last report, so it doesn't matter who made it.</p>
       <p>"Since last report" starts at the beginning of that report's day, so nothing done that day is missed. Something done earlier on the same day may appear in both reports.</p>
 
       <h3 id="whats-in-the-report">What's in the report</h3>
 
       <h4 id="the-cover">The cover</h4>
-      <p>The top of the first page shows the project, client and contractor, the site address, the report date, <strong>Prepared by</strong> (your name from <strong>Settings → You</strong>), the number of plots, and under <strong>Changes</strong> the period the report covers.</p>
-
+      <p>The top of the first page shows the project, client and contractor, the site address, the report date, <strong>Prepared by</strong> (your name from <strong>Settings → You</strong>, left off if you haven't set one), the number of plots, and under <strong>Changes</strong> the period the report covers.</p>
       <figure class="shot">
         <a href="images/progress-report.png" target="_blank" rel="noopener noreferrer">
           <img src="images/progress-report.png" alt="The first page of the Meadow View Phase 2 progress report: the project details, the Summary with 3 not started, 5 in progress, 2 awaiting sign-off and 4 handed over, progress by street, and the start of What&#x27;s changed" loading="lazy">
@@ -88,11 +87,6 @@
       <h4 id="summary">Summary</h4>
       <p>How many plots are not started, in progress, awaiting sign-off and handed over, with a coloured bar and a line such as "4 of 14 plots handed over · 13 outstanding items (2 overdue) · 5 documents outstanding · 982 not yet checked". On sites with more than one block or street, tables show the progress of each. <strong>Sign-off left</strong> means everything is recorded except the signatures.</p>
 
-      <h4 id="plot-tracker">Plot tracker</h4>
-      <p>A row for each plot: its address, tenure and type, and how much of each part of the form is done, for example meters "3/3" and documents "8/12". <strong>Open items</strong> is the number of snags still open.</p>
-      <p><strong>Handover</strong> shows the real handover date once a plot is handed over. Until then it shows the target date in grey, or red once the target has passed, and the heading counts how many are past target.</p>
-      <p><strong>PA</strong> means the plot was handed over by a previous agent, who dealt with its meters, keys, documents and sign-off before the site was taken on (chapter 4).</p>
-
       <h4 id="whats-changed">What's changed</h4>
       <p>What happened in the period, starting with a line such as "1 plot handed over · 12 documents received · 4 chased · 3 outstanding items completed":</p>
       <ul>
@@ -102,6 +96,11 @@
         <li><strong>Outstanding items completed</strong>: snags ticked off in the period, with their completed date.</li>
       </ul>
       <p>If nothing happened in the period, the section says so.</p>
+
+      <h4 id="plot-tracker">Plot tracker</h4>
+      <p>A row for each plot: its address, tenure and type, and how much of each part of the form is done, for example meters "3/3" and documents "8/12". <strong>Open items</strong> is the number of snags still open.</p>
+      <p><strong>Handover</strong> shows the real handover date once a plot is handed over. Until then it shows the target date in grey, or red once the target has passed, and the heading counts how many are past target.</p>
+      <p><strong>PA</strong> means the plot was handed over by a previous agent, who dealt with its meters, keys, documents and sign-off before the site was taken on (chapter 4).</p>
 
       <h4 id="outstanding-items">Outstanding items</h4>
       <p>Every snag still open, with the plot, who's fixing it and the due date. Overdue ones come first, marked <strong>Overdue</strong>.</p>
@@ -119,11 +118,11 @@
       <p>The last three columns only appear when there's something in them.</p>
       <p>Documents nobody has ticked off either way on any plot are listed together in three columns, under "Not yet checked on any of the 10 plots", so the report doesn't fill up with rows that say the same thing. As the report explains, some of these may have arrived without anyone recording it, and waiting time only starts when a document is marked outstanding.</p>
       <p>Project documents are listed after the plot documents, each marked <strong>Outstanding</strong> or <strong>Not received</strong>. A bundle shows how many items have arrived, with the missing ones underneath.</p>
+
       <div class="note">
         <span class="note-label">Tip</span>
         <p>The quickest way to make this section useful is to mark documents <strong>Outstanding</strong> on the day you ask for them, and record each chase (chapter 6). Then the report shows how long everyone has been waiting.</p>
       </div>
-
       <figure class="shot">
         <a href="images/report-documents.png" target="_blank" rel="noopener noreferrer">
           <img src="images/report-documents.png" alt="Documents not received in the progress report: rows for each document with how many plots are missing it, which plots, and how long they&#x27;ve waited, such as Energy Performance Certificate 8 of 10, waiting since 15/10/2026 (35 days)" loading="lazy">
@@ -140,7 +139,7 @@
         <li>The conditions, under <strong>Pre-commencement</strong>, <strong>Pre-occupation</strong> and <strong>Compliance only</strong>, with their status and the discharge decision that approved them.</li>
         <li><strong>Notes</strong>, for example suggestions in To do that haven't been confirmed yet. The report doesn't count them until you confirm them.</li>
       </ul>
-      <p>It's followed by <strong>S106 / CIL obligations</strong>, grouped by when they're due, with the amount, the date complied and the status: <strong>Outstanding</strong>, <strong>Complied</strong> or <strong>Not required</strong>. The <strong>Planning</strong> switch covers both.</p>
+      <p>It's followed by <strong>S106 / CIL obligations</strong>, grouped by when they're due, with the agreement it comes from, the amount, the date complied and the status: <strong>Outstanding</strong>, <strong>Complied</strong> or <strong>Not required</strong>. The heading says how many are left, for example "1 of 5 outstanding", or "None outstanding". The <strong>Planning</strong> switch covers both.</p>
       <p>The report notes that this is a record of the planning documents imported into KeyCheck, not a legal certificate of planning compliance.</p>
 
       <h4 id="plot-notes">Plot notes</h4>
@@ -153,6 +152,7 @@
       <p>The communal keys, with who they were handed to and when, or <strong>Not handed over</strong>. The communal meters, with their location, serial number and reading, or <strong>Not read</strong>.</p>
 
       <h3 id="using-the-report-at-progress-meetings">Using the report at progress meetings</h3>
+
       <div class="note">
         <span class="note-label">From the office</span>
         <p>Before the meeting:</p>
@@ -164,16 +164,21 @@
         <p>At the meeting, <strong>What's changed</strong> is the update since last time, <strong>Outstanding items</strong> and <strong>Documents not received</strong> are the actions, and the <strong>Plot tracker</strong> shows which plots are next and which are past their target. If you need a draft first, turn <strong>Count as the latest report</strong> off, so the real report still covers the whole period.</p>
       </div>
 
-
       <h3 id="spreadsheets-for-excel-or-numbers">Spreadsheets for Excel or Numbers</h3>
       <p>For a tracker of your own, or to send figures to a client's system, KeyCheck can export the project as spreadsheets. On the <strong>Site</strong> tab, find <strong>Spreadsheets</strong> under <strong>Reports</strong> and tap <strong>Export…</strong>. Choose any of:</p>
       <ul>
-        <li><strong>Plots and meters</strong>: one row per plot, with the address, tenure, status, target and actual handover dates, meter details, how many documents are received and how many final snags are open. It uses the same columns as <strong>Import addresses &amp; meters</strong>, so you can correct it in Excel and import it again.</li>
+        <li><strong>Plots and meters</strong>: one row per plot, with the address, tenure, status, target and actual handover dates, meter details, how many documents are received and how many final snags are open. It uses the same columns as the import in <strong>Project settings → Addresses and meter details</strong> (chapter 3), so you can correct it in Excel and import it again.</li>
         <li><strong>Plot documents</strong>: one row per plot and a column per document, saying for example "Received 03/11/2026" or "Outstanding since 21/10/2026, chased 01/11/2026".</li>
         <li><strong>Project documents</strong>: each project document and bundle item, with its status and dates.</li>
         <li><strong>Final snags</strong>: every snag, with who it's with, when it's due, whether it's open, overdue or done, and when it was completed.</li>
       </ul>
-      <p>Tap <strong>Export</strong>. Each spreadsheet is a separate CSV file, which opens in Excel, Numbers or Google Sheets. Dates are written day first, and long numbers such as MPANs keep every digit.</p>
+      <p>Tap <strong>Export</strong>, then share or save the files as usual (on the Mac, choose <strong>Share…</strong> or <strong>Save…</strong>). Each spreadsheet is a separate CSV file, which opens in Excel, Numbers or Google Sheets. Dates are written day first, and long numbers such as MPANs keep every digit.</p>
+      <figure class="shot">
+        <a href="images/spreadsheet-export.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/spreadsheet-export.png" alt="Export spreadsheets, with Plots and meters, Plot documents, Project documents and Final snags all switched on, each with a short description, and Export at the top right" loading="lazy">
+        </a>
+        <figcaption>Choosing the spreadsheets</figcaption>
+      </figure>
 
     </section>
 

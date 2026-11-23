@@ -8,7 +8,7 @@
   <title>10. The handover PDF – KeyCheck User Manual</title>
   <link rel="icon" href="icon.svg?v=2" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg?v=2">
-  <link rel="stylesheet" href="keycheck.css?v=3">
+  <link rel="stylesheet" href="keycheck.css?v=4">
 </head>
 <body>
   <header class="hero hero-compact" id="top">
@@ -39,9 +39,10 @@
 
       <h4 id="one-plot">One plot</h4>
       <p>Open the plot and tap the share button at the top right (<strong>Export this handover</strong>). KeyCheck prepares the PDF, then opens the share sheet, where you can email it, save it to Files or OneDrive, AirDrop it or print it.</p>
+      <p>You don't have to open the plot: on the Plots tab, swipe right on the plot and tap <strong>Export</strong>, or touch and hold it and choose <strong>Export</strong>.</p>
 
       <h4 id="several-plots">Several plots</h4>
-      <p>On the Plots tab, tap the menu beside the number of plots, choose <strong>Select plots</strong>, select the ones you want, and tap <strong>Export</strong> at the bottom of the screen. Each plot gets its own form.</p>
+      <p>On the Plots tab, tap the menu beside the number of plots, choose <strong>Select plots</strong>, select the ones you want, and tap <strong>Export</strong> at the bottom of the screen. (You can also start selecting by swiping down the list with two fingers. The bar at the bottom has <strong>Delete</strong> too, so take care.) You get one PDF, with each plot's form in turn.</p>
 
       <h4 id="the-whole-site">The whole site</h4>
       <p>On the <strong>Site</strong> tab, find <strong>Handover forms</strong> and tap <strong>Export all…</strong>. This makes one PDF, often called the handover pack, with:</p>
@@ -50,21 +51,21 @@
         <li>a handover form for every plot that has something recorded (plots with nothing recorded yet are left out)</li>
         <li>the communal keys, at the end</li>
       </ol>
+      <p>See an example: the <a href="samples/meadow-view-handover-pack.pdf">sample handover pack</a> for Meadow View Phase 2 (PDF, 36 pages).</p>
 
       <h4 id="on-the-mac">On the Mac</h4>
-      <p>Select one or more plots in the table and choose <strong>Plot → Export Handover PDF…</strong> (⌘E), or right-click them. To print one plot's form, select it and choose <strong>File → Print Handover Form…</strong> (⌘P).</p>
+      <p>Select one or more plots in the table and choose <strong>Plot → Export Handover PDF…</strong> (⌘E), or right-click them. KeyCheck asks where to save the PDF. To email or AirDrop it instead, right-click and choose <strong>Share Handover PDF…</strong>. You can also drag plots from the table straight to Finder or into an email, and the PDF is made as you drop them. To print one plot's form, select it and choose <strong>File → Print Handover Form…</strong> (⌘P).</p>
 
       <h4 id="file-names">File names</h4>
-      <p>The file is named using the <strong>File name</strong> in the project's branding profile (chapter 2), which starts as <code>{project} - {unit} Handover</code>. KeyCheck fills in the project name, the plot (or "All plots"), and the date as year-month-day. For example: <em>Meadow View Phase 2 - Plot 7 Handover.pdf</em>.</p>
+      <p>The file is named using the <strong>File name</strong> in the project's branding profile (chapter 2), which starts as <code>{project} - {unit} Handover</code>. KeyCheck fills in the project name and the plot, for example <em>Meadow View Phase 2 - Plot 7 Handover.pdf</em>. Exporting several plots gives, for example, <em>Meadow View Phase 2 - 3 Plots Handover.pdf</em>, and Export all says "All plots". If you add <code>{date}</code> to the pattern, it's written as year-month-day: the plot's handover date for one plot (or today if it hasn't got one), and today's date for several.</p>
 
       <h3 id="whats-on-the-form">What's on the form</h3>
       <p>Handover forms are A4 portrait. Here's what each part means, from top to bottom.</p>
 
       <h4 id="the-header">The header</h4>
       <p>The coloured bar, title (<strong>HANDOVER FORM</strong> unless the branding changes it), logo or company name come from the project's branding profile. With no branding, the form is plain black and white.</p>
-      <p>Below it is a shaded panel with the project, client and contractor; the plot's postal address and postcode (or the site's, if the plot has none); the plot number, tenure and <strong>Handover date</strong>; and, if they're recorded, the house type, property and block and floor. <strong>Prepared by</strong> is the name in <strong>Settings → You</strong> of the person who made the PDF. A dash (—) means nothing was recorded.</p>
+      <p>Below it is a shaded panel with the project, client and contractor; the plot's postal address and postcode (or the site's, if the plot has none); the plot number, tenure and <strong>Handover date</strong>; and, if they're recorded, the house type, property and block and floor. <strong>Prepared by</strong> is the name in <strong>Settings → You</strong> of the person who made the PDF. If no name is set there, it's left off. A dash (—) means nothing was recorded.</p>
       <p>The target handover date is never printed. The form only ever shows the real handover date.</p>
-
       <figure class="shot">
         <a href="images/handover-pdf.png" target="_blank" rel="noopener noreferrer">
           <img src="images/handover-pdf.png" alt="Page 1 of Plot 2&#x27;s handover form: HANDOVER FORM above a panel with the project, client, contractor, address, plot number, handover date 17/10/2026, tenure and house type, then the Electricity, Water and Solar PV readings and 13 keys handed over" loading="lazy">
@@ -96,7 +97,6 @@
       </div>
       <p>Any note on a document is printed beside it. The heading has a summary, such as "18 received · 2 outstanding · 3 N/A".</p>
       <p>Documents switched off in <strong>Form items</strong>, and documents hidden for this plot's tenure (chapter 3), aren't printed at all.</p>
-
       <figure class="shot">
         <a href="images/handover-pdf-documents.png" target="_blank" rel="noopener noreferrer">
           <img src="images/handover-pdf-documents.png" alt="The documents on Plot 2&#x27;s handover form, each marked RECEIVED with its date and the EV charging instructions N/A, then Defects / outstanding items with one item DONE, the notes, and Sign-off for Sarah Okafor and Dan Whitfield on 17/10/2026" loading="lazy">
@@ -108,7 +108,7 @@
       <p>The final snags still open at handover, with who's fixing them, the due date and the completed date. Each is marked <strong>OPEN</strong> or <strong>DONE</strong>, and the heading says how many are still open, for example "2 open of 3". This section only appears if the project uses outstanding items and the plot has some.</p>
 
       <h4 id="notes">Notes</h4>
-      <p>The plot's notes, if there are any.</p>
+      <p>The plot's notes, if there are any, with any bold text and lists as they were typed.</p>
 
       <h4 id="sign-off">Sign-off</h4>
       <p>A box for each sign-off role, such as the client representative and contractor, with the signature, name and date. For a plot handed over by a previous agent, there's a single box instead, saying <em>Handed over by a previous agent</em> and <em>No signatures were taken in KeyCheck</em>, with the handover date.</p>
@@ -123,6 +123,7 @@
         <li><strong>Communal keys</strong> (chapter 7): tap <strong>Export communal keys (PDF)</strong> at the bottom of the Communal keys screen. It lists each key, its block or entrance, quantity, who it was handed to, the date and any note.</li>
         <li><strong>Project documents</strong> (chapter 6): on the Documents tab, tap <strong>⋯ → Export PDF</strong>. It lists every project document with its status, dates and notes, with bundles and their items. If the project has planning conditions, it adds a <strong>Planning conditions</strong> section (outstanding, discharged and compliance-only conditions) and an <strong>S106 / CIL obligations</strong> section. Planning conditions come with a note that they're a record of the documents imported into KeyCheck, not a legal certificate of compliance.</li>
       </ul>
+
       <div class="note">
         <span class="note-label">For clients and residents</span>
         <p>If you've received a handover form, the most important parts are usually the meter readings (take a photo of your own meters on the day you move in, to check them), the keys you should have, and any items still <strong>OPEN</strong> under <strong>Defects / outstanding items</strong>, with who's fixing them. Documents marked <strong>OUTSTANDING</strong> or <strong>NOT RECEIVED</strong> are still to come.</p>
