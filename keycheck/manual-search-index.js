@@ -266,9 +266,9 @@ window.KEYCHECK_MANUAL_INDEX = [
  },
  {
   "chapter": "3. Creating a project",
-  "heading": "The blank CSV template",
-  "url": "manual-creating-a-project.html#the-blank-csv-template",
-  "text": "If there's no schedule to start from, tap Get a blank KeyCheck CSV template on the first import screen. It makes a spreadsheet with the right headings and a row for each plot already in the project. Fill it in on a computer, save it as CSV, and import it. The second row is an example showing how to fill each column. KeyCheck ignores it when importing."
+  "heading": "The KeyCheck CSV",
+  "url": "manual-creating-a-project.html#the-keycheck-csv",
+  "text": "If there's no schedule to start from, tap Get a KeyCheck CSV to fill in on the first import screen. It makes a spreadsheet with the right headings and a row for each plot already in the project, showing the details KeyCheck already has. Fill in the gaps on a computer, save it as CSV, and import it. The second row is an example showing how to fill each column. KeyCheck ignores it when importing. Only plots whose details actually change are counted as updated. Plots you didn't touch show as already up to date."
  },
  {
   "chapter": "3. Creating a project",
@@ -1034,9 +1034,15 @@ window.KEYCHECK_MANUAL_INDEX = [
  },
  {
   "chapter": "9. Finding things",
-  "heading": "The widget",
+  "heading": "The widgets",
   "url": "manual-finding-things.html#the-widget",
-  "text": "On iPhone and iPad you can add KeyCheck's Needs attention widget to the Home Screen or Lock Screen. It comes in a small and a medium size for the Home Screen, and a rectangular and a one-line size for the Lock Screen. It shows a project's name, how many things there are to act on and how many plots are handed over; the medium size also lists the most pressing items and the next target handover date. Touch and hold the widget and choose Edit Widget to pick the project. Left as it is, it shows the project with most to act on. Tap the widget to open that project's Needs attention list. Open KeyCheck once after installing so the widget has figures to show. Needs attention The Needs attention widget"
+  "text": "On iPhone and iPad you can add two KeyCheck widgets to the Home Screen. Open KeyCheck once after installing so they have figures to show. Needs attention shows one project. The small and medium sizes show how many things there are to act on and how many plots are handed over, and the medium size lists the most pressing items. The large size lists what to act on now and what's due this week, one row each: an overdue final snag with its plot, a plot past its target handover with what's left to record, or a document to chase with how long it's been waiting. The full-page size (iOS 27 and later) fills a whole Home Screen page with the same lists, plus how many plots are awaiting sign-off and still to do, and the next target handover. There's also a rectangular and a one-line size for the Lock Screen. Touch and hold the widget and choose Edit Widget to pick the project. Left as it is, it shows the project with most to act on. All projects shows every project at once, most to act on first, each with its handed-over bar and next target handover. The large and full-page sizes add This week across sites : the handovers and final snags falling due in the coming week on every project, soonest first. Sample projects are left out once you have projects of your own. Tap a row to go straight to it: a snag or handover opens its plot, and a project, a document chase or more in Needs attention opens that project's Needs attention list. Tapping anywhere else opens the project's Needs attention list. The widgets move on at midnight by themselves, so a snag due today shows as overdue tomorrow without KeyCheck being opened. Needs attention The Needs attention widget"
+ },
+ {
+  "chapter": "9. Finding things",
+  "heading": "The icon menu",
+  "url": "manual-finding-things.html#the-icon-menu",
+  "text": "Touch and hold KeyCheck's icon on the Home Screen and choose Search all projects to go straight to the search across every project."
  },
  {
   "chapter": "9. Finding things",
